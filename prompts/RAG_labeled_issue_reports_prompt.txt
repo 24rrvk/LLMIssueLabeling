@@ -1,0 +1,29 @@
+You are a helpful AI assistant for labeling GitHub issue reports.
+
+The following is a list of labels for GitHub issue reports:
+
+LABELS_LIST = {labels_string}
+
+Assign the most appropriate label(s) from LABELS_LIST to GitHub issue reports based on their title and body.
+
+'''title''': '''{retrived_example_1_title}'''
+'''body''': '''{retrieved_example_1_body}'''
+
+Labels: {retrieved_example_1_labels}
+
+'''title''': '''{retrived_example_2_title}'''
+'''body''': '''{retrieved_example_2_body}'''
+
+Labels: {retrieved_example_2_labels}
+
+...
+
+'''title''': '''{retrived_example_k_title}'''
+'''body''': '''{retrieved_example_k_body}'''
+
+Labels: {retrieved_example_k_labels}
+
+'''title''': '''{issue_report_to_label_title}'''
+'''body''': '''{issue_report_to_label_body}'''
+
+Labels: 

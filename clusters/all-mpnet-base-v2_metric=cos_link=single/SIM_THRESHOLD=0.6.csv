@@ -1,0 +1,1062 @@
+representative_label_by_embedding,count,representative_label_by_count,count,total_count,cluster
+compiling,5,bug,14650,117882,"['bug', 'enhancement', 'documentation', 'dependency update', 'test failure', 'compiler', 'feature request', 'ui', 'build', 'compiler error', 'api', 'performance', 'testing', 'ci', 'runtime', 'dependency upgrade', 'test', 'security', 'cli', 'regression', 'editor', 'database', 'feature', 'build system', 'esql', 'terminal', 'gopls', 'logging', 'plugin', 'windows', 'runtime error', 'type system', 'configuration', 'dynamo', 'rendering', 'syntax', 'web', 'behavior', 'extension', 'accessibility', 'docker', 'dependency management', 'maven', 'spring framework', 'trait', 'spring boot', 'crash', 'panic', 'dependency', 'integration test', 'sql', 'error', 'optimization', 'docs', 'dependency resolution', 'compile error', 'http', 'search', 'type error', 'crypto', 'tooling', 'language', 'core', 'aot', 'cuda', 'spel', 'memory leak', 'android', 'networking', 'distributed', 'python', 'codegen', 'upgrade', 'java', 'installation', 'cache', 'rustc', 'inductor', 'layout', 'reactor', 'css', 'messaging', 'workspace', 'component', 'mvc', 'config', 'jit', 'debugger', 'deprecation', 'build failure', 'chat', 'cpu', 'error message', 'improvement', 'ux', 'user interface', 'tracing', 'std', 'rustdoc', 'memory', 'httpclient', 'telemetry', 'parser', 'metrics', 'frontend', 'mir', 'spring data', 'workflow', 'autograd', 'ddl', 'authentication', 'async', 'server', 'segfault', 'migration', 'onnx', 'mps', 'infrastructure', 'jdbc', 'compiler bug', 'tomcat', 'compile time', 'cgo', 'functionality', 'import', 'ios', 'index', 'compilation', 'debug', 'os', 'concurrency', 'query planner', 'renderer', 'web server', 'network', 'llvm', 'suggestion', 'generics', 'memory safety', 'compatibility', 'dependencies', 'ownership', 'r2dbc', 'language server', 'dom', 'routing', 'graphql', 'optimizer', 'ssl', 'auto configuration', 'extensions', 'markdown', 'diagnostics', 'struct', 'compiler behavior', 'aten', 'x pack', 'settings', 'environment', 'command line', 'template', 'json', 'indexing', 'theme', 'type bug', 'sync', 'api change', 'packaging', 'testfailure', 'dependency conflict', 'webflux', 'macos', 'debugging', 'refactoring', 'linking', 'metadata', 'warning', 'analysis', 'const eval', 'tensor', 'executor', 'validation', 'input', 'linux', 'formatting', 'gc', 'doc', 'macro', 'gui', 'torch compile', 'opcache', 'workbench', 'bugs', 'encoding', 'website', 'toolchain', 'fuzzing', 'iterator', 'torch.compile', 'caching', 'error handling', 'language feature', 'flaky', 'release', 'nn', 'pip', 'vim9script', 'gpu', 'extension api', 'internal', 'scripting', 'threading', 'functional', 'zend engine', 'vimscript', 'webserver', 'compile', 'cmd/go', 'linker', 'user experience', 'assertionerror', 'pytorch core', 'export', 'netty', 'framework upgrade', 'mockito', 'tools', 'package manager', 'memory management', 'http2', 'typechecker', 'traits', 'fsdp', 'storage', 'jms', 'uv cli', 'powershell', 'localization', 'turbopack', 'abi', 'clippy', 'operator', 'pytorch', 'spring session', 'ldap', 'annotation', 'aop', 'information schema', 'git', 'backend', 'syscall', 'net/http', 'compiler internal', 'assertion', 'function', 'mysql', 'rest', 'zend', 'race condition', 'scrolling', 'runtimeerror', 'html', 'refactor', 'ssa', 'assertion failure', 'overflow', 'http client', 'libraries', 'spring hateoas', 'infoschema', 'shell', 'c++', 'event handling', 'code style', 'asan', 'api design', 'type inference', 'library', 'components', 'unsafe code', 'compiler warning', 'compilation error', 'inference', 'framework', 'classpath', 'webclient', 'aggregation', 'tidb server', 'ttl', 'ide', 'runtime panic', 'breaking change', 'integer overflow', 'lifecycle', 'borrow checker', 'flaky test', 'pytorch api', 'cpp', 'webmvc', 'suggest', 'keyboard', 'schema', 'ui bug', 'permissions', 'npm', 'repl', 'filesystem', 'go/types', 'analyzer', 'net', 'test framework', 'language design', 'io', 'vite', 'mongodb', 'build tools', 'mobile', 'build process', 'torchscript', 'scheduler', 'svelte 5', 'upgrades', 'library update', 'virtual threads', 'buildpack', 'dependency injection', 'decompiler', 'backup', 'javascript', 'experimental', 'script', 'client', 'gdb', 'language go', 'package management', 'match', 'array', 'mapping', 'rpc', 'spring retry', 'amqp', 'spring test', 'restore', 'filetype', 'auth', 'clipboard', 'typeerror', 'styling', 'design', 'input handling', 'model', 'style', 'lsp', 'profiler', 'build error', 'cross compilation', 'cleanup', 'install', 'binding', 'f compiler', 'safety', 'fx', 'data type', 'redis', 'xml', 'spring boot configuration', 'properties', 'testcontainers', 'spring integration', 'query', 'decompilation', 'uv tool', 'br', 'netrw', 'comments', 'file system', 'automation', 'command', 'api proposal', 'output', 'nextjs', 'build issue', 'parsing', 'tls', 'fmt', 'const', 'behavior change', 'module', 'monitoring', 'snapshot', 'lockfile', 'trait related', 'pattern matching', 'f traits', 'closures', 'f compiler error', 'compiler lint', 'undefined behavior', 'graph', 'elasticsearch', 'postgresql', 'data consistency', 'console', 'preview', 'task', 'kernel', 'module resolution', 'math', 'slices', 'pprof', 'types', 'profiling', 'go', 'test runner', 'miri', 'torchdynamo', 'pytorch dynamo', 'device', 'dtensor', 'data types', 'integration tests', 'datasource', 'spring web', 'autowiring', 'stats', 'desktop', 'uv sync', 'undefinedbehaviorsanitizer', 'explorer', 'display', 'module system', 'text', 'code cleanup', 'worker', 'unstable', 'hash', 'ast', 'reproducibility', 'string', 'webgpu', 'import error', 'dependency issue', 'compiletest', 'typechecking', 'warnings', 'coroutines', 'custom ops', 'python api', 'dtype', 'p2p', 'actions', 'templating', 'opentelemetry', 'spring graphql', 'github actions', 'rest api', 'jpa', 'bean definition', 'uvx', 'spl', 'proxy', 'keybindings', 'focus', 'usability', 'input method', 'esm', 'language features', 'ui issue', 'next dev', 'fetch', 'unicode', 'generic', 'v8', 'node api', 'deps', 'svelte', 'format', 'async await', 'const evaluation', 'translation', 'i18n', 'typo', 'custom op', 'checkpoint', 'plugin update', 'data access', 'ci cd', 'mail', 'query execution', 'repository', 'php core', 'phpdbg', 'query performance', 'sql parser', 'color', 'event', 'shell integration', 'startup', 'features', 'language support', 'api documentation', 'comment', 'tasks', 'browser', 'api clarity', 'typos', 'sorting', 'assertion error', 'redirect', 'grpc', 'unsafe', 'vscode', 'path', 'test failures', 'slice', 'architecture', 'environment variables', 'formatter', 'sveltekit', 'api compatibility', 'std library', 'ffi', 'thread safety', 'edition 2024', 'attribute', 'naming', 't compiler', 'runtime behavior', 'aoti', 'checkpointing', 'torchinductor', 'tensor operations', 'accuracy', 'toml', 'batch', 'spring boot dependencies', 'authorization', 'backward compatibility', 'bean', 'maven plugin', 'rest template', 'library upgrade', 'jsp', 'exception handling', 'servlet', 'ml', 'cluster', 'mapper', 'bean lifecycle', 'datetime', 'analyze', 'gd', 'query optimization', 'mysql compatibility', 'settings sync', 'menu', 'angular', 'selection', 'event listener', 'profile', 'jupyter', 'url', 'view', 'eslint', 'loader', 'packages', 'protocol', 'race detector', 'scheduling', 'goroutine', 'spec', 'crypto/tls', 'trace', 'asm', 'context', 'link', 'textinput', 'devtools', 'websocket', 'compiler suggestion', 'macro expansion', 'compiler crash', 'coherence', 'test infrastructure', 'recursion', 'const generics', 'closure', 'trait bounds', 'uv', 'segmentation fault', 'cursor', 'typing', 'angular cli', 'torch function', 'dynamic graph', 'numpy', 'svelte compiler', 'content', 'autoconfiguration', 'spring boot autoconfigure', 'spring boot web', 'ci test failure', 'annotation processing', 'spring context', 'file handling', 'openssl', 'pdo', 'status bar', 'markup', 'rust', 'api enhancement', 'feedback', 'release notes', 'persistence', 'test flaky', 'code review', 'hang', 'mouse', 'turbo', 'server actions', 'internationalization', 'parallelism', 'runtime issue', 'semantic tokens', 'syscalls', 'interface', 'unix', 'dns', 'build tool', 'tool', 'client server', 'internal error', 'api breaking change', 'semantic analysis', 'test suite', 'compile time error', 'api reference', 'scrollview', 'new architecture', 'api deprecation', 'util', 'connectivity', 'consistency', 'node compat', 'regex', 'encryption', 'trait system', 'repr', 'allocator', 'c interop', 'compiler optimization', 'float', 'tests', 'mkldnn', 'pytorch test', 'torch.export', 'symbolic execution', 'onnx export', 'distribute', 'multithreading', 'torch', 'model loading', 'initialization', 'spring boot 3.4', 'ci/cd', 'data source', 'buildpacks', 'authorization server', 'spring amqp', 'spring boot core', 'property binding', 'container', 'cds', 'uri', 'spring boot 3.2', 'spring beans', 'replication', 'importer', 'lfs', 'upload', 'python integration', 'uv lock', 'php fpm', 'statistics', 'tidb sql', 'hash join', 'visual mode', 'code', 'dialog', 'paste', 'keyboard shortcuts', 'extension host', 'text display', 'remote development', 'inline chat', 'profiles', 'window management', 'registry', 'code quality', 'unused code', 'window', 'events', 'ui ux', 'dynamic imports', 'api improvement', 'benchmark', 'cryptography', 'runtime crash', 'cmd', 'sys', 'format string', 'stack', 'locking', 'env', 'code generation', 'type safety', 'api behavior', 'fuzz', 'module loading', 'decoder', 'autolinking', 'process', 'api docs', 'image processing', 't traits', 'opaque types', 'compiler errors', 'rustc error', 'cfg', 'macro rules', 'lang', 'configure', 'sort', 'diagnostic', 'debuginfo', 'unstable features', 'integer', 'link issue', 'build performance', 'backpropagation', 'compiling', 'ci failure', 'sympy', 'memorymanagement', 'sparse', 'collective', 'floating point', 'vmap', 'utils', 'resource loading', 'sass', 'table', 'transform', 'resource handling', 'oracle', 'forward port', 'boot', 'jdk', 'spring batch', 'native', 'language groovy', 'bytebuddy', 'mock', 'websockets', 'oauth2', 'converter', 'ansi', 'classloading', 'logsdb', 'fuzzy matching', 'beans', 'request mapping', 'resttemplate', 'multipart', 'emulator', 'api error', 'pkg', 'toml parser', 'uv python', 'uv api', 'python version', 'resolution', 'pd', 'sql syntax', 'tidb', 'termdebug', 'panel', 'debug console', 'zsh', 'quick chat', 'visual', 'find', 'keybinding', 'locale', 'snippets', 'detection', 'freezing', 'input output', 'breakpoint', 'font', 'variables', 'api usage', 'rename', 'api issue', 'editing', 'ide features', 'execution', 'dev server', 'type check', 'stacktrace', 'type checker', 'editor integration', 'indexer', 'x tools', 'standard library', 'timer', 'memory corruption', 'alignment', 'api breaking', 'assembly', 'time', 'lock', 'mmap', 'type:bug', 'copyright', 'pe file', 'static analysis', 'pgo', 'release management', 'new feature', 'timezone', 'vulnerability', 'language behavior', 'leak', 'newarchitecture', 'image loading', 'errors', 'timers', 'eval', 'type api', 'utf8', 'nodejs compatibility', 'library compatibility', 'node integration', 'stability', 'type mismatch', 'vitest', 'connection', 'data corruption', 't rustdoc', 'proc macro', 'compiler rt', 'impl trait', 'rustfmt', 'const fn', 'mir opt', 'const propagation', 'transmute', 'static items', 'const items', 'associated types', 'dead code', 'target support', 'msvc', 'async runtime', 't build system', 'compilers', 'typeck', 'vector', 'libc', 'posix', 'angular.dev', 'firefox', 'template syntax', 'component interaction', 'area core', 'pipelining', 'graph execution', 'torch dynamo', 'devicemesh', 'api consistency', 'verification', 'eager', 'datatype', 'unittest', 'torchcompile', 'torch.fx', 'cpp extension', 'optimizers', 'multiprocessing', 'distributeddataparallel', 'distributions', 'third party', 'meta', 'qt', 'data structures', 'data model', 'svelte component', 'svelte core', 'plugin upgrade', 'spring boot starter web', 'property resolution', 'adoc', 'javadoc', 'spring security', 'spring boot features', 'multi release', 'spring ldap', 'build tooling', 'constructor', 'spring boot 3.3', 'configuration properties', 'otel', 'coding style', 'spring mvc', 'activemq', 'spring authorization server', 'transaction management', 'release process', 'spring ws', 'tmux', 'data binding', 'beanfactory', 'task scheduler', 'rich text editor', 'arrays', 'requires python', 'versioning', 'resolver', 'package installation', 'uv run', 'vuetify', 'v data table', 'component: vselect', 'pcre', 'zend optimizer', 'fpm', 'memorysafety', 'libxml2', 'php8', 'pgsql', 'backup restore', 'coprocessor', 'privilege', 'query plan', 'vim9', 'popup', 'vim9class', 'files', 'remote debugging', 'activity bar', 'toolbar', 'vscode extension', 'extension installation', 'featurerequest', 'test explorer', 'text model', 'vim', 'launch', 'quickpick', 'code editor', 'extension management', 'ai', 'api incompatibility', 'code optimization', 'node', 'extensionhost', 'suggestions', 'commands', 'memoryleak', 'watcher', 'window behavior', 'voice', 'audio', 'developer experience', 'headers', 'client side', 'minification', 'server rendering', 'html/template', 'js', 'pkgsite', 'cmd/trace', 'cross compile', 'go1.x', 'relui', 'workflows', 'atomic', 'code action', 'modules', 'go1.23', 'action', 'go tools', 'assembler', 'maps', 'area/build', 'area/testing', 'go1.22', 'github', 'request body', 'appearance', 'organize imports', 'x/telemetry', 'error reporting', 'parse error', 'x509', 'go.mod', 'build related', 'reference', 'type improvement', 'type checking', 'command line behavior', 'removal', 'feature discussion', 'platform compatibility', 'compiler feedback', 'relocation', 'semantics', 'dark mode', 'turbomodule', 'touch', 'syntax error', 'native modules', 'assert', 'contributor', 'zlib', 'sqlite', 'webidl', 'object model', 'child process', 'vm', 'parallel', 'worker threads', 'circular dependency', 'property access', 'type feature', 'installer', 'watch', 'framework integration', 'http headers', 'random', 'type:enhancement', 'jsx', 'api request', 'api missing', 'web api', 'f type system', 'f abi', 'edition', 'f trait', 'compiler frontend', 'api review', 'emscripten', 'async fn', 'compiler panic', 'extern c', 'libcore', 'compiler builtins', 'f unsafe', 'f closures', 'rustc bug', 'f async', 'cfi', 'a compiler', 'incremental compilation', 'riscv', 'f const', 'copy', 'unsized types', 'license', 't const', 'extern', 'object safety', 'bounds', 'command line interface', 'specialization', 'angular compiler', 'platform server', 'rxjs', 'dependencyinjection', 'area compiler', 'class binding', 'symbolic computation', 'torch.cond', 'dispatch', 'conv1d', 'torch script', 'compute', 'mkl', 'runner', 'aotcompilation', 'compiler issue', 'conv2d', 'conv', 'torch api', 'nn modules', 'nn module', 'inference mode', 'dynamo export', 'dcp', 'python compatibility', 'type hints', 'type: bug', 'compile autograd', 'performance regression', 'cudagraphs', 'tensor subclass', 'inlining', 'memory access', 'css generation', 'utility', 'plugin issue', 'plugins', 'selector', 'clang', 'data integrity', 'svelte syntax', 'content rendering', 'path handling', 'multilingual', 'language update', 'log4j2', 'jmx', 'annotations', 'technology', 'build info', 'binder', 'request handling', 'management', 'application context', 'test improvement', 'mssql', 'spring boot 3.x', 'spring boot buildpack', 'containerization', 'launcher', 'logback', 'constructor binding', 'rabbitmq', 'conversion', 'classloader', 'spring cloud', 'image building', 'domain core', 'startup failure', 'mime types', 'spring data mongodb', 'web client', 'class loader', 'java version', 'rest client', 'maintenance', 'api removal', 'rank eval', 'multi cluster', 'date format', 'recovery', 'knn', 'ui enhancement', 'terminal integration', 'bash', 'usage', 'ui improvement', 'instruction handling', 'visibility', 'memory usage', 'resource resolution', 'web mvc', 'bean post processing', 'sse', 'spring framework 6.1', 'web framework', 'null safety', 'mime', 'restclient', 'spring webmvc', 'spring framework core', 'string handling', 'disassembly', 'pdb', 'disassembler', 'switch statement', 'codebrowser', 'conflicts', 'pypi', 'project', 'webhooks', 'method dispatch', 'wheel', 'cli usage', 'python versioning', 'editable', 'uv add', 'calendar', 'simplexml', 'intl', 'zendengine', 'ext calendar', 'ext dom', 'ext standard', 'dml', 'tidb ddl', 'sql feature', 'data migration', 'resource control', 'auto analyze', 'info schema', 'region', 'gettext', 'autocommand', 'autoload', 'gvim', 'widget', 'code server', 'editor feature', 'multi window', 'language model', 'references', 'source control', 'text editor', 'setting', 'instantiation', 'vscode ui', 'test missing', 'code clarity', 'extension issues', 'api update', 'esmodules', 'notification', 'input focus', 'lldb', 'language style', 'pty', 'devcontainer', 'extension issue', 'chatgpt', 'extensionapi', 'fuzzy search', 'web ui', 'customization', 'ui feedback', 'monaco editor', 'urls', 'text rendering', 'eventhandling', 'ide feature', 'next.js api', 'mdx', 'next api', 'next.js', 'serverless', 'server side', 'data fetching', 'next config', 'sitemap', 'server action', 'babel', 'hot reload', 'next js', 'dynamic import', 'css modules', 'build issues', 'client side navigation', 'runtime errors', 'server side rendering', 'weak pointers', 'language enhancement', 'apidiff', 'x/build', 'webassembly', 'go1.24', 'runtime performance', 'cmd/cgo', 'type/bug', 'watchflakes', 'go test', 'smtp', 'encoding/xml', 'interpreter', 'clock', 'imports', 'text/template', 'range loop', 'loop', 'ui/ux', 'x sys unix', 'resource leak', 'linkname', 'server error', 'type assertion', 'go mod', 'encoding/json', 'command line tool', 'os/exec', 'user', 'doc improvement', 'buildinfo', 'gopath', 'cmd/gomote', 'infra', 'spec compliance', 'env var', 'cross platform', 'cmd/compile', 'format issue', 'go tool', 'openbsd', 'go1.18', 'noder', 'type crash', 'dynamic linking', 'switch', 'deadcode', 'type/improvement', 'ppc64', 'type/feature', 'go1.20', 'type issue', 'generic types', 'binary size', 'expected behavior', 'build tags', 'math/rand', 'area:gopls', 'for loop', 'runtime/metrics', 'bounds check', 'ide integration', 'language proposal', 'threadsanitizer', 'database/sql', 'go1.21', 'package import', 'x/tools', 'hashing', 'tcp', 'freebsd', 'transforms', 'background tasks', 'newrenderer', 'area modules', 'clone', 'async hooks', 'mocking', 'test related', 'source maps', 'deno install', 'deno fmt', 'symlink', 'url handling', 'scripts', 'stabilization', 'node compatibility', 'package resolution', 'async storage', 'url parsing', 'deno node', 'library issue', 'docusaurus', 'workspaces', 'cli tool', 'f const trait', 'edition 2015', 'target feature', 'borrowck', 'never patterns', 'trait implementation', 'regions', 'needs investigation', 'target features', 'libstd', 'doc tests', 'compiler diagnostics', 'ui tests', 'const expressions', 'grammar', 'numeric', 'compile test', 'trait objects', 'ptr', 'lld', 'trait object', 'compiler intrinsic', 'a abi', 'macro errors', 'a diagnostics', 't compiler error', 'attr repr', 'smart pointers', 'internals', 'f compiler errors', 'test enhancement', 'rust analyzer', 'efficiency', 'f macro', 'c ffi', 'f inference', 'edition 2018', 't ownership', 'a rustdoc ui', 'variadic functions', 'extern blocks', 'f compiler internal', 'a code coverage', 'macros', 'transmutability', 'function call', 'method resolution', 'macro related', 'missing feature', 'test infra', 'alloc', 'abi issue', 'unstable feature', 'f dyn trait', 'rpath', 'tidy', 'f generics', 'unsafety', 'f opaque types', 'compiler warnings', 'cli behavior', 'platform support', 'compiler design', 'vectorization', 'generic const exprs', 'select', 'hashmap', 'pointer arithmetic', 'compilation time', 'variable', 'c compiler', 'fn pointer', 'const trait', 'win32', 'terminal ui', 'language improvement', 'api doc', 'ng switch', 'example code', 'angular core', 'unit testing', 'torchgen', 'setup', 'pytorch model', 'torch inductor', 'operators', 'aot compilation', 'model export', 'exporter', 'pipeline parallelism', 'inductor backend', 'function signature', 'torchfx', 'pytorch linalg', 'aot compiler', 'fp8', 'mpi', 'dtype conversion', 'type regression', 'functionalization', 'reasoning', 'operator support', 'symbol conflict', 'model inference', 'torch export', 'torch.nn', 'property', 'datastructures', 'aot compile', 'subclassing', 'batchnorm', 'distribution', 'libtorch', 'relu', 'header file', 'pytorch compiler', 'pytorch transformers', 'doc issue', 'tensordict', 'compile time issue', 'pytorch frontend', 'recompilation', 'global variables', 'dlpack', 'save load', 'pytorch function', 'gather', 'graph construction', 'schedule', 'pytorch benchmarks', 'area: core', 'compile time behavior', 'functions', 'cpu features', 'benchmarks', 'tensor parallel', 'tensor parallelism', 'memory format', 'pytorch compile', 'torchbench', 'loading', 'randomness', 'onnxruntime', 'subclasses', 'asyncio', 'data type issues', 'tensor creation', 'abi compatibility', 'c api', 'symbolic conversion', 'type conversion', 'pytorch onnx', 'autotune', 'floatingpoint', 'pytorch rocm', 'operator behavior', 'shapeerror', 'class detection', 'resource', 'utility classes', 'utilities', 'web components', 'feature index', 'regtest', 'synchronization', 'system tests', 'crypter', 'unit tests', 'dependency issues', 'svelte5', 'parsing error', 'area api', 'svelte kit', 'snippet', 'type api change', 'svelte migration', 'permission', 'permalink', 'golang', 'template issue', 'content model', 'params', 'library dependency', 'go runtime', 'content generation', 'resources', 'dependencyupgrade', 'timestamp', 'connect', 'porting', 'spring boot starter', 'hateoas', 'scoped beans', 'spring boot testing', 'structured logging', 'spring rest docs', 'spring restdocs', 'boot autoconfigure', 'boot starter', 'spring data jpa', 'spring aop', 'release workflow', 'spring boot starter test', 'connector', 'dev services', 'otlp', 'rabbit mq', 'value objects', 'type enhancement', 'mongo', 'boot loader', 'log4j', 'property source', 'spring data redis', 'spring boot 2.x', 'http status', 'saml', 'service', 'spring webflux', 'language upgrade', 'dependencymanagement', 'module metadata', 'web application', 'spring native', 'chore', 'type cleanup', 'spring profiles', 'image build', 'webservices', 'task execution', 'starter', 'startup performance', 'configurationproperties', 'dependencyupdate', 'conversion service', 'type/enhancement', 'spring boot cli', 'continuous integration', 'resource loader', 'syft', 'propertysource', 'code improvement', 'autoconfigure', 'test issue', 'integrationtests', 'indexcompatibility', 'index compatibility', 'rolling upgrade', 'credentials', 'integrationtest', 'ci test', 'sql plugin', 'unit test', 'searchable snapshots', 'ranking', 'codec', 'vector index', 'indices', 'searchablesnapshots', 'jvm', 'docvalues', 'mixed cluster', 'ql', 'esql plugin', 'cluster management', 'thread pool', 'search vectors', 'vector search', 'netty4', 'snapshot repo', 'vectors', 'aggregations', 'elasticsearch sql', 'x pack ml', 'fish', 'preview window', 'fzf vim', 'alias', 'fzf tmux', 'neovim', 'arithmetic', 'function reference', 'request binding', 'xml configuration', 'spring scheduling', 'path matching', 'springframework', 'cglibs', 'factorybean', 'spring framework 6.2', 'spring core', 'spring framework 6', 'factory bean', 'constructor injection', 'qualifier', 'bean factory', 'rest docs', 'reference manual', 'dynamic property', 'task executor', 'data mapping', 'spring orm', 'assertion library', 'method handle', 'transactional', 'http message converter', 'async support', 'strings', 'handler', 'java interop', 'review', 'method overriding', 'parser issue', 'pe', 'emulation', 'x86', 'pyghidra', 'coloring', 'version tracking', 'pe format', 'compiler specific', 'gcc', 'tags', 'dropbox', 'repo', 'issue', 'organization', 'git integration', 'access control', 'cron', 'sftp', 'playback', 'upload error', 'local storage', 'storage driver', 'display issue', 'cloud storage', 'stdlib', 'methoderror', 'code analysis', 'sockets', 'tool uv', 'editable install', 'python packaging', 'uv publish', 'uv pip', 'uv config', 'python discovery', 'tool installation', 'pip compile', 'dependencyresolution', 'virtual environment', 'lock file', 'uv pip compile', 'python env', 'project management', 'init', 'uv init', 'general', 'logic', 'pip compatibility', 'component:vnumberinput', 'readonly', 'vmenu', 'component: vnumberinput', 'datepicker', 'fatal error', 'zend extension', 'fatalerror', 'splfixedarray', 'area datetime', 'dba', 'domain language', 'libxml', 'gmp', 'php extension', 'undefinedbehavior', 'language c', 'compiler compatibility', 'ext date', 'foreach', 'sema', 'c backend', 'metaprogramming', 'translate c', 'slow query log', 'data import', 'mvcc', 'code refactoring', 'query planning', 'backup and restore', 'dxf', 'query optimizer', 'data management', 'domain', 'go language', 'tidb planner', 'resource group', 'sql mode', 'tidb core', 'tidb query', 'alter table', 'eval context', 'hash aggregation', 'dist task', 'dm', 'select for update', 'slow query', 'data type issue', 'normal mode', 'text objects', 'colors', 'autocmd', 'vim behavior', 'autocommands', 'x11', 'c code', 'screen', 'colorscheme', 'oss', 'php', 'titlebar', 'tunnel', 'extension development', 'chrome', 'reproducible', 'light theme', 'account management', 'commenting', 'ui design', 'auto update', 'accounts', 'extension compatibility', 'deprecated', 'api testing', 'extensibility', 'dart', 'test results', 'code tunnel', 'extension interaction', 'image preview', 'graphics', 'findfiles', 'command guide', 'context menu', 'picker', 'comment thread', 'vscode web', 'profile manager', 'file management', 'embedded languages', 'type hierarchy', 'workspace trust', 'uri encoding', 'views', 'codespaces', 'deep linking', 'scrollbar', 'extension update', 'extension updates', 'ui interaction', 'visual regression', 'vscode dev', 'web extensions', 'scm', 'command prompt', 'zenmode', 'text to speech', 'chat feature', 'launch config', 'flutter', 'integrated terminal', 'profile sync', 'codelens', 'test coverage', 'event listeners', 'ui text', 'roaming profiles', 'microphone', 'window layout', 'language mode', 'input field', 'floating window', 'ui layout', 'visual bug', 'floating windows', 'subprocess', 'call stack', 'codemod', 'peer dependencies', 'parallel routes', 'bundling', 'dev experience', 'link broken', 'client side rendering', 'image component', 'production', 'google tag manager', 'csp', 'third party scripts', 'synctest', 'traceback', 'cmd/link', 'go env', 'checker', 'mptcp', 'jsonrpc', 'task failure', 'map', 'compiler internal error', 'sendfile', 'cleaning', 'jsonrpc2', 'libfuzzer', 'pkg.go.dev', 'x/vuln', 'go types', 'os exec', 'goroutines', 'unique', 'build cache', 'chdir', 'language version', 'kind/enhancement', 'cmd/vet', 'sys unix', 'net package', 'build id', 'glibc', 'runtime test', 'math/big', 'os/user', 'pkg config', 'assignment', 'parse', 'integer arithmetic', 'type params', 'visualization', 'netbsd', 'encoding/binary', 'iter', 'internal api', 'objectpath', 'package missing', 'exec', 'encoder', 'semantic token', 'memory layout', 'contributing', 'aix', 'incompatible', 'cmd/pprof', 'go modules', 'net http', 'code actions', 'buildmode', 'limit', 'mips64', 'export data', 'cgocall', 'cmd go', 'limits', 'type alias', 'dark theme', 'os windows', 'stringer', 'go.work', 'cmd/gitmirror', 'language/go', 'cmd/gonew', 'import errors', 'runtime trace', 'incorrect behavior', 'module cache', 'gopathwalk', 'race', 'gcp', 'memory profiling', 'internal/trace', 'token', 'communication', 'rangefunc', 'release build', 'dev settings', 'ui rendering', 'refreshcontrol', 'turbo module', 'nullpointerexception', 'autocorrect', 'specification', 'inspect', 'es modules', 'internalerror', 'commonjs', 'sqlite3', 'env file', 'debug build', 'v8 api', 'readdir', 'pipeline', 'module exports', 'npm package', 'subcommand', 'https', 'n api', 'js error', 'deno', 'node postgres', 'path mapping', 'pino', 'deno workspace', 'exports', 'promise hooks', 'node modules', 'deno std', 'workers', 'ipc', 'node js', 'postinstall', 'npm integration', 'slsa', 'stack trace', 'child processes', 'deno core', 'deno task', 'gpus', 'message port', 'deno compile', 'feature management', 'unix socket', 'unstable api', 'debug assertions', 'target cpu', 'rustc book', 'compiler interaction', 'unboxing', 'cfg attr', 'const fns', 'links', 'backtrace', 'a coroutines', 'rust by example', 'thread local', 'static linking', 'borrow checking', 'language change', 'str', 'coercion', 'intra doc links', 'patterns', 'lang items', 'const safety', 'recursion limit', 'iterators', 'a debuginfo', 'internal compiler error', 'unstable attribute', 'api stability', 'compiler regression', 'derive macros', 'f transmutability', 'avr', 'async closures', 'sleep', 'float types', 'f async closure', 'rustc llvm', 'rustup', 'missing symbol', 'platform specific', 'c enhancement', 'rustc internal', 'pointer safety', 'polymorphization', 'bindgen', 'compiler message', 'debug info', 'trait upcasting', 'utf 8', 'feature proposal', 'f closure', 'static', 'f check cfg', 'return type notation', 'sysroot', 'f specialization', 'pointer aliasing', 'build script', 'async programming', 'miscompile', 'library usage', 'dependency check', 'platform', 'a llvm', 'a ffi', 'compiler feature', 'structure', 'rustc internal error', 'interior mutability', 'async fn traits', 'never type', 'abi mismatch', 'async closure', 'trait impl', 'struct layout', 'pattern', 'target specs', 'fix', 'data layout', 'trait selection', 'resolve', 'const functions', 'schema validation', 'screen reader', 'color scheme', 'terminal behavior', 'terminal app', 'interaction', 'command not found', 'terminal emulation', 'api regression', 'minimization', 'terminal protocol', 'focus mode', 'error page', 'host directive', 'spelling', 'localize', 'runtime warning', 'matcher', 'status change', 'inputs', 'lazy loading', 'angular dev', 'command line tools', 'prerendering', 'translation issue', 'app shell', 'template rendering', 'dynamic content', 'template pipeline', 'a11y', 'two way binding', 'queries', 'query list', 'dataclasses', 'constraint violation', 'kernel generation', 'multi gpu', 'higher order ops', 'tensorflow', 'pytorch docs', 'type promotion', 'autotuning', 'ddp', 'gemm', 'dynamic', 'core ops', 'memory optimization', 'clipping', 'templates', 'function support', 'pytorch internal', 'ubuntu', 'eager mode', 'tensor ops', 'torch compiler', 'torchvision', 'tcpstore', 'torchtune', 'custom operations', 'bincount', 'sve', 'tensor operation', 'domain tensor', 'int8', 'device allocator', 'meta registration', 'safetensors', 'mask', 'scatter reduce', 'benchmarking', 'torch.unique', 'sharding', 'models', 'contributor experience', 'pytorch aten', 'float8', 'sycl', 'detectron2', 'text generation', 'pytorch distributed', 'linear algebra', 'sdpa', 'dynamic compilation', 'torch core', 'validation error', 'vision', 'guard validation', 'cond', 'graph optimization', 'functional api', 'tensor dict', 'meta tensors', 'pt2e', 'module list', 'ops', 'torch jit', 'c++ api', 'mixed precision', 'pooling', 'type: enhancement', 'area: typing', 'masking', 'constexpr', 'process group', 'sparse tensor', 'clang tidy', 'dataloader', 'data parallelism', 'data loading', 'ipython', 'model issue', 'devx', 'map location', 'tensors', 'device mesh', 'pytorch functionality', 'runtime dependency', 'meta tensor', 'device behavior', 'torchelastic', 'numerical accuracy', 'gcn', 'scaling', 'missing function', 'cpp wrapper', 'undefined symbol', 'compilererror', 'conversionerror', 'execution trace', 'custom class', 'torch fx', 'slice scatter', 'dispatcher', 'import behavior', 'while loop', 'functional programming', 'registration', 'graph break', 'cpu fallback', 'device support', 'index select', 'c implementation', 'pytorch ops', 'symint', 'meta programming', 'test case', 'int type', 'return types', 'named tensor', 'tensor construction', 'pytorch feature request', 'dataclass', 'precision', 'attribute error', 'dtype mismatch', 'batch norm', 'sparse matrix', 'scatter gather', 'operator overloading', 'dce', 'dist', 'cudnn', 'type:feature', 'backend issues', 'test execution', 'graph compilation', 'pytorch fx', 'api bug', 'dtype mapping', 'pytorch ir', 'tensor api', 'sparse tensors', 'source map', 'v4', 'ui component', 'css assets', 'vue', 'css syntax', 'css variables', 'dynamic classes', 'watch mode', 'css issue', 'safari', 'css output', 'css processing', 'scoped styles', 'transparency', 'color mix', 'shadow', 'css transformer', 'data attribute', 'guix', 'unit test failure', 'zeromq', 'thread hang', 'core logic', 'thread management', 'multiprocess', 'i2p', 'migrate', 'content script', 'shadowing', 'template literals', 'type guard', 'svelte check', 'svelte directives', 'dev mode', 'parser error', 'type feature request', 'render', 'bindings', 'content management', 'site data', 'template engine', 'template compatibility', 'live reload', 'scss', 'content processing', 'output format', 'builder', 'services', 'failure analysis', 'redirects', 'customizer', 'java 21', 'spring boot loader', 'webjars', 'upgrade policy', 'dependency problem', 'factory', 'bind', 'conditional on missing bean', 'resource management', 'url update', 'spring data cassandra', 'spring boot starter activemq', 'processor', 'upgrading', 'spring boot 3.4.x', 'guides', 'spring reactor', 'web services', 'java io', 'rxjava', 'value classes', 'module info', 'spring boot test autoconfigure', 'restart', 'spring cloud config', 'task dependency', 'record', 'context management', 'build image', 'spec compatibility', 'spring boot build', 'sqlserver', 'service connections', 'byte buddy', 'management server', 'configuration cache', 'test strategy', 'xml ws', 'application startup', 'spring init', 'spring boot docker', 'data redis', 'data', 'post processor', 'spring environment', 'web testing', 'dev tools', 'spring boot auto configuration', 'executable jar', 'java compiler', 'third party library', 'application name', 'connection pooling', 'ci improvement', 'domain/build', 'automation testing', 'querydsl', 'postgres', 'orm', 'ansi element', 'github api', 'spring boot tools', 'dynamic property sources', 'http error', 'bug fix', 'failure analyzer', 'email', 'it test', 'repositories', 'lookup', 'lookup join', 'licensing', 'annotated text', 'feature migration', 'inference engine', 'test integration', 'es', 'snapshots', 'ingest pipeline', 'snapshot restore', 'restoration', 'http status code', 'cross cluster search', 'cross cluster', 'outofmemoryerror', 'index mode', 'privileges', 'doc values', 'hdfs', 'multi node', 'geoip', 'query dsl', 'master node', 'library conflict', 'ci build', 'script error', 'index settings', 'date time', 'index management', 'transform plugin', 'fs directory', 'response format', 'component template', 'cpu usage', 'query validation', 'querying', 'frozen tier', 'request stats', 'query parser', 'search syntax', 'fzf options', 'fzf integration', 'fzf cli', 'nvim', 'fzf', 'rendering issue', 'ipfs', 'package registry', 'type propagation', 'mutability', 'function inlining', 'rust compiler', 'unsafe operations', 'api upgrade', 'reactor netty', 'cglib', 'ioexception', 'ide support', 'bean override', 'request parameter', 'runtime exception', 'listener', 'media types', 'class loading', 'java api', 'spring data jdbc', 'response handling', 'request', 'spring coroutines', 'methodhandle', 'coroutine', 'support request', 'nohttp', 'client request factory', 'test annotation', 'bean validation', 'spring cloud stream', 'expression language', 'beanutils', 'mockmvc', 'media type', 'accessor', 'jpms', 'spi', 'spring websocket', 'assertj', 'null pointer exception', 'expression parser', 'exception message', 'value class', 'handler method', 'setter injection', 'cron expression', 'jsonpath', 'spring tx', 'io error', 'instruction set', 'listing', 'memory consumption', 'ida exporter', 'listing panel', 'code browser', 'run configuration', 'c cpp', 'import failure', 'input validation', 'ui feature', 'stack editor', 'keyerror', 'symbol resolution', 'gdt', 'ppc', 'function analysis', 'switch case', 'listing view', 'file import', 'analysis issue', 'import table', 'c language', 'readability', 'api access', 'register', 'instruction', 'x86 64', 'address space', 'memory mapping', 'versiontracking', 'domain file', 'application layout', 'symbol server', 'symbol table', 'os request', 'onenote', 'note', 'text formatting', 'list formatting', 'mobile app', 'new note', 'web clipper', 'html rendering', 'node.js', 'codemirror', 'protection', 'webhook', 'issue tracking', 'status check', 'labels', 'jobs', 'matrix', 'issue comment', 'activity', 'tag', 'issues', 'webauthn', 'web interface', 'onedrive', 'file access', 'browser compatibility', 'api integration', 'login issue', 'file type', 'media playback', 'symbolic links', 'typesystem', 'math functions', 'circular references', 'freeze', 'packageissue', 'parser bug', 'julia language', 'packagemanagement', 'type stability', 'external dependency', 'matrix operations', 'package loading', 'math function', 'type', 'threads', 'julia lang', 'subarray', 'self reference', 'subtyping', 'operator precedence', 'function overloading', 'recursive functions', 'build backend', 'uv index', 'dbt', 'uv project', 'find links', 'wheel selection', 'build tag', 'pypy', 'command execution', 'project setup', 'http request', 'gitlab', 'install issue', 'editable packages', 'tool interaction', 'pep508', 'python interpreter', 'transient errors', 'pip install', 'font awesome', 'version', 'command issue', 'source management', 'user feedback', 'workspace support', 'dev dependencies', 'optional dependencies', 'parallel execution', 'workspace management', 'project structure', 'python project', 'self update', 'build isolation', 'toml parsing', 'config parsing', 'experimental feature', 'logic error', 'portability', 'binary', 'missing', 'index url', 'python interaction', 'package dependency', 'url resolution', 'data table', 'shadow dom', 'read only', 'data loss', 'v date input', 'dropdown', 'vnumberinput', 'type: documentation', 'datatable', 'v dialog', 'proc open', 'attributes', 'snmp', 'mysqlnd', 'type coercion', 'odbc', 'spl heap', 'php 8.4', 'xmlreader', 'observer', 'function error', 'hash table', 'date functions', 'c++ compatibility', 'engine', 'excimer', 'header checks', 'file cache', 'readonly class', 'domdocument', 'dtrace', 'access', 'documentation bug', 'interactive shell', 'output formatting', 'status', 'fuzzer', 'iteration', 'observer api', 'mysqli', 'weak references', 'socket', 'os compatibility', 'languagefeature', 'constant', 'garbage collection', 'cli server', 'errorhandling', 'range function', 'generic functions', 'function pointer', 'preprocessor', 'target platform', 'tokenizer', 'destructuring', 'autodoc', 'transitive analysis', 'incremental build', 'operating system', 'linker error', 'std.progress', 'function calls', 'feature detection', 'reorganize', 'mysql protocol', 'sql compatibility', 'conflict resolution', 'log backup', 'region error', 'task management', 'execution plan', 'async load', 'sql performance', 'reorg', 'general log', 'meta data', 'data inconsistency', 'sync load', 'test flakiness', 'log', 'reorganization', 'slow log', 'integration testing', 'read engines', 'decode', 'sql function', 'gcs', 'admin', 'client api', 'data accuracy', 'user management', 'goroutine leak', 'testkit', 'sql query', 'data retrieval', 'global variable', 'system variables', 'pd api', 'query result', 'cluster level', 'schema migration', 'batch mode', 'sql error', 'location', 'index join', 'schema tracker', 'nodejs', 'tidb lightning', 'external storage', 'delete', 'tablesample', 'tracker', 'async merge', 'logical plan', 'pdms', 'system table', 'unexpected behavior', 'elt', 'distinct', 'virtual text', 'plugin integration', 'plugin interaction', 'plugin compatibility', 'filetype plugin', 'desktop integration', 'vim script', 'locks', 'numerics', 'viml', 'matchit', 'spell checking', 'command block', 'mappings', 'function behavior', 'c', 'vimrc', 'spring', 'ice', 'performance issue', 'deep learning', 'programming language', 'type: feature request', 'bug report', 'development', 'machine learning', 'spring boot feature', 'spring projects', 'ci issue', 'performance optimization', 'rust language', 'go tooling', 'distributed computing', 'bean management', 'query language', 'domain: testing', 'deno cli', 'qa', 'process management', 'generic programming', 'distributed system', 'programming', 'installation issue', 'ui components', 'go standard library', 'memory issue', 'java ee', 'environment variable', 'domain: documentation', 'compilation issue', 'go build', 'tracking issue', 'jit compilation', 'productivity', 'language bug', 'data mismatch', 'sync issue', 'vscode features', 'configuration issue', 'windows terminal', 'binary analysis', 'type: feature', 'memory allocation', 'go command', 'documentation issue', 'out of bounds', 'error report', 'text processing', 'web development', 'go compiler', 'cache management', 'bugfix', 'rust lang', 'rustc compiler', 'unsupported operation', 'copy paste', 'quality', 'type:feature request', 'text manipulation', 'import issue', 'software development', 'go stdlib', 'command line options', 'domain: performance', 'memory issues', 'library management', 'mathematics', 'oauth', 'aspect oriented programming', 'spring expression', 'reverse engineering', 'note taking', 'julia core', 'domain: api', 'connection issue', 'go language server', 'area/tools', 'package', 'memory model', 'random number generation', 'type incorrectness', 'type unsoundness', 'multi threading', 'domain:ci', 'php extensions', 'github integration', 'broken link', 'library maintenance', 'domain:build', 'text input', 'compatibility issue', 'windows support', 'cuda support', 'guidelines', 'domain:testing', 'notes', 'storage engine', 'desktop app', 'profile management', 'vscode api', 'go toolchain', 'language standards', 'nil pointer dereference', 'package issue', 'internalcompilererror', 'language implementation', 'numerical', 'upgrade issue', 'software', 'null pointer', 'java support', 'domain:java', 'repository management', 'php internal', 'vscode extensions', 'theming', 'type: refactor', 'text editing', 'static site generation', 'go/packages', 'domain/go', 'compiler flags', 'go/tools', 'domain: tooling', 'determinism', 'go version', 'testing issue', 'language extensions', 'fuzz testing', 'linker issue', 'deprecation warning', 'core lib', 'windows issue', 'panicking', 'deno runtime', 'library issues', 'core language', 'pytorch export', 'neural networks', 'tensor manipulation', 'evaluation', 'torch distributed', 'device management', 'domain: python', 'bitcoin', 'spring boot plugin', 'domain: build', 'spring configuration', 'note management', 'project configuration', 'virtual environments', 'vim feature', 'path resolution', 'network issue', 'visual issue', 'data structure', 'domain: language features', 'incompatibility', 'domain: nodejs', 'vscode internal', 'keyboard input', 'domain:ui', 'cursor position', 'ux improvement', 'path issue', 'installation failure', 'go packages', 'domain: gopls', 'domain/crypto', 'go lang', 'file transfer', 'go/build', 'constraint', 'module management', 'language semantics', 'language spec', 'contribution', 'constants', 'file io', 'library linking', 'support', 'new renderer', 'domain:cli', 'domain: core', 'connection management', 'domain: svelte', 'mir validation', 'const expr', 'domain language features', 'tooling issue', 'mir optimization', 'ui behavior', 'desktop application', 'domain: angular', 'domain:angular', 'constraints', 'domain: pytorch', 'tensor management', 'numerical computation', 'performance improvement', 'topic: ci', 'pytorch modules', 'component behavior', 'application', 'domain:documentation', 'clean up', 'java features', 'version management', 'async execution', 'vim plugin', 'spring expression language', 'expression evaluation', 'julia stdlib', 'vuejs', 'heap use after free', 'ext', 'vim features', 'vim configuration', 'vim core', 'vscode insiders', 'domain: ui', 'delay', 'html generation', 'styles', 'domain: security', 'domain: go', 'code formatting', 'go/cmd', 'go ssa', 'third party issue', 'testing failure', 'area/cmd', 'kubernetes', 'quality assurance', 'invalid input', 'command line flags', 'cmd compile', 'domain: compiler', 'toolchain issue', 'language compiler', 'file format', 'aliasing', 'tokens', 'encoding issue', 'linking issue', 'domain: compatibility', 'development tool', 'domain:package management', 'domain: package management', 'type: issue', 'type aliasing', 'comparison operator', 'string manipulation', 'borrowing', 'core library', 'domain stdlib', 'rust std', 'library support', 'constant evaluation', 'llvm ir', 'variable scope', 'application crash', 'component issue', 'build configuration', 'tensor computation', 'decomposition', 'nn.module', 'python extension', 'accuracy issue', 'topic: optimization', 'distributed tensor', 'context manager', 'float16', 'dynamic tracing', 'math operations', 'category: documentation', 'torch.dynamo', 'troubleshooting', 'distributed systems', 'assertions', 'utility class', 'directory', 'migration issue', 'source code', 'blockchain', 'bitcoin core', 'content type', 'java configuration', 'type:dependency upgrade', 'file', 'schema management', 'database migration', 'reference guide', 'mq', 'domain:security', 'core functionalities', 'type: bugfix', 'java application', 'spring aot', 'date parsing', 'data processing', 'directory management', 'fuzzy finder', 'file upload', 'programming language agnostic', 'github compatibility', 'sql optimization', 'python tooling', 'date picker', 'c extensions', 'php stdlib', 'time zone', 'editor functionality', 'editor behavior', 'c memory management', 'keyboard navigation', 'domain: user interface', 'general issue', 'editor rendering', 'refresh', 'keyboard shortcut', 'domain:editor', 'crash report', 'breakpoints', 'domain: crypto', 'extension integration', 'domain: rendering', 'keyboard interaction', 'suggest widget', 'terminal feature', 'slow performance', 'domain:performance', 'version control', 'notifications', 'link resolution', 'typography', 'development mode', 'local development', 'racing', 'domain language server', 'constant expression', 'domain/cryptography', 'interoperability', 'editor plugin', 'racing condition', 'domain: language server', 'binary format', 'domain: language', 'protocol support', 'type/issue', 'domain/go tools', 'type/breaking change', 'naming conflict', 'cpu architecture', 'domain/tools', 'structs', 'topic: compatibility', 'conflict', 'allocation', 'javascript error', 'text component', 'java exception', 'native module', 'javascript engine', 'stdio', 'deno configuration', 'domain: dependency management', 'plugin configuration', 'deno feature', 'domain: deno', 'cli options', 'cli command', 'cache issue', 'conditional compilation', 'language issue', 'match statement', 'rustcompiler', 'compiler issues', 'library features', 'api exposure', 'numeric types', 'rustc ice', 'attribute issue', 'invalid code', 'uninitialized variable', 'const generic', 'compiler bugs', 'c interoperability', 'domain: infrastructure', 'domain compiler', 'polymorphism', 'compiler features', 'compiler implementation', 'function definition', 'trait resolution', 'category performance', 'invalid pointer', 'type:upgrade', 'domain:infrastructure', 'infinite loop', 'type annotation', 'access violation', 'crashes', 'labels: api', 'angular component', 'component rendering', 'component lifecycle', 'dynamic computation graph', 'object oriented programming', 'jit compiler', 'containers', 'eager execution', 'graph manipulation', 'undefined reference', 'compiled autograd', 'pytorch optimization', 'cuda issue', 'tensor issue', 'cpu gpu comparison', 'dynamic compiler', 'domain autograd', 'inconsistent behavior', 'math operation', 'model optimization', 'fx graph', 'custom function', 'plugin system', 'cpu performance', 'programming model', 'float precision', 'domain: math', 'functional issue', 'data conversion', 'correctness', 'domain math', 'cross platform issue', 'domain: ci', 'package configuration', 'plugin issues', 'offline support', 'css utility', 'relative paths', 'library incompatibility', 'template literal', 'type: refactoring', 'docker compose', 'domain:dependencies', 'plugin management', 'domain: java', 'lifecycle management', 'domain:build tool', 'downgrade', 'domain: spring boot', 'servlet container', 'data storage', 'classpath loading', 'type:refactoring', 'performance monitoring', 'database issue', 'elastic', 'unexpected error', 'elasticsearch api', 'internal server error', 'ui customization', 'bean post processor', 'java annotations', 'java threading', 'spring features', 'method invocation', 'java annotation', 'binaryanalysis', 'data modeling', 'register management', 'rich text', 'gitea', 'database performance', 'uv issue', 'python ecosystem', 'domain: uv', 'uv configuration', 'select component', 'buffer overflow', 'domain php', 'use after free', 'php compiler', 'heap buffer overflow', 'character set', 'null pointer access', 'null pointer dereference', 'database management', 'job management', 'ti database', 'domain:editing', 'configuration files', 'cursor movement', 'python3', 'vim functionality', 'vim internal', 'vim scripting', 'title bar', 'default values', 'accessibility issues', 'domain: user experience', 'event system', 'vscode server', 'error messages', 'language service', 'domain: extension', 'action bar', 'vscode insider', 'vscode configuration', 'domain: api design', 'github copilot', 'vscode feature', 'ux feedback', 'visual studio code', 'visual appearance', 'media', 'mouse events', 'read aloud', 'domain:javascript', 'domain: editor', 'text search', 'markdown support', 'help menu', 'category:feature request', 'undefined variable', 'async operation', 'variable resolution', 'panel chat', 'domain: terminal', 'domain: git', 'vscode ide', 'default configuration', 'permission issue', 'css styles', 'ui appearance', 'feature regression', 'turbo pack', 'web performance', 'domain: next.js', 'rewriting', 'server components', 'character encoding', 'production issue', 'go internal', 'go1', 'interface conversion', 'domain:go language', 'area: testing', 'domain:go tools', 'domain:programming language', 'evaluation error', 'http protocol', 'test/failure', 'cipher', 'net/http2', 'website content', 'project maintenance', 'go cgo', 'documentation inconsistency', 'crash reporting', 'domain/testing', 'go/install', 'process execution', 'go/cmd/go', 'cgo issue', 'go c interop', 'go binary', 'domain/go standard library', 'area/networking', 'intermittent', 'go/stdlib', 'topic: testing', 'protocol extension', 'go/test', 'compiler optimizations', 'pointers', 'alignment issue', 'sync package', 'asn1', 'go project', 'go ide', 'domain: go tools', 'path variable', 'area/crypto', 'library proposal', 'area testing', 'gomobile', 'code inspection', 'crashmonitor', 'json rpc', 'instruction encoding', 'cpu instruction', 'assembly language', 'topic/documentation', 'area/editor', 'resource limit', 'mips', 'language specification', 'ld', 'range', 'nil pointer', 'memory leaks', 'doc content', 'import management', 'command failure', 'domain/language', 'performance metrics', 'go programming language', 'lock management', 'timing', 'compiler assertion', 'os agnostic', 'type: error message', 'bytes', 'topic:deprecation', 'topic: configuration', 'bounds checking', 'kind/regression', 'json output', 'development tools', 'event emission', 'platform:android', 'topic: api', 'domain: v8', 'web apis', 'category: api', 'ecmascript', 'cloning', 'area: cli', 'type: deprecation', 'topic: api change', 'module import', 'team management', 'domain: cryptography', 'env variable', 'file loading', 'domain: esm', 'runtime issues', 'domain: deno cli', 'domain: runtime', 'private registries', 'npm support', 'script execution', 'deno compiler', 'pem', 'async local storage', 'fetch api', 'async iterable', 'type: api change', 'lsp issue', 'deno lock', 'cli flags', 'command line args', 'const unsafety', 'rust abi', 'breakage', 'feature bug', 'size limit', 'compilation bug', 'analysis panic', 'match expression', 'ownership and borrowing', 'type system bug', 'compiler interpretation', 'compiler configuration', 'compile failure', 'documentation generation', 'trait impl conflict', 'non lifetime binders', 'windows specific', 'const features', 'allocation error', 'logical error', 'tracking', 'diagnostic issue', 'rustc issue', 'attribute system', 'c abi', 'topic integer overflow', 'mismatch', 'invalid syntax', 'rust stdlib', 'rustc warning', 'embedded systems', 'function pointers', 'array indexing', 'invalid program', 'pointer', 'domain language rust', 'type traits', 'polymorphize', 'setup issue', 'linking error', 'binary compatibility', 'adt', 'reference issue', 'experimental features', 'category language', 'domain const generics', 'generic parameter', 'inline asm', 'compilation failure', 'fix it', 'type parameter issue', 'linker problem', 'style guide', 'rust standard library', 'typeinference', 'generic issue', 'library problem', 'bug introduction', 'type alias impl trait', 'function arguments', 'reference counting', 'generic const items', 'unimplemented feature', 'user interfaces', 'static initialization', 'issue type/bug', 'domain/language features', 'macro system', 'consteval', 'type checking bug', 'lazy initialization', 'core libraries', 'rustc panic', 'compiler verification', 'category undefined behavior', 'type unification', 'static variable', 'memory allocator', 'code readability', 'mpsc', 'invalid usage', 'trait specialization', 'std lib', 'screenreader', 'terminal features', 'domain: angular cli', 'type: improvement', 'domain: code quality', 'type:documentation', 'migrations', 'topic:build', 'topic:optimization', 'domain:html', 'angular tutorial', 'topic:documentation', 'domain: cli', 'template binding', 'category feature request', 'pattern matcher', 'dispatching', 'nested tensor', 'collective operations', 'backend compiler failed', 'rebuild', 'aot export', 'pytorch issues', 'pytorch issue', 'macos support', 'tensor broadcasting', 'domain: torchscript', 'category: compilation', 'renaming', 'data type conversion', 'tensor shapes', 'dist distributed', 'math accuracy', 'stats tracking', 'symbolic variables', 'domain torch library', 'category dynamo', 'aten native', 'dynamo framework', 'nn.batchnorm2d', 'domain ml', 'parallelization', 'domain cuda', 'topic performance', 'pytorch feature', 'multinode', 'graph issue', 'topic: inductor', 'multiplication', 'cpu optimization', 'third party dependency', 'cudagraph', 'random state', 'data type mismatch', 'graph recompilation', 'tensor attributes', 'type: optimization', 'neural network', 'numerical issues', 'pytorch elastic', 'c++ related', 'topic:performance', 'numerical computing', 'third party support', 'topic: caching', 'domain: docker', 'domain: deep learning', 'missing module', 'topic autograd', 'pytorch benchmark', 'domain: optimization', 'parameter names', 'domain: cuda', 'nn.functional', 'list manipulation', 'lowering exception', 'torch.nn.functional', 'pytorch backend', 'oom error', 'pytorch extensions', 'user guide', 'out of bounds access', 'layout issue', 'nn functional', 'domain machine learning', 'cse', 'numerical issue', 'styling issue', 'angular integration', 'gitignore', 'css parser', 'core development', 'domain:rpc', 'type:issue', 'configure script', 'domain:network', 'domain: network', 'sveltejs', 'user interaction', 'production build', 'svelte features', 'svelte feature', 'bug fix request', 'site management', 'content structure', 'site generation', 'extension support', 'configuration option', 'multilingual support', 'go template', 'dependency bump', 'batch processing', 'microservices', 'bug fix version upgrade', 'release note', 'file not found', 'domain: build tool', 'deprecated feature', 'deprecated api', 'oci image', 'image packaging', 'topic: versioning', 'java ecosystem', 'quality control', 'application management', 'process improvement', 'conditional beans', 'topic:workflow', 'topic:dependency management', 'category:ci', 'routing datasource', 'third party libraries', 'jstl', 'feature requests', 'open telemetry', 'distributed cache', 'java driver', 'domain:authentication', 'testing infrastructure', 'type:release note', 'java technology', 'spring boot 3', 'reference docs', 'embedded server', 'minor issue', 'framework configuration', 'client upgrade', 'version bump', 'starter metadata', 'ojdbc', 'spring modules', 'spring properties', 'application runtime', 'interrupt', 'container management', 'spring extensions', 'oci', 'esql spec', 'multicluster', 'date handling', 'retrieval', 'optimization issue', 'license management', 'api keys', 'data analysis', 'elasticsearch query', 'index store', 'type casting', 'matching', 'ml aggregations', 'lag', 'fzf configuration', 'fzf features', 'directory operations', 'list view', 'user input', 'topic:configuration', 'ordering', 'java stdlib', 'uri handling', 'url encoding', 'scheduled task', 'bean registration', 'method argument resolution', 'string processing', 'proxying', 'proxies', 'binary data', 'category:refactoring', 'assembly disassembly', 'data formatting', 'cpu emulation', 'debugging tool', 'function id', 'language agnostic', 'decompiler bug', 'software engineering', 'disassembly issue', 'instruction decoding', 'software reverse engineering', 'low level programming', 'corrupted binary', 'general improvement', 'software debugging', 'csharp', 'decompilation issue', 'domain: networking', 'gui improvement', 'sync failure', 'cloud sync', 'plugin support', 'repo management', 'github migration', 'storage issue', 'copy operation', 'video player', 'gc issue', 'stdlib issue', 'julia base', 'package build', 'type instability', 'array operations', 'library metadata', 'python support', 'python library', 'build problem', 'runtime environment', 'version conflict', 'platform agnostic', 'file extension', 'netrc', 'lock files', 'core functionality', 'path management', 'software architecture', 'virtualization', 'dom manipulation', 'date selection', 'component configuration', 'dropdown menu', 'color picker', 'array manipulation', 'reference handling', 'windows build', 'opcode', 'dom extension', 'category math', 'programming error', 'heap overflow', 'php src', 'opcode cache', 'domain database', 'fileinfo', 'c standard', 'language standard', 'shared memory', 'design proposal', 'database engine', 'table management', 'sql functionality', 'domain/database', 'calculation', 'sql engine', 'invalid data', 'high availability', 'query issue', 'database error', 'ddl operation', 'sql execution', 'filetype support', 'filetype detection', 'minor bug', 'popup menu', 'syntax definition', 'vi mode', 'vim internal error', 'developer tools', 'recursive error', 'pick model', 'chat integration', 'language status', 'locale issue', 'event emitter', 'vscode marketplace', 'microsoft', 'snapshot testing', 'focus issue', 'instantiation service', 'feature change', 'editor navigation', 'contributions', 'reload', 'ux issue', 'reproducible issue', 'chat view', 'editor ui', 'file watcher', 'template expansion', 'insider build', 'fonts', 'color support', 'shared process', 'menubar', 'speech input', 'speech recognition', 'mouse interaction', 'bundling issue', 'cache control', 'metadata issue', 'canary build', 'path alias', 'refresh issue', 'refresh behavior', 'protocol violation', 'argument parsing', 'alias analysis', 'http proxy', 'random number generator', 'ssa interp', 'hash function', 'time package', 'concurrency issue', 'ptrace', 'internal tool', 'allocations', 'thread local storage', 'semantic change', 'x/sys', 'struct padding', 'panics', 'gccgo', 'go release', 'design discussion', 'extension handling', 'go work', 'behavioral change', 'user lookup', 'type switch', 'leak detection', 'type aliases', 'non determinism', 'build mode', 'netpoller', 'constant time', 'command output', 'load error', 'go analysis', 'formatting issue', 'standard compliance', 'mod', 'url issue', 'turbo modules', 'javascript core', 'ui thread', 'text layout', 'file reader', 'autolink', 'doc bug', 'contributor engagement', 'web platform', 'nodejs core', 'es module', 'execution order', 'parallel testing', 'unix domain socket', 'local files', 'deno check', 'readonly file system', 'url validation', 'javascript issue', 'deno add', 'relative path', 'api mismatch', 'const trait impl', 'associated type', 'cpu detection', 'edition migration', 'borrow check', 'edition compatibility', 'trait coherence', 'ui test', 'crash recovery', 't lang', 'a trait objects', 'a coercions', 'generic constants', 'impl blocks', 'component conflict', 'feature tracking', 'abi compliance', 'function merging', 'invalidation', 'generic parameters', 'suggest change', 't rustdoc frontend', 'c variadic', 'rustc dev guide', 'pointer comparison', 'dead code elimination', 'register class', 'lang team', 'resolver issue', 'library compilation', 'search issue', 'trait associated types', 'mir build', 'move semantics', 'generic type', 'trait alias', 'solver', 'naked functions', 'const expression', 'command line arguments', 'code coverage', 'ci pipeline', 'build std', 'test porting', 'type change', 'loops', 'slicing', 'read impl', 'derive macro', 'panic handling', 'unstable behavior', 'compiler diagnostic', 'future incompatibility', 'memory overflow', 'text scaling', 'unicode support', 'cursor behavior', 'ui automation', 'dsr queries', 'override', 'async issue', 'cd', 'native fetch', 'event replay', 'content issue', 'form validation', 'website issue', 'missing content', 'input output mapping', 'test flake', 'mutable mapping', 'operator implementation', 'max pooling', 'tensorrt', 'include path', 'out of memory', 'workflow management', 'code snippet', 'reconstruction', 'device properties', 'matrix multiplication', 'floating point exception', 'reorder', 'reference cycle', 'data dependency', 'device specific', 'maintainers', 'device agnostic', 'torch runtime error', 'shared library', 'tensor conversion', 'limitations', 'tensor comparison', 'nvidia', 'functional execution', 'recursion error', 'guard failure', 'custom autograd function', 'masked tensor', 'gradient checkpointing', 'evaluation mode', 'python package', 'attribute access', 'distributed checkpointing', 'cpp backend', 'cross version compatibility', 'async collective tensor', 'collective ops', 'warning messages', 'key error', 'cyclic dependency', 'test logic', 'gpu issue', 'type hint issue', 'ort', 'device compatibility', 'data dependent', 'torch. dynamo', 'getattr', 'path issues', 'device mismatch', 'tensor copy', 'custom device', 'numerical precision', 'custom operator', 'aot autograd', 'inconsistency', 'layout mismatch', 'public api', 'python registration', 'unary functions', 'fp32', 'optimizations', 'cuda error', 'activation checkpointing', 'custom backend', 'build tool configuration', 'resolution issue', 'build output', 'pnpm', 'jquery', 'light dark mode', 'css rendering', 'types issue', 'functional test', 'qt client', 'intermittent failure', 'build test', 'seed node', 'functional tests', 'ports', 'component name', 'interop', 'touch events', 'focus management', 'svelte version 5', 'routing issue', 'permalinks', 'investigation', 'deterministic order', 'api version', 'missing dependency', 'connection factory', 'artifact management', 'metric', 'port', 'client connection', 'xml schema', 'database integration', 'status page', 'connection pool', 'pool', 'spring data r2dbc', 'release candidate', 'subprojects', 'value object', 'spring boot upgrade', 'ssl configuration', 'code sample', 'default value', 'protocol resolver', 'reproducible builds', 'transitive dependency', 'docker image', 'sql server', 'service connection', 'executable', 'upgrade required', 'reloading', 'virtual thread', 'containerd', 'spring config', 'jndi', 'security issue', 'test environment', 'system test', 'auto startup', 'job status', 'allocation failures', 'integ test', 'async enrich', 'index mapping', 'entitlements', 'memory error', 'mapping issue', 'repository access', 'snapshot repository', 'inference plugin', 'index template', 'date format issue', 'elastic search', 'apm', 'http status codes', 'cluster restart', 'snapshot recovery', 'test kit', 'template evaluation', 'randomized testing', 'consistency issue', 'elasticsearch plugin', 'ml plugin', 'script fields', 'key bindings', 'hyperlinks', 'shell command', 'fish shell', 'terminal emulator', 'log management', 'semantic', 'connect protocol', 'async handling', 'async executor', 'io exception', 'naming convention', 'nullable', 'issue template', 'uri parsing', 'metadata reading', 'equals hashcode', 'immutability', 'contract annotations', 'forwarding', 'method handler', 'scheduled tasks', 'evaluation context', 'api client', 'function invocation', 'autowired', 'copy properties', 'enhanced classes', 'bean discovery', 'qualifier resolution', 'async requests', 'uri resolution', 'http connection', 'json parsing', 'build time', 'request response', 'context propagation', 'spring webclient', 'classloader issue', 'core framework', 'jdbctemplate', 'symbol management', 'key binding', 'disposal', 'script manager', 'version parsing', 'low level error', 'default behavior', 'debugging issue', 'binary loading', 'gui issue', 'note editing', 'file monitoring', 'multiple window support', 'conversion issue', 'sort order', 'admin panel', 'raw file', 'external issue tracker', 'tag management', 'issue list', 'multi select', 'tables', 'video issue', 'network error', 'browser issue', 'markdown rendering', 'ui preview', 'multipart upload', 'circular dependencies', 'type constraint', 'abstract types', 'bounds error', 'resolution conflict', 'configuration file', 'python environment', 'constraint validation', 'uv library', 'editable installs', 'type annotations', 'project isolation', 'resolution strategy', 'progress indicator', 'universal locking', 'prerelease', 'simple repository', 'index strategy', 'file input', 'expansion panel', 'default state', 'number input', 'front end', 'input component', 'macro redefinition', 'ftp', 'uninitialized', 'persistent connection', 'core engine', 'header', 'jit issue', 'mime type', 'avx', 'heap corruption', 'integer type', 'memory limit', 'incompatible types', 'visibility issue', 'autoloader', 'multibyte string', 'unix domain sockets', 'configuration parsing', 'preload', 'array handling', 'tokenization', 'ziglang', 'language extension', 'symbolic link', 'whole cache mode', 'memory alignment', 'cpu feature detection', 'target os', 'api evolution', 'plan cache', 'load', 'aggregate', 'backup recovery', 'admin check', 'latency', 'parallel processing', 'context packages', 'window functions', 'read write', 'variable management', 'concurrency control', 'lock mechanism', 'unique constraint', 'limit operator', 'rpc server', 'resource usage', 'design change', 'extension system', 'system tables', 'ui issues', 'statusline', 'recording', 'scp', 'multibyte', 'text object', 'regexp', 'deletion', 'paste issue', 'config management', 'editor features', 'c bug', 'core vim', 'initializers', 'backward compatible', 'lang item', 'integration test failure', 'gpu rendering', 'ui suggestion', 'api suggestion', 'spring bean', 'json processing', 'ci update', ' ice ', 'security plugin', 'security vulnerability', 'lang server', 'async test', 'htmlunit', 'ui look and feel', 'css selector', 'upstream dependency', 'pooled', 'package versioning', 'color theme', 'spell check', 'ppc64le', 'internal package', 'api compliance', 'content update', 'debug mode', 'vite plugin', 'error suggestion', 'match pattern', 'suggestion improvement', 'test update', 'pattern mismatch', 'aot inductor', 'ui upgrade', 'string comparison', 'aggregation test', 'ui request', 'tool management', 'uninitialized memory', 'debugger issue', 'gpu acceleration', 'ui change', 'order', 'jupyter notebook', 'riscv64', 'panicked', 'suggest fix', 'generic issues', 'compile fail', 'impl', 'ci integration', 'broken', 'disabled test', 'cuda unsupported', 'aarch64', 'symbolic function', 'math rendering', 'issue porting', 'thread interruption', 'activemq artemis', 'binding issue', 'commons codec', 'backwards compatibility', 'mimetype', 'json path', 'searchable snapshot', 'search template', 'knn search', 'static resources', 'temporary table', 'ui a11y', 'keyboard issue', 'web extension', 'font size', 'fix needed', 'input box', 'os user', 'doc request', 'sha256', 'golang go', 'recursive types', 'content error', 'http server', 'ecmascript modules', 'auth issue', 'asynchronous', 'decryption', 'const context', 'atomic operations', 'ice ', 'doc test', 'target issue', 'static method', 'input processing', 'fake tensor', 'unittest failure', 'backend issue', 'graph mode', 'function compilation', 'dtype issue', 'function missing', 'arm64', 'bytecode', 'gcc compatibility', 'documentation needed', 'glibc compatibility', 'classpath issue', 'patch release', 'container bean', 'web driver', 'xml soap', 'ci infrastructure', 'charset', 'spring java format', 'api response', 'rest esql', 'search api', 'azure snapshot repo', 'codec issue', 'array access', 'bean resolution', 'bean injection', 'http message conversion', 'bean creation', 'bean overriding', 'type compatibility', 'osx', 'metadata parsing', 'python version conflict', 'v select', 'gd extension', 'xml processing', 'sql analysis', 'schema cache', 'editor performance', 'a11y issues', 'reconnection', 'issue report', 'expansion', 'filesystem error', 'ansi color', 'extension bug', 'performance issues', 'mouse wheel', 'browser interaction', 'quick input', 'documentation suggestion', 'output view', 'dev container', 'ui glitch', 'labeling', 'chat widget', 'rendering issues', 'voice input', 'redirect issue', 'sitemaps', 'production bug', 'production mode', 'script test', 'atomic ops', 'internal tests', 'doc suggestion', 'method call', 'map iteration', 'external link', 'arm32', 'os issue', 'pthread', 'skip test', 'amd64', 'heap profile', 'doc link', 'netip', 'json schema', 'command consistency', 'permission denied', 'context cancellation', 'code migration', 'os interface', 'sql package', 'go imports', 'header management', 'generic code', 'sha3', 'version compatibility', 'testability', 'version upgrade', 'os issues', 'log analysis', 'cleanup issue', 'v2', 'map write', 'layout problem', 'image rendering', 'ui bugs', 'architecture compatibility', 'event listening', 'shell script', 'v8 compatibility', 'structured clone', 'contributor recognition', 'html formatting', 'console api', 'private registry', 'code consistency', 'port conflict', 'pre release', 'url pattern', 'async io', 'os incompatibility', 'path processing', 'async recursion', 'regression test', 'smart pointer', 'tcx', 'component missing', 'ptr metadata', 'git dependency', 'lang attribute', 'feature interaction', 'upgrade regression', 'sized trait', 'utf8 error', 'type instantiation', 'thread', 'static mut', 'backends', 'parentheses', 'infinite recursion', 'trait method', 'functional bug', 'template migration', 'english', 'command suggestion', 'third party integration', 'template compiler', 'content missing', 'graph breaking', 'nested tensors', 'mathematical function', 'device dispatch', 'graph building', 'tensor strides', 'tensor prop', 'symbolic tracing', 'batching', 'device type', 'view operation', 'complex types', 'mathematical operations', 'device mode', 'flaky tests', 'cpp compile error', 'backend failure', 'backend extension', 'optimizer state', 'distributed checkpoint', 'api use', 'cpp issue', 'numpy compatibility', 'mesh', 'empty tensor', 'name error', 'op consistency', 'test bug', 'css custom properties', 'css import', 'p2p network', 'p2p networking', 'user suggestion', 'svelte transition', 'immutable', 'svelte bindings', 'svelte class', 'svelte version', 'svelte template', 'svelte component interaction', 'rest props', 'copyright update', 'type resolution', 'jvm tool mode', 'build pack', 'platform dependencies', 'test configuration', 'oracle jdk', 'access token', 'spring data gemfire', 'log level', 'binding errors', 'dependencies upgrade', 'jsonassert', 'httpcore', 'maven integration', 'dependencies update', 'connection details', 'uri validation', 'environment configuration', 'springboot', 'resolution algorithm', 'framework spring boot', 'tag validation', 'ci system tests', 'spring boot maven plugin', 'image upgrade', 'profile integ tests', 'sql es', 'concurrent test', 'sql parsing', 'repository verification', 'text field mapper', 'aggregation tests', 'scroll api', 'elasticsearchql', 'ticket validation', 'metrics test', 'shard management', 'upgrade issues', 'math error', 'handler mapping', 'webtestclient', 'spring boot compatibility', 'url handlers', 'spring mockito', 'servlet api', 'uri template', 'disk space', 'datetime formatting', 'http method', 'test context', 'executor service', 'filesystem issue', 'python version mismatch', 'order dependency', 'data type management', 'decompiler issue', 'floating point issue', 'documentation request', 'memory reference', 'table issue', 'environment interaction', 'schedule issue', 'upload issue', 'copy error', 'search function', 'core function', 'float arithmetic', 'pkg mode', 'cache miss', 'subdirectory', 'optional dependency', 'platform issue', 'virtual workspace', 'workspace package', 'coloring issue', 'metadata management', 'wheel file', 'docker integration', 'reinstallation', 'init error', 'lock resolution', 'environment management', 'text field', 'v3.x', 'v menu', 'php 8 4', 'gd library', 'json encoding', 'destructors', 'atomic operation', 'schema change', 'br tool', 'query hang', 'sql update', 'privilege check', 'key range', 'query processing', 'sql schema', 'auth plugin', 'index usage', 'po file', 'key mapping', 'python interp', 'correction', 'vimscript interaction']"
+gradle,295,gradle,295,340,"['gradle', 'gradle plugin', 'gradcheck', 'domain:gradle']"
+typescript,386,typescript,386,390,"['typescript', 'topic: typescript', 'typescript support']"
+integration,285,integration,285,289,"['integration', 'integration issue']"
+instrumentation,70,instrumentation,70,70,['instrumentation']
+lifetime issue,17,lifetime,106,151,"['lifetime', 'lifetimes', 'f lifetime', 'lifetime issue', 'lifetime issues', 'lifetime parameters', 'lifetime bounds']"
+pulsar,115,pulsar,115,158,"['pulsar', 'spring pulsar', 'pulsar reactive']"
+kotlin,155,kotlin,155,168,"['kotlin', 'language kotlin', 'kotlin dsl', 'kotlin support']"
+micrometer,147,micrometer,147,150,"['micrometer', 'spring micrometer']"
+tab completion,2,completion,129,163,"['completion', 'shell completion', 'completions', 'tabs', 'tab', 'tab management', 'category: completion', 'completion issue', 'pinned tabs', 'tab completion', 'tab stops']"
+spring kafka,45,kafka,87,134,"['kafka', 'spring kafka', 'framework kafka']"
+attention mechanism,30,attention,44,87,"['attention', 'flex attention', 'attention mechanism', 'attention mechanisms', 'flash attention']"
+web streams,6,reactive,80,356,"['reactive', 'reactivity', 'streams', 'data streams', 'stream', 'reactive programming', 'streaming', 'broadcast', 'react', 'react native', 'webstreams', 'web streams', 'reactiveprogramming', 'data stream', 'multicast', 'multi stream', 'reactive statements', 'stream wrappers', 'stream wrapper', 'broadcasting', 'custom stream wrapper', 'reactive streams']"
+jetty,86,jetty,86,86,['jetty']
+native image,97,native image,97,97,['native image']
+enum,74,enum,74,84,"['enum', 'enums', 'enum variant', 'enum layout', 'enum update']"
+serialization,125,serialization,125,147,"['serialization', 'deserialization', 'serialize', 'kotlin serialization']"
+neo4j,88,neo4j,88,88,['neo4j']
+actuator,62,actuator,62,62,['actuator']
+tikv,52,tikv,52,52,['tikv']
+bootstrap,77,bootstrap,77,84,"['bootstrap', 't bootstrap', 'bootstrapping']"
+data race,78,data race,78,78,['data race']
+notebook,53,notebook,53,67,"['notebook', 'notebooks']"
+cmake,52,cmake,52,55,"['cmake', 'rmake']"
+navigation drawer,2,navigation,113,119,"['navigation', 'navigationdrawer', 'drawer', 'navigation drawer']"
+triton kernel,4,triton,79,85,"['triton', 'triton kernels', 'triton kernel']"
+hibernate,72,hibernate,72,72,['hibernate']
+mirror,5,reflection,85,115,"['reflection', 'reflect', 'mirror', 'mirroring', 'mirrors']"
+planner,36,planner,36,38,"['planner', 'planning']"
+jackson,37,jackson,37,37,['jackson']
+lint,113,lint,113,246,"['lint', 'linting', 'linter', 'next lint', 'lint issue', 'lints', 'lint warning']"
+xpu,40,xpu,40,40,['xpu']
+junit,43,junit,43,45,"['junit', 'junit jupiter']"
+quantization,57,quantization,57,57,['quantization']
+partitioning,55,partitioning,55,85,"['partitioning', 'network partition', 'partitioner', 'reorganize partition', 'partition pruning', 'partition', 'column pruning', 'truncation', 'pruning', 'space management', 'partition management']"
+fs,35,fs,35,35,['fs']
+coverage,46,coverage,46,46,['coverage']
+wasm,52,wasm,52,52,['wasm']
+filter,40,filter,40,56,"['filter', 'filtering', 'runtime filter']"
+groovy,36,groovy,36,36,['groovy']
+timeout,76,timeout,76,80,"['timeout', 'timed out', 'test timeout']"
+rfc7807,2,rfc,20,33,"['rfc', 'rfc compliance', 'rfc3986', 'rfc7807']"
+amp,36,amp,36,36,['amp']
+undertow,50,undertow,50,50,['undertow']
+xpack,43,xpack,43,45,"['xpack', 'xpack esql']"
+rocm,43,rocm,43,69,"['rocm', 'roc', 'rocml', 'rocmlib', 'roc m']"
+copilot,37,copilot,37,39,"['copilot', 'copilot chat']"
+image,52,image,52,58,"['image', 'images']"
+backward pass,9,backward,21,59,"['backward', 'undo redo', 'revert', 'ref', 'backward pass', 'reversing', 'undo', 'forward pass', 'forward ref']"
+dynamic shapes,33,dynamic shapes,33,91,"['dynamic shape', 'dynamic shapes', 'symbolic shapes', 'symbolic', 'shape inference', 'shape', 'region inference', 'geo shape']"
+tiflash,29,tiflash,29,29,['tiflash']
+hover,35,hover,35,35,['hover']
+autocomplete,27,autocomplete,27,29,"['autocomplete', 'autocompletion']"
+app router,37,app router,37,37,['app router']
+incremental hydration,7,hydration,44,53,"['hydration', 'incremental hydration', 'component hydration']"
+exception,70,exception,70,73,"['exception', 'exceptions']"
+aspectj,38,aspectj,38,38,['aspectj']
+highlighting,48,syntax highlighting,50,105,"['highlighting', 'syntax highlighting', 'highlight']"
+date,28,date,28,30,"['date', 'dates']"
+session,28,session,28,45,"['session', 'session management']"
+remote ssh,4,ssh,41,52,"['ssh', 'remote ssh', 'remote access', 'remote desktop']"
+ssr,35,ssr,35,35,['ssr']
+driver 115,2,driver,45,97,"['driver', 'driver upgrade', 'driver update', 'driver issue', 'driver 115', 'driver terabox', 'driver feijipan', 'terabox', 'drivers', '115 driver']"
+change detection,37,change detection,37,37,['change detection']
+azure,25,azure,25,25,['azure']
+icon,18,icon,18,32,"['icon', 'icons', 'iconography', 'tray icon', 'iconv']"
+example,26,example,26,32,"['example', 'examples']"
+elf,27,elf,27,27,['elf']
+transformers,23,transformers,23,42,"['transformers', 'transformer']"
+complex numbers,45,complex numbers,45,45,['complex numbers']
+graalvm,31,graalvm,31,31,['graalvm']
+update,31,update,31,31,['update']
+multi diff,2,diff,22,39,"['diff', 'diff editor', 'multi diff', 'autodiff', 'diff mode']"
+dashboard,18,dashboard,18,18,['dashboard']
+proposal,91,proposal,91,91,['proposal']
+webdav,27,webdav,27,27,['webdav']
+backport,141,backport,141,141,['backport']
+couchbase,28,couchbase,28,28,['couchbase']
+bom,26,bom,26,39,"['bomr', 'bom', 'bmm', 'bom conflict']"
+shutdown,40,shutdown,40,44,"['shutdown', 'graceful shutdown']"
+npe,18,npe,18,18,['npe']
+hazelcast,23,hazelcast,23,23,['hazelcast']
+discovery,23,discovery,23,25,"['discovery', 'exploration']"
+ubsan,14,ubsan,14,29,"['ubsan', 'uaf', 'ub', 'ubsan error']"
+lightning,16,lightning,16,16,['lightning']
+command palette,26,command palette,26,26,['command palette']
+swc,22,swc,22,22,['swc']
+vet,21,vet,21,23,"['vet', 'go vet']"
+target,17,target,17,17,['target']
+generator,21,generator,21,28,"['generator', 'generators']"
+scope,17,scope,17,21,"['scope', 'scopes', 'scope restart']"
+comptime,22,comptime,22,22,['comptime']
+signal,27,signal,27,48,"['signals', 'signal', 'signal handling']"
+zone js,9,zone.js,12,38,"['zone.js', 'zoneless', 'zone', 'zone js', 'zonejs']"
+linalg,12,linalg,12,12,['linalg']
+lucene,25,lucene,25,25,['lucene']
+foreign key,20,foreign key,20,20,['foreign key']
+help,14,help,14,14,['help']
+router,16,router,16,20,"['router', 'next router']"
+quic,22,quic,22,22,['quic']
+govulncheck,12,govulncheck,12,12,['govulncheck']
+wiki,11,wiki,11,11,['wiki']
+download issue,11,download,31,51,"['download', 'download issue', 'download failure', 'offline download']"
+fabric,22,fabric,22,27,"['fabric', 'yarn', 'material']"
+collaboration,13,collaboration,13,13,['collaboration']
+jsr,9,jsr,9,15,"['jsr', 'jsr223', 'jsr 330', 'jsr packages']"
+cargo,24,cargo,24,24,['cargo']
+derive,12,derive,12,25,"['derive', 'derived values', 'derives', 'differentiation', 'deriving', 'derivation']"
+simd,18,simd,18,20,"['simd', 'portable simd']"
+injection,12,injection,12,20,"['injection', 'injector']"
+nccl,28,nccl,28,28,['nccl']
+complex,10,complex,10,10,['complex']
+distribtued training,2,distributed training,63,82,"['training', 'distributed training', 'distribtued training', 'federated learning']"
+shortcode,15,shortcode,15,30,"['shortcode', 'shortcodes']"
+deployment,39,deployment,39,43,"['deployment', 'deploy']"
+infinispan,51,infinispan,51,51,['infinispan']
+zipkin,18,zipkin,18,30,"['zipkin', 'zip']"
+jaxb,15,jaxb,15,15,['jaxb']
+pikpak,14,pikpak,14,14,['pikpak']
+fuzzy,14,fuzzy,14,14,['fuzzy']
+middleware,20,middleware,20,20,['middleware']
+perf,8,perf,8,11,"['perf', 'perf hooks']"
+hermes,16,hermes,16,16,['hermes']
+svg,19,svg,19,19,['svg']
+effects,15,effects,15,23,"['effects', 'effect']"
+aotautograd,7,aotautograd,7,7,['aotautograd']
+autocast,21,autocast,21,23,"['autocast', 'autocasting']"
+oom,20,oom,20,20,['oom']
+core dump,27,core dump,27,27,['core dump']
+bfloat16,18,bfloat16,18,24,"['bfloat16', 'bf16']"
+animation,32,animation,32,47,"['animation', 'animations', 'keyframes', 'motion', 'movement']"
+reindex,15,reindex,15,15,['reindex']
+class,15,class,15,22,"['class', 'main class', 'class recovery']"
+yaml test,5,yaml,27,32,"['yaml', 'yaml test']"
+compose,14,compose,14,14,['compose']
+flyway,12,flyway,12,12,['flyway']
+jar,12,jar,12,20,"['jar', 'jarmode', 'uber jar']"
+kibana,8,kibana,8,8,['kibana']
+expression,22,expression,22,22,['expression']
+precompilation,23,precompilation,23,23,['precompilation']
+pyproject toml,12,pyproject toml,12,15,"['pyproject toml', 'pyproject']"
+segmentationfault,6,segmentationfault,6,6,['segmentationfault']
+sanitizer,25,sanitizer,25,60,"['soap', 'sanitizers', 'sanitizer', 'sanitizer issue', 'sanitization', 'sanitizer error']"
+dumpling,7,dumpling,7,7,['dumpling']
+txn,6,txn,6,6,['txn']
+remote,9,remote,9,9,['remote']
+electron,16,electron,16,16,['electron']
+state dict,7,state management,21,40,"['state management', 'state', 'dict', 'state dict', 'load state dict', 'state dictionary']"
+wsl,15,wsl,15,15,['wsl']
+indentation,24,indentation,24,26,"['indentation', 'indent']"
+hmr,9,hmr,9,9,['hmr']
+deadlock,39,deadlock,39,39,['deadlock']
+playground,8,playground,8,11,"['playground', 'go playground']"
+tutorial,18,tutorial,18,18,['tutorial']
+ipv6,14,ipv6,14,17,"['ipv6', 'ipv4']"
+future,9,future,9,13,"['future', 'futures']"
+forms,13,forms,13,25,"['forms', 'form']"
+directives,7,directive,19,28,"['directive', 'directives', 'source directive']"
+defer block,2,defer,15,28,"['defer', 'blocking', 'defer block', 'blocking issue']"
+ir,7,ir,7,7,['ir']
+priority queue,2,priority medium,5,21,"['priority medium', 'priority high', 'priority: medium', 'message queue', 'queue management', 'priority queue', 'high priority']"
+fft,14,fft,14,14,['fft']
+transition,13,transition,13,24,"['transitions', 'transition', 'view transition', 'css transitions']"
+exif,15,exif,15,15,['exif']
+headless,6,headless,6,13,"['headless', 'headless mode', 'headless task']"
+paketo,7,paketo,7,10,"['paketo', 'kineto']"
+gson,11,gson,11,11,['gson']
+conditional,4,condition,19,46,"['condition', 'conditional', 'conditions', 'conditional on property', 'conditional on', 'conditional statements', 'conditional rendering', 'conditionals', 'conditional onproperty', 'condition evaluation']"
+jersey,17,jersey,17,19,"['jersey', 'njt']"
+pull request,14,pull request,14,25,"['pull request', 'pull requests']"
+jakarta ee,14,jakarta ee,14,23,"['jakartaee', 'jakarta ee', 'jakarta']"
+sbom,13,sbom,13,13,['sbom']
+homebrew,18,homebrew,18,20,"['homebrew', 'brew']"
+observation,11,observation,11,11,['observation']
+web flux,6,web flux,6,11,"['web flux', 'flux']"
+bcmath,13,bcmath,13,13,['bcmath']
+curl,13,curl,13,13,['curl']
+join,21,join,21,21,['join']
+folding,12,folding,12,14,"['folding', 'constant folding']"
+treeview,16,tree view,17,52,"['treeview', 'tree view', 'tree', 'component: treeview', 'tree sitter', 'program tree', 'v treeview', 'tree traversal', 'tree command']"
+smoke test,12,smoke test,12,12,['smoke test']
+insiders,16,insiders,16,16,['insiders']
+question,9,question,9,9,['question']
+speech,10,speech,10,10,['speech']
+pagination,17,pagination,17,17,['pagination']
+darwin,9,darwin,9,9,['darwin']
+plan9,8,plan9,8,8,['plan9']
+fips,16,fips,16,18,"['fips', 'fips140']"
+gorm,2,gomote,10,16,"['gomote', 'gorm', 'goenv', 'goroot']"
+gcimporter,7,gcimporter,7,7,['gcimporter']
+godebug,15,godebug,15,15,['godebug']
+privacy,11,privacy,11,11,['privacy']
+slog,9,slog,9,9,['slog']
+embedding,9,embedding,9,9,['embedding']
+inspector,7,inspector,7,7,['inspector']
+buffers,2,buffer management,18,41,"['buffer', 'output buffering', 'buffer management', 'buffering', 'buffers', 'buffer mutation']"
+readline,9,readline,9,9,['readline']
+ty,5,ty,5,5,['ty']
+intrinsics,8,intrinsics,8,18,"['intrinsics', 'intrinsic', 'intrinsic function']"
+wasi,8,wasi,8,8,['wasi']
+hir,5,hir,5,5,['hir']
+fn delegation,9,fn delegation,9,11,"['fn delegation', 'f fn delegation']"
+stack overflow,23,stack overflow,23,23,['stack overflow']
+help text,6,help text,6,6,['help text']
+collections,10,collections,10,10,['collections']
+conpty,13,conpty,13,13,['conpty']
+custom elements,16,custom elements,16,21,"['custom elements', 'custom element']"
+linearization,2,normalization,10,27,"['linear', 'normalization', 'linearization', 'linearizability', 'spectral normalization', 'progress linear']"
+norm,8,norm,8,8,['norm']
+hip,7,hip,7,7,['hip']
+gradient check,2,gradient,10,22,"['gradient', 'gradientcheck', 'gradient check', 'gradient computation', 'gradient comparison']"
+nestedtensor,7,nestedtensor,7,7,['nestedtensor']
+placement,7,placement,7,11,"['placement', 'position', 'placement rules']"
+slot,5,slots,12,17,"['slot', 'slots']"
+wallet,18,wallet,18,18,['wallet']
+taxonomy,12,taxonomy,12,12,['taxonomy']
+thymeleaf,10,thymeleaf,10,10,['thymeleaf']
+jooq,18,jooq,18,18,['jooq']
+observability,27,observability,27,31,"['observability', 'observable']"
+prometheus,17,prometheus,17,17,['prometheus']
+sdkman,13,sdkman,13,13,['sdkman']
+placeholderresolution,2,property placeholder,4,11,"['property placeholder', 'placeholderresolution', 'placeholder resolution', 'placeholder']"
+endpoints,5,endpoint,11,16,"['endpoint', 'endpoints']"
+mustache,4,mustache,4,4,['mustache']
+s3,14,s3,14,21,"['s3', 's3 repository']"
+spatial,7,spatial,7,7,['spatial']
+sway,17,sway,17,19,"['sway', 'sway core']"
+marker,2,freemarker,9,21,"['freemarker', 'marker resolution', 'marker', 'free marker', 'markers']"
+transaction,42,transaction,42,42,['transaction']
+qemu,12,qemu,12,12,['qemu']
+overlay,14,overlay,14,14,['overlay']
+ocr,15,ocr,15,15,['ocr']
+virtualenv,9,virtualenv,9,9,['virtualenv']
+phar,13,phar,13,13,['phar']
+mbstring,8,mbstring,8,8,['mbstring']
+generated columns,9,generated columns,9,11,"['generated columns', 'generated column']"
+cve,5,cte,17,22,"['cte', 'cve']"
+quick open,7,quick open,7,9,"['quick open', 'quickopen']"
+code smell,3,code smell,3,3,['code smell']
+webview,7,webview,7,7,['webview']
+code lens,6,code lens,6,11,"['code lens', 'code lenses', 'lens']"
+clarity,3,clarity,3,3,['clarity']
+quick picks,3,quick pick,6,9,"['quick picks', 'quick pick']"
+tooltip,13,tooltip,13,13,['tooltip']
+prompt,5,prompt,5,5,['prompt']
+history,11,history,11,16,"['history', 'local history']"
+help wanted,5,help wanted,5,5,['help wanted']
+aux window,8,aux window,8,8,['aux window']
+webpack,17,webpack,17,17,['webpack']
+relay,7,relay,7,7,['relay']
+vercel,6,vercel,6,6,['vercel']
+reporting,4,reporting,4,4,['reporting']
+acme,9,acme,9,9,['acme']
+user facing,3,user facing,3,3,['user facing']
+dwarf,9,dwarf,9,9,['dwarf']
+transport,11,transport,11,11,['transport']
+pie,4,pie,4,4,['pie']
+mach o,6,mach o,6,6,['mach o']
+archive,11,archive,11,11,['archive']
+quickfix,8,quickfix,8,14,"['quickfix', 'quick fix']"
+bridgeless,6,bridgeless,6,6,['bridgeless']
+flow,5,flow,5,5,['flow']
+modal,7,modal,7,7,['modal']
+serde,4,serde,4,4,['serde']
+promise,8,promise,8,10,"['promise', 'promises']"
+governance,3,governance,3,3,['governance']
+tokio,3,tokio,3,5,"['tokio', 'in toto']"
+astro,4,astro,4,4,['astro']
+publishing,9,publishing,9,23,"['publish', 'publisher', 'publishing', 'publication', 'publish failure']"
+compression,21,compression,21,24,"['compression', 'commons compress']"
+jest,6,jest,6,6,['jest']
+hermit,4,hermit,4,4,['hermit']
+drop,14,drop,14,14,['drop']
+index out of bounds,12,index out of bounds,12,15,"['index out of bounds', 'index out of range']"
+delegation,9,delegation,9,9,['delegation']
+incremental,5,incremental,5,5,['incremental']
+submodules,5,submodule,7,12,"['submodules', 'submodule']"
+nightly,6,nightly,6,9,"['nightly', 'requires nightly']"
+union,9,union,9,11,"['union', 'union type']"
+content projection,8,content projection,8,8,['content projection']
+mermaid,7,mermaid,7,7,['mermaid']
+set,3,set,3,6,"['set', 'set operation']"
+interpolation,13,interpolation,13,13,['interpolation']
+stable diffusion,8,stable diffusion,8,8,['stable diffusion']
+matmul,7,matmul,7,7,['matmul']
+llama,3,llama,3,3,['llama']
+huggingface,7,huggingface,7,7,['huggingface']
+boolean expressions,2,boolean,6,10,"['boolean', 'bool query', 'boolean expressions']"
+bool,3,bool,3,3,['bool']
+c10d,6,c10d,6,11,"['c10d', 'c10']"
+tvm,10,tvm,10,10,['tvm']
+arm,12,arm,12,12,['arm']
+model behavior,4,model behavior,4,4,['model behavior']
+tensorboard,6,tensorboard,6,6,['tensorboard']
+postcss,17,postcss,17,19,"['postcss', 'postcss plugin']"
+rollup,5,rollup,5,7,"['rollup', 'rollover']"
+goldmark,5,goldmark,5,5,['goldmark']
+front matter,12,front matter,12,12,['front matter']
+latex,4,latex,4,4,['latex']
+glob,4,glob,4,7,"['glob', 'globbing']"
+maria db,4,mariadb,11,15,"['mariadb', 'maria db']"
+retry,38,retry,38,38,['retry']
+asciidoc,8,asciidoc,8,8,['asciidoc']
+conventions,16,conventions,16,34,"['convention', 'calling convention', 'conventions', 'calling conventions']"
+new relic,3,newrelic,6,9,"['newrelic', 'new relic']"
+cookie,9,cookie,9,17,"['cookie', 'cookies']"
+ccr,3,ccr,3,3,['ccr']
+ingest,8,ingest,8,8,['ingest']
+fullclusterrestartit,3,fullclusterrestartit,3,3,['fullclusterrestartit']
+keyword,4,keyword,4,4,['keyword']
+interactive,8,interactive,8,8,['interactive']
+forc,4,forc,4,4,['forc']
+bsim,7,bsim,7,7,['bsim']
+rtti,6,rtti,6,6,['rtti']
+pcode,5,pcode,5,5,['pcode']
+branching,2,branch management,9,28,"['branch', 'branch management', 'fork management', 'branch resolution', 'forking', 'branching', 'forks']"
+115,5,115,5,5,['115']
+venv,6,venv,6,6,['venv']
+poetry,3,poetry,3,3,['poetry']
+labs,6,labs,6,6,['labs']
+checksum,13,checksum,13,18,"['checksum', 'checkstyle']"
+area sql,3,area sql,3,3,['area sql']
+flashback,5,flashback,5,5,['flashback']
+xxd,4,xxd,4,4,['xxd']
+zoom,3,zoom,3,3,['zoom']
+marketplace,5,marketplace,5,5,['marketplace']
+save,7,save,7,18,"['saving', 'save', 'save issue', 'save strategy', 'savepoint']"
+draganddrop,2,drag and drop,11,13,"['draganddrop', 'drag and drop']"
+stepping,3,stepping,3,7,"['stepping', 'strides', 'step']"
+msal,9,msal,9,9,['msal']
+compare,3,comparison,29,32,"['compare', 'comparison']"
+autosave,5,autosave,5,5,['autosave']
+msys2,4,msys2,4,4,['msys2']
+revalidation,8,revalidation,8,8,['revalidation']
+next 14,2,next 14,2,2,['next 14']
+next start,3,next start,3,3,['next start']
+tailwindcss,68,tailwindcss,68,68,['tailwindcss']
+isr,4,isr,4,4,['isr']
+failure,75,failure,75,75,['failure']
+extract,3,extract,3,3,['extract']
+algorithm,35,algorithm,35,35,['algorithm']
+modindex,5,modindex,5,5,['modindex']
+toc,5,toc,5,5,['toc']
+mutex,10,mutex,10,10,['mutex']
+printing,8,printing,8,14,"['printer', 'print', 'printing']"
+signature,2,signature help,3,10,"['signature help', 'signer', 'signature', 'signing']"
+illumos,4,undici,6,10,"['illumos', 'undici']"
+merge,9,merge,9,17,"['merge', 'merge conflict', 'mergebot', 'merge request']"
+list,5,list,5,11,"['go list', 'list', 'list item']"
+nilness,2,nilness,2,2,['nilness']
+printf,4,printf,4,4,['printf']
+clarification,16,clarification,16,16,['clarification']
+push,4,push,4,6,"['push', 'push failure']"
+goimports,2,goimports,2,2,['goimports']
+eglot,2,eglot,2,2,['eglot']
+gerritbot,5,gerritbot,5,5,['gerritbot']
+protobuf,4,protobuf,4,4,['protobuf']
+vendoring,5,vendor,7,12,"['vendoring', 'vendor']"
+flatlist,3,flatlist,3,3,['flatlist']
+metro,4,metro,4,4,['metro']
+ccache,5,ccache,5,8,"['ccache', 'jcache']"
+reporter,3,reporter,3,3,['reporter']
+serve,4,serve,4,4,['serve']
+nuxt,3,nuxt,3,3,['nuxt']
+import map,3,import map,3,5,"['import map', 'import maps']"
+canvas,4,canvas,4,4,['canvas']
+jsdoc,8,jsdoc,8,8,['jsdoc']
+ec2,15,ec2,15,32,"['aws', 'ec2', 'ec2 discovery']"
+sdk,4,sdk,4,4,['sdk']
+diesel,2,diesel,2,2,['diesel']
+anyhow,3,anyhow,3,3,['anyhow']
+primitives,4,primitives,4,4,['primitives']
+orphan rules,3,orphan rules,3,3,['orphan rules']
+unsoundness,32,unsoundness,32,49,"['i unsound', 'unsoundness', 'soundness']"
+deref,7,deref,7,7,['deref']
+false positive,11,false positive,11,14,"['false positive', 'false positives']"
+libs,3,libs,3,5,"['libs', 't libs']"
+cranelift,4,cranelift,4,4,['cranelift']
+variance,3,variance,3,5,"['variance', 'variance inference']"
+lexer,6,lexer,6,6,['lexer']
+size,3,size,3,6,"['size', 'size oblivious']"
+meson,2,meson,2,2,['meson']
+phantom data,3,phantom data,3,3,['phantom data']
+miscompilation,8,miscompilation,8,8,['miscompilation']
+let underscore drop,2,let underscore drop,2,2,['let underscore drop']
+sixel,4,sixel,4,4,['sixel']
+whitespace,4,whitespace,4,7,"['whitespace', 'spacing']"
+changedetection,2,changedetection,2,2,['changedetection']
+interceptor,10,interceptor,10,14,"['interceptor', 'interceptors']"
+esbuild,8,esbuild,8,8,['esbuild']
+tso,4,tso,4,10,"['ts', 'tso', 'lto']"
+distutils,5,distutils,5,5,['distutils']
+addmm,4,addmm,4,4,['addmm']
+upstream,15,upstream,15,15,['upstream']
+tunableops,4,tunableops,4,7,"['tunableops', 'tunableop']"
+hook,3,hooks,4,11,"['hook', 'forward hooks', 'hooks', 'pre receive hook']"
+mypy,5,mypy,5,5,['mypy']
+xformers,2,xformers,2,2,['xformers']
+deepcopy,5,deepcopy,5,5,['deepcopy']
+timm,4,timm,4,7,"['timm', 'timm models']"
+bitwise operations,3,bitwise operations,3,5,"['bitwise operations', 'bitwise operation']"
+take along dim,3,take along dim,3,3,['take along dim']
+nll loss,3,nll loss,3,3,['nll loss']
+dsd,3,dsd,3,3,['dsd']
+tp,4,tp,4,4,['tp']
+learningrate,2,learning rate,11,15,"['learningrate', 'learning rate', 'learning rate scheduler']"
+rendezvous,3,rendezvous,3,3,['rendezvous']
+etcd,6,etcd,6,6,['etcd']
+clamp,4,clamp,4,4,['clamp']
+distribtued,2,distribtued,2,2,['distribtued']
+opset,3,opset,3,3,['opset']
+hsdp,3,hsdp,3,3,['hsdp']
+composer,4,composer,4,4,['composer']
+einsum,4,einsum,4,4,['einsum']
+flops,5,flops,5,7,"['flops', 'flops counting']"
+spectral norm,3,spectral norm,3,3,['spectral norm']
+openmp,7,openmp,7,7,['openmp']
+faketensor,2,faketensor,2,2,['faketensor']
+functorch,8,functorch,8,8,['functorch']
+concat,3,concat,3,5,"['concat', 'concatenation']"
+diffusers,5,diffusers,5,5,['diffusers']
+activation function,9,activation function,9,9,['activation function']
+control flow,22,control flow,22,22,['control flow']
+cost estimation,2,estimation,5,13,"['fee estimation', 'estimation', 'cost estimation', 'cost model']"
+depends,2,depends,2,2,['depends']
+scriptpubkeyman,3,scriptpubkeyman,3,3,['scriptpubkeyman']
+derived state,4,derived state,4,4,['derived state']
+props,3,props,3,3,['props']
+alert,3,alert,3,3,['alert']
+cascade,4,cascade,4,4,['cascade']
+content adapters,4,content adapters,4,7,"['content adapters', 'content adapter']"
+lombok,15,lombok,15,15,['lombok']
+health check,6,health,7,16,"['health', 'health check', 'health indicator']"
+eclipse,15,eclipse,15,15,['eclipse']
+systemd,9,systemd,9,9,['systemd']
+getting started,4,getting started,4,4,['getting started']
+how to,5,how to,5,5,['how to']
+artemis,6,artemis,6,6,['artemis']
+antora,9,antora,9,9,['antora']
+cnb,2,cnb,2,2,['cnb']
+readme,6,readme,6,6,['readme']
+dsl,2,dsl,2,2,['dsl']
+revision history,2,changelog,12,14,"['changelog', 'revision history']"
+firebird,4,firebird,4,6,"['jaybird', 'firebird']"
+component scan,5,component scan,5,5,['component scan']
+time series,10,time series,10,12,"['time series', 'timeseries']"
+bucket,2,bucket,2,2,['bucket']
+bulk,2,bulk,2,2,['bulk']
+nested,3,nested,3,6,"['nested', 'nested fields']"
+ilm,8,ilm,8,8,['ilm']
+painless,4,painless,4,4,['painless']
+cloud,5,cloud,5,5,['cloud']
+walker,3,walker,3,3,['walker']
+tar,4,tar,4,4,['tar']
+content negotiation,9,content negotiation,9,9,['content negotiation']
+osgi,4,osgi,4,4,['osgi']
+crac,7,crac,7,7,['crac']
+milestone,10,milestone,10,10,['milestone']
+controller,11,controller,11,11,['controller']
+response,6,response,6,6,['response']
+stomp,4,stomp,4,4,['stomp']
+fpu,4,fpu,4,4,['fpu']
+demangling,4,demangling,4,4,['demangling']
+goto anything,2,goto anything,2,2,['goto anything']
+sharing,4,sharing,4,4,['sharing']
+sidebar,10,sidebar,10,10,['sidebar']
+pam,5,pam,5,5,['pam']
+rss,5,rss,5,5,['rss']
+artifact,4,artifact,4,7,"['artifact', 'artifacts']"
+environment markers,7,environment markers,7,7,['environment markers']
+manylinux,4,manylinux,4,4,['manylinux']
+requirements,18,requirements,18,22,"['requirements', 'require']"
+setuptools scm,3,setuptools scm,3,3,['setuptools scm']
+slider,2,stepper,6,8,"['stepper', 'slider']"
+snackbar,6,snackbar,6,6,['snackbar']
+zts,5,zts,5,5,['zts']
+fiber,8,fiber,8,8,['fiber']
+weakmap,4,weakmap,4,4,['weakmap']
+finfo,4,finfo,4,4,['finfo']
+var dump,3,var dump,3,3,['var dump']
+tiproxy,2,tiproxy,2,2,['tiproxy']
+auto increment,3,auto increment,3,3,['auto increment']
+grafana,6,grafana,6,6,['grafana']
+region balancing,3,region balancing,3,3,['region balancing']
+manpage,3,man pages,4,7,"['manpage', 'man pages']"
+lua,3,lua,3,3,['lua']
+insert mode,8,insert mode,8,12,"['insert mode', 'insert']"
+dap,3,dap,3,3,['dap']
+live share,2,live share,2,2,['live share']
+ghe,2,ghe,2,2,['ghe']
+disposable store,2,store,6,17,"['disposable management', 'store', 'disposable store', 'disposable']"
+working sets,2,working sets,2,2,['working sets']
+decoration,2,decorations,8,12,"['decorations', 'decoration', 'cosmetic']"
+code completion,13,code completion,13,13,['code completion']
+inlay hints,2,inlay hints,2,4,"['inlay hints', 'inlay hint']"
+intellisense,10,intellisense,10,10,['intellisense']
+microsoft account,2,microsoft account,2,2,['microsoft account']
+vsda,2,vsda,2,2,['vsda']
+monaco,2,monaco,2,2,['monaco']
+nls,2,nls,2,2,['nls']
+postman,2,postman,2,2,['postman']
+temporal,2,timeline,5,9,"['timeline', 'temporal sdk', 'temporal']"
+memento,3,memento,3,3,['memento']
+multi monitor,5,multi monitor,5,5,['multi monitor']
+button,5,button,5,5,['button']
+system,3,system,3,3,['system']
+toast,2,toast,2,2,['toast']
+redux,3,redux,3,3,['redux']
+ppr,4,ppr,4,4,['ppr']
+partytown,3,partytown,3,3,['partytown']
+next build,2,next build,2,2,['next build']
+typed routes,2,typed routes,2,2,['typed routes']
+next og,2,next og,2,2,['next og']
+polyfills,4,polyfill,9,13,"['polyfills', 'polyfill']"
+fouc,3,fouc,3,3,['fouc']
+rsa,7,rsa,7,7,['rsa']
+sarif,2,sarif,2,2,['sarif']
+purego,2,purego,2,2,['purego']
+inline,2,inline,2,2,['inline']
+new arch,3,archunit,4,10,"['multi arch', 'new arch', 'archunit']"
+s390x,4,s390x,4,4,['s390x']
+finalizers,3,finalizers,3,3,['finalizers']
+internal representation,3,representation,4,7,"['internal representation', 'representation']"
+predeclared,2,predeclared,2,2,['predeclared']
+timing attack,2,timing attack,2,2,['timing attack']
+odr violation,3,odr violation,3,3,['odr violation']
+kqueue,3,kqueue,3,3,['kqueue']
+callgraph,3,callgraph,3,3,['callgraph']
+benchseries,2,benchseries,2,2,['benchseries']
+xcframework,3,xcframework,3,3,['xcframework']
+read,6,read,6,6,['read']
+vuln check,4,vuln check,4,4,['vuln check']
+escaping,2,escaping,2,2,['escaping']
+handshake,3,handshake,3,3,['handshake']
+gob,2,gob,2,2,['gob']
+luci,3,luci,3,3,['luci']
+vcs,3,vcs,3,3,['vcs']
+border,3,border,3,3,['border']
+cdp,3,cdp,3,3,['cdp']
+fragment,3,fragment,3,3,['fragment']
+react root view,2,react root view,2,2,['react root view']
+padding,5,padding,5,5,['padding']
+abort signal,3,abort controller,4,7,"['abort signal', 'abort controller']"
+stdin,3,stdin,3,3,['stdin']
+mksnapshot,2,mksnapshot,2,2,['mksnapshot']
+keepalive,4,keepalive,4,6,"['keepalive', 'tcp keepalive']"
+bundler,2,bundler,2,2,['bundler']
+jwk,3,jwk,3,3,['jwk']
+shader,2,shader,2,2,['shader']
+global,3,global,3,3,['global']
+provenance,3,provenance,3,3,['provenance']
+brotli,2,brotli,2,2,['brotli']
+ecosystem,2,ecosystem,2,2,['ecosystem']
+pin ergonomics,2,pin ergonomics,2,2,['pin ergonomics']
+os string,2,os string,2,2,['os string']
+aux build,2,aux build,2,2,['aux build']
+large file,2,file size,2,6,"['file size', 'large file', 'large files']"
+unwinding,5,unwinding,5,8,"['unwinding', 'unwind']"
+exit code,3,exit code,3,3,['exit code']
+confusion,7,confusion,7,14,"['ambiguity', 'confusion', 'confusing']"
+expect,3,expect,3,3,['expect']
+nalgebra,2,nalgebra,2,2,['nalgebra']
+embedded,4,embedded,4,4,['embedded']
+pin,2,pinning,4,6,"['pin', 'pinning']"
+unreachable code,17,unreachable code,17,17,['unreachable code']
+implementation,6,implementation,6,8,"['implementation', 'implementation detail']"
+reuse,3,reusability,7,10,"['reuse', 'reusability']"
+polonius,4,polonius,4,4,['polonius']
+verbose,2,verbose mode,4,6,"['verbose', 'verbose mode']"
+linked list,3,linked list,3,3,['linked list']
+cell,2,cell,2,2,['cell']
+mingw,3,mingw,3,3,['mingw']
+musl,3,musl,3,3,['musl']
+chumsky,2,chumsky,2,2,['chumsky']
+nix,2,nix,2,2,['nix']
+localwaker,2,localwaker,2,2,['localwaker']
+non local definitions,2,non local definitions,2,2,['non local definitions']
+waker,3,waker,3,3,['waker']
+channel,7,channel,7,9,"['channel', 'channels last']"
+unnamed fields,2,unnamed fields,2,2,['unnamed fields']
+crates,21,crates,21,27,"['crates', 'crates io', 'crates issue']"
+future compat,2,future compat,2,2,['future compat']
+feature gate,7,feature gate,7,7,['feature gate']
+cycle detection,4,cycle detection,4,4,['cycle detection']
+associated functions,4,associated functions,4,4,['associated functions']
+pane management,2,pane management,2,4,"['pane management', 'pane']"
+winget,3,winget,3,3,['winget']
+reflow,3,reflow,3,3,['reflow']
+ansi escape sequences,5,ansi escape sequences,5,7,"['escape sequences', 'ansi escape sequences']"
+new instance,2,new instance,2,2,['new instance']
+resize,8,resize,8,8,['resize']
+conhost,2,conhost,2,2,['conhost']
+standalone components,3,standalone components,3,6,"['standalone components', 'standalone component']"
+tree shaking,5,tree shaking,5,5,['tree shaking']
+schematics,3,schematics,3,3,['schematics']
+common,3,common,3,3,['common']
+diagram,4,diagram,4,4,['diagram']
+ngfor,2,ngfor,2,2,['ngfor']
+update guide,2,update guide,2,2,['update guide']
+view child,2,viewchild,2,6,"['viewchild', 'view children', 'view child']"
+ngmodel,2,ngmodel,2,2,['ngmodel']
+elements,2,elements,2,4,"['elements', 'metal']"
+multiple inheritance,3,inheritance,8,11,"['multiple inheritance', 'inheritance']"
+ninja,2,ninja,2,2,['ninja']
+conformer,2,conformance,8,10,"['conformer', 'conformance']"
+count nonzero,2,count nonzero,2,2,['count nonzero']
+sfinae,2,sfinae,2,2,['sfinae']
+loss function,8,loss function,8,11,"['loss function', 'loss functions']"
+lazy module,2,lazy module,2,2,['lazy module']
+omegaconf,2,omegaconf,2,2,['omegaconf']
+cusparse,2,cusparse,2,2,['cusparse']
+accelerator,5,accelerator,5,10,"['accelerator', 'acceleration']"
+rnn,2,rnn,2,4,"['rnn', 'lstm']"
+feature flags,2,feature flag,4,8,"['feature flag', 'flags', 'feature flags']"
+convolution,12,convolution,12,12,['convolution']
+hardswish,2,hardswish,2,2,['hardswish']
+torchaudio,3,torchaudio,3,3,['torchaudio']
+keras,2,keras,2,2,['keras']
+pyright,2,pytree,3,5,"['pyright', 'pytree']"
+multinomial,3,multinomial,3,3,['multinomial']
+reduction,5,reduction,5,5,['reduction']
+cutlass,2,cutlass,2,2,['cutlass']
+layer norm,3,linear layer,4,7,"['layer norm', 'linear layer']"
+arange,2,arange,2,2,['arange']
+side effects,3,side effects,3,3,['side effects']
+cumsum,2,cumsum,2,2,['cumsum']
+hud,2,hud,2,2,['hud']
+pickle,3,pickle,3,3,['pickle']
+dynamic axes,4,dynamic axes,4,4,['dynamic axes']
+gelu,2,gelu,2,2,['gelu']
+lora,2,lora,2,2,['lora']
+counter,6,counter,6,6,['counter']
+mv,2,mv,2,2,['mv']
+scalar,3,scalar,3,3,['scalar']
+neon,4,neon,4,4,['neon']
+cnn,19,cnn,19,19,['cnn']
+gil,4,gil,4,4,['gil']
+dropout,5,dropout,5,5,['dropout']
+hdf5,3,hdf5,3,3,['hdf5']
+parametrization,4,parametrization,4,4,['parametrization']
+flatten,2,flatten,2,2,['flatten']
+opmath,2,opmath,2,2,['opmath']
+forward mode ad,2,forward mode ad,2,2,['forward mode ad']
+bilinear,2,bilinear,2,2,['bilinear']
+differentiability,2,differentiability,2,2,['differentiability']
+lowering,4,lowering,4,4,['lowering']
+unflatten,2,unflatten,2,2,['unflatten']
+storybook,2,storybook,2,2,['storybook']
+grid,2,grid,2,2,['grid']
+oxide,2,oxide,2,2,['oxide']
+shorthand,3,shorthand,3,3,['shorthand']
+arbitrary values,3,arbitrary values,3,3,['arbitrary values']
+media queries,2,media queries,2,2,['media queries']
+important modifier,2,modifier,2,4,"['modifier', 'important modifier']"
+usdt,2,usdt,2,2,['usdt']
+consensus,6,consensus,6,6,['consensus']
+tor,3,tor,3,3,['tor']
+hardening,3,hardening,3,3,['hardening']
+boost,2,boost,2,2,['boost']
+miniwallet,3,miniwallet,3,3,['miniwallet']
+psbt,3,psbt,3,3,['psbt']
+reproduction,3,reproduction,3,3,['reproduction']
+legacy,4,legacy,4,4,['legacy']
+layercake,3,layercake,3,3,['layercake']
+prop,3,prop,3,3,['prop']
+assets,3,assets,3,5,"['assets', 'asset management']"
+inflect,3,inflect,3,3,['inflect']
+theme extension,2,theme extension,2,2,['theme extension']
+hugo build,2,hugo,15,28,"['hugo server', 'hugo', 'hugo features', 'hugo core', 'hugo build']"
+method security,2,method visibility,3,5,"['method security', 'method visibility']"
+narayana,2,narayana,2,2,['narayana']
+actuate,2,actuate,2,2,['actuate']
+metering,2,metering,2,2,['metering']
+colima,2,colima,2,2,['colima']
+fork join pool,3,fork join pool,3,3,['fork join pool']
+selenium,16,selenium,16,16,['selenium']
+remote restart,3,remote restart,3,3,['remote restart']
+code of conduct,7,code of conduct,7,7,['code of conduct']
+camel,3,camel,3,3,['camel']
+podman,4,podman,4,4,['podman']
+cloud foundry,4,cloud foundry,4,4,['cloud foundry']
+workaround,6,workaround,6,8,"['workaround', 'bypass']"
+propagation,3,propagation,3,6,"['propagation', 'constant propagation']"
+manifest,6,manifest,6,6,['manifest']
+liquibase,3,liquibase,3,3,['liquibase']
+cat,3,cat,3,3,['cat']
+jwt,2,jwt realm,3,5,"['jwt', 'jwt realm']"
+geospatial,2,geospatial,2,2,['geospatial']
+rescore,3,rescore,3,3,['rescore']
+fleet,3,fleet,3,3,['fleet']
+synthetic source,5,synthetic source,5,5,['synthetic source']
+xcontent,3,xcontent,3,3,['xcontent']
+tdigest,3,tdigest,3,3,['tdigest']
+change point,2,change point,2,2,['change point']
+coordination,2,coordination,2,2,['coordination']
+heap attack,3,heap attack,3,3,['heap attack']
+csv,5,csv,5,5,['csv']
+ergonomics,4,ergonomics,4,4,['ergonomics']
+translog,2,translog,2,2,['translog']
+circuit breaker,3,circuit breaker,3,5,"['circuit breaker', 'circuit breaking']"
+delimiter,3,delimiter,3,3,['delimiter']
+multi line,2,multi line,2,4,"['multi line', 'multiline comment']"
+ripgrep,2,ripgrep,2,2,['ripgrep']
+replace,2,replace,2,8,"['replace', 'replace into', 'search and replace', 'replacement']"
+kms,2,kms,2,2,['kms']
+purity,3,purity,3,5,"['purity', 'purity check']"
+fallback,3,fallback,3,7,"['fallback', 'fallback content', 'fallback function']"
+contract analysis,2,contract analysis,2,2,['contract analysis']
+configurable,5,configurable,5,5,['configurable']
+formdata,2,form data,4,6,"['formdata', 'form data']"
+hibernate validator,4,hibernate validator,4,4,['hibernate validator']
+runtime hints,5,runtime hints,5,5,['runtime hints']
+load time weaving,4,load time weaving,4,4,['load time weaving']
+wildfly,2,wildfly,2,2,['wildfly']
+community,14,community,14,14,['community']
+jakarta activation,2,jakarta activation,2,2,['jakarta activation']
+varargs,7,varargs,7,7,['varargs']
+code size,3,code size,3,3,['code size']
+subscription,5,subscription,5,5,['subscription']
+ioc,2,ioc,2,2,['ioc']
+rsocket,3,rsocket,3,3,['rsocket']
+suspend,2,suspend,2,4,"['suspend', 'suspend function']"
+severity critical,3,severity critical,3,7,"['severity:minor', 'severity critical', 'severity/critical']"
+quartz,2,quartz,2,2,['quartz']
+predicate,5,predicate,5,5,['predicate']
+vfp,2,vfp,2,2,['vfp']
+m68k,2,m68k,2,2,['m68k']
+ghidra,47,ghidra,47,56,"['ghidra core', 'ghidra', 'ghidra feature', 'ghidra bug']"
+coff,3,coff,3,3,['coff']
+xref,2,xref,2,2,['xref']
+trash,2,trash,2,2,['trash']
+duplication,3,duplication,3,9,"['duplicate', 'duplication', 'deduplication', 'duplicates']"
+beta,2,beta,2,2,['beta']
+tesseract,2,tesseract,2,2,['tesseract']
+attachment,6,attachment,6,12,"['attachments', 'attachment', 'attach']"
+playwright,2,playwright,2,2,['playwright']
+rte,3,rte,3,3,['rte']
+enex,4,enex,4,4,['enex']
+pr,6,pr,6,6,['pr']
+feishu,2,feishu,2,2,['feishu']
+automerge,3,automerge,3,3,['automerge']
+certificates,9,certificates,9,19,"['certificate', 'certificates', 'root certificates']"
+renewal,2,renewal,2,2,['renewal']
+minio,4,minio,4,4,['minio']
+rpm,2,rpm,2,2,['rpm']
+branch protection,4,branch protection,4,4,['branch protection']
+checkout,2,checkout,2,2,['checkout']
+orgmode,2,orgmode,2,2,['orgmode']
+login,7,login,7,7,['login']
+announcement,2,announcement,2,2,['announcement']
+video,4,video,4,4,['video']
+cdn,5,cdn,5,5,['cdn']
+ccall,2,ccall,2,2,['ccall']
+makefile,4,make,5,11,"['makefile', 'make', 'run make']"
+automa,2,automa,2,2,['automa']
+openblas,3,openblas,3,3,['openblas']
+tuple,2,tuple,2,2,['tuple']
+uuids,2,uuids,2,4,"['uuids', 'uuid']"
+ntuple,3,ntuple,3,3,['ntuple']
+extras,3,extras,3,3,['extras']
+aws lambda,2,lambda,4,6,"['aws lambda', 'lambda']"
+conda,5,conda,5,5,['conda']
+hash mismatch,2,hash mismatch,2,2,['hash mismatch']
+entrypoint,3,entrypoint,3,5,"['entrypoint', 'entrypoints']"
+libuv,2,libuv,2,2,['libuv']
+monorepo,8,monorepo,8,11,"['monorepo', 'monorepo support']"
+preferences,6,preferences,6,6,['preferences']
+v radio,2,v radio,2,2,['v radio']
+progress,5,progress,5,5,['progress']
+combobox,3,combobox,3,3,['combobox']
+v model,2,v model,2,2,['v model']
+adapter,6,adapter,6,6,['adapter']
+trampoline,3,trampoline,3,3,['trampoline']
+variant,2,variant,2,2,['variant']
+magic methods,2,magic methods,2,2,['magic methods']
+ini,2,ini,2,2,['ini']
+mhash,2,mhash,2,2,['mhash']
+shebang,2,shebang,2,2,['shebang']
+xpath,3,xpath,3,3,['xpath']
+endianness,3,endianness,3,6,"['endianness', 'big endian']"
+property hooks,4,property hooks,4,4,['property hooks']
+pear,2,pear,2,2,['pear']
+xinclude,3,xinclude,3,3,['xinclude']
+sapi,3,sapi,3,3,['sapi']
+heredoc,3,heredoc,3,3,['heredoc']
+expat,2,expat,2,2,['expat']
+symfony,3,symfony,3,3,['symfony']
+futex,2,futex,2,2,['futex']
+audit,6,audit,6,6,['audit']
+objcopy,2,objcopy,2,2,['objcopy']
+stmt summary,2,stmt summary,2,2,['stmt summary']
+lightning import,2,lightning import,2,2,['lightning import']
+advancer,2,advancer,2,2,['advancer']
+pitr,3,pitr,3,3,['pitr']
+dump,5,dump,5,5,['dump']
+compaction,3,compaction,3,3,['compaction']
+badger,2,badger,2,2,['badger']
+primary key,5,primary key,5,5,['primary key']
+stale read,3,stale read,3,3,['stale read']
+mutation,3,mutation,3,3,['mutation']
+mem,2,mem,2,4,"['mem', 'memdb']"
+hint,2,hint,2,2,['hint']
+parquet,2,parquet,2,2,['parquet']
+ticdc,2,ticdc,2,2,['ticdc']
+changefeed,2,changefeed,2,2,['changefeed']
+bazel,2,bazel,2,2,['bazel']
+charclass,2,charclass,2,2,['charclass']
+loclist,2,loclist,2,2,['loclist']
+callback,4,callback,4,4,['callback']
+ctags,2,ctags,2,2,['ctags']
+options,7,options,7,12,"['options', 'option']"
+less mode,2,less mode,2,2,['less mode']
+ftplugin,4,ftplugin,4,4,['ftplugin']
+echomsg,2,echomsg,2,2,['echomsg']
+best practices,17,best practices,17,30,"['best practices', 'best practice']"
+reliability,16,reliability,16,16,['reliability']
+numerical stability,10,numerical stability,10,10,['numerical stability']
+simplification,17,simplification,17,17,['simplification']
+help system,11,help system,11,11,['help system']
+scalability,11,scalability,11,11,['scalability']
+checkbox,8,checkbox,8,8,['checkbox']
+quality of life,6,quality of life,6,6,['quality of life']
+collaborator nomination,11,collaborator nomination,11,11,['collaborator nomination']
+foreign function interface,6,foreign function interface,6,6,['foreign function interface']
+equality,7,equality,7,9,"['equality', 'equivalence']"
+hot module replacement,7,hot module replacement,7,7,['hot module replacement']
+import resolution,13,import resolution,13,13,['import resolution']
+corruption,5,corruption,5,5,['corruption']
+metal performance shaders,4,metal performance shaders,4,4,['metal performance shaders']
+catalyst,4,catalyst,4,4,['catalyst']
+attribution,4,attribution,4,4,['attribution']
+namespace,7,namespace,7,7,['namespace']
+pages router,5,pages router,5,5,['pages router']
+interception,4,interception,4,4,['interception']
+transpilation,5,transpilation,5,5,['transpilation']
+marshalling,3,marshalling,3,3,['marshalling']
+unmarshalling,3,unmarshaling,4,7,"['unmarshalling', 'unmarshaling']"
+xcode,5,xcode,5,5,['xcode']
+feat,3,feat,3,3,['feat']
+deferred content,3,deferred content,3,3,['deferred content']
+projection,4,projection,4,4,['projection']
+operation,3,operation,3,3,['operation']
+nan handling,2,nan,7,12,"['nan', 'nan values', 'nan handling']"
+just in time,3,just in time,3,3,['just in time']
+legal,3,legal,3,3,['legal']
+it,3,it,3,3,['it']
+percentile,3,percentile calculations,4,9,"['percentile', 'percentile calculations', 'percentile test']"
+kerberos,7,kerberos,7,7,['kerberos']
+smart contracts,2,smart contract,4,6,"['smart contract', 'smart contracts']"
+aria,2,aria,2,2,['aria']
+ime,3,ime,3,3,['ime']
+type: discussion,2,type: discussion,2,6,"['type: discussion', 'type: question', 'discussion']"
+standardization,3,standardization,3,3,['standardization']
+cancellation,5,cancellation,5,7,"['cancellation', 'cancel']"
+terminology,2,terminology,2,4,"['terminology', 'term']"
+create next app,3,create next app,3,3,['create next app']
+gotypes,5,gotypes,5,8,"['gotypes', 'gotypesalias']"
+release blocker,2,release blocker,2,2,['release blocker']
+android issue,5,android issue,5,5,['android issue']
+promise rejection,2,promise rejection,2,2,['promise rejection']
+prototype,2,prototype,2,2,['prototype']
+semver,8,semver,8,8,['semver']
+people,2,people,2,2,['people']
+dyn star,4,dyn star,4,4,['dyn star']
+well formedness,3,well formedness,3,3,['well formedness']
+interning,3,interning,3,3,['interning']
+low level,2,low level,2,2,['low level']
+angular guides,2,angular guides,2,2,['angular guides']
+graph neural networks,2,graph neural networks,2,2,['graph neural networks']
+cublas,2,cublas,2,2,['cublas']
+histogram,2,histogram,2,2,['histogram']
+open source,2,open source,2,2,['open source']
+attn,2,attn,2,2,['attn']
+model compilation,5,model compilation,5,5,['model compilation']
+miscellaneous,2,miscellaneous,2,2,['miscellaneous']
+casting,2,cast,4,6,"['casting', 'cast']"
+inplace,3,inplace operation,4,7,"['inplace', 'inplace operation']"
+topic tracing,2,topic tracing,2,2,['topic tracing']
+keystore,3,keystore,3,5,"['keystore', 'key management']"
+pack to bp,2,pack to bp,2,2,['pack to bp']
+undeprecated,2,undeprecated,2,2,['undeprecated']
+polish,2,polish,2,2,['polish']
+repackaging,3,repackaging,3,3,['repackaging']
+cloud native,3,cloud native,3,3,['cloud native']
+cassandra,3,cassandra,3,3,['cassandra']
+instanceof,2,instanceof,2,2,['instanceof']
+shards,2,shards,2,2,['shards']
+retry mechanism,3,retries,4,10,"['retries', 'retry mechanism', 'retry strategy']"
+multivalue,2,multivalue,2,2,['multivalue']
+blobstore,2,blobstore,2,4,"['blobstore', 'image store']"
+critical,2,critical,2,2,['critical']
+content length,4,content length,4,4,['content length']
+joplin,2,joplin,2,2,['joplin']
+commit,3,commit,3,3,['commit']
+minor,2,minor,2,2,['minor']
+wrapper,2,wrapper,2,4,"['wrapper', 'wrapping']"
+result,2,result,2,2,['result']
+fastcgi,2,fastcgi,2,2,['fastcgi']
+self hosted,3,self hosted,3,3,['self hosted']
+position independent code,3,position independent code,3,3,['position independent code']
+titanic,2,titanic,2,2,['titanic']
+oop,2,oop,2,2,['oop']
+audio cues,2,audio cues,2,2,['audio cues']
+exclusion,4,exclusion,4,6,"['exclusion', 'isolation']"
+trust,2,trust,2,2,['trust']
+case sensitivity,3,case sensitivity,3,3,['case sensitivity']
+user consent,2,user consent,2,2,['user consent']
+high contrast,3,high contrast,3,3,['high contrast']
+draft mode,2,draft mode,2,2,['draft mode']
+sri,2,sri,2,2,['sri']
+edge runtime,2,edge runtime,2,2,['edge runtime']
+sigterm,2,sigterm,2,4,"['sigterm', 'sigint']"
+ssg,3,ssg,3,3,['ssg']
+intercepting routes,2,intercepting routes,2,4,"['intercepting routes', 'route interception']"
+go tip,2,go tip,2,2,['go tip']
+cross environment,2,cross environment,2,2,['cross environment']
+bot management,3,bot management,3,3,['bot management']
+godev,2,godev,2,2,['godev']
+post quantum cryptography,2,post quantum cryptography,2,2,['post quantum cryptography']
+timing channel,2,timing channel,2,2,['timing channel']
+social media,2,social media,2,2,['social media']
+shim,2,shim,2,2,['shim']
+layout animation,2,layout animation,2,2,['layout animation']
+action sheet,2,action sheet,2,2,['action sheet']
+pressable,2,pressable,2,2,['pressable']
+cloudflare workers,2,cloudflare workers,2,2,['cloudflare workers']
+pglite,2,pglite,2,2,['pglite']
+bigint,2,bigint,2,2,['bigint']
+span,2,span,2,2,['span']
+vtable,3,vtable,3,3,['vtable']
+unsizing,4,unsizing,4,4,['unsizing']
+a contributor roadblock,2,a contributor roadblock,2,2,['a contributor roadblock']
+e easy,2,e easy,2,2,['e easy']
+precondition,2,precondition,2,2,['precondition']
+helper,2,helper,2,4,"['helper', 'build helper']"
+virtual function elimination,2,virtual function elimination,2,2,['virtual function elimination']
+interference,2,interference,2,2,['interference']
+wcag,2,wcag,2,2,['wcag']
+viewport,2,viewport,2,2,['viewport']
+roadmap,2,roadmap,2,2,['roadmap']
+provider,2,provider,2,2,['provider']
+unsubscription,2,unsubscription,2,2,['unsubscription']
+outdated,7,outdated,7,7,['outdated']
+index fill,2,index fill,2,2,['index fill']
+magma,2,magma,2,2,['magma']
+speculation,2,speculation,2,2,['speculation']
+dynamic programming,2,dynamic programming,2,2,['dynamic programming']
+skipfile,2,skipfile,2,2,['skipfile']
+backward computation,5,backward computation,5,5,['backward computation']
+namedtuple,2,namedtuple,2,2,['namedtuple']
+reparameterization,2,reparameterization,2,2,['reparameterization']
+model evaluation,2,model evaluation,2,2,['model evaluation']
+getitem,2,getitem,2,2,['getitem']
+layout propagation,2,layout propagation,2,2,['layout propagation']
+type punning,2,type punning,2,2,['type punning']
+xla,2,xla,2,2,['xla']
+gradscaler,2,gradscaler,2,2,['gradscaler']
+unification,4,unification,4,4,['unification']
+crossfade,2,crossfade,2,2,['crossfade']
+summary,3,summary,3,3,['summary']
+site authoring,2,site authoring,2,2,['site authoring']
+correlation ids,2,correlation ids,2,2,['correlation ids']
+formula,3,formula,3,3,['formula']
+good first issue,2,good first issue,2,2,['good first issue']
+abstraction,2,abstraction,2,2,['abstraction']
+missing classes,2,missing classes,2,2,['missing classes']
+robustness,2,robustness,2,2,['robustness']
+anomaly detection,2,anomaly detection,2,2,['anomaly detection']
+node shutdown,2,node shutdown,2,2,['node shutdown']
+partial results,2,partial results,2,2,['partial results']
+tty,4,tty,4,4,['tty']
+contract,4,contract,4,4,['contract']
+sse emitter,2,sse emitter,2,2,['sse emitter']
+etag,4,etag,4,4,['etag']
+classcastexception,4,classcastexception,4,4,['classcastexception']
+column,2,column,2,2,['column']
+volatile registers,2,volatile registers,2,2,['volatile registers']
+continuation,2,continuation,2,2,['continuation']
+rule,2,rule,2,2,['rule']
+biometrics,2,biometrics,2,2,['biometrics']
+matrix jobs,2,matrix jobs,2,2,['matrix jobs']
+memcache,2,memcache,2,2,['memcache']
+feed,2,feed,2,2,['feed']
+mount,3,mount,3,3,['mount']
+interval arithmetic,2,interval arithmetic,2,2,['interval arithmetic']
+mono repo,2,mono repo,2,2,['mono repo']
+wheel support,2,wheel support,2,2,['wheel support']
+responsive design,4,responsive design,4,4,['responsive design']
+type juggling,2,type juggling,2,2,['type juggling']
+polling,2,polling,2,2,['polling']
+php stream,2,php stream,2,2,['php stream']
+builtin,7,builtin,7,7,['builtin']
+fault injection,2,fault injection,2,2,['fault injection']
+traffic management,2,traffic management,2,2,['traffic management']
+log redaction,2,log redaction,2,2,['log redaction']
+scan,2,scan,2,2,['scan']
+idempotence,3,idempotence,3,3,['idempotence']
+double free,2,double free,2,2,['double free']
+xdg compliance,3,xdg compliance,3,3,['xdg compliance']
+gtk,2,gtk,2,2,['gtk']
+man,2,man,2,2,['man']
+jetty reactive,12,jetty reactive,12,12,['jetty reactive']
+misleading,6,misleading,6,6,['misleading']
+segv,5,segv,5,5,['segv']
+policy,4,policy,4,4,['policy']
+surefire,4,surefire,4,4,['surefire']
+sanity check,3,sanity check,3,3,['sanity check']
+unhandled rejection,3,unhandled rejection,3,3,['unhandled rejection']
+fusion,3,fusion,3,3,['fusion']
+hparams,3,hparams,3,3,['hparams']
+composite,3,composite,3,3,['composite']
+surefire plugin,3,surefire plugin,3,3,['surefire plugin']
+mock server,3,mock server,3,3,['mock server']
+xml bind,3,xml bind,3,3,['xml bind']
+webgl,2,webgl,2,2,['webgl']
+xtermjs,2,xtermjs,2,2,['xtermjs']
+step over,2,step over,2,2,['step over']
+agent,2,agent,2,2,['agent']
+multi root workspace,2,multi root workspace,2,2,['multi root workspace']
+wording suggestion,2,wording suggestion,2,2,['wording suggestion']
+gomaxprocs,2,gomaxprocs,2,2,['gomaxprocs']
+auto collected,2,auto collected,2,2,['auto collected']
+malloc,2,malloc,2,2,['malloc']
+receiver,2,receiver,2,2,['receiver']
+alpine,2,alpine,2,2,['alpine']
+cover,2,cover,2,2,['cover']
+incomplete implementation,2,incomplete implementation,2,2,['incomplete implementation']
+godeps,2,godeps,2,2,['godeps']
+flexbox,2,flexbox,2,2,['flexbox']
+stuck,2,stuck,2,2,['stuck']
+footnote,2,footnote,2,2,['footnote']
+beginner,2,beginner,2,2,['beginner']
+dylib,2,dylib,2,2,['dylib']
+unimplemented,2,unimplemented,2,2,['unimplemented']
+target triple,2,target triple,2,2,['target triple']
+uefi,2,uefi,2,2,['uefi']
+test order,2,test order,2,2,['test order']
+reentrancy,2,reentrancy,2,2,['reentrancy']
+private items,2,private items,2,2,['private items']
+address sanitizer,2,address sanitizer,2,2,['address sanitizer']
+vec,2,vec,2,2,['vec']
+vt100,2,vt100,2,2,['vt100']
+mse loss,2,mse loss,2,2,['mse loss']
+not implemented,2,not implemented,2,2,['not implemented']
+jacobian,2,jacobian,2,2,['jacobian']
+prefix,2,prefix,2,2,['prefix']
+prohibition,2,prohibition,2,2,['prohibition']
+temp directory,2,temp directory,2,2,['temp directory']
+h2,2,h2,2,2,['h2']
+backoff,2,backoff,2,2,['backoff']
+rest assured,2,rest assured,2,2,['rest assured']
+enterprise to develocity,2,enterprise to develocity,2,2,['enterprise to develocity']
+json bind,2,json bind,2,2,['json bind']
+spatial plugin,2,spatial plugin,2,2,['spatial plugin']
+null values,2,null values,2,2,['null values']
+dense vector,2,dense vector,2,2,['dense vector']
+advice,2,advice,2,2,['advice']
+blinking,2,blinking,2,2,['blinking']
+astral sh uv,2,astral sh uv,2,2,['astral sh uv']
+pep,2,pep,2,2,['pep']
+prepared statement,2,prepared statement,2,2,['prepared statement']

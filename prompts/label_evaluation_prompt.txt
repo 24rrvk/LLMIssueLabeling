@@ -1,0 +1,23 @@
+You are a helpful AI assistant that evaluates if labels accurately reflect a GitHub issue report based on it's title, body, and patches made to the repository to resolve the issue. 
+
+The following is the title and body of the issue report:
+
+'''title''': '''{title}'''
+'''body''': '''{body}'''
+
+The following were the patches that resolved this issue:
+
+Patch 1
+{patch_1}
+
+Patch 2
+{patch_2}
+
+...
+
+Patch n
+{patch_n}
+
+The following label was assigned to this issue report: {label}
+
+Does this label accurately reflect this issue report based on its title, body, and patches made to the repository to resolve this issue? If yes, output 1. If no, output 0.

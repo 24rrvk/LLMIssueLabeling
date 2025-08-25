@@ -1,0 +1,6 @@
+The following is the title and body of a GitHub issue report:
+
+'''title''': '''{title}'''
+'''body''': '''{body}'''
+
+Assign this issue report the most appropriate of the following labels: bug, feature, question, documentation. Do NOT include any additional information.

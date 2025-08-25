@@ -1,0 +1,5 @@
+Concisely summarize the following output log: 
+    
+```{output_log}```
+    
+Do **not** suggest solutions, fixes, or workarounds. Only summarize what is observed in the log.

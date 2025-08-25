@@ -1,0 +1,1225 @@
+representative_label_by_embedding,count,representative_label_by_count,count,total_count,cluster
+bug,14650,bug,14650,15334,"['bug', 'type bug', 'bugs', 'type:bug', 'quickfix', 'type: bug', 'type/bug', 'issue', 'quick fix', 'fix', 'model issue', 'workaround', 'bug fix', 'severity:minor', 'issue tracking', 'issue comment', 'issues', 'packageissue', 'bug report', 'ci issue', 'tracking issue', 'bugfix', 'import issue', 'package issue', 'type: issue', 'component issue', 'type: bugfix', 'functional issue', 'feature bug', 'type system bug', 'fix it', 'bug introduction', 'issue type/bug', 'type:issue', 'bug fix request', 'minor issue', 'minor', 'minor bug', 'good first issue', 'issue template', 'external issue tracker', 'issue list', 'c bug', 'fix needed', 'issue report', 'functional bug']"
+type/improvement,2,enhancement,1655,2168,"['enhancement', 'improvement', 'api enhancement', 'api improvement', 'type improvement', 'type:enhancement', 'test improvement', 'type/improvement', 'test enhancement', 'type enhancement', 'type/enhancement', 'kind/enhancement', 'c enhancement', 'type: enhancement', 'ci improvement', 'type: improvement', 'process improvement', 'general improvement']"
+documentation,2591,documentation,2591,3008,"['documentation', 'docs', 'doc', 'adoc', 'asciidoc', 'doc improvement', 'doc issue', 'type: documentation', 'documentation bug', 'autodoc', 'domain: documentation', 'documentation issue', 'domain:documentation', 'category: documentation', 'documentation inconsistency', 'topic/documentation', 'doc content', 'documentation generation', 'type:documentation', 'topic:documentation', 'doc bug', 'documentation needed', 'documentation suggestion', 'doc suggestion', 'doc link', 'documentation request']"
+upgrade,2079,upgrade,2079,3868,"['dependency update', 'dependency upgrade', 'upgrade', 'framework upgrade', 'upgrades', 'library update', 'update', 'plugin update', 'library upgrade', 'plugin upgrade', 'api update', 'dependencyupgrade', 'dependencyupdate', 'rolling upgrade', 'auto update', 'dependency check', 'upgrade policy', 'upgrading', 'api upgrade', 'self update', 'upgrade issue', 'type:dependency upgrade', 'type:upgrade', 'dependency bump', 'bug fix version upgrade', 'client upgrade', 'version bump', 'upgrade required', 'content update', 'test update', 'ui upgrade', 'patch release', 'version upgrade', 'upgrade regression', 'enum update', 'dependencies upgrade', 'dependencies update', 'image upgrade', 'upgrade issues']"
+test failure,1026,test failure,1026,1857,"['test failure', 'testfailure', 'flaky', 'flaky test', 'test failures', 'ci test failure', 'test flaky', 'ci failure', 'failure', 'test issue', 'task failure', 'unit test failure', 'import failure', 'test flakiness', 'testing issue', 'testing failure', 'test/failure', 'test flake', 'unittest failure', 'flaky tests', 'test bug']"
+compiler error,493,compiler,1145,2907,"['compiler', 'compiler error', 'compile error', 'compiler bug', 'compile time', 'compilation', 'compiler behavior', 'compile', 'compiler internal', 'compiler warning', 'compilation error', 'f compiler', 'f compiler error', 't compiler', 'compiler suggestion', 'compiler crash', 'compile time error', 'precompilation', 'compiler errors', 'compiling', 'compilers', 'compiler feedback', 'compiler frontend', 'compiler panic', 'a compiler', 'compiler issue', 'compiler diagnostics', 't compiler error', 'f compiler errors', 'f compiler internal', 'compiler warnings', 'compiler design', 'compilation time', 'miscompilation', 'compile time issue', 'recompilation', 'compile time behavior', 'compiler specific', 'compiler compatibility', 'compiler internal error', 'compiler interaction', 'internal compiler error', 'compiler regression', 'compiler message', 'miscompile', 'compiler feature', 'compilererror', 'compilation issue', 'internalcompilererror', 'compiler flags', 'cmd compile', 'domain: compiler', 'language compiler', 'conditional compilation', 'compiler issues', 'compiler bugs', 'compiler features', 'compiler implementation', 'compilation bug', 'compiler configuration', 'compile failure', 'compilation failure', 'compiler verification', 'backend compiler failed', 'category: compilation', 'model compilation', 'library compilation', 'compiler diagnostic', 'compile fail', 'function compilation']"
+feat,3,feature request,2225,2933,"['feature request', 'feature', 'features', 'unstable features', 'new feature', 'featurerequest', 'feature discussion', 'type feature', 'type/feature', 'target feature', 'target features', 'unstable feature', 'feature index', 'feature management', 'feature proposal', 'feature gate', 'feature flag', 'type:feature', 'type feature request', 'experimental feature', 'type: feature request', 'type: feature', 'type:feature request', 'feat', 'library features', 'category:feature request', 'feature flags', 'const features', 'experimental features', 'category feature request', 'feature requests', 'feature change', 'design change']"
+ui,1340,ui,1340,2232,"['ui', 'user interface', 'gui', 'ui bug', 'ui issue', 'ui ux', 'ui enhancement', 'ui improvement', 'ui/ux', 'display issue', 'ui design', 'visual bug', 'hud', 'ui component', 'ui feature', 'ui components', 'visual issue', 'domain:ui', 'ux improvement', 'domain: ui', 'domain: user interface', 'ui customization', 'ui appearance', 'user interfaces', 'gui improvement', 'ux issue', 'gui issue', 'ui issues', 'ui look and feel', 'ui change', 'ui glitch', 'ui bugs']"
+build,895,build,895,1904,"['build', 'build system', 'build failure', 'build tools', 'build process', 'build error', 'build issue', 'build tool', 'build performance', 't build system', 'build tooling', 'build related', 'build info', 'build issues', 'buildinfo', 'build tags', 'build id', 'buildmode', 'aux build', 'build script', 'builder', 'build tag', 'domain:build', 'domain: build', 'build configuration', 'domain:build tool', 'topic:build', 'domain: build tool', 'package build', 'build problem', 'build mode', 'build std', 'build tool configuration', 'build test', 'build time', 'build helper']"
+api,829,api,829,1076,"['api', 'api design', 'api documentation', 'api reference', 'api docs', 'api error', 'api usage', 'api issue', 'type api', 'api missing', 'usage', 'api doc', 'api testing', 'n api', 'library usage', 'api regression', 'api bug', 'api access', 'domain: api', 'api exposure', 'labels: api', 'domain: api design', 'topic: api', 'category: api', 'public api', 'api use']"
+performance,1955,performance,1955,2195,"['performance', 'perf', 'benchmark', 'performance regression', 'runtime performance', 'benchmarks', 'benchmarking', 'performance issue', 'performance optimization', 'domain: performance', 'performance improvement', 'slow performance', 'domain:performance', 'category performance', 'performance monitoring', 'web performance', 'performance metrics', 'topic performance', 'topic:performance', 'performance issues']"
+testing,1629,testing,1629,2486,"['testing', 'test', 'junit', 'test framework', 'test runner', 'test infrastructure', 'test suite', 'tests', 'smoke test', 'unittest', 'test explorer', 'jest', 'test related', 'test infra', 'unit testing', 'regtest', 'system tests', 'unit tests', 'unit test', 'test results', 'synctest', 'test case', 'test execution', 'archunit', 'test strategy', 'it test', 'testkit', 'domain: testing', 'domain:testing', 'area: testing', 'domain/testing', 'topic: testing', 'testing infrastructure', 'parallel testing', 'test logic', 'functional test', 'functional tests', 'test environment', 'system test', 'test kit', 'disabled test', 'testability', 'regression test', 'test configuration', 'concurrent test', 'junit jupiter']"
+ci integration,4,ci,744,833,"['ci', 'ci cd', 'ci/cd', 'cfi', 'continuous integration', 'ci test', 'ci build', 'domain:ci', 'topic: ci', 'domain: ci', 'category:ci', 'oci', 'ci pipeline', 'ci update', 'ci integration', 'ci infrastructure', 'ci system tests']"
+runtime,626,runtime,626,1115,"['runtime', 'runtime error', 'runtimeerror', 'runtime panic', 'runtime behavior', 'runtime issue', 'runtime errors', 'runtime test', 'runtime warning', 'runtime hints', 'runtime exception', 'runtime issues', 'domain: runtime', 'application runtime', 'runtime environment', 'edge runtime']"
+domain:security,4,security,819,884,"['security', 'vulnerability', 'cve', 'hardening', 'domain: security', 'domain:security', 'security issue', 'security plugin', 'security vulnerability']"
+cli,420,cli,420,583,"['cli', 'command line', 'command line behavior', 'command line interface', 'cli usage', 'command line tool', 'cli tool', 'cli behavior', 'command line tools', 'command line options', 'domain:cli', 'command line flags', 'cli options', 'cli command', 'area: cli', 'cli flags', 'command line args', 'domain: cli', 'argument parsing', 'command line arguments']"
+type regression,2,regression,441,449,"['regression', 'type regression', 'feature regression', 'kind/regression']"
+domain:editor,3,editor,593,763,"['editor', 'editing', 'editor integration', 'code editor', 'editable', 'editor feature', 'text editor', 'editable install', 'stack editor', 'editable packages', 'editor functionality', 'editor behavior', 'domain:editor', 'editor plugin', 'domain:editing', 'domain: editor', 'area/editor', 'editor navigation', 'editor ui', 'note editing', 'editable installs', 'editor features', 'editor performance']"
+database,1070,database,1070,1104,"['database', 'dba', 'data management', 'dbt', 'database issue', 'database management', 'ti database', 'database error', 'database integration']"
+sql,420,sql,420,780,"['esql', 'sql', 'sql syntax', 'mssql', 'sql feature', 'database/sql', 'sql plugin', 'ql', 'esql plugin', 'sqlserver', 'sql function', 'sql query', 'sql error', 'esql spec', 'sql functionality', 'sql server', 'rest esql', 'sql analysis', 'sql package', 'sql es']"
+terminal,454,terminal,454,534,"['terminal', 'tmux', 'terminal integration', 'terminal ui', 'integrated terminal', 'terminal behavior', 'terminal app', 'terminal emulation', 'terminal protocol', 'windows terminal', 'terminal feature', 'domain: terminal', 'terminal features', 'tty', 'terminal emulator', 'xtermjs', 'vt100']"
+language server,89,gopls,339,520,"['gopls', 'language server', 'lsp', 'code lens', 'area:gopls', 'eglot', 'intellisense', 'code lenses', 'go language server', 'domain: gopls', 'domain language server', 'domain: language server', 'lsp issue', 'lang server']"
+log,14,logging,463,543,"['logging', 'logsdb', 'slog', 'log4j2', 'logback', 'log4j', 'translog', 'log backup', 'general log', 'log', 'log management', 'log analysis']"
+plugin,269,plugin,269,323,"['plugin', 'plugin issue', 'plugins', 'plugin integration', 'plugin compatibility', 'plugin configuration', 'plugin system', 'plugin issues', 'plugin management', 'plugin support']"
+platform support,5,windows,415,593,"['windows', 'desktop', 'window', 'platform compatibility', 'cross platform', 'platform support', 'win32', 'os windows', 'platform specific', 'platform', 'desktop integration', 'windows support', 'desktop app', 'windows issue', 'desktop application', 'cross platform issue', 'os agnostic', 'windows specific', 'platform agnostic', 'windows build', 'device agnostic', 'platform dependencies', 'platform issue']"
+typechecking,15,type system,644,1218,"['type system', 'type error', 'typechecker', 'type inference', 'typeerror', 'types', 'typechecking', 'type safety', 'type check', 'type checker', 'type mismatch', 'typeck', 'type checking', 'f type system', 'type hints', 'type assertion', 'type issue', 'data type issues', 'data type issue', 'type hierarchy', 'area: typing', 'type guard', 'typesystem', 'type stability', 'type', 'type incorrectness', 'type unsoundness', 'type/issue', 'type annotation', 'type parameter issue', 'typeinference', 'type checking bug', 'type unification', 'data type mismatch', 'type instability', 'type hint issue', 'type punning', 'types issue', 'type constraint', 'type annotations', 'incompatible types', 'type compatibility', 'type instantiation']"
+domain:gradle,6,gradle,295,385,"['gradle', 'groovy', 'gradle plugin', 'language groovy', 'domain:gradle']"
+configuration,999,configuration,999,1149,"['configuration', 'config', 'cfg', 'configure', 'omegaconf', 'configurable', 'config parsing', 'configuration issue', 'configuration files', 'topic: configuration', 'configuration option', 'topic:configuration', 'configuration file', 'configuration parsing', 'config management']"
+dynamo,456,dynamo,456,464,"['dynamo', 'dyn star', 'category dynamo', 'dynamo framework']"
+rendering,320,rendering,320,492,"['rendering', 'renderer', 'server rendering', 'content rendering', 'server side rendering', 'newrenderer', 'client side rendering', 'ui rendering', 'prerendering', 'render', 'rendering issue', 'html rendering', 'new renderer', 'conditional rendering', 'editor rendering', 'domain: rendering', 'component rendering', 'css rendering', 'gpu rendering', 'rendering issues', 'image rendering']"
+parser,136,syntax,255,565,"['syntax', 'parser', 'parsing', 'parse error', 'syntax error', 'grammar', 'lexer', 'parsing error', 'parser issue', 'parse', 'parser error', 'parser bug', 'invalid syntax', 'syntax definition']"
+web,306,web,306,492,"['web', 'web server', 'website', 'webserver', 'webview', 'web api', 'web framework', 'web ui', 'web application', 'web interface', 'web development', 'website content', 'web apis', 'web platform', 'website issue', 'site authoring']"
+behavior,138,behavior,138,189,"['behavior', 'behavior change', 'api behavior', 'language behavior', 'model behavior', 'import behavior', 'function behavior', 'behavioral change']"
+extensions,57,extension,256,442,"['extension', 'extensions', 'extension api', 'extension host', 'extension installation', 'extension management', 'extensionhost', 'extension issues', 'extension issue', 'extensionapi', 'extension development', 'extension compatibility', 'extensibility', 'extension update', 'extension updates', 'web extensions', 'extension integration', 'domain: extension', 'extension support', 'dom extension', 'extension handling', 'expansion panel', 'extension system', 'web extension', 'expansion', 'extension bug']"
+a11y,17,accessibility,228,254,"['accessibility', 'a11y', 'accessibility issues', 'wcag', 'ui a11y', 'a11y issues']"
+docker,291,docker,291,421,"['docker', 'testcontainers', 'container', 'containerization', 'devcontainer', 'podman', 'kubernetes', 'containers', 'docker compose', 'domain: docker', 'microservices', 'cloud native', 'container management', 'containerd', 'dev container', 'docker integration']"
+dependency,397,dependency management,491,1523,"['dependency management', 'dependency', 'dependency resolution', 'dependencies', 'dependency conflict', 'dependency issue', 'deps', 'upstream', 'depends', 'dependency issues', 'library dependency', 'dependencymanagement', 'dependencyresolution', 'peer dependencies', 'runtime dependency', 'dependency problem', 'task dependency', 'external dependency', 'dev dependencies', 'optional dependencies', 'package dependency', 'domain: dependency management', 'domain:dependencies', 'topic:dependency management', 'data dependency', 'data dependent', 'upstream dependency', 'git dependency', 'optional dependency']"
+maven,224,maven,224,322,"['maven', 'maven plugin', 'maven integration']"
+spring boot,1725,spring boot,1725,2934,"['spring framework', 'spring boot', 'spring boot configuration', 'spring boot dependencies', 'spring boot autoconfigure', 'spring boot web', 'spring boot 3.4', 'spring boot core', 'spring boot 3.2', 'spring boot starter web', 'spring boot features', 'spring boot 3.3', 'spring boot 3.x', 'spring boot buildpack', 'spring cloud', 'spring framework 6.1', 'spring framework core', 'spring boot starter', 'boot starter', 'spring boot 2.x', 'spring native', 'spring boot cli', 'springframework', 'spring framework 6.2', 'spring core', 'spring framework 6', 'spring boot loader', 'spring boot 3.4.x', 'spring cloud config', 'spring boot build', 'spring init', 'spring boot docker', 'spring boot auto configuration', 'spring boot tools', 'spring', 'spring boot feature', 'spring projects', 'spring boot plugin', 'spring configuration', 'domain: spring boot', 'spring features', 'spring boot 3', 'spring modules', 'spring extensions', 'spring boot upgrade', 'spring config', 'springboot', 'framework spring boot', 'spring boot maven plugin', 'spring boot compatibility']"
+trait,171,trait,171,289,"['trait', 'traits', 'trait related', 'f traits', 't traits', 'f trait', 'const trait', 'trait selection']"
+typescript,386,typescript,386,390,"['typescript', 'topic: typescript', 'typescript support']"
+integration test,420,integration test,420,804,"['integration', 'integration test', 'integration tests', 'integrationtests', 'integrationtest', 'integration issue', 'test integration', 'api integration', 'integration testing', 'integ test', 'integration test failure', 'third party integration', 'profile integ tests']"
+crash report,3,crash,644,666,"['crash', 'runtime crash', 'type crash', 'application crash', 'crash report', 'crashes', 'crash reporting', 'crashmonitor']"
+panicking,14,panic,244,275,"['panic', 'panicking', 'analysis panic', 'panics', 'panic handling', 'panicked']"
+error,270,error,270,810,"['error', 'error message', 'error handling', 'import error', 'errors', 'error reporting', 'methoderror', 'fatal error', 'fatalerror', 'import errors', 'error page', 'http error', 'logic error', 'errorhandling', 'error report', 'unexpected error', 'error messages', 'type: error message', 'logical error', 'programming error', 'name error']"
+type: optimization,2,optimization,668,823,"['optimization', 'optimizer', 'compiler optimization', 'optimizers', 'graph optimization', 'mir optimization', 'topic: optimization', 'model optimization', 'compiler optimizations', 'topic:optimization', 'cpu optimization', 'type: optimization', 'domain: optimization', 'optimization issue', 'optimizations', 'optimizer state']"
+http,284,http,284,455,"['http', 'httpclient', 'http client', 'curl', 'https', 'http protocol', 'httpcore']"
+search,201,search,201,232,"['search', 'find', 'findfiles', 'lookup', 'search syntax', 'text search', 'user lookup', 'search issue', 'search template', 'search api', 'search function']"
+crypto,206,crypto,206,278,"['crypto', 'encryption', 'cryptography', 'crypter', 'rsa', 'domain/crypto', 'domain: crypto', 'domain/cryptography', 'cipher', 'area/crypto', 'domain: cryptography', 'post quantum cryptography', 'decryption']"
+tool,12,tooling,199,284,"['tooling', 'tools', 'tool', 'x tools', 'tool interaction', 'domain: tooling', 'tooling issue', 'python tooling', 'tool management']"
+language,262,language,262,803,"['language', 'language feature', 'language features', 'language support', 'lang', 'language update', 'language style', 'language enhancement', 'language proposal', 'language improvement', 'language upgrade', 'domain language', 'language mode', 'language version', 'language change', 'languagefeature', 'language bug', 'language standards', 'language extensions', 'domain: language features', 'language spec', 'domain language features', 'domain: language', 'language issue', 'language service', 'language specification', 'domain/language', 'category language', 'domain/language features', 'language standard', 'language status', 't lang', 'lang team', 'language extension', 'english']"
+core,216,framework,328,601,"['core', 'framework', 'area core', 'framework integration', 'libcore', 'domain core', 'area: core', 'core logic', 'core lib', 'core language', 'domain: core', 'core library', 'core functionalities', 'core libraries', 'framework configuration', 'core functionality', 'core framework', 'core function']"
+aot compile,5,aot,157,200,"['aot', 'aoti', 'aotcompilation', 'aot compilation', 'aot compiler', 'aot compile', 'spring aot', 'aot export']"
+inspector,7,instrumentation,70,85,"['instrumentation', 'inspector', 'inspect', 'audit']"
+cuda,326,cuda,326,574,"['cuda', 'gpu', 'nccl', 'cudagraphs', 'c10d', 'c10', 'gpus', 'cusparse', 'cutlass', 'cudnn', 'cuda support', 'cuda issue', 'cublas', 'domain cuda', 'cudagraph', 'domain: cuda', 'nvidia', 'gpu issue', 'cuda error', 'gpu acceleration', 'cuda unsupported']"
+spl,25,spel,144,189,"['spel', 'spl', 'sdk', 'sarif', 'sve', 'spi', 'sapi']"
+memory leak,245,memory leak,245,273,"['memory leak', 'leak', 'memoryleak', 'resource leak', 'memory leaks', 'leak detection']"
+android,147,android,147,221,"['android', 'mobile', 'mobile app', 'android issue', 'platform:android']"
+network,173,network,173,427,"['networking', 'network', 'net', 'net package', 'net http', 'nohttp', 'connection issue', 'network issue', 'area/networking', 'domain:network', 'domain: network', 'domain: networking', 'network error']"
+lifetime issue,17,lifetime,106,155,"['lifetime', 'lifetimes', 'f lifetime', 'lifetime issue', 'lifetime issues', 'lifetime parameters', 'non lifetime binders', 'lifetime bounds']"
+dist distributed,2,distributed,126,218,"['distributed', 'deployment', 'distribute', 'distributions', 'dispatch', 'deploy', 'distribution', 'distribtued', 'dist task', 'dispatcher', 'dist', 'dispatching', 'dist distributed']"
+python,454,python,454,504,"['python', 'python api', 'python integration', 'python packaging', 'pypy', 'python project', 'domain: python', 'python ecosystem', 'python3', 'python support', 'python library', 'python package']"
+codegen,146,codegen,146,216,"['codegen', 'generator', 'code generation', 'generators']"
+jdk,13,java,1923,2019,"['java', 'graalvm', 'jdk', 'jvm', 'java 21', 'java api', 'jpms', 'java support', 'domain:java', 'java features', 'domain: java', 'java ecosystem', 'java technology', 'oracle jdk']"
+installation,203,installation,203,326,"['installation', 'install', 'package installation', 'installer', 'setup', 'tool installation', 'postinstall', 'install issue', 'installation issue', 'installation failure', 'setup issue']"
+cache,195,cache,195,359,"['cache', 'caching', 'module cache', 'configuration cache', 'jcache', 'file cache', 'cache management', 'cache issue', 'topic: caching', 'distributed cache', 'cache control', 'memcache', 'whole cache mode', 'cache miss']"
+rustc,381,rustc,381,582,"['rustc', 'rust', 'rustc error', 'rustc bug', 'rust analyzer', 'rustc book', 'rust by example', 'rustc llvm', 'rustup', 'rustc internal', 'rustc internal error', 'rust compiler', 'rust language', 'rust lang', 'rustc compiler', 'rust std', 'rustcompiler', 'rustc ice', 'rust abi', 'rustc issue', 'rust stdlib', 'rustc warning', 'domain language rust', 'rust standard library', 'rustc panic', 'rustc dev guide']"
+inductor,243,inductor,243,263,"['inductor', 'inductor backend', 'topic: inductor', 'aot inductor']"
+layout,199,layout,199,220,"['layout', 'window layout', 'ui layout', 'application layout', 'layout issue', 'layout animation', 'layout propagation', 'layout mismatch', 'layout problem']"
+reactiveprogramming,2,reactor,170,243,"['reactor', 'reactive programming', 'rxjs', 'reactiveprogramming', 'spring reactor', 'rxjava', 'reactive streams']"
+css,208,css,208,273,"['css', 'sass', 'css generation', 'css modules', 'css assets', 'css syntax', 'css variables', 'css output', 'css processing', 'scoped styles', 'css transformer', 'scss', 'css utility', 'css styles', 'css custom properties']"
+rabbit mq,2,messaging,63,259,"['messaging', 'jms', 'amqp', 'spring amqp', 'activemq', 'rabbitmq', 'rabbit mq', 'message queue', 'mq', 'activemq artemis']"
+spring pulsar,41,pulsar,115,294,"['pulsar', 'kafka', 'spring kafka', 'spring pulsar', 'framework kafka', 'spring cloud stream', 'pulsar reactive']"
+workspace,96,workspace,96,257,"['workspace', 'workflow', 'workbench', 'workflows', 'workspaces', 'workspace support', 'workspace management', 'topic:workflow', 'workflow management', 'virtual workspace', 'workspace package']"
+component,135,component,135,181,"['component', 'components', 'component interaction', 'standalone components', 'component template', 'component behavior', 'select component', 'standalone component', 'component configuration', 'component name']"
+kotlin,155,kotlin,155,170,"['kotlin', 'language kotlin', 'kotlin dsl', 'kotlin serialization', 'kotlin support']"
+spring web,37,webflux,85,326,"['mvc', 'webflux', 'webclient', 'webmvc', 'spring web', 'web flux', 'spring mvc', 'web client', 'web mvc', 'spring webmvc', 'spring webflux', 'spring webclient']"
+jit,159,jit,159,189,"['jit', 'jit compilation', 'jit compiler', 'just in time', 'jit issue']"
+debug,67,debugging,253,485,"['debugger', 'debug', 'debugging', 'debuginfo', 'debug console', 'breakpoint', 'debug build', 'a debuginfo', 'debug info', 'breakpoints', 'debugging tool', 'software debugging', 'debugging issue', 'debug mode', 'debugger issue']"
+deprecation,154,deprecation,154,203,"['deprecation', 'api deprecation', 'api removal', 'deprecated', 'deprecation warning', 'topic:deprecation', 'type: deprecation', 'deprecated feature', 'deprecated api', 'undeprecated']"
+chat,139,chat,139,178,"['chat', 'inline chat', 'quick chat', 'chat feature', 'channel', 'channels last', 'panel chat', 'chat integration', 'chat view', 'chat widget']"
+cpu,179,cpu,179,217,"['cpu', 'coprocessor', 'cpu features', 'cpu fallback', 'processor', 'cpu usage', 'cpu architecture', 'cpu performance', 'cpu detection', 'cpu feature detection']"
+metrics,220,metrics,220,381,"['micrometer', 'metrics', 'runtime/metrics', 'metering', 'spring micrometer', 'metric', 'metrics test']"
+uv,60,ux,128,331,"['ux', 'uv cli', 'uv tool', 'uv sync', 'uvx', 'uv', 'uv lock', 'uv python', 'uv api', 'uv run', 'uv add', 'uaf', 'ub', 'tool uv', 'uv publish', 'uv pip', 'uv config', 'uv pip compile', 'uv init', 'uv project', 'uv issue', 'domain: uv', 'uv configuration', 'uv library']"
+trace,27,tracing,192,279,"['tracing', 'trace', 'stacktrace', 'cmd/trace', 'call stack', 'traceback', 'runtime trace', 'stack trace', 'backtrace', 'execution trace', 'dtrace', 'tracker', 'dynamic tracing', 'tracking', 'topic tracing']"
+it,3,dom,109,691,"['std', 'dom', 'aten', 'asan', 'ide', 'amp', 'br', 'const', 'elf', 'ast', 'gd', 'hang', 'ir', 'native', 'ty', 'hir', 'hip', 'relui', 'bridgeless', 'conv', 'pty', 'toc', 'nilness', 'anyhow', 'ts', 'tp', 'zts', 'tso', 'dm', 'ghe', 'inline', 'escaping', 'border', 'in toto', 'never type', 'neon', 'gil', 'tor', 'boost', 'beta', 'pr', 'ini', 'elt', 'nan', 'elastic', 'it', 'aria', 'ime', 'adt', 'aten native', 'trust', 'nullable', 'rule', 'bypass', 'tcx', 'h2']"
+t rustdoc,9,rustdoc,114,132,"['rustdoc', 't rustdoc', 'a rustdoc ui', 't rustdoc frontend']"
+memory allocation,16,memory management,158,457,"['memory', 'memory management', 'allocator', 'memorymanagement', 'mmap', 'memory access', 'memory usage', 'alloc', 'memory optimization', 'outofmemoryerror', 'memory consumption', 'memory mapping', 'mem', 'memory issue', 'memory allocation', 'memory issues', 'memory model', 'c memory management', 'allocation', 'allocation error', 'memory allocator', 'allocations', 'memory overflow', 'out of memory', 'allocation failures', 'memory error', 'malloc', 'memory reference']"
+open telemetry,2,telemetry,138,329,"['telemetry', 'monitoring', 'opentelemetry', 'zipkin', 'observability', 'prometheus', 'x/telemetry', 'newrelic', 'otlp', 'new relic', 'open telemetry', 'apm']"
+front end,2,frontend,109,123,"['frontend', 'front matter', 'front end']"
+mir,87,mir,87,155,"['mir', 'miri', 'mir opt', 'mirror', 'mirroring', 'mirrors', 'mir validation', 'mir build']"
+spring data,165,spring data,165,182,"['spring data', 'spring data mongodb', 'spring data jpa', 'spring data redis', 'spring data jdbc', 'spring data gemfire']"
+autograd,158,autograd,158,194,"['autograd', 'aotautograd', 'compile autograd', 'autodiff', 'forward mode ad', 'compiled autograd', 'domain autograd', 'topic autograd', 'custom autograd function', 'aot autograd']"
+ddl,82,ddl,82,98,"['ddl', 'dml', 'dsl', 'ddl operation']"
+auth,35,authentication,128,216,"['authentication', 'auth', 'authorization', 'credentials', 'webauthn', 'login', 'login issue', 'domain:authentication', 'auth issue', 'auth plugin']"
+async,123,async,123,266,"['async', 'async await', 'async runtime', 'async fn', 'f async', 'async support', 'async programming', 'async execution', 'async operation', 'async issue', 'async handling', 'async executor', 'async requests', 'asynchronous']"
+server,122,server,122,175,"['server', 'server actions', 'client server', 'platform server', 'server side', 'server action', 'serve', 'management server', 'server components', 'embedded server']"
+segfault,152,segfault,152,222,"['segfault', 'segmentation fault', 'segmentationfault', 'segv']"
+migration,158,migration,158,196,"['migration', 'data migration', 'migrate', 'feature migration', 'migration issue', 'database migration', 'migrations', 'edition migration', 'code migration', 'template migration']"
+pytorch,619,pytorch,619,1422,"['onnx', 'torch compile', 'torch.compile', 'pytorch core', 'pytorch', 'pytorch api', 'torchscript', 'torchdynamo', 'pytorch dynamo', 'torchinductor', 'torch function', 'pytorch test', 'torch.export', 'onnx export', 'torch', 'torch dynamo', 'torchcompile', 'torch.fx', 'torch script', 'torch api', 'torchgen', 'pytorch model', 'torch inductor', 'torchfx', 'torch export', 'libtorch', 'pytorch compiler', 'pytorch frontend', 'pytorch function', 'pytorch benchmarks', 'pytorch compile', 'torchbench', 'onnxruntime', 'functorch', 'pytorch onnx', 'pytorch docs', 'pytorch internal', 'torch compiler', 'pytorch aten', 'torch core', 'torch jit', 'pytorch functionality', 'torch fx', 'pytorch ops', 'pytorch feature request', 'pytorch fx', 'pytorch ir', 'pytorch export', 'domain: pytorch', 'pytorch modules', 'torch.dynamo', 'pytorch optimization', 'pytorch issues', 'pytorch issue', 'domain: torchscript', 'domain torch library', 'pytorch feature', 'pytorch benchmark', 'pytorch backend', 'pytorch extensions', 'torch runtime error', 'torch. dynamo']"
+mps,98,mps,98,111,"['mps', 'mpi', 'mptcp', 'multicast', 'mpsc', 'magma']"
+domain:infrastructure,3,infrastructure,174,182,"['infrastructure', 'infra', 'domain: infrastructure', 'domain:infrastructure']"
+jdbc,100,jdbc,100,144,"['jdbc', 'pdo', 'oracle', 'odbc', 'ojdbc']"
+servlet,29,tomcat,129,163,"['tomcat', 'servlet', 'servlet container', 'servlet api']"
+cgo,100,cgo,100,121,"['cgo', 'c interop', 'cmd/cgo', 'go cgo', 'cgo issue', 'go c interop', 'gccgo']"
+functions,4,functionality,91,206,"['functionality', 'functional', 'function', 'functionalization', 'functions', 'associated functions', 'const functions', 'functional api', 'functional programming', 'lambda', 'functional execution']"
+import,113,import,113,113,['import']
+macos,99,ios,121,231,"['ios', 'macos', 'mach o', 'macos support', 'osx']"
+indexing,93,indexing,93,246,"['index', 'indexing', 'indexer', 'modindex', 'indexcompatibility', 'index compatibility', 'indices', 'index select', 'index mode', 'index settings', 'index management', 'index store', 'index fill', 'index mapping', 'index strategy', 'index usage']"
+resolution,32,completion,129,285,"['completion', 'closure', 'resolution', 'resolver', 'clamp', 'placeholderresolution', 'resolve', 'import resolution', 'completion issue', 'result', 'resolver issue', 'resolution issue', 'summary', 'placeholder resolution', 'resolution strategy', 'resolution algorithm']"
+os,119,os,119,137,"['os', 'os/user', 'os string', 'os compatibility', 'os user', 'os issue', 'os interface', 'os issues']"
+concurrency issue,7,concurrency,252,322,"['concurrency', 'race condition', 'racing condition', 'concurrency issue', 'concurrency control']"
+query plan,6,query planner,40,189,"['query planner', 'query execution', 'query performance', 'query optimization', 'query plan', 'query planning', 'query optimizer', 'tidb planner', 'execution plan', 'sql performance', 'logical plan', 'sql optimization', 'database performance', 'sql execution', 'plan cache']"
+llvm,99,llvm,99,114,"['llvm', 'compiler rt', 'cranelift', 'a llvm', 'llvm ir']"
+suggestion,104,suggestion,104,205,"['suggestion', 'suggest', 'suggestions', 'suggest widget', 'suggest change', 'ui suggestion', 'api suggestion', 'error suggestion', 'suggestion improvement', 'suggest fix', 'command suggestion', 'user suggestion', 'advice']"
+generic type,6,generics,86,226,"['generics', 'generic', 'const generics', 'generic types', 'f generics', 'generic functions', 'generic programming', 'const generic', 'domain const generics', 'generic parameter', 'generic parameters', 'generic type', 'generic code']"
+unsafety,5,memory safety,95,252,"['memory safety', 'unsafe code', 'safety', 'unsafe', 'privacy', 'memorysafety', 'f unsafe', 'object safety', 'null safety', 'unsafety', 'const safety', 'pointer safety', 'unsafe operations', 'protection', 'const unsafety']"
+compatibility,259,compatibility,259,600,"['compatibility', 'backport', 'api compatibility', 'backward compatibility', 'api incompatibility', 'abi compatibility', 'incompatible', 'spec compatibility', 'compatibility issue', 'incompatibility', 'domain: compatibility', 'topic: compatibility', 'binary compatibility', 'edition compatibility', 'cross version compatibility', 'backward compatible', 'backwards compatibility', 'version compatibility', 'architecture compatibility', 'os incompatibility']"
+ownership,40,properties,64,123,"['ownership', 'properties', 't ownership', 'property', 'props', 'prop', 'ownership and borrowing']"
+attention mechanism,30,attention,44,89,"['attention', 'flex attention', 'attention mechanism', 'attn', 'attention mechanisms', 'flash attention']"
+reactive,80,reactive,80,132,"['reactive', 'reactivity', 'reactive statements']"
+r2dbc,95,r2dbc,95,97,"['r2dbc', 'spring data r2dbc']"
+jetty,86,jetty,86,150,"['jetty', 'undertow', 'wildfly', 'jetty reactive']"
+native module,3,native image,97,109,"['native image', 'native modules', 'native module']"
+routing,99,routing,99,169,"['routing', 'app router', 'router', 'next router', 'parallel routes', 'typed routes', 'pages router', 'routing issue']"
+graphql,100,graphql,100,129,"['graphql', 'spring graphql']"
+ssl,105,ssl,105,187,"['ssl', 'tls', 'crypto/tls', 'openssl', 'ssl configuration']"
+autoconfiguration,11,auto configuration,100,180,"['auto configuration', 'actuator', 'autoconfiguration', 'boot autoconfigure', 'autoconfigure', 'actuate']"
+markdown,111,markdown,111,135,"['markdown', 'markup', 'markdown support', 'markdown rendering']"
+diagnostic,29,diagnostics,117,151,"['diagnostics', 'diagnostic', 'a diagnostics', 'diagnostic issue']"
+data structure,6,struct,49,72,"['struct', 'data structures', 'datastructures', 'structure', 'data structure', 'structs']"
+x pack,88,x pack,88,133,"['x pack', 'xpack', 'x pack ml']"
+options,7,settings,96,150,"['settings', 'set', 'setting', 'customization', 'customizer', 'preferences', 'options', 'option']"
+environment,82,environment,82,88,"['environment', 'ecosystem', 'environment interaction', 'environment management']"
+templating,22,template,112,228,"['template', 'templating', 'template syntax', 'mustache', 'html/template', 'text/template', 'template issue', 'template rendering', 'template pipeline', 'templates', 'template literals', 'template engine', 'template compatibility', 'template literal', 'go template', 'template expansion', 'template evaluation', 'template compiler']"
+json,130,json,130,218,"['json', 'jackson', 'gson', 'encoding/json', 'json output', 'json parsing', 'json processing', 'json encoding']"
+enum,74,enum,74,80,"['enum', 'enums', 'enum variant']"
+color theme,5,theme,45,91,"['theme', 'dark mode', 'colorscheme', 'light theme', 'dark theme', 'color scheme', 'theme extension', 'theming', 'light dark mode', 'color theme']"
+sync,105,sync,105,190,"['sync', 'settings sync', 'synchronization', 'profile sync', 'sync issue', 'sync package', 'sync failure', 'cloud sync']"
+api breaking change,6,api change,170,249,"['api change', 'breaking change', 'api breaking change', 'api breaking', 'api consistency', 'type api change', 'api stability', 'type/breaking change', 'topic: api change', 'type: api change', 'type change', 'api evolution']"
+serialize,2,serialization,125,134,"['serialization', 'serde', 'serialize', 'pickle']"
+pkg,7,npm,50,168,"['packaging', 'npm', 'packages', 'paketo', 'pkg', 'fpm', 'pkg config', 'npm package', 'npm integration', 'rpm', 'packagemanagement', 'domain:package management', 'domain: package management', 'npm support', 'image packaging', 'repackaging', 'pnpm']"
+neo4j,88,neo4j,88,88,['neo4j']
+type: refactoring,3,refactoring,174,228,"['refactoring', 'refactor', 'code refactoring', 'codemod', 'type: refactor', 'type: refactoring', 'type:refactoring', 'category:refactoring']"
+linker issue,11,linker,86,213,"['linking', 'linker', 'dynamic linking', 'static linking', 'linker error', 'linker issue', 'linking issue', 'linking error', 'linker problem', 'shared library', 'dylib']"
+metadata,130,metadata,130,150,"['metadata', 'meta', 'meta data', 'library metadata', 'metadata issue', 'metadata reading', 'metadata parsing', 'metadata management']"
+notification,8,warning,119,172,"['warning', 'warnings', 'notification', 'alert', 'snackbar', 'toast', 'announcement', 'notifications', 'warning messages']"
+analysis,106,analysis,106,145,"['analysis', 'analyzer', 'analyze', 'auto analyze', 'function analysis', 'analysis issue']"
+eval,4,const eval,90,141,"['const eval', 'const evaluation', 'eval', 'eval context', 'evaluation', 'constant evaluation', 'evaluation error', 'model evaluation', 'evaluation context', 'condition evaluation']"
+tensor,180,tensor,180,401,"['tensor', 'dtensor', 'tensor operations', 'nestedtensor', 'tensor subclass', 'tensordict', 'faketensor', 'tensor creation', 'tensor ops', 'tensor operation', 'domain tensor', 'tensor dict', 'meta tensors', 'tensors', 'meta tensor', 'named tensor', 'tensor construction', 'tensor manipulation', 'tensor management', 'tensor computation', 'tensor issue', 'nested tensor', 'tensor broadcasting', 'tensor shapes', 'tensor attributes', 'tensor conversion', 'tensor comparison', 'tensor copy', 'fake tensor', 'nested tensors', 'tensor prop', 'empty tensor']"
+execution,20,executor,53,117,"['executor', 'execution', 'task execution', 'task executor', 'os exec', 'exec', 'command execution', 'script execution', 'executor service']"
+validation,155,validation,155,188,"['validation', 'validation error', 'query validation', 'hibernate validator', 'bean validation', 'input validation', 'form validation', 'constraint validation', 'tag validation']"
+input,87,input,87,166,"['input', 'input handling', 'input method', 'textinput', 'input output', 'input field', 'inputs', 'text input', 'user input', 'input component', 'input box', 'input processing', 'quick input', 'text field']"
+unix,48,linux,113,253,"['linux', 'unix', 'sys', 'plan9', 'posix', 'x sys unix', 'illumos', 'openbsd', 'freebsd', 'system', 'sys unix', 'netbsd', 'aix', 'ubuntu', 'operating system']"
+formatting,113,formatting,113,210,"['formatting', 'fmt', 'format', 'formatter', 'format string', 'format issue', 'memory format', 'output format', 'text formatting', 'list formatting', 'output formatting', 'data formatting', 'formatting issue']"
+gc,78,gc,78,109,"['gc', 'garbage collection', 'gc issue']"
+macros,14,macro,75,152,"['macro', 'macro expansion', 'macro rules', 'proc macro', 'macro errors', 'f macro', 'macros', 'macro related', 'macro system']"
+opcode cache,2,opcache,86,93,"['opcache', 'ccache', 'opcode cache']"
+tidb,103,tidb,103,219,"['tikv', 'tidb server', 'tiflash', 'tidb sql', 'tidb', 'tidb ddl', 'tidb core', 'tidb query', 'tidb lightning']"
+encoder,2,encoding,94,111,"['encoding', 'decoder', 'encoder', 'decode', 'commons codec']"
+startup,27,bootstrap,77,164,"['bootstrap', 'startup', 'boot', 'launch', 'launcher', 't bootstrap', 'boot loader', 'starter', 'startup performance', 'application startup', 'bootstrapping', 'starter metadata', 'auto startup']"
+toolchain,57,toolchain,57,64,"['toolchain', 'bazel', 'toolchain issue']"
+fuzzing,61,fuzzing,61,86,"['fuzzing', 'fuzz', 'libfuzzer', 'fuzzer', 'fuzz testing', 'fault injection']"
+loop,7,iterator,66,126,"['iterator', 'loop', 'for loop', 'foreach', 'iter', 'iterators', 'ngfor', 'while loop', 'iteration', 'infinite loop', 'loops']"
+data inconsistency,6,data race,78,139,"['data race', 'data consistency', 'data corruption', 'data integrity', 'data loss', 'data inconsistency']"
+jupyter notebook,4,notebook,53,91,"['notebook', 'jupyter', 'ipython', 'notebooks', 'jupyter notebook']"
+release,68,release,68,190,"['release', 'release notes', 'release management', 'release process', 'release workflow', 'changelog', 'release build', 'release blocker', 'release note', 'type:release note', 'canary build', 'release candidate', 'prerelease', 'pre release']"
+cmake,52,cmake,52,52,['cmake']
+neural networks,6,deep learning,59,185,"['nn', 'ai', 'rnn', 'cnn', 'lstm', 'deep learning', 'machine learning', 'neural networks', 'neural network', 'domain: deep learning', 'domain machine learning']"
+pip,69,pip,69,96,"['pip', 'pypi', 'pip compile', 'pep508', 'pip install', 'conda']"
+vim,31,vimscript,86,290,"['vim9script', 'vimscript', 'vim9', 'vim9class', 'vim', 'gvim', 'neovim', 'vim behavior', 'nvim', 'vim script', 'vimrc', 'vim feature', 'vim plugin', 'vim features', 'vim configuration', 'vim core', 'vim functionality', 'vim internal', 'vim scripting', 'vim internal error', 'core vim', 'vimscript interaction']"
+internal,30,internal,30,52,"['internal', 'internals', 'internal representation', 'internal api', 'interning', 'internal tool', 'internal package', 'internal tests']"
+script,22,scripting,59,87,"['scripting', 'script', 'scripts', 'script manager', 'script test']"
+multithreading,44,threading,60,226,"['threading', 'virtual threads', 'thread safety', 'multithreading', 'worker threads', 'thread pool', 'thread management', 'threads', 'multi threading', 'java threading', 'virtual thread', 'pthread', 'thread']"
+zend engine,110,zend engine,110,152,"['zend engine', 'zend', 'zend optimizer', 'zendengine', 'zend extension']"
+mapping,26,navigation,113,180,"['navigation', 'mapping', 'mapper', 'maps', 'import map', 'data mapping', 'map', 'map location', 'mappings', 'import maps', 'mapping issue', 'map write']"
+go1,2,go,167,564,"['cmd/go', 'language go', 'go', 'go1.x', 'go1.23', 'go tools', 'go1.22', 'go.mod', 'go1.24', 'go mod', 'go tool', 'go1.18', 'go1.20', 'go1.21', 'x/tools', 'golang', 'go language', 'go modules', 'cmd go', 'go.work', 'language/go', 'go tooling', 'go build', 'go command', 'go toolchain', 'domain/go', 'go/tools', 'go version', 'go lang', 'go/build', 'domain: go', 'go/cmd', 'domain/go tools', 'go1', 'domain:go language', 'domain:go tools', 'go playground', 'go/cmd/go', 'go project', 'go ide', 'domain: go tools', 'go programming language', 'go tip', 'go work', 'godev', 'golang go']"
+user feedback,4,user experience,223,283,"['user experience', 'usability', 'feedback', 'user facing', 'ui feedback', 'user', 'user feedback', 'domain: user experience', 'ux feedback', 'user guide', 'user consent']"
+assertions,5,assertion failure,151,338,"['assertionerror', 'assertion', 'assertion failure', 'assertion error', 'assert', 'assertion library', 'debug assertions', 'assertj', 'assertions', 'compiler assertion', 'jsonassert']"
+triton kernel,4,triton,79,87,"['triton', 'triton kernels', 'tensorrt', 'triton kernel']"
+ext,5,export,83,136,"['export', 'example', 'examples', 'extract', 'enex', 'extras', 'excimer', 'ext', 'exclusion']"
+hibernate,72,hibernate,72,105,"['hibernate', 'jpa', 'spring orm']"
+netty,83,netty,83,94,"['netty', 'netty4', 'reactor netty']"
+mockito,47,mockito,47,88,"['mockito', 'mock', 'mocking', 'mockmvc', 'mock server', 'spring mockito']"
+reference,24,reflection,85,165,"['reflection', 'reflect', 'reference', 'references', 'function reference', 'reference manual', 'xref', 'self reference', 'ref', 'reference guide', 'reference issue', 'reference docs', 'forward ref']"
+task,22,planner,36,99,"['planner', 'task', 'tasks', 'assignment', 'planning', 'task management', 'job management', 'roadmap', 'schedule issue']"
+package manager,40,package management,286,326,"['package manager', 'package management']"
+http2,60,http2,60,84,"['http2', 'quic', 'net/http2']"
+dcp,7,fsdp,55,76,"['fsdp', 'dcp', 'dsd', 'hsdp', 'vsda', 'ddp', 'dce']"
+storage,135,storage,135,163,"['storage', 'local storage', 'storage driver', 'external storage', 'data storage', 'storage issue', 'space management', 'disk space']"
+powershell,38,powershell,38,38,['powershell']
+internationalization,36,i18n,43,224,"['localization', 'translation', 'i18n', 'internationalization', 'locale', 'multilingual', 'intl', 'gettext', 'translate c', 'nls', 'localize', 'translation issue', 'multilingual support', 'locale issue', 'po file']"
+turbo module,9,turbopack,66,92,"['turbopack', 'turbo', 'turbomodule', 'turbo module', 'turbo pack', 'turbo modules']"
+abi,66,abi,66,79,"['abi', 'f abi', 'a abi', 'abi issue', 'c abi']"
+lint,113,lint,113,331,"['clippy', 'lint', 'linting', 'compiler lint', 'eslint', 'linter', 'next lint', 'clang tidy', 'lint issue', 'lints', 'lint warning']"
+operator,29,operator,29,62,"['operator', 'operators', 'opset', 'operator behavior', 'core ops', 'ops', 'operator overloading', 'operator precedence', 'operation', 'opcode', 'operator implementation']"
+xpu,40,xpu,40,52,"['xpu', 'mkldnn', 'dlpack', 'xla']"
+spring session,64,spring security,76,140,"['spring session', 'spring security']"
+dap,3,ldap,56,64,"['ldap', 'pam', 'dap']"
+tags,4,annotation,38,106,"['annotation', 'taxonomy', 'annotations', 'tags', 'annotated text', 'labels', 'tag', 'etag', 'tag management', 'labeling']"
+aop,56,aop,56,113,"['aop', 'aspectj', 'spring aop', 'aspect oriented programming']"
+schema,25,information schema,58,137,"['information schema', 'infoschema', 'schema', 'info schema', 'schema migration', 'schema tracker', 'system table', 'schema management', 'system tables', 'schema cache', 'schema change', 'sql schema']"
+repo,5,git,73,263,"['git', 'github actions', 'repository', 'github', 'repo', 'git integration', 'github api', 'repositories', 'gitlab', 'github integration', 'repository management', 'github compatibility', 'gitea', 'domain: git', 'repo management', 'github migration', 'repository access', 'simple repository']"
+backend,73,backend,73,95,"['backend', 'c backend', 'build backend', 'cpp backend', 'custom backend', 'backends', 'backend extension']"
+syscall,50,syscall,50,66,"['syscall', 'syscalls']"
+net/http,48,net/http,48,48,['net/http']
+quantization,57,quantization,57,57,['quantization']
+partition,6,partitioning,55,71,"['partitioning', 'network partition', 'partitioner', 'partition', 'partition management']"
+mysql,59,mysql,59,111,"['mysql', 'mysql compatibility', 'mariadb', 'sql mode', 'mysqlnd', 'mysqli', 'mysql protocol', 'sql compatibility', 'maria db']"
+restclient,4,rest,46,151,"['rest', 'rest api', 'rest template', 'resttemplate', 'rest client', 'restclient', 'postman', 'rest assured']"
+scrolling,73,scrolling,73,85,"['scrolling', 'scrollview', 'scrollbar', 'scroll api']"
+html,68,html,68,76,"['html', 'html generation', 'domain:html', 'html formatting']"
+ssg,3,ssa,47,107,"['ssa', 'ssr', 'sse', 'go ssa', 'ssg']"
+stack overflow,23,integer overflow,95,169,"['overflow', 'integer overflow', 'stack', 'stack overflow', 'topic integer overflow']"
+filesystem,148,filesystem,148,367,"['fs', 'filesystem', 'file system', 'file handling', 'files', 'file management', 'file size', 'fs directory', 'large file', 'file access', 'file io', 'directory', 'file', 'directory management', 'directory operations', 'local files', 'filesystem error', 'large files', 'filesystem issue']"
+library issues,6,library,253,352,"['libraries', 'library', 'library compatibility', 'library issue', 'library management', 'library maintenance', 'library issues', 'library support', 'library incompatibility', 'library problem']"
+spring hateoas,42,spring hateoas,42,46,"['spring hateoas', 'hateoas']"
+shell,39,shell,39,99,"['shell', 'shell integration', 'zsh', 'bash', 'shebang', 'shell command', 'fish shell', 'shell script']"
+code coverage,4,coverage,46,61,"['coverage', 'a code coverage', 'test coverage', 'code coverage']"
+c cpp,10,c++,92,229,"['c++', 'cpp', 'clang', 'c compiler', 'gcc', 'language c', 'c code', 'c implementation', 'c cpp', 'c language', 'c++ compatibility', 'c', 'c++ related', 'c standard', 'gcc compatibility', 'cpp compile error', 'cpp issue']"
+event listening,2,event handling,44,102,"['event handling', 'event listener', 'eventhandling', 'event listeners', 'listener', 'event system', 'event listening']"
+wasm,52,wasm,52,77,"['wasm', 'wasi', 'emscripten', 'webassembly']"
+code quality,99,code quality,99,228,"['code style', 'code cleanup', 'code review', 'code quality', 'static analysis', 'coding style', 'code smell', 'code optimization', 'code clarity', 'code improvement', 'code analysis', 'code formatting', 'code inspection', 'code readability', 'domain: code quality', 'code consistency']"
+model inference,5,inference,79,108,"['inference', 'inference mode', 'f inference', 'model inference', 'shape inference', 'inference engine', 'evaluation mode', 'inference plugin']"
+classpath loading,3,classpath,37,75,"['classpath', 'classloading', 'classloader', 'classpath loading', 'classloader issue', 'classpath issue']"
+aggregation,55,aggregation,55,79,"['aggregation', 'aggregations', 'hash aggregation', 'ml aggregations', 'aggregate', 'aggregation test', 'aggregation tests']"
+timing,2,timeout,76,181,"['ttl', 'timeout', 'timer', 'time', 'timers', 'clock', 'timeline', 'timing attack', 'temporal sdk', 'temporal', 'timing', 'timed out', 'time package', 'timing channel', 'test timeout']"
+filtering,14,filter,40,56,"['filter', 'filtering', 'runtime filter']"
+lifecycle,38,lifecycle,38,47,"['lifecycle', 'component lifecycle', 'lifecycle management']"
+borrow check,24,borrow checker,31,77,"['borrow checker', 'borrowck', 'borrow checking', 'borrowing', 'borrow check']"
+keybinding,12,keyboard,41,161,"['keyboard', 'keybindings', 'keyboard shortcuts', 'keybinding', 'keyboard input', 'keyboard navigation', 'keyboard shortcut', 'keyboard interaction', 'key bindings', 'key binding', 'keyboard issue', 'key mapping']"
+permissions,70,permissions,70,116,"['permissions', 'privilege', 'permission', 'access control', 'privileges', 'access', 'permission issue', 'entitlements', 'permission denied']"
+repl,44,repl,44,50,"['repl', 'interactive shell']"
+go/types,31,go/types,31,43,"['go/types', 'go types']"
+rfc,20,rfc,20,31,"['rfc', 'rfc compliance', 'rfc3986']"
+programming language,49,language design,79,146,"['language design', 'programming language', 'language implementation', 'programming language agnostic', 'programming model', 'domain:programming language', 'language agnostic']"
+implementation,6,io,46,123,"['io', 'interface', 'ide features', 'ide feature', 'ide integration', 'ipc', 'implementation', 'implementation detail', 'ide support', 'ioc', 'impl']"
+vue,55,vuetify,120,239,"['vite', 'vitest', 'vuetify', 'nuxt', 'vue', 'vuejs', 'vite plugin']"
+mongo,8,mongodb,49,84,"['mongodb', 'persistence', 'mongo', 'orm', 'memdb']"
+scheduler,49,scheduler,49,106,"['scheduler', 'scheduling', 'task scheduler', 'schedule', 'spring scheduling', 'cron', 'cron expression', 'quartz', 'scheduled task', 'scheduled tasks']"
+svelte,179,svelte,179,325,"['svelte 5', 'svelte', 'sveltekit', 'svelte compiler', 'svelte component', 'svelte core', 'svelte syntax', 'svelte5', 'svelte kit', 'svelte migration', 'svelte check', 'svelte directives', 'domain: svelte', 'sveltejs', 'svelte features', 'svelte feature', 'svelte version 5', 'svelte bindings', 'svelte class', 'svelte version', 'svelte template', 'svelte component interaction']"
+buildpack,27,buildpack,27,49,"['buildpack', 'buildpacks', 'cloud foundry']"
+dependency injection,88,dependency injection,88,153,"['dependency injection', 'autowiring', 'injection', 'dependencyinjection', 'constructor injection', 'setter injection', 'injector', 'autowired', 'bean injection']"
+decompilation,32,decompilation,32,134,"['decompiler', 'decompilation', 'disassembly', 'disassembler', 'binary analysis', 'reverse engineering', 'reversing', 'binaryanalysis', 'assembly disassembly', 'decompiler bug', 'disassembly issue', 'software reverse engineering', 'decompilation issue', 'decompiler issue']"
+backup recovery,2,backup,42,123,"['backup', 'restore', 'backup restore', 'recovery', 'backup and restore', 'snapshot restore', 'retrieval', 'crash recovery', 'snapshot recovery', 'class recovery', 'backup recovery']"
+js,11,javascript,547,585,"['javascript', 'js', 'jsx', 'js error', 'script error', 'javascript error', 'domain:javascript', 'javascript core', 'javascript issue', 'jquery']"
+experimental,18,experimental,18,24,"['experimental', 'labs']"
+client side,8,client,43,60,"['client', 'client side', 'client side navigation', 'client api', 'api client']"
+gdb,44,gdb,44,70,"['gdb', 'phpdbg', 'lldb']"
+pattern matching,76,pattern matching,76,170,"['match', 'pattern matching', 'regex', 'never patterns', 'patterns', 'pattern', 'matcher', 'matchit', 'match statement', 'match expression', 'pattern matcher', 'matching', 'regexp', 'match pattern']"
+array handling,2,array,30,58,"['array', 'arrays', 'splfixedarray', 'array indexing', 'array operations', 'array manipulation', 'array handling', 'array access']"
+pytorch rocm,2,rocm,43,45,"['rocm', 'pytorch rocm']"
+jsonrpc,2,rpc,31,43,"['rpc', 'jsonrpc', 'jsonrpc2', 'json rpc', 'domain:rpc', 'rpc server']"
+retry,38,retry,38,85,"['spring retry', 'retry', 'retries', 'retry mechanism', 'retry strategy', 'backoff']"
+spring boot testing,2,spring test,18,24,"['spring test', 'spring boot testing', 'spring boot starter test', 'spring boot test autoconfigure']"
+filetype,20,filetype,20,45,"['filetype', 'finfo', 'file type', 'filetype plugin', 'file format', 'file extension', 'fileinfo', 'filetype support', 'filetype detection']"
+copilot chat,2,copilot,37,43,"['copilot', 'chatgpt', 'copilot chat', 'github copilot']"
+paste,21,clipboard,34,80,"['clipboard', 'paste', 'copy', 'copy paste', 'paste issue']"
+styling,52,styling,52,91,"['styling', 'style', 'css issue', 'styles', 'style guide', 'styling issue']"
+design proposal,2,proposal,91,162,"['design', 'api proposal', 'proposal', 'library proposal', 'design proposal', 'design discussion']"
+package,12,module,39,181,"['model', 'module', 'class', 'overlay', 'popup', 'prompt', 'modules', 'modal', 'button', 'models', 'attachments', 'attachment', 'package', 'namespace', 'wrapper', 'position', 'mod', 'pressable', 'placeholder', 'attach', 'mount', 'wrapping', 'cover']"
+image,52,image,52,100,"['image', 'image processing', 'image loading', 'images', 'image component', 'image store']"
+profiling,62,profiling,62,112,"['profiler', 'pprof', 'profiling', 'cmd/pprof', 'memory profiling', 'heap profile']"
+target os,2,cross compilation,69,80,"['cross compilation', 'cross compile', 'target cpu', 'target platform', 'target os', 'target triple']"
+cleanup,57,cleanup,57,67,"['cleanup', 'type cleanup', 'clean up', 'cleanup issue']"
+binding,64,binding,64,126,"['binding', 'property binding', 'data binding', 'class binding', 'binder', 'two way binding', 'bindings', 'bind', 'template binding', 'binding issue', 'binding errors']"
+undo,5,backward,21,55,"['backward', 'flashback', 'undo redo', 'legacy', 'revert', 'undo', 'outdated']"
+dynamic,6,dynamic shapes,33,119,"['dynamic shape', 'dynamic shapes', 'dynamic graph', 'dynamic imports', 'dynamic import', 'dynamic property', 'dynamic content', 'dynamic', 'dynamic compilation', 'dynamic axes', 'dynamic classes', 'dynamic computation graph', 'dynamic compiler']"
+freeze,7,ice,409,524,"['fx', 'fabric', 'freezing', 'flow', 'forc', 'fiber', 'fouc', 'fragment', 'factory', 'frozen tier', 'flux', 'freeze', 'ice', ' ice ', 'ice ', 'fusion']"
+dtype,34,data type,37,113,"['data type', 'data types', 'dtype', 'datatype', 'dtype conversion', 'dtype mismatch', 'dtype mapping', 'dtype issue', 'data type management']"
+redis,30,redis,30,32,"['redis', 'data redis']"
+xml,65,xml,65,101,"['xml', 'libxml2', 'simplexml', 'libxml', 'xpath', 'xmlreader', 'expat', 'xml processing']"
+spring integration,118,spring integration,118,147,"['spring integration', 'spring batch']"
+querying,3,query,52,101,"['query', 'queries', 'query list', 'querydsl', 'query dsl', 'bool query', 'querying', 'query result', 'query language', 'query issue', 'query processing']"
+netrw,38,netrw,38,38,['netrw']
+hover,35,hover,35,37,"['hover', 'rollover']"
+autocompletion,2,autocomplete,27,59,"['autocomplete', 'shell completion', 'completions', 'code completion', 'autocompletion', 'category: completion', 'tab completion']"
+comment,16,comments,32,74,"['comments', 'comment', 'dialog', 'commenting', 'comment thread', 'type: discussion', 'discussion']"
+automation,35,automation,35,39,"['automation', 'automation testing', 'automa']"
+command,32,cmd,33,115,"['command', 'command palette', 'cmd', 'commands', 'command guide', 'command prompt', 'command not found', 'command issue', 'command block', 'command failure', 'command output']"
+view,18,output,29,142,"['output', 'display', 'view', 'visual', 'content projection', 'visibility', 'screen', 'graphics', 'views', 'visualization', 'vision', 'transparency', 'projection', 'viewport', 'visibility issue', 'output view']"
+nextjs,105,nextjs,105,183,"['nextjs', 'next dev', 'next.js api', 'next api', 'next.js', 'next 14', 'next start', 'next config', 'next js', 'next build', 'next og', 'create next app', 'domain: next.js']"
+searchablesnapshots,2,snapshot,31,56,"['snapshot', 'searchable snapshots', 'searchablesnapshots', 'snapshot repo', 'snapshots', 'snapshot repository', 'searchable snapshot', 'azure snapshot repo']"
+locking,19,deadlock,39,136,"['lockfile', 'deadlock', 'locking', 'lock', 'mutex', 'lock file', 'locks', 'lock management', 'lock files', 'universal locking', 'lock mechanism', 'lock resolution']"
+async closures,3,closures,16,29,"['closures', 'f closures', 'async closures', 'f async closure', 'f closure', 'async closure']"
+unstable behavior,2,undefined behavior,27,84,"['undefined behavior', 'undefinedbehaviorsanitizer', 'unstable', 'undefinedbehavior', 'incorrect behavior', 'unstable api', 'unstable attribute', 'unexpected behavior', 'inconsistent behavior', 'category undefined behavior', 'unstable behavior']"
+hydration,44,hydration,44,44,['hydration']
+graph,25,graph,25,50,"['graph', 'graph execution', 'graph construction', 'graph compilation', 'graph manipulation', 'graph issue', 'graph recompilation', 'graph mode', 'graph building']"
+elasticsearch,357,elasticsearch,357,374,"['elasticsearch', 'elasticsearch sql', 'elasticsearch api', 'elasticsearch query', 'elastic search', 'elasticsearch plugin', 'xpack esql', 'elasticsearchql']"
+postgres,8,postgresql,48,93,"['postgresql', 'pgsql', 'sqlite', 'firebird', 'sqlite3', 'node postgres', 'postgres', 'pglite']"
+exception,70,exception handling,85,167,"['exception', 'exception handling', 'exception message', 'exceptions', 'java exception', 'lowering exception']"
+highlighting,48,syntax highlighting,50,108,"['highlighting', 'syntax highlighting', 'highlight', 'high contrast']"
+date handling,2,datetime,43,169,"['date', 'datetime', 'date format', 'timestamp', 'datepicker', 'ext date', 'picker', 'date time', 'v date input', 'date functions', 'date parsing', 'date picker', 'date handling', 'date selection', 'date format issue', 'dates', 'datetime formatting']"
+console,40,console,40,50,"['console', 'gomote']"
+preview window,2,preview,23,30,"['preview', 'preview window', 'image preview', 'ui preview']"
+cookie,9,session,28,62,"['session', 'cookie', 'cookies', 'session management']"
+kernel,28,kernel,28,30,"['kernel', 'kernel generation']"
+remote access,5,ssh,41,84,"['ssh', 'remote', 'remote development', 'remote debugging', 'remote ssh', 'remote access', 'remote desktop']"
+module loading,7,module resolution,34,45,"['module resolution', 'module loading', 'module import']"
+math operations,4,math,181,240,"['math', 'arithmetic', 'opmath', 'math functions', 'math function', 'mathematics', 'math operations', 'math operation', 'domain: math', 'domain math', 'math accuracy', 'category math', 'calculation', 'formula', 'mathematical function', 'mathematical operations', 'math error']"
+slice,11,slices,18,34,"['slices', 'slice', 'slice scatter', 'slicing']"
+driver,45,driver,45,91,"['driver', 'driver upgrade', 'driver update', 'driver issue', 'driver 115', 'driver feijipan', 'drivers', '115 driver']"
+changedetection,2,change detection,37,41,"['change detection', 'changedetection', 'change point']"
+device,30,device,30,71,"['device', 'devicemesh', 'device mesh', 'device behavior', 'device support', 'device management', 'device properties', 'device specific', 'device compatibility', 'device mismatch', 'custom device', 'device dispatch', 'device type', 'device mode']"
+cloud storage,16,azure,25,77,"['azure', 's3', 'bucket', 'cloud', 'cloud storage', 'gcp', 'minio', 'blobstore', 's3 repository']"
+datasource,14,datasource,14,26,"['datasource', 'data source', 'routing datasource']"
+stats,23,statistics,50,75,"['stats', 'statistics', 'stats tracking']"
+exploration,2,discovery,23,46,"['explorer', 'discovery', 'exploration']"
+icon,18,icon,18,29,"['icon', 'icons', 'iconography', 'flags']"
+module system,29,module system,29,47,"['module system', 'trait system']"
+text,19,text,19,96,"['text', 'text display', 'rich text editor', 'text model', 'text rendering', 'text objects', 'ui text', 'virtual text', 'text processing', 'text manipulation', 'text editing', 'text component', 'rich text', 'text layout', 'text object']"
+jobs,2,worker,21,35,"['worker', 'help wanted', 'workers', 'jobs', 'matrix jobs']"
+hashing,20,hashing,20,49,"['hash', 'hashing', 'hashmap', 'mhash', 'hash table', 'hash function', 'sha256', 'sha3']"
+reproducible,38,reproducible,38,72,"['reproducibility', 'reproducible', 'reproducible issue', 'reproducible builds']"
+string,23,string,23,64,"['string', 'string handling', 'strings', 'str', 'string manipulation', 'string processing', 'string comparison']"
+webgpu,29,webgpu,29,31,"['webgpu', 'webgl']"
+compiletest,18,compiletest,18,20,"['compiletest', 'compile test']"
+a coroutines,3,coroutines,33,56,"['coroutines', 'asyncio', 'a coroutines', 'spring coroutines', 'coroutine']"
+transformers,23,transformers,23,79,"['transformers', 'transformer', 'stable diffusion', 'llama', 'huggingface', 'language model', 'xformers', 'pytorch transformers', 'diffusers', 'conformer', 'lora']"
+custom op,17,custom ops,29,59,"['custom ops', 'custom op', 'custom operations', 'custom class', 'custom function', 'custom operator']"
+composite,3,complex numbers,45,76,"['complex numbers', 'complex', 'compose', 'composer', 'composite']"
+p2p,25,p2p,25,35,"['p2p', 'i2p', 'ipfs', 'p2p network', 'p2p networking']"
+motion,2,animation,32,93,"['actions', 'animation', 'action', 'ilm', 'animations', 'activity', 'motion', 'movement', 'casting', 'cast']"
+spring bean,14,bean definition,36,184,"['bean definition', 'bean', 'bean lifecycle', 'spring beans', 'beans', 'beanfactory', 'scoped beans', 'factorybean', 'factory bean', 'bean factory', 'conditional on missing bean', 'bean management', 'conditional beans', 'bean registration', 'bean discovery', 'spring bean', 'container bean', 'bean resolution', 'bean creation']"
+proxy,41,proxy,41,51,"['proxy', 'tiproxy', 'proxying', 'proxies', 'http proxy']"
+focus,38,focus,38,51,"['focus', 'input focus', 'focus mode', 'focus issue', 'focus management']"
+diff,22,diff,22,36,"['diff', 'diff editor', 'apidiff', 'multi diff', 'diff mode']"
+es modules,3,esm,23,41,"['esm', 'esmodules', 'es modules', 'es', 'ecmascript', 'domain: esm', 'es module', 'ecmascript modules']"
+fetch,21,fetch,21,30,"['fetch', 'fetch api', 'native fetch']"
+grafana,6,dashboard,18,32,"['dashboard', 'kibana', 'grafana']"
+utf8,14,unicode,48,103,"['unicode', 'utf8', 'mbstring', 'utf 8', 'iconv', 'encoding issue', 'character set', 'character encoding', 'unicode support', 'multibyte string', 'multibyte', 'charset', 'utf8 error']"
+dropbox,5,webdav,27,40,"['webdav', 'dropbox', 'driver terabox', 'onedrive', 'terabox']"
+v8,21,v8,21,28,"['v8', 'v8 api', 'domain: v8', 'v8 compatibility']"
+nodejs,74,nodejs,74,138,"['node api', 'node compat', 'nodejs compatibility', 'node integration', 'node', 'noder', 'node compatibility', 'node modules', 'node js', 'node.js', 'nodejs', 'domain: nodejs', 'nodejs core']"
+spell check,5,typo,70,131,"['typo', 'typos', 'typing', 'autocorrect', 'spelling', 'spell checking', 'spell check']"
+checkpointing,22,checkpointing,22,50,"['checkpoint', 'checkpointing', 'gradient checkpointing', 'activation checkpointing', 'savepoint']"
+cassandra,3,couchbase,28,34,"['couchbase', 'spring data cassandra', 'cassandra']"
+bomr,9,bom,26,44,"['bomr', 'bom', 'bsim', 'bmm']"
+node shutdown,2,shutdown,40,46,"['shutdown', 'graceful shutdown', 'node shutdown']"
+null pointer,15,null pointer exception,29,97,"['npe', 'nullpointerexception', 'null pointer exception', 'nil pointer dereference', 'null pointer', 'invalid pointer', 'null pointer access', 'null pointer dereference', 'nil pointer']"
+hazelcast,23,infinispan,51,74,"['hazelcast', 'infinispan']"
+data,5,data access,15,33,"['data access', 'data fetching', 'data', 'data retrieval', 'data processing', 'data analysis']"
+mail,19,mail,19,34,"['mail', 'smtp', 'email']"
+php,120,php,120,202,"['php core', 'phar', 'php', 'php internal', 'php src']"
+ubsan,14,ubsan,14,16,"['ubsan', 'ubsan error']"
+lightning,16,lightning,16,18,"['lightning', 'lightning import']"
+sql parser,16,sql parser,16,20,"['sql parser', 'query parser', 'sql parsing']"
+color,20,color,20,41,"['color', 'coloring', 'colors', 'color mix', 'color picker', 'color support', 'coloring issue']"
+event,15,event,15,42,"['event', 'events', 'calendar', 'ext calendar']"
+browser,20,browser,20,47,"['browser', 'firefox', 'codebrowser', 'chrome', 'safari', 'code browser', 'browser compatibility', 'browser issue']"
+clarity,3,clarification,16,28,"['api clarity', 'clarity', 'clarification']"
+ordering,5,sorting,33,67,"['sorting', 'sort', 'ordering', 'execution order', 'ort', 'deterministic order', 'sort order', 'order', 'test order', 'order dependency']"
+sway core,2,swc,22,41,"['swc', 'sway', 'sway core']"
+redirect,35,redirect,35,40,"['redirect', 'redirects', 'redirect issue']"
+v2,2,vet,21,48,"['vet', 'vmap', 'v4', 'v model', 'variant', 'viml', 'v2', 'v3.x']"
+grpc,25,grpc,25,29,"['grpc', 'protobuf']"
+vscode,93,vscode,93,171,"['vscode', 'vscode extension', 'code server', 'vscode ui', 'vscode web', 'codespaces', 'vscode dev', 'vscode features', 'vscode api', 'vscode extensions', 'vscode internal', 'vscode insiders', 'vscode server', 'vscode insider', 'vscode configuration', 'vscode feature', 'visual studio code', 'vscode ide', 'vscode marketplace']"
+path management,4,path,25,78,"['path', 'path handling', 'path matching', 'path mapping', 'path issue', 'relative paths', 'path variable', 'path management', 'path alias', 'relative path', 'path issues', 'path processing']"
+software engineering,2,architecture,42,81,"['architecture', 'programming', 'software development', 'software', 'open source', 'software engineering', 'software architecture']"
+environment variable,35,environment variable,35,90,"['environment variables', 'env', 'env var', 'environment markers', 'env file', 'environment variable', 'env variable', 'environment configuration']"
+std library,18,stdlib,109,184,"['std library', 'standard library', 'libstd', 'libs', 'stdlib', 't libs', 'domain stdlib', 'std lib', 'java stdlib']"
+ccall,2,ffi,28,66,"['ffi', 'extern c', 'extern', 'c ffi', 'c api', 'a ffi', 'c++ api', 'cpp wrapper', 'ccall', 'foreign function interface']"
+edition 2018,2,edition 2024,9,21,"['edition 2024', 'edition', 'edition 2015', 'edition 2018']"
+attribute,31,attribute,31,63,"['attribute', 'cfg attr', 'attribute error', 'data attribute', 'attributes', 'attribution', 'attribute issue', 'attribute system']"
+naming convention,5,conventions,16,39,"['naming', 'convention', 'conventions', 'naming convention']"
+spec,22,spec,22,71,"['target', 'scope', 'spec', 'specification', 'target specs', 'scopes', 'target issue']"
+comptime,22,comptime,22,22,['comptime']
+signal,27,signal,27,52,"['signals', 'signal', 'signal handling', 'sigterm', 'sigint']"
+zone,6,timezone,19,67,"['zone.js', 'timezone', 'zoneless', 'zone', 'zone js', 'time zone', 'zonejs']"
+matrix multiplication,4,linear algebra,15,57,"['linalg', 'matmul', 'addmm', 'nalgebra', 'gemm', 'linear algebra', 'matrix', 'matrix operations', 'multiplication', 'matrix multiplication']"
+accuracy,29,accuracy,29,54,"['accuracy', 'precision', 'data accuracy', 'accuracy issue', 'correctness', 'correction']"
+toml parser,5,toml,12,19,"['toml', 'toml parser', 'toml parsing']"
+batch,9,batch,9,21,"['batch', 'bulk', 'batch mode', 'batch processing', 'batching']"
+jsp,19,jsp,19,26,"['jsp', 'jstl']"
+lucene,25,lucene,25,25,['lucene']
+ml,17,ml,17,20,"['ml', 'ml plugin']"
+multi cluster,18,cluster,19,81,"['cluster', 'multi cluster', 'mixed cluster', 'cluster management', 'multi node', 'cluster level', 'multinode', 'multicluster']"
+foreign key,20,foreign key,20,25,"['foreign key', 'primary key']"
+dropdown menu,2,menu,20,40,"['menu', 'vmenu', 'context menu', 'dropdown', 'dropdown menu', 'popup menu', 'v menu']"
+domain:angular,5,angular,175,233,"['angular', 'angular cli', 'angular.dev', 'angular compiler', 'angular core', 'angular dev', 'domain: angular', 'domain:angular', 'angular component', 'domain: angular cli', 'angular guides', 'angular tutorial', 'angular integration']"
+selection,16,selection,16,35,"['selection', 'component: vselect', 'selector', 'select', 'v select']"
+profiles,9,profile,25,36,"['profile', 'profiles', 'people']"
+help,14,help,14,53,"['help', 'target support', 'help text', 'operator support', 'function support', 'support request', 'help system', 'support', 'help menu']"
+url,22,uri,24,95,"['url', 'uri', 'urls', 'url handling', 'url parsing', 'url update', 'uri handling', 'url issue', 'url validation', 'uri parsing', 'url pattern', 'uri validation', 'url handlers', 'uri template']"
+load,3,loader,20,93,"['loader', 'model loading', 'resource loading', 'class loader', 'loading', 'resource loader', 'data loading', 'class loading', 'package loading', 'load error', 'preload', 'load']"
+protocol,31,protocol,31,36,"['protocol', 'protocol support', 'prototype']"
+goroutine,23,goroutine,23,47,"['race detector', 'goroutine', 'go runtime', 'goroutines', 'goroutine leak']"
+govulncheck,12,govulncheck,12,18,"['govulncheck', 'x/vuln', 'vuln check']"
+wiki,11,wiki,11,11,['wiki']
+assembly,47,assembly,47,68,"['asm', 'assembly', 'assembler', 'assembly language', 'inline asm']"
+download,31,download,31,55,"['download', 'download issue', 'download failure', 'offline download', 'offline support']"
+context management,7,context,19,36,"['context', 'context management', 'context manager', 'context packages']"
+link,28,broken link,30,112,"['link', 'autolinking', 'link issue', 'linkname', 'deep linking', 'link broken', 'links', 'broken link', 'library linking', 'autolink', 'hyperlinks', 'external link']"
+dev tools,3,development,37,108,"['devtools', 'dev server', 'developer experience', 'dev services', 'dev experience', 'dev settings', 'dev mode', 'dev tools', 'development', 'development tool', 'development mode', 'local development', 'development tools', 'core development', 'developer tools']"
+stream,29,stream,29,108,"['streams', 'data streams', 'stream', 'streaming', 'webstreams', 'web streams', 'data stream', 'multi stream']"
+coherence,30,coherence,30,48,"['collaboration', 'coherence', 'coordination', 'trait coherence']"
+jsr,9,jsr,9,13,"['jsr', 'jsr 330', 'jsr packages']"
+sockets,6,websocket,27,45,"['websocket', 'websockets', 'sockets', 'rsocket', 'socket']"
+crates,21,cargo,24,51,"['cargo', 'crates', 'crates io', 'crates issue']"
+recursion,30,recursion,30,45,"['recursion', 'recursion limit', 'recursive functions', 'recursive error', 'recursion error', 'recursive types', 'infinite recursion']"
+derive,12,derive,12,29,"['derive', 'derive macros', 'differentiability', 'derives', 'differentiation', 'deriving', 'derive macro', 'derivation']"
+simd,18,simd,18,40,"['simd', 'mkl', 'openmp', 'portable simd', 'openblas', 'avx']"
+trait impl,21,trait implementation,42,154,"['trait bounds', 'impl trait', 'trait implementation', 'trait objects', 'trait object', 'f dyn trait', 'trait impl', 'trait impl conflict', 'const trait impl', 'a trait objects']"
+cursor,19,cursor,19,31,"['cursor', 'cursor position', 'cursor movement', 'cursor behavior']"
+numpy,24,numpy,24,26,"['numpy', 'numpy compatibility']"
+tutorial,18,tutorial,18,41,"['training', 'tutorial', 'getting started', 'how to']"
+shortcode,15,shortcode,15,33,"['shortcode', 'shortcodes', 'shorthand']"
+content,46,content,46,99,"['content', 'content model', 'content script', 'content management', 'content processing', 'xcontent', 'missing', 'content structure', 'content issue', 'missing content', 'content error', 'content missing']"
+xml bind,3,jaxb,15,20,"['jaxb', 'xml bind', 'json bind']"
+java annotation,3,annotation processing,17,23,"['annotation processing', 'java annotations', 'java annotation']"
+spring context,11,spring context,11,24,"['spring context', 'application context', 'spring environment']"
+pikpak,14,pikpak,14,16,"['pikpak', 'feishu']"
+fuzzy matching,7,fuzzy,14,35,"['fuzzy', 'fuzzy matching', 'fuzzy search']"
+action bar,3,status bar,16,42,"['status bar', 'activity bar', 'toolbar', 'titlebar', 'title bar', 'action bar', 'menubar']"
+mouse events,3,mouse,16,25,"['mouse', 'mouse events', 'mouse interaction', 'mouse wheel']"
+interceptor,10,middleware,20,42,"['middleware', 'interceptor', 'interceptors', 'interception', 'intercepting routes', 'route interception']"
+parallel processing,2,parallelism,19,68,"['parallelism', 'pipelining', 'multiprocessing', 'parallel', 'pipeline parallelism', 'pipeline', 'data parallelism', 'multiprocess', 'parallel execution', 'parallelization', 'parallel processing']"
+tokens,4,semantic tokens,18,39,"['semantic tokens', 'semantic token', 'token', 'tokenizer', 'tokens', 'tokenization']"
+domain,2,dns,21,44,"['dns', 'domain', 'domain/build', 'domain file', 'domain/tools', 'domain compiler', 'domain php', 'domain ml', 'domain database', 'domain/database']"
+internal error,261,internal error,261,279,"['internal error', 'server error', 'internalerror', 'backend issues', 'internal server error', 'backend issue', 'backend failure']"
+semantic,2,semantics,39,69,"['semantic analysis', 'semantics', 'sema', 'language semantics', 'semantic change', 'semantic']"
+new architecture,34,new architecture,34,41,"['new architecture', 'newarchitecture', 'new arch']"
+hermes,16,hermes,16,22,"['hermes', 'artemis']"
+util,10,utility,12,49,"['util', 'utils', 'utility', 'utility classes', 'utilities', 'utility class', 'helper']"
+connection,20,connection,20,48,"['connectivity', 'connection', 'connect', 'connector', 'connection management', 'connection factory', 'persistent connection', 'connection details']"
+consistency,37,consistency,37,130,"['consistency', 'stability', 'stabilization', 'consensus', 'reliability', 'inconsistency', 'robustness', 'consistency issue', 'command consistency', 'op consistency']"
+svg,19,svg,19,23,"['svg', 'canvas']"
+repr,9,repr,9,15,"['repr', 'attr repr', 'representation']"
+floating point,39,floating point,39,120,"['float', 'bfloat16', 'floating point', 'fp8', 'bf16', 'floatingpoint', 'fpu', 'float types', 'float8', 'mixed precision', 'float16', 'float precision', 'floating point exception', 'fp32', 'floating point issue', 'float arithmetic']"
+effects,15,effects,15,26,"['effects', 'effect', 'side effects']"
+symbolic,2,symbolic computation,14,46,"['symbolic execution', 'sympy', 'symbolic computation', 'symbolic conversion', 'symbolic', 'symbolic variables', 'symbolic function', 'symbolic tracing']"
+rocml,2,roc,18,26,"['roc', 'rocml', 'rocmlib', 'roc m']"
+autocast,21,autocast,21,23,"['autocast', 'autocasting']"
+oom,20,oom,20,30,"['oom', 'zoom', 'oss', 'oom error', 'oop']"
+torch distributed,6,distributed training,63,107,"['distributed training', 'distributeddataparallel', 'distribtued training', 'tensor parallel', 'tensor parallelism', 'multi gpu', 'pytorch distributed', 'torchelastic', 'torch distributed', 'distributed tensor', 'pytorch elastic']"
+dump,5,core dump,27,35,"['core dump', 'var dump', 'dump']"
+initialization,20,initialization,20,37,"['initialization', 'init', 'static initialization', 'initializers']"
+reorganize,2,reindex,15,31,"['reindex', 'reorganize', 'reorganize partition', 'reorg', 'reorganization', 'reorder']"
+yaml,27,yaml,27,32,"['yaml', 'yaml test']"
+liquibase,3,jooq,18,33,"['flyway', 'jooq', 'liquibase']"
+oauth,11,spring authorization server,31,59,"['authorization server', 'oauth2', 'spring authorization server', 'oauth', 'access token']"
+executable jar,3,jar,12,21,"['jar', 'executable jar', 'uber jar', 'executable']"
+cdp,3,cds,10,23,"['cds', 'csp', 'cdp', 'cdn', 'cd']"
+duplication,3,replication,18,35,"['replication', 'clone', 'duplicate', 'duplication', 'cloning', 'deduplication', 'duplicates']"
+expression language,35,expression language,35,87,"['expression', 'expression language', 'expression parser', 'spring expression', 'spring expression language', 'expression evaluation']"
+importer,11,importer,11,36,"['importer', 'gcimporter', 'imports', 'package import', 'data import']"
+ld,2,lfs,17,26,"['lfs', 'lld', 'ld', 'lto']"
+upload,21,upload,21,47,"['upload', 'multipart', 'upload error', 'file upload', 'multipart upload', 'upload issue']"
+pyproject,3,pyproject toml,12,15,"['pyproject toml', 'pyproject']"
+php fpm,16,php fpm,16,18,"['php fpm', 'fastcgi']"
+webservices,2,soap,22,39,"['soap', 'webservices', 'web services', 'xml ws', 'xml soap']"
+dumpling,7,dumpling,7,7,['dumpling']
+index join,3,hash join,8,15,"['hash join', 'lookup join', 'index join']"
+transaction,42,transaction,42,72,"['txn', 'transaction management', 'transaction', 'transactional', 'spring tx']"
+less mode,2,visual mode,14,35,"['visual mode', 'normal mode', 'insert mode', 'zenmode', 'less mode', 'vi mode', 'draft mode']"
+code,5,code action,12,51,"['code', 'snippets', 'code action', 'example code', 'snippet', 'codelens', 'code actions', 'source code', 'code snippet', 'code sample']"
+electron,16,electron,16,16,['electron']
+floating windows,3,window management,24,51,"['window management', 'window behavior', 'aux window', 'multi window', 'multi monitor', 'floating window', 'floating windows', 'multiple window support']"
+registration,2,registry,25,34,"['registry', 'meta registration', 'registration', 'register', 'register management']"
+state dictionary,3,state management,21,37,"['state management', 'state', 'state dict', 'state dictionary', 'default state']"
+dead code,16,unreachable code,17,49,"['unused code', 'dead code', 'deadcode', 'unreachable code', 'dead code elimination']"
+wsl,15,wsl,15,18,"['wsl', 'winget']"
+indent,2,indentation,24,36,"['indentation', 'padding', 'spacing', 'span', 'indent']"
+hot reload,8,hmr,9,27,"['hmr', 'hot reload', 'live reload', 'hot module replacement']"
+trampoline,3,playground,8,13,"['playground', 'trampoline', 'type juggling']"
+ipv4,3,ipv6,14,19,"['ipv6', 'ipv4', 'netip']"
+zip,12,compression,21,44,"['zip', 'zlib', 'compression', 'commons compress', 'tar']"
+process,21,process management,25,62,"['process', 'child process', 'subprocess', 'child processes', 'process group', 'process management', 'process execution']"
+opaque types,13,opaque types,13,17,"['opaque types', 'f opaque types', 'complex types']"
+future,9,future,9,17,"['future', 'futures', 'future compat', 'future incompatibility']"
+integer,10,integer,10,28,"['integer', 'integer arithmetic', 'scalar', 'symint', 'numeric types', 'bigint', 'integer type']"
+form data,4,forms,13,31,"['forms', 'form', 'formdata', 'form data']"
+directive,19,directive,19,26,"['directive', 'directives']"
+delay,4,defer,15,30,"['defer', 'sleep', 'suspend', 'delay', 'lag', 'suspend function', 'latency']"
+backward pass,9,backpropagation,18,34,"['backpropagation', 'backward pass', 'forward pass', 'backward computation']"
+priority high,2,priority medium,5,12,"['priority medium', 'priority high', 'priority: medium', 'high priority']"
+fft,14,fft,14,14,['fft']
+sparse tensor,7,sparse,10,24,"['sparse', 'sparse tensor', 'sparse matrix', 'sparse tensors']"
+gather,4,collections,10,25,"['collective', 'collections', 'gather', 'scatter reduce', 'scatter gather', 'auto collected']"
+shape,2,symbolic shapes,10,14,"['symbolic shapes', 'shape', 'geo shape']"
+transform,15,transform,15,65,"['transitions', 'transform', 'transmute', 'transition', 'transforms', 'transmutability', 'f transmutability', 'transform plugin', 'mutation']"
+table,12,table,12,41,"['table', 'v data table', 'import table', 'data table', 'datatable', 'tablesample', 'tables', 'table issue']"
+exif,15,exif,15,15,['exif']
+headless,6,headless,6,13,"['headless', 'headless mode', 'headless task']"
+resource management,30,resource management,30,63,"['resource handling', 'resource control', 'resource', 'resources', 'resource group', 'resource management', 'resource limit', 'resource usage']"
+forward port,273,forward port,273,275,"['forward port', 'forwarding']"
+conditional,4,control flow,22,102,"['condition', 'bounds', 'conditional', 'control flow', 'conditions', 'limit', 'limits', 'constraint violation', 'cond', 'conditional on', 'conditional statements', 'constraint', 'constraints', 'conditionals', 'limitations', 'continuation', 'limit operator']"
+jersey,17,jersey,17,19,"['jersey', 'njt']"
+bytebuddy,5,bytebuddy,5,8,"['bytebuddy', 'bytecode']"
+merge request,3,pull request,14,50,"['pull request', 'pull requests', 'merge', 'push', 'merge conflict', 'automerge', 'merge request', 'commit']"
+jakarta ee,14,java ee,26,51,"['jakartaee', 'jakarta ee', 'jakarta', 'jakarta activation', 'java ee']"
+sbom,13,sbom,13,16,"['sbom', 'slsa']"
+homebrew,18,homebrew,18,20,"['homebrew', 'brew']"
+type conversion,9,conversion,33,91,"['converter', 'conversion', 'type conversion', 'conversion service', 'coercion', 'type promotion', 'conversionerror', 'type coercion', 'data conversion', 'interface conversion', 'data type conversion', 'type casting', 'a coercions', 'conversion issue']"
+ansi escape sequences,5,ansi,12,23,"['ansi', 'escape sequences', 'ansi element', 'ansi escape sequences', 'ansi color']"
+observer,5,observation,11,23,"['observation', 'observable', 'observer', 'observer api']"
+request mapping,5,request mapping,5,7,"['request mapping', 'handler mapping']"
+emulation,10,emulator,13,48,"['emulator', 'qemu', 'vm', 'emulation', 'cpu emulation', 'virtualization']"
+python version,13,python compatibility,16,40,"['python version', 'python compatibility', 'python versioning', 'pip compatibility', 'python version conflict', 'python version mismatch']"
+bcmath,13,bcmath,13,19,"['bcmath', 'gmp']"
+pd,9,pd,9,20,"['pd', 'pdb', 'pd api', 'pdms']"
+concat,3,join,21,39,"['join', 'union', 'concat', 'concatenation', 'unification']"
+term,2,termdebug,7,11,"['termdebug', 'terminology', 'term']"
+panel,9,sidebar,10,39,"['panel', 'widget', 'sidebar', 'pane management', 'pane', 'grid', 'slider', 'drawer', 'column']"
+folding,12,folding,12,12,['folding']
+treeview,16,tree view,17,50,"['treeview', 'tree view', 'tree', 'component: treeview', 'pytree', 'program tree', 'v treeview', 'tree traversal', 'tree command']"
+detection,6,detection,6,16,"['detection', 'class detection', 'feature detection', 'feature tracking']"
+insiders,16,insiders,16,21,"['insiders', 'insider build']"
+font,14,font,14,25,"['font', 'typography', 'fonts', 'text scaling', 'font size']"
+variables,9,variables,9,40,"['variables', 'variable', 'global variables', 'global variable', 'system variables', 'variable scope', 'variable management']"
+question,9,qa,20,31,"['question', 'qa', 'type: question']"
+replace,2,rename,14,28,"['rename', 'replace', 'search and replace', 'renaming', 'replacement']"
+audio,10,speech,10,42,"['speech', 'voice', 'audio', 'microphone', 'record', 'audio cues', 'speech input', 'speech recognition', 'recording', 'voice input']"
+pagination,17,pagination,17,17,['pagination']
+darwin,9,darwin,9,18,"['darwin', 'dwarf']"
+fips,16,fips,16,18,"['fips', 'fips140']"
+godebug,15,godebug,15,17,"['godebug', 'godeps']"
+heap overflow,2,memory corruption,17,45,"['memory corruption', 'heap attack', 'buffer overflow', 'heap buffer overflow', 'corrupted binary', 'heap overflow', 'heap corruption']"
+alignment,45,alignment,45,52,"['alignment', 'alignment issue', 'memory alignment']"
+copyright,13,copyright,13,15,"['copyright', 'copyright update']"
+pe file,7,pe format,9,16,"['pe file', 'pe format']"
+pgo,9,pgo,9,11,"['pgo', 'purego']"
+vector,6,embedding,9,37,"['embedding', 'vector', 'vectorization', 'vector index', 'search vectors', 'vector search', 'vectors', 'vec', 'dense vector']"
+buffer,11,buffer management,18,39,"['buffer', 'output buffering', 'buffer management', 'buffering', 'buffers']"
+readline,9,readline,9,12,"['readline', 'stdin']"
+rustfmt,7,rustfmt,7,9,"['rustfmt', 'deno fmt']"
+const fn,13,const fn,13,16,"['const fn', 'const fns']"
+const propagation,4,const propagation,4,11,"['const propagation', 'propagation', 'type propagation', 'context propagation']"
+intrinsics,8,intrinsics,8,30,"['intrinsics', 'compiler builtins', 'compiler intrinsic', 'intrinsic', 'intrinsic function', 'builtin']"
+static items,5,static items,5,14,"['static items', 'const items', 'generic const items', 'private items']"
+type aliases,4,associated types,14,49,"['associated types', 'type alias', 'type traits', 'type alias impl trait', 'type aliases', 'associated type', 'trait associated types', 'trait alias']"
+fn delegation,9,fn delegation,9,20,"['fn delegation', 'delegation', 'f fn delegation']"
+mingw,3,msvc,15,24,"['msvc', 'msys2', 'meson', 'mingw']"
+glibc,4,libc,11,21,"['libc', 'glibc', 'musl', 'glibc compatibility']"
+conpty,13,conpty,13,15,"['conpty', 'conhost']"
+custom element,5,custom elements,16,36,"['custom elements', 'custom element', 'web components', 'shadow dom']"
+linearization,2,linear,7,13,"['linear', 'linearization', 'linearizability']"
+batch norm,3,normalization,10,34,"['norm', 'batchnorm', 'spectral norm', 'normalization', 'layer norm', 'batch norm', 'nn.batchnorm2d', 'spectral normalization']"
+verification,31,verification,31,33,"['verification', 'repository verification']"
+gradientcheck,2,gradient,10,25,"['gradient', 'gradientcheck', 'gradient check', 'gradcheck', 'gradient computation', 'gradient comparison']"
+eager mode,9,eager mode,9,18,"['eager', 'eager mode', 'eager execution']"
+php extension,18,php extension,18,44,"['cpp extension', 'php extension', 'php extensions', 'python extension', 'c extensions']"
+third party,102,third party,102,225,"['third party', 'third party scripts', 'third party library', 'third party issue', 'third party dependency', 'third party support', 'third party libraries']"
+placement,7,relocation,12,21,"['placement', 'relocation', 'placement rules']"
+quickpick,8,slots,12,34,"['slot', 'quickpick', 'quick picks', 'slots', 'quick pick']"
+qt,9,qt,9,11,"['qt', 'qt client']"
+wallet,18,wallet,18,21,"['wallet', 'miniwallet']"
+data model,6,data model,6,15,"['data model', 'object model', 'data modeling']"
+freemarker,9,thymeleaf,10,23,"['thymeleaf', 'freemarker', 'free marker']"
+symbol resolution,12,path resolution,18,96,"['property resolution', 'resource resolution', 'package resolution', 'method resolution', 'symbol resolution', 'url resolution', 'path resolution', 'link resolution', 'trait resolution', 'variable resolution', 'protocol resolver', 'uri resolution', 'type resolution']"
+javadoc,72,javadoc,72,80,"['javadoc', 'jsdoc']"
+multi arch,3,multi release,6,15,"['multi release', 'manylinux', 'multi arch', 'alpine']"
+spring ldap,27,spring ldap,27,27,['spring ldap']
+constructor,6,constructor,6,12,"['constructor', 'constructor binding']"
+configurationproperties,2,configuration properties,9,27,"['configuration properties', 'property source', 'spring profiles', 'configurationproperties', 'propertysource', 'dynamic property sources', 'spring properties']"
+otel,12,otel,12,12,['otel']
+sdkman,13,sdkman,13,13,['sdkman']
+spring ws,13,spring ws,13,16,"['spring ws', 'spring websocket']"
+property placeholder,4,property placeholder,4,4,['property placeholder']
+entrypoints,2,endpoint,11,21,"['endpoint', 'endpoints', 'entrypoint', 'entrypoints']"
+spatial,7,spatial,7,11,"['spatial', 'geospatial', 'spatial plugin']"
+ocr,15,ocr,15,17,"['ocr', 'tesseract']"
+require,4,requirements,18,29,"['requires python', 'requirements', 'require']"
+version control,3,versioning,51,97,"['versioning', 'source control', 'version tracking', 'scm', 'vcs', 'versiontracking', 'version', 'source management', 'version management', 'version control', 'topic: versioning', 'revision history']"
+virtual environment,30,virtual environment,30,55,"['virtualenv', 'venv', 'virtual environment', 'python env', 'virtual environments', 'python environment']"
+pcre,10,pcre,10,10,['pcre']
+php 8.4,2,php8,4,8,"['php8', 'php 8.4', 'php 8 4']"
+generated columns,9,generated columns,9,11,"['generated columns', 'generated column']"
+cte,17,cte,17,17,['cte']
+quickopen,2,quick open,7,11,"['quick open', 'quickopen', 'goto anything']"
+inlay hint,2,tooltip,13,19,"['tooltip', 'inlay hints', 'inlay hint', 'hint']"
+history,11,history,11,16,"['history', 'local history']"
+watch,8,watch,8,27,"['watcher', 'watch', 'watchflakes', 'watch mode']"
+babel,5,webpack,17,40,"['webpack', 'rollup', 'babel', 'esbuild', 'transpilation']"
+headers,17,headers,17,37,"['headers', 'http headers', 'header file', 'header checks', 'header', 'header management']"
+relay,7,relay,7,15,"['relay', 'rendezvous', 'rte', 'receiver']"
+minification,10,minification,10,15,"['minification', 'tree shaking']"
+vercel,6,vercel,6,8,"['vercel', 'cloudflare workers']"
+pkg.go.dev,2,go packages,7,18,"['pkgsite', 'pkg.go.dev', 'go/packages', 'go packages']"
+reporting,4,reporting,4,7,"['reporting', 'reporter']"
+atomic operations,3,atomic,13,20,"['atomic', 'atomic operations', 'atomic ops', 'atomic operation']"
+area/build,4,area/testing,9,40,"['area/build', 'area/testing', 'area compiler', 'area sql', 'area modules', 'area api', 'area datetime', 'area/tools', 'area/cmd', 'area testing']"
+certificates,9,acme,9,28,"['acme', 'certificate', 'certificates', 'root certificates']"
+request parameter,3,request body,5,10,"['request body', 'request binding', 'request parameter']"
+appearance,8,appearance,8,12,"['appearance', 'visual appearance', 'cosmetic']"
+organize imports,4,organize imports,4,4,['organize imports']
+transport,11,transport,11,13,"['transport', 'traffic management']"
+x509,8,x509,8,12,"['x509', 'asn1']"
+pie,4,pie,4,9,"['pie', 'layercake', 'pear']"
+artifact,4,archive,11,21,"['archive', 'artifact', 'artifacts', 'artifact management']"
+delete,3,removal,25,44,"['removal', 'drop', 'delete', 'deletion']"
+touch,5,touch,5,7,"['touch', 'touch events']"
+contributions,3,collaborator nomination,11,40,"['contributor', 'contributing', 'contributor experience', 'contribution', 'collaborator nomination', 'contributions', 'contributor engagement', 'contributor recognition']"
+webidl,4,webidl,4,4,['webidl']
+promise rejection,2,promise,8,15,"['promise', 'promise rejection', 'promises', 'unhandled rejection']"
+circular dependency,13,circular dependency,13,26,"['circular dependency', 'cycle detection', 'circular references', 'cyclic dependency', 'circular dependencies']"
+attribute access,3,property access,7,19,"['property access', 'accessor', 'attribute access', 'getattr', 'getitem']"
+policy,4,policy,4,9,"['governance', 'polling', 'policy']"
+random number generator,2,randomness,12,41,"['random', 'math/rand', 'randomness', 'random number generation', 'random state', 'random number generator', 'randomized testing']"
+tokio,3,tokio,3,3,['tokio']
+astro,4,astro,4,4,['astro']
+request,17,request,17,39,"['api request', 'request', 'os request', 'http request', 'request response', 'ui request', 'doc request']"
+publication,3,publishing,9,35,"['publish', 'publisher', 'printer', 'print', 'publishing', 'printing', 'publication']"
+api review,3,review,4,7,"['api review', 'review']"
+walker,3,runner,9,21,"['hermit', 'runner', 'walker', 'waker', 'man']"
+make,5,make,5,14,"['rmake', 'makefile', 'make', 'run make']"
+out of bounds,14,out of bounds,14,41,"['index out of bounds', 'bounds check', 'out of bounds', 'index out of range', 'bounds checking', 'out of bounds access', 'bounds error']"
+incremental compilation,15,incremental compilation,15,25,"['incremental compilation', 'incremental', 'incremental build']"
+mips64,2,riscv,8,19,"['riscv', 'mips64', 'm68k', 'mips', 'riscv64']"
+f const,3,f const,3,8,"['f const', 't const', 'f const trait']"
+unsized types,21,unsized types,21,21,['unsized types']
+license,10,license,10,20,"['license', 'licensing', 'legal', 'license management']"
+submodule,7,submodule,7,24,"['submodules', 'subcommand', 'subscription', 'submodule', 'subprojects', 'subdirectory']"
+nightly,6,nightly,6,11,"['nightly', 'ninja', 'requires nightly']"
+f specialization,3,specialization,9,14,"['specialization', 'f specialization', 'trait specialization']"
+diagram,4,mermaid,7,14,"['mermaid', 'schematics', 'diagram']"
+torch.cond,4,torch.cond,4,4,['torch.cond']
+conv2d,3,convolution,12,18,"['conv1d', 'conv2d', 'convolution']"
+bilinear,2,interpolation,13,15,"['interpolation', 'bilinear']"
+compute,3,compute,3,5,"['compute', 'cse']"
+broadcast,4,broadcast,4,9,"['broadcast', 'v radio', 'broadcasting']"
+nn functional,2,nn module,19,67,"['nn modules', 'nn module', 'torch.nn', 'relu', 'activation function', 'hardswish', 'gelu', 'dropout', 'nn.module', 'nn.functional', 'torch.nn.functional', 'nn functional', 'linear layer']"
+exports,2,model export,12,23,"['dynamo export', 'model export', 'module exports', 'exports']"
+boolean,6,boolean,6,11,"['boolean', 'bool', 'boolean expressions']"
+tensorflow,3,tvm,10,40,"['tvm', 'tensorboard', 'timm', 'tensorflow', 'torchvision', 'keras', 'tensor api', 'timm models']"
+inlining,19,inlining,19,21,"['inlining', 'function inlining']"
+arm64,3,arm,12,53,"['arm', 'ppc64', 'x86', 's390x', 'ppc', 'x86 64', 'ppc64le', 'aarch64', 'arm64', 'arm32', 'amd64']"
+postcss,17,postcss,17,19,"['postcss', 'postcss plugin']"
+goldmark,5,goldmark,5,5,['goldmark']
+latex,4,latex,4,8,"['latex', 'math rendering']"
+glob,4,glob,4,7,"['glob', 'globbing']"
+jmx,14,jmx,14,14,['jmx']
+technology,3,technology,3,3,['technology']
+response handling,3,response,6,18,"['request handling', 'response', 'response format', 'response handling', 'api response']"
+project management,33,project management,33,76,"['management', 'project', 'organization', 'project management', 'project setup', 'project structure', 'project configuration', 'import management', 'team management']"
+image build,8,image build,8,23,"['image building', 'image build', 'build image', 'oci image', 'docker image']"
+startup failure,5,startup failure,5,7,"['startup failure', 'init error']"
+mime type,2,mime,7,31,"['mime types', 'mime', 'media types', 'media type', 'content type', 'mime type', 'mimetype']"
+java version,41,java version,41,44,"['java version', 'api version']"
+project maintenance,2,maintenance,114,118,"['maintenance', 'project maintenance', 'maintainers']"
+rank eval,5,rank eval,5,12,"['rank eval', 'ranking', 'rescore']"
+knn,7,knn,7,11,"['knn', 'knn search']"
+ccr,3,crac,7,10,"['ccr', 'crac']"
+ingest,8,ingest,8,10,"['ingest', 'ingest pipeline']"
+restart,10,restart,10,20,"['fullclusterrestartit', 'restart', 'remote restart', 'cluster restart', 'scope restart']"
+key error,2,keyerror,5,11,"['keyword', 'keyerror', 'key error']"
+user interaction,5,interaction,21,68,"['interactive', 'extension interaction', 'ui interaction', 'interaction', 'plugin interaction', 'ui behavior', 'user interaction', 'browser interaction', 'feature interaction']"
+instruction set,11,instruction set,11,23,"['instruction handling', 'instruction set', 'instruction', 'instruction encoding', 'cpu instruction', 'instruction decoding']"
+bean post processor,5,bean post processing,7,14,"['bean post processing', 'post processor', 'bean post processor']"
+blocking,9,blocking,9,15,"['blocking', 'a contributor roadblock', 'blocking issue', 'stuck']"
+unmarshalling,3,deserialization,18,28,"['deserialization', 'marshalling', 'unmarshalling', 'unmarshaling']"
+rtti,6,rtti,6,6,['rtti']
+switch case,4,switch statement,12,25,"['switch statement', 'switch', 'ng switch', 'switch case', 'type switch']"
+pcode,5,pcode,5,8,"['pcode', 'position independent code']"
+conflicts,3,conflict resolution,12,43,"['conflicts', 'symbol conflict', 'library conflict', 'conflict resolution', 'naming conflict', 'conflict', 'version conflict', 'component conflict', 'resolution conflict', 'bom conflict']"
+branching,2,branch management,9,32,"['branch', 'branch management', 'fork management', 'branch protection', 'branch resolution', 'forking', 'branching', 'forks']"
+hook,3,webhook,7,22,"['webhooks', 'hook', 'hooks', 'webhook', 'callback']"
+115,5,undici,6,11,"['115', 'undici']"
+method call,2,method dispatch,7,15,"['method dispatch', 'method invocation', 'method call', 'trait method']"
+wheel support,2,wheel,11,18,"['wheel', 'wheel selection', 'wheel support', 'wheel file']"
+poetry,3,poetry,3,3,['poetry']
+domdocument,3,ext dom,3,8,"['ext dom', 'domdocument', 'dom manipulation']"
+ext standard,3,ext standard,3,6,"['ext standard', 'standardization']"
+calling convention,8,calling convention,8,10,"['calling convention', 'calling conventions']"
+checker,4,checksum,13,28,"['checksum', 'checker', 'checkbox', 'sanity check']"
+region,4,region,4,9,"['region', 'regions', 'region error']"
+xxd,4,xxd,4,4,['xxd']
+autocommands,4,autocommand,11,21,"['autocommand', 'autocmd', 'autocommands']"
+autoload,14,autoload,14,16,"['autoload', 'autoloader']"
+store,6,store,6,13,"['marketplace', 'store', 'checkout']"
+save,7,save,7,23,"['saving', 'autosave', 'save load', 'save', 'save issue', 'save strategy']"
+draganddrop,2,drag and drop,11,13,"['draganddrop', 'drag and drop']"
+stepping,3,stepper,6,15,"['stepping', 'stepper', 'advancer', 'step', 'step over']"
+instantiation,3,instantiation service,4,9,"['instantiation', 'new instance', 'instantiation service']"
+microsoft account,2,msal,9,15,"['msal', 'microsoft account', 'microsoft']"
+missing module,2,missing function,3,20,"['test missing', 'missing feature', 'package missing', 'missing function', 'missing module', 'missing dependency', 'missing classes', 'function missing', 'component missing']"
+comparison,29,comparison,29,45,"['compare', 'comparison', 'equality', 'comparison operator', 'equivalence']"
+monaco editor,6,monaco editor,6,8,"['monaco editor', 'codemirror']"
+mdx,5,mdx,5,5,['mdx']
+reconstruction,3,revalidation,8,26,"['revalidation', 'restoration', 'renewal', 'rebuild', 'invalidation', 'reconstruction', 'reconnection', 'reinstallation']"
+aws,14,ec2,15,34,"['serverless', 'aws', 'ec2', 'aws lambda']"
+sitemap,4,sitemap,4,10,"['sitemap', 'site data', 'site management', 'sitemaps']"
+tailwindcss,68,tailwindcss,68,68,['tailwindcss']
+isr,4,isr,4,6,"['isr', 'sri']"
+react,10,react native,41,56,"['react', 'react native', 'redux', 'react root view']"
+weak references,3,weakmap,4,16,"['weak pointers', 'weakmap', 'weak references', 'reference counting', 'reference handling', 'reference cycle']"
+x/build,2,x/sys,3,5,"['x/build', 'x/sys']"
+algorithm,35,algorithm,35,37,"['algorithm', 'dynamic programming']"
+go/test,2,go test,7,15,"['go test', 'go internal', 'go/test', 'go analysis']"
+encoding/xml,4,encoding/xml,4,4,['encoding/xml']
+interpreter,9,interpreter,9,13,"['interpreter', 'compiler interpretation', 'ssa interp']"
+range loop,5,range loop,5,5,['range loop']
+signature,2,manifest,6,16,"['signature help', 'signer', 'signature', 'manifest', 'signing']"
+os/exec,7,os/exec,7,7,['os/exec']
+gopath,6,gopath,6,10,"['gopath', 'gopathwalk', 'goroot']"
+gomobile,3,cmd/gomote,3,6,"['cmd/gomote', 'gomobile']"
+spec compliance,14,spec compliance,14,33,"['spec compliance', 'conformance', 'standard compliance', 'abi compliance', 'api compliance']"
+cmd/compile,19,cmd/compile,19,31,"['cmd/compile', 'go compiler']"
+go list,4,go list,4,4,['go list']
+binary,9,byte buddy,28,58,"['binary size', 'byte buddy', 'binary', 'binary format', 'bytes', 'binary data', 'binary loading']"
+expected behavior,5,expected behavior,5,8,"['expected behavior', 'expect']"
+stdio,3,printf,4,9,"['printf', 'stdio', 'stdlib issue']"
+threadsanitizer,2,threadsanitizer,2,2,['threadsanitizer']
+goimports,2,goimports,2,4,"['goimports', 'go imports']"
+gerritbot,5,gerritbot,5,7,"['gerritbot', 'mergebot']"
+vendoring,5,vendoring,5,5,['vendoring']
+tcp,3,stomp,4,9,"['tcp', 'stomp', 'tcpstore']"
+listing,2,list,5,20,"['flatlist', 'module list', 'list', 'listing', 'listing panel', 'listing view', 'list view', 'list item']"
+metro,4,metro,4,4,['metro']
+background tasks,4,background tasks,4,4,['background tasks']
+async hooks,5,async hooks,5,12,"['async hooks', 'perf hooks', 'promise hooks', 'forward hooks']"
+source map,2,source maps,2,6,"['source maps', 'source map', 'source directive']"
+deno,168,deno,168,255,"['deno install', 'deno node', 'deno', 'deno workspace', 'deno std', 'deno core', 'deno task', 'deno compile', 'deno cli', 'deno runtime', 'deno configuration', 'deno feature', 'domain: deno', 'domain: deno cli', 'deno compiler', 'deno lock', 'deno check', 'deno add']"
+symbolic link,3,symlink,11,19,"['symlink', 'symbolic links', 'symbolic link']"
+async storage,2,async storage,2,4,"['async storage', 'async local storage']"
+docusaurus,4,antora,9,13,"['docusaurus', 'antora']"
+diesel,2,diesel,2,2,['diesel']
+primitives,4,primitives,4,4,['primitives']
+orphan rules,3,orphan rules,3,3,['orphan rules']
+needs investigation,2,needs investigation,2,4,"['needs investigation', 'investigation']"
+unsoundness,32,unsoundness,32,49,"['i unsound', 'unsoundness', 'soundness']"
+doc tests,6,doc tests,6,9,"['doc tests', 'doc test']"
+ui test,2,ui tests,5,9,"['ui tests', 'ui test', 'ui automation']"
+const expression,2,const expr,5,10,"['const expressions', 'const expr', 'const expression']"
+numerical,7,numerics,19,79,"['numeric', 'numerical accuracy', 'numerics', 'numerical stability', 'numerical', 'numerical computation', 'numerical issues', 'numerical computing', 'numerical issue', 'numerical precision']"
+deref,7,deref,7,7,['deref']
+pointer,2,pointer arithmetic,15,45,"['ptr', 'smart pointers', 'pointer arithmetic', 'fn pointer', 'function pointer', 'pointers', 'function pointers', 'pointer', 'pointer comparison', 'smart pointer']"
+false positive,11,false positive,11,20,"['false positive', 'false positives', 'misleading']"
+efficiency,2,productivity,14,16,"['efficiency', 'productivity']"
+variadic functions,13,variadic functions,13,22,"['variadic functions', 'varargs', 'c variadic']"
+extern blocks,2,extern blocks,2,4,"['extern blocks', 'impl blocks']"
+function call,7,function call,7,10,"['function call', 'function calls']"
+rpath,3,rpath,3,3,['rpath']
+tidy,8,tidy,8,10,"['tidy', 'polish']"
+variance,3,variance,3,5,"['variance', 'variance inference']"
+size,3,resize,8,18,"['size', 'size oblivious', 'resize', 'unsizing']"
+generic const exprs,11,generic const exprs,11,13,"['generic const exprs', 'generic constants']"
+phantom data,3,phantom data,3,3,['phantom data']
+let underscore drop,2,let underscore drop,2,2,['let underscore drop']
+sixel,4,sixel,4,4,['sixel']
+whitespace,4,whitespace,4,4,['whitespace']
+incremental hydration,7,incremental hydration,7,9,"['incremental hydration', 'component hydration']"
+distutils,5,distutils,5,5,['distutils']
+exporter,3,exporter,3,5,"['exporter', 'ida exporter']"
+kineto,3,kineto,3,5,"['kineto', 'kms']"
+tunableop,3,autotune,13,27,"['tunableops', 'autotune', 'autotuning', 'tunableop', 'torchtune']"
+function signature,12,function signature,12,12,['function signature']
+mypy,5,mypy,5,7,"['mypy', 'pyright']"
+deepcopy,5,deepcopy,5,7,"['deepcopy', 'structured clone']"
+pytorch linalg,2,pytorch linalg,2,2,['pytorch linalg']
+reasoning,3,logic,15,18,"['reasoning', 'logic']"
+bitwise operations,3,bitwise operations,3,5,"['bitwise operations', 'bitwise operation']"
+take along dim,3,take along dim,3,3,['take along dim']
+loss function,8,loss function,8,16,"['nll loss', 'loss function', 'loss functions', 'mse loss']"
+subclassing,2,inheritance,8,18,"['subclassing', 'subclasses', 'multiple inheritance', 'inheritance', 'subtyping']"
+learning rate,11,learning rate,11,15,"['learningrate', 'learning rate', 'learning rate scheduler']"
+etcd,6,etcd,6,6,['etcd']
+einsum,4,einsum,4,4,['einsum']
+flops,5,flops,5,7,"['flops', 'flops counting']"
+shapeerror,2,shapeerror,2,2,['shapeerror']
+cost estimation,2,estimation,5,13,"['fee estimation', 'estimation', 'cost estimation', 'cost model']"
+scriptpubkeyman,3,scriptpubkeyman,3,6,"['scriptpubkeyman', 'psbt']"
+derived state,4,derived state,4,7,"['derived state', 'derived values']"
+permalink,4,permalink,4,6,"['permalink', 'permalinks']"
+cascade,4,cascade,4,8,"['cascade', 'catalyst']"
+content adapter,3,adapter,6,13,"['content adapters', 'content adapter', 'adapter']"
+params,5,params,5,9,"['params', 'type params', 'parameter names']"
+content generation,5,content generation,5,10,"['content generation', 'text generation']"
+porting,26,porting,26,57,"['porting', 'message port', 'portability', 'test porting', 'port', 'issue porting']"
+jarmode,4,jarmode,4,6,"['jarmode', 'pkg mode']"
+structured logging,6,structured logging,6,6,['structured logging']
+lombok,15,lombok,15,15,['lombok']
+health indicator,3,health,7,16,"['health', 'health check', 'health indicator']"
+spring rest docs,3,spring restdocs,9,17,"['spring rest docs', 'spring restdocs', 'rest docs']"
+eclipse,15,eclipse,15,15,['eclipse']
+systemd,9,systemd,9,9,['systemd']
+value class,2,value classes,5,11,"['value objects', 'value classes', 'value class', 'value object']"
+http status code,5,http status code,5,10,"['http status', 'http status code', 'http status codes']"
+saml,5,saml,5,5,['saml']
+cnb,2,cnb,2,2,['cnb']
+readonly,10,readonly,10,38,"['readme', 'readonly', 'read', 'read only', 'readonly class', 'stale read', 'readonly file system', 'read write']"
+services,2,service,5,11,"['service', 'services', 'service connections', 'service connection']"
+module metadata,2,module metadata,2,2,['module metadata']
+cleaning,3,cleaning,3,5,"['chore', 'cleaning']"
+jaybird,2,jaybird,2,2,['jaybird']
+conditional onproperty,2,conditional on property,3,5,"['conditional on property', 'conditional onproperty']"
+component scan,5,component scan,5,7,"['component scan', 'scan']"
+syft,2,federated learning,3,5,"['syft', 'federated learning']"
+timeseries,2,time series,10,14,"['time series', 'benchseries', 'timeseries']"
+video issue,2,codec,4,15,"['codec', 'video', 'video player', 'video issue', 'codec issue']"
+docvalues,4,docvalues,4,6,"['docvalues', 'doc values']"
+nested,3,nested,3,6,"['nested', 'nested fields']"
+painless,4,painless,4,6,"['painless', 'e easy']"
+fish,3,fish,3,3,['fish']
+fzf,32,fzf,32,53,"['fzf vim', 'fzf tmux', 'fzf options', 'fzf integration', 'fzf cli', 'ripgrep', 'fzf', 'fuzzy finder', 'fzf configuration', 'fzf features']"
+aliasing,8,aliasing,8,23,"['alias', 'pointer aliasing', 'aliasing', 'type aliasing', 'alias analysis']"
+xml configuration,8,xml configuration,8,12,"['xml configuration', 'java configuration']"
+content negotiation,9,content negotiation,9,13,"['content negotiation', 'content length']"
+jsr223,2,jsr223,2,2,['jsr223']
+cglibs,2,cglib,8,10,"['cglibs', 'cglib']"
+osgi,4,osgi,4,4,['osgi']
+qualifier,7,qualifier,7,13,"['qualifier', 'modifier', 'important modifier', 'qualifier resolution']"
+marker,2,milestone,10,18,"['milestone', 'marker resolution', 'marker', 'markers']"
+method handler,2,method handle,5,14,"['method handle', 'handler', 'methodhandle', 'handler method', 'method handler']"
+controller,11,controller,11,17,"['controller', 'counter']"
+http message converter,8,http message converter,8,11,"['http message converter', 'http message conversion']"
+interop,2,java interop,6,15,"['java interop', 'interoperability', 'c interoperability', 'interop']"
+bean override,11,bean override,11,22,"['method overriding', 'bean override', 'override', 'bean overriding']"
+pe,3,ppr,4,27,"['pe', 'ppr', 'pino', 'pin', 'pt2e', 'pitr', 'pem', 'pinning', 'pep']"
+ghidra,47,ghidra,47,58,"['pyghidra', 'ghidra core', 'ghidra', 'ghidra feature', 'ghidra bug']"
+demangling,4,demangling,4,4,['demangling']
+shared memory,5,shared memory,5,12,"['sharing', 'shared memory', 'shared process']"
+feed,2,rss,5,7,"['rss', 'feed']"
+ftp,2,sftp,6,18,"['sftp', 'sendfile', 'file transfer', 'ftp', 'scp']"
+playback,3,playback,3,7,"['playback', 'media playback', 'event replay']"
+python discovery,2,python discovery,2,2,['python discovery']
+setuptools scm,3,setuptools scm,3,3,['setuptools scm']
+generic issues,4,general,27,44,"['general', 'global', 'common', 'general issue', 'generic issue', 'miscellaneous', 'generic issues']"
+component:vnumberinput,2,vnumberinput,4,10,"['component:vnumberinput', 'component: vnumberinput', 'vnumberinput', 'number input']"
+navigationdrawer,2,navigationdrawer,2,4,"['navigationdrawer', 'navigation drawer']"
+metaprogramming,6,metaprogramming,6,9,"['metaprogramming', 'meta programming']"
+slow query log,2,slow query,6,11,"['slow query log', 'slow query', 'slow log']"
+mvcc,4,mvcc,4,4,['mvcc']
+dxf,2,dxf,2,2,['dxf']
+auto increment,3,auto increment,3,3,['auto increment']
+alter table,4,alter table,4,4,['alter table']
+region balancing,3,region balancing,3,3,['region balancing']
+gorm,2,gorm,2,2,['gorm']
+select for update,2,select for update,2,2,['select for update']
+manpage,3,man pages,4,7,"['manpage', 'man pages']"
+luci,3,lua,3,6,"['lua', 'luci']"
+dict,3,dict,3,3,['dict']
+x11,4,x11,4,9,"['x11', 'xdg compliance', 'gtk']"
+live share,2,live share,2,2,['live share']
+disposable,6,disposable,6,16,"['disposable management', 'trash', 'disposable store', 'disposable', 'disposal']"
+tunnel,2,tunnel,2,4,"['tunnel', 'code tunnel']"
+working sets,2,working sets,2,2,['working sets']
+decorations,8,decorations,8,10,"['decorations', 'decoration']"
+account management,7,user management,11,34,"['account management', 'accounts', 'profile manager', 'user management', 'profile management', 'bot management']"
+tree sitter,5,tree sitter,5,5,['tree sitter']
+dart,2,flutter,3,5,"['dart', 'flutter']"
+monaco,2,monaco,2,2,['monaco']
+embedded,4,embedded,4,8,"['embedded languages', 'embedded', 'embedded systems']"
+workspace trust,2,workspace trust,2,2,['workspace trust']
+uri encoding,2,url encoding,5,7,"['uri encoding', 'url encoding']"
+snapshot testing,2,visual regression,2,6,"['visual regression', 'storybook', 'snapshot testing']"
+screen reader,12,screen reader,12,19,"['text to speech', 'screen reader', 'read aloud', 'screenreader']"
+run configuration,2,launch config,3,5,"['launch config', 'run configuration']"
+memento,3,memento,3,3,['memento']
+roaming profiles,2,roaming profiles,2,2,['roaming profiles']
+bundling,2,bundling,2,6,"['bundling', 'bundler', 'bundling issue']"
+partytown,3,partytown,3,3,['partytown']
+production,3,production issue,5,15,"['production', 'production issue', 'production build', 'production bug', 'production mode']"
+google tag manager,2,google tag manager,2,2,['google tag manager']
+polyfills,4,polyfill,9,13,"['polyfills', 'polyfill']"
+cmd/link,6,cmd/link,6,6,['cmd/link']
+goenv,2,go env,3,7,"['go env', 'go/install', 'goenv']"
+sanitizer,25,sanitizer,25,38,"['sanitizers', 'sanitizer', 'sanitizer issue', 'sanitization', 'sanitizer error']"
+unique,2,distinct,4,13,"['unique', 'uuids', 'distinct', 'unique constraint', 'uuid']"
+build cache,4,build cache,4,4,['build cache']
+chdir,2,chdir,2,2,['chdir']
+cmd/vet,2,cmd/vet,2,4,"['cmd/vet', 'go vet']"
+finalizers,3,finalizers,3,5,"['finalizers', 'destructors']"
+math/big,2,math/big,2,2,['math/big']
+go binary,2,encoding/binary,2,6,"['encoding/binary', 'gob', 'go binary']"
+json path,4,json path,4,8,"['objectpath', 'jsonpath', 'json path']"
+precondition,2,predicate,5,13,"['predeclared', 'predicate', 'preprocessor', 'precondition', 'prefix']"
+data layout,2,memory layout,5,11,"['memory layout', 'struct layout', 'data layout', 'enum layout']"
+export data,2,export data,2,2,['export data']
+odr violation,3,access violation,5,11,"['odr violation', 'access violation', 'protocol violation']"
+cgocall,4,cgocall,4,4,['cgocall']
+kqueue,3,kqueue,3,3,['kqueue']
+callgraph,3,callgraph,3,3,['callgraph']
+stringer,2,stringer,2,2,['stringer']
+xcframework,3,xcode,5,8,"['xcframework', 'xcode']"
+cmd/gitmirror,2,cmd/gitmirror,2,2,['cmd/gitmirror']
+cmd/gonew,2,cmd/gonew,2,2,['cmd/gonew']
+handshake,3,handshake,3,3,['handshake']
+race,5,race,5,5,['race']
+internal/trace,3,internal/trace,3,3,['internal/trace']
+media,4,community,14,27,"['communication', 'community', 'media', 'social media']"
+range function,2,rangefunc,3,11,"['rangefunc', 'arange', 'range function', 'range', 'key range']"
+refresh,6,refresh,6,21,"['refreshcontrol', 'reflow', 'refresh', 'reload', 'refresh issue', 'refresh behavior', 'reloading']"
+yarn,3,yarn,3,3,['yarn']
+commonjs,2,commonjs,2,2,['commonjs']
+abort signal,3,abort controller,4,7,"['abort signal', 'abort controller']"
+mksnapshot,2,mksnapshot,2,2,['mksnapshot']
+readdir,3,readdir,3,3,['readdir']
+keepalive,4,keepalive,4,6,"['keepalive', 'tcp keepalive']"
+jwt,2,jwk,3,8,"['jwk', 'jwt', 'jwt realm']"
+shader,2,metal performance shaders,4,6,"['shader', 'metal performance shaders']"
+provenance,3,provenance,3,3,['provenance']
+brotli,2,brotli,2,4,"['brotli', 'br tool']"
+unix domain socket,3,unix domain socket,3,7,"['unix socket', 'unix domain socket', 'unix domain sockets']"
+pin ergonomics,2,ergonomics,4,6,"['pin ergonomics', 'ergonomics']"
+unwind,3,unwinding,5,15,"['unboxing', 'unwinding', 'flatten', 'unflatten', 'unwind']"
+thread local,3,thread local,3,6,"['thread local', 'thread local storage']"
+intra doc links,3,intra doc links,3,5,"['intra doc links', 'find links']"
+exit code,3,exit code,3,3,['exit code']
+lang items,3,lang item,29,32,"['lang items', 'lang item']"
+confusion,7,confusion,7,14,"['ambiguity', 'confusion', 'confusing']"
+avr,2,avr,2,2,['avr']
+undefined reference,5,undefined reference,5,25,"['missing symbol', 'undefined symbol', 'uninitialized variable', 'undefined reference', 'undefined variable', 'uninitialized', 'uninitialized memory']"
+reusability,7,reusability,7,12,"['reuse', 'reusability', 'reentrancy']"
+polymorphization,2,polymorphism,4,8,"['polymorphization', 'polymorphism', 'polymorphize']"
+bindgen,3,bindgen,3,3,['bindgen']
+trait upcasting,3,trait upcasting,3,3,['trait upcasting']
+polonius,4,polonius,4,4,['polonius']
+verbose,2,verbose mode,4,8,"['verbose', 'verbose mode', 'log level']"
+linked list,3,linked list,3,3,['linked list']
+static,2,static variable,4,11,"['static', 'static variable', 'static method', 'static mut']"
+f check cfg,2,f check cfg,2,2,['f check cfg']
+return type notation,2,return type notation,2,4,"['return type notation', 'return types']"
+sysroot,3,sysroot,3,3,['sysroot']
+cell,2,cell,2,2,['cell']
+chumsky,2,chumsky,2,2,['chumsky']
+nix,2,guix,3,5,"['nix', 'guix']"
+location,2,localwaker,2,6,"['localwaker', 'location', 'loclist']"
+non local definitions,2,non local definitions,2,2,['non local definitions']
+immutability,2,idempotence,3,11,"['interior mutability', 'mutability', 'immutability', 'idempotence', 'immutable']"
+async fn traits,2,async fn traits,2,2,['async fn traits']
+mismatch,4,data mismatch,22,44,"['abi mismatch', 'hash mismatch', 'data mismatch', 'mismatch', 'api mismatch', 'pattern mismatch']"
+unnamed fields,2,unnamed fields,2,2,['unnamed fields']
+tray icon,3,tray icon,3,3,['tray icon']
+json schema,2,schema validation,4,8,"['schema validation', 'xml schema', 'json schema']"
+tabs,3,tab management,5,15,"['tabs', 'tab', 'tab management', 'pinned tabs', 'tab stops']"
+reduction,5,simplification,17,33,"['minimization', 'reduction', 'lowering', 'simplification', 'downgrade']"
+host directive,5,host directive,5,8,"['host directive', 'self hosted']"
+status,3,status,3,11,"['status change', 'status check', 'status', 'status page', 'job status']"
+lazy loading,7,lazy loading,7,15,"['lazy loading', 'lazy module', 'lazy initialization']"
+guides,8,guidelines,10,20,"['update guide', 'guides', 'guidelines']"
+view child,2,viewchild,2,6,"['viewchild', 'view children', 'view child']"
+app shell,3,app shell,3,3,['app shell']
+ngmodel,2,ngmodel,2,2,['ngmodel']
+svelte transition,2,css transitions,3,7,"['view transition', 'css transitions', 'svelte transition']"
+material,2,assets,3,9,"['elements', 'assets', 'material', 'mesh']"
+dataclasses,5,dataclasses,5,7,"['dataclasses', 'dataclass']"
+collective ops,3,higher order ops,4,9,"['higher order ops', 'collective operations', 'collective ops']"
+truncation,2,pruning,3,7,"['clipping', 'truncation', 'pruning']"
+count nonzero,2,count nonzero,2,2,['count nonzero']
+fallback,3,fallback,3,9,"['sfinae', 'fallback', 'fallback content', 'fallback function']"
+accelerator,5,accelerator,5,10,"['accelerator', 'acceleration']"
+bincount,2,bincount,2,4,"['bincount', 'histogram']"
+int8,4,int8,4,4,['int8']
+torchaudio,3,torchaudio,3,3,['torchaudio']
+device allocator,3,device allocator,3,3,['device allocator']
+safetensors,3,safetensors,3,3,['safetensors']
+masking,3,masking,3,7,"['mask', 'masking', 'masked tensor']"
+multivalue,2,multinomial,3,7,"['multinomial', 'multivalue', 'multi select']"
+torch.unique,2,torch.unique,2,2,['torch.unique']
+sharding,4,sharding,4,8,"['sharding', 'shards', 'shard management']"
+sycl,2,sycl,2,2,['sycl']
+detectron2,2,detectron2,2,2,['detectron2']
+cumsum,2,cumsum,2,2,['cumsum']
+solver,6,sdpa,10,16,"['sdpa', 'solver']"
+strides,2,strides,2,4,"['strides', 'tensor strides']"
+metal,2,metal,2,2,['metal']
+guard validation,4,guard validation,4,6,"['guard validation', 'guard failure']"
+mv,2,mv,2,2,['mv']
+pooling,2,pooled,6,18,"['pooling', 'connection pooling', 'connection pool', 'pool', 'pooled']"
+constant,7,constexpr,7,32,"['constexpr', 'constant', 'constants', 'constant expression', 'consteval', 'constant propagation', 'constant time', 'constant folding']"
+dataloader,2,dataloader,2,2,['dataloader']
+devx,2,devx,2,2,['devx']
+load state dict,2,load state dict,2,2,['load state dict']
+gcn,3,gcn,3,5,"['gcn', 'graph neural networks']"
+scaling,4,scalability,11,17,"['scaling', 'scalability', 'gradscaler']"
+graph breaking,2,graph break,9,23,"['graph break', 'circuit breaker', 'breakage', 'circuit breaking', 'broken', 'graph breaking']"
+hdfs,2,hdf5,3,7,"['hdf5', 'hdfs', 'parquet']"
+parametrization,4,parametrization,4,6,"['parametrization', 'reparameterization']"
+int type,2,int type,2,2,['int type']
+oxide,2,oxide,2,2,['oxide']
+arbitrary values,3,arbitrary values,3,3,['arbitrary values']
+keyframes,3,keyframes,3,3,['keyframes']
+shadow,3,shadow,3,7,"['shadow', 'shadowing', 'shim']"
+media queries,2,responsive design,4,6,"['media queries', 'responsive design']"
+usdt,2,usdt,2,2,['usdt']
+zeromq,3,zeromq,3,3,['zeromq']
+thread hang,2,thread hang,2,4,"['thread hang', 'query hang']"
+reproduction,3,reproduction,3,3,['reproduction']
+provider,2,vendor,7,11,"['vendor', 'provider', 'agent']"
+inflect,3,inflect,3,3,['inflect']
+hugo,15,hugo,15,28,"['hugo server', 'hugo', 'hugo features', 'hugo core', 'hugo build']"
+failure analysis,3,failure analysis,3,5,"['failure analysis', 'failure analyzer']"
+method security,2,method visibility,3,5,"['method security', 'method visibility']"
+narayana,2,narayana,2,2,['narayana']
+webjars,5,webjars,5,5,['webjars']
+spring boot starter activemq,2,spring boot starter activemq,2,2,['spring boot starter activemq']
+colima,2,colima,2,2,['colima']
+fork join pool,3,fork join pool,3,3,['fork join pool']
+ioexception,2,io error,4,13,"['java io', 'ioexception', 'io error', 'io exception']"
+module info,4,module management,9,13,"['module info', 'module management']"
+web driver,3,selenium,16,32,"['selenium', 'web testing', 'playwright', 'htmlunit', 'web driver', 'webtestclient']"
+code of conduct,7,code of conduct,7,7,['code of conduct']
+camel,3,camel,3,8,"['camel', 'cat', 'badger']"
+main class,4,main class,4,4,['main class']
+java compiler,4,java compiler,4,7,"['java compiler', 'php compiler']"
+application,5,application,5,13,"['application name', 'application', 'java application', 'application management']"
+fleet,3,fleet,3,3,['fleet']
+synthetic source,5,synthetic source,5,5,['synthetic source']
+cross cluster,8,cross cluster,8,14,"['cross cluster search', 'cross cluster', 'cross environment']"
+tdigest,3,tdigest,3,3,['tdigest']
+geoip,3,geoip,3,3,['geoip']
+master node,2,master node,2,4,"['master node', 'seed node']"
+csv,5,csv,5,8,"['csv', 'delimiter']"
+request stats,2,request stats,2,2,['request stats']
+multi line,2,multi line,2,4,"['multi line', 'multiline comment']"
+package registry,2,package registry,2,2,['package registry']
+purity,3,purity,3,5,"['purity', 'purity check']"
+contract,4,smart contract,4,14,"['contract analysis', 'smart contract', 'smart contracts', 'contract', 'contract annotations']"
+load time weaving,4,load time weaving,4,4,['load time weaving']
+checkstyle,5,checkstyle,5,5,['checkstyle']
+code size,3,code size,3,3,['code size']
+client request factory,2,client request factory,2,2,['client request factory']
+test annotation,2,test annotation,2,2,['test annotation']
+beanutils,2,beanutils,2,2,['beanutils']
+rfc7807,2,rfc7807,2,2,['rfc7807']
+vfp,2,vfp,2,2,['vfp']
+gdt,2,gdt,2,4,"['gdt', 'gcs']"
+file import,2,file input,3,11,"['file import', 'file loading', 'file not found', 'file reader', 'file input']"
+readability,12,readability,12,12,['readability']
+address space,3,address space,3,5,"['address space', 'address sanitizer']"
+coff,3,coff,3,3,['coff']
+symbol management,2,symbol table,4,8,"['symbol server', 'symbol table', 'symbol management']"
+notes,8,note taking,10,35,"['onenote', 'note', 'new note', 'note taking', 'notes', 'note management']"
+web clipper,2,web clipper,2,2,['web clipper']
+pre receive hook,2,pre receive hook,2,2,['pre receive hook']
+orgmode,2,orgmode,2,2,['orgmode']
+julia core,11,julia core,11,24,"['julia language', 'julia lang', 'julia core', 'julia stdlib', 'julia base']"
+ntuple,3,ntuple,3,7,"['tuple', 'ntuple', 'namedtuple']"
+subarray,2,subarray,2,2,['subarray']
+function overloading,2,function overloading,2,2,['function overloading']
+uv index,2,uv index,2,4,"['uv index', 'astral sh uv']"
+python interpreter,8,python interpreter,8,12,"['python interpreter', 'python interaction', 'python interp']"
+transient errors,2,transient errors,2,2,['transient errors']
+font awesome,2,font awesome,2,2,['font awesome']
+libuv,2,libuv,2,2,['libuv']
+monorepo,8,monorepo,8,15,"['monorepo', 'monorepo support', 'mono repo', 'multi root workspace']"
+project isolation,2,build isolation,2,6,"['build isolation', 'project isolation', 'isolation']"
+index url,3,index url,3,3,['index url']
+progress linear,2,progress indicator,6,15,"['progress', 'std.progress', 'progress indicator', 'progress linear']"
+combobox,3,combobox,3,3,['combobox']
+v dialog,2,v dialog,2,2,['v dialog']
+proc open,3,proc open,3,3,['proc open']
+snmp,3,snmp,3,3,['snmp']
+magic methods,2,magic methods,2,2,['magic methods']
+spl heap,2,spl heap,2,4,"['spl heap', 'priority queue']"
+function error,2,function error,2,2,['function error']
+endianness,3,endianness,3,6,"['endianness', 'big endian']"
+severity critical,3,severity critical,3,7,"['severity critical', 'severity/critical', 'critical']"
+database engine,2,storage engine,8,22,"['engine', 'read engines', 'storage engine', 'database engine', 'sql engine', 'core engine']"
+property hooks,4,property hooks,4,4,['property hooks']
+stream wrapper,5,stream wrapper,5,11,"['stream wrappers', 'stream wrapper', 'custom stream wrapper', 'php stream']"
+xinclude,3,xinclude,3,3,['xinclude']
+heredoc,3,heredoc,3,3,['heredoc']
+symfony,3,symfony,3,3,['symfony']
+cli server,3,cli server,3,6,"['cli server', 'http server']"
+futex,2,futex,2,2,['futex']
+destructuring,4,decomposition,8,12,"['destructuring', 'decomposition']"
+transitive analysis,4,transitive analysis,4,6,"['transitive analysis', 'transitive dependency']"
+objcopy,2,objcopy,2,2,['objcopy']
+stmt summary,2,stmt summary,2,2,['stmt summary']
+async load,2,sync load,3,5,"['async load', 'sync load']"
+insert,4,insert,4,6,"['insert', 'replace into']"
+partition pruning,3,partition pruning,3,5,"['partition pruning', 'column pruning']"
+compaction,3,compaction,3,3,['compaction']
+admin,2,admin,2,6,"['admin', 'admin panel', 'admin check']"
+async merge,3,async merge,3,5,"['async merge', 'function merging']"
+ticdc,2,ticdc,2,4,"['ticdc', 'changefeed']"
+charclass,2,charclass,2,2,['charclass']
+ctags,2,ctags,2,2,['ctags']
+ftplugin,4,ftplugin,4,4,['ftplugin']
+echomsg,2,echomsg,2,2,['echomsg']
+distributed system,17,distributed computing,22,49,"['distributed computing', 'distributed system', 'distributed systems', 'distributed checkpointing', 'distributed checkpoint']"
+go stdlib,10,go standard library,16,30,"['go standard library', 'go stdlib', 'domain/go standard library', 'go/stdlib']"
+best practices,17,best practices,17,30,"['best practices', 'best practice']"
+unimplemented,2,unsupported operation,14,23,"['unsupported operation', 'unimplemented feature', 'incomplete implementation', 'unimplemented', 'not implemented']"
+quality,10,quality,10,23,"['quality', 'quality of life', 'quality assurance', 'quality control']"
+static site generation,6,static site generation,6,8,"['static site generation', 'site generation']"
+determinism,7,determinism,7,10,"['determinism', 'non determinism']"
+bitcoin,7,bitcoin,7,17,"['bitcoin', 'blockchain', 'bitcoin core']"
+use after free,6,heap use after free,7,15,"['heap use after free', 'use after free', 'double free']"
+invalid input,4,invalid input,4,13,"['invalid input', 'invalid code', 'invalid program', 'invalid usage', 'invalid data']"
+corruption,5,corruption,5,5,['corruption']
+troubleshooting,4,troubleshooting,4,4,['troubleshooting']
+php stdlib,4,php stdlib,4,4,['php stdlib']
+racing,4,racing,4,6,"['racing', 'ports']"
+javascript engine,3,javascript engine,3,3,['javascript engine']
+function definition,4,function definition,4,4,['function definition']
+deferred content,3,deferred content,3,3,['deferred content']
+object oriented programming,3,object oriented programming,3,3,['object oriented programming']
+cpu gpu comparison,3,cpu gpu comparison,3,3,['cpu gpu comparison']
+nan values,3,nan values,3,7,"['nan values', 'nan handling', 'null values']"
+fx graph,8,fx graph,8,8,['fx graph']
+package configuration,3,package configuration,3,3,['package configuration']
+percentile,3,percentile calculations,4,9,"['percentile', 'percentile calculations', 'percentile test']"
+key management,2,kerberos,7,14,"['kerberos', 'keystore', 'api keys', 'key management']"
+default value,2,default behavior,8,16,"['default values', 'default configuration', 'default value', 'default behavior']"
+cancellation,5,cancellation,5,11,"['cancellation', 'cancel', 'unsubscription', 'context cancellation']"
+queue management,2,table management,4,6,"['queue management', 'table management']"
+rewriting,2,rewriting,2,4,"['rewriting', 'wording suggestion']"
+asset management,2,asset management,2,2,['asset management']
+intermittent,2,intermittent,2,6,"['intermittent', 'interference', 'intermittent failure']"
+gotypes,5,gotypes,5,8,"['gotypes', 'gotypesalias']"
+protocol extension,2,protocol extension,2,2,['protocol extension']
+event emitter,3,event emitter,3,7,"['event emission', 'event emitter', 'sse emitter']"
+semver,8,semver,8,10,"['semver', 'version parsing']"
+private registries,2,private registries,2,4,"['private registries', 'private registry']"
+async iterable,3,async iterable,3,3,['async iterable']
+size limit,2,memory limit,6,8,"['size limit', 'memory limit']"
+well formedness,3,well formedness,3,3,['well formedness']
+function arguments,2,function arguments,2,2,['function arguments']
+low level,2,low level error,3,7,"['low level', 'low level programming', 'low level error']"
+list manipulation,3,list manipulation,3,3,['list manipulation']
+inplace,3,inplace operation,4,7,"['inplace', 'inplace operation']"
+gitignore,3,gitignore,3,3,['gitignore']
+css parser,2,css selector,6,8,"['css parser', 'css selector']"
+configure script,2,configure script,2,2,['configure script']
+pack to bp,2,pack to bp,2,2,['pack to bp']
+java driver,12,java driver,12,12,['java driver']
+instanceof,2,instanceof,2,2,['instanceof']
+interrupt,3,thread interruption,4,7,"['interrupt', 'thread interruption']"
+method argument resolution,2,method argument resolution,2,2,['method argument resolution']
+function id,4,function id,4,4,['function id']
+csharp,2,csharp,2,2,['csharp']
+joplin,2,joplin,2,2,['joplin']
+copy operation,3,copy operation,3,5,"['copy operation', 'copy error']"
+netrc,4,netrc,4,4,['netrc']
+titanic,2,titanic,2,2,['titanic']
+high availability,2,high availability,2,2,['high availability']
+pick model,2,pick model,2,2,['pick model']
+lens,2,lens,2,2,['lens']
+case sensitivity,3,case sensitivity,3,3,['case sensitivity']
+file monitoring,2,file watcher,3,5,"['file watcher', 'file monitoring']"
+ptrace,2,ptrace,2,2,['ptrace']
+struct padding,2,struct padding,2,2,['struct padding']
+go release,3,go release,3,3,['go release']
+netpoller,2,netpoller,2,2,['netpoller']
+ui thread,2,ui thread,2,2,['ui thread']
+action sheet,2,action sheet,2,2,['action sheet']
+vtable,3,vtable,3,5,"['vtable', 'virtual function elimination']"
+register class,2,register class,2,2,['register class']
+move semantics,3,move semantics,3,3,['move semantics']
+naked functions,2,naked functions,2,4,"['naked functions', 'unary functions']"
+read impl,2,read impl,2,2,['read impl']
+dsr queries,2,dsr queries,2,2,['dsr queries']
+defer block,2,defer block,2,2,['defer block']
+input output mapping,2,input output mapping,2,2,['input output mapping']
+set operation,3,set operation,3,3,['set operation']
+mutable mapping,2,mutable mapping,2,2,['mutable mapping']
+max pooling,2,max pooling,2,2,['max pooling']
+include path,2,include path,2,2,['include path']
+speculation,2,speculation,2,2,['speculation']
+skipfile,2,skipfile,2,4,"['skipfile', 'skip test']"
+async collective tensor,2,async collective tensor,2,2,['async collective tensor']
+buffer mutation,2,buffer mutation,2,2,['buffer mutation']
+python registration,2,python registration,2,2,['python registration']
+build output,2,build output,2,2,['build output']
+crossfade,2,crossfade,2,2,['crossfade']
+client connection,2,client connection,2,6,"['client connection', 'connect protocol', 'http connection']"
+correlation ids,2,correlation ids,2,2,['correlation ids']
+abstraction,2,abstract types,3,5,"['abstraction', 'abstract types']"
+jndi,2,jndi,2,2,['jndi']
+anomaly detection,2,anomaly detection,2,2,['anomaly detection']
+async enrich,2,async enrich,2,2,['async enrich']
+index template,3,index template,3,3,['index template']
+union type,2,union type,2,2,['union type']
+script fields,2,script fields,2,2,['script fields']
+partial results,2,partial results,2,2,['partial results']
+equals hashcode,3,equals hashcode,3,3,['equals hashcode']
+function invocation,2,function invocation,2,2,['function invocation']
+copy properties,2,copy properties,2,2,['copy properties']
+enhanced classes,2,enhanced classes,2,2,['enhanced classes']
+classcastexception,4,classcastexception,4,4,['classcastexception']
+jdbctemplate,2,jdbctemplate,2,2,['jdbctemplate']
+volatile registers,2,volatile registers,2,2,['volatile registers']
+biometrics,2,biometrics,2,2,['biometrics']
+raw file,2,raw file,2,2,['raw file']
+interval arithmetic,2,interval arithmetic,2,2,['interval arithmetic']
+macro redefinition,2,macro redefinition,2,2,['macro redefinition']
+ziglang,2,ziglang,2,2,['ziglang']
+log redaction,2,log redaction,2,2,['log redaction']
+window functions,2,window functions,2,2,['window functions']
+statusline,2,statusline,2,2,['statusline']
+async test,8,async test,8,8,['async test']
+region inference,6,region inference,6,6,['region inference']
+package versioning,6,package versioning,6,6,['package versioning']
+surefire,4,surefire,4,7,"['surefire', 'surefire plugin']"
+static resources,4,static resources,4,4,['static resources']
+temporary table,4,temporary table,4,6,"['temporary table', 'temp directory']"
+const context,3,const context,3,5,"['const context', 'test context']"
+hparams,3,hparams,3,3,['hparams']
+spring java format,3,spring java format,3,3,['spring java format']
+ec2 discovery,3,ec2 discovery,3,3,['ec2 discovery']
+gd extension,3,gd extension,3,5,"['gd extension', 'gd library']"
+gomaxprocs,2,gomaxprocs,2,2,['gomaxprocs']
+map iteration,2,map iteration,2,2,['map iteration']
+push failure,2,push failure,2,4,"['push failure', 'publish failure']"
+flexbox,2,flexbox,2,2,['flexbox']
+console api,2,console api,2,2,['console api']
+port conflict,2,port conflict,2,2,['port conflict']
+async io,2,async io,2,2,['async io']
+footnote,2,footnote,2,2,['footnote']
+async recursion,2,async recursion,2,2,['async recursion']
+beginner,2,beginner,2,2,['beginner']
+ptr metadata,2,ptr metadata,2,2,['ptr metadata']
+uefi,2,uefi,2,2,['uefi']
+lang attribute,2,lang attribute,2,2,['lang attribute']
+sized trait,2,sized trait,2,2,['sized trait']
+parentheses,2,parentheses,2,2,['parentheses']
+view operation,2,view operation,2,2,['view operation']
+jacobian,2,jacobian,2,2,['jacobian']
+css import,2,css import,2,2,['css import']
+rest props,2,rest props,2,2,['rest props']
+jvm tool mode,2,jvm tool mode,2,2,['jvm tool mode']
+build pack,2,build pack,2,2,['build pack']
+prohibition,2,prohibition,2,2,['prohibition']
+enterprise to develocity,2,enterprise to develocity,2,2,['enterprise to develocity']
+text field mapper,2,text field mapper,2,2,['text field mapper']
+ticket validation,2,ticket validation,2,2,['ticket validation']
+http method,2,http method,2,2,['http method']
+blinking,2,blinking,2,2,['blinking']
+sql update,2,sql update,2,2,['sql update']
+prepared statement,2,prepared statement,2,2,['prepared statement']
+privilege check,2,privilege check,2,2,['privilege check']

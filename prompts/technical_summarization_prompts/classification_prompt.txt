@@ -1,0 +1,10 @@
+Is the following a code snippet, shell script, or output log:
+    
+```{text}```
+
+Respond **only** with a single number:
+ - **1** if it is a code snippet
+ - **2** if it is a shell script
+ - **3** if it is an output log
+
+Do **not** provide any explanation or additional information.

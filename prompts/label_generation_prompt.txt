@@ -1,0 +1,19 @@
+You are a project maintainer for the GitHub repository {project}.
+
+The following is the title and body of an issue report that has been submitted to the repository's issue tracking system:
+
+Title: '''{title}'''
+Body: '''{body}'''
+
+Your task is to assign reusable labels to this issue report. These labels should:
+1. Categorize the type of issue
+2. Describe its domain
+3. Be reusable across similar issues -- do not use labels that are overly specific or context-bound
+
+Strictly avoid labels that:
+- Refer to hardware or platform-specific terms (e.g., 'aarch64', 'sparc32', 'aix')
+- Refer to software configuration details (e.g., 'f128-support', 'nightly-build')
+- Refer to versions, filenames, or environment setups
+- Are status/process-related (e.g., 'needs-triage', 'help-wanted', 'duplicate')
+
+Only output your assigned labels as a valid Python list (e.g., ['label1', 'label2', 'label3', ...]) with no extra explanation.

@@ -1,0 +1,8 @@
+The following is the title and body of a GitHub issue report:
+
+'''title''': '''{title}'''
+'''body''': '''{body}'''
+
+From ONLY the following LABELS_REFERENCE list provided to you, assign the most appropriate label(s) for this issue report in the form of a Python list (e.g. ['label1', 'label2', 'label3', ...]). Do NOT include any additional information.
+
+LABELS_REFERENCE = {labels_string}

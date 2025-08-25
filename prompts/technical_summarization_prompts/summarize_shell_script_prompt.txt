@@ -1,0 +1,5 @@
+Concisely summarize the following shell script: 
+    
+ ```{shell_script}```
+    
+Do **not** provide any suggestions for modifications or improvements.
