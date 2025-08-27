@@ -1,6 +1,6 @@
-# LLM Issue Labeling Replication Package
+# Results and Prompts Folder
 
-This replication package contains the dataset, prompts, and generated results of my project on labeling issue reports using LLMs.
+This folder contains the dataset, prompts, and generated results.
 
 ## Cloning Instructions
 
