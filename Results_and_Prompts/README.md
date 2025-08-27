@@ -1,26 +1,6 @@
 # Results and Prompts Folder
 
-This folder contains the dataset, prompts, and generated results.
-
-## Cloning Instructions
-
-The "labeled_datasets.zip" file is stored using Git Large File Storage (LFS) because it exceeds GitHub's file size limit of 100.00 MB. As a result, if cloning the repo for the first time, you need to first install Git LFS to correctly download this file:
-
-```bash
-# Install Git LFS (one-time setup)
-git lfs install
-
-# Clone the repository (normal git clone works)
-git clone https://github.com/24rrvk/LLMIssueLabeling.git
-
-# Pull LFS-tracked files
-git lfs pull
-```
-
-Without Git LFS, the large files will appear as small text pointer files instead of the actual data.
-
-Below is a description of the contents of this replication package:
-
+This folder contains the dataset, prompts, and generated results of this work which is described in depth below:
 
 ## "raw_dataset.zip" 
 
