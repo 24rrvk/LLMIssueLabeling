@@ -2,6 +2,9 @@
 
 This folder contains the dataset, prompts, and generated results of this work which is described in depth below:
 
+
+NEED TO EXPLAIN repr_subset_labels_w_LLM_eval_compare.csv
+
 ## "raw_dataset.zip" 
 
 When unzipped, this folder contains three files. Two of them, "train_set_raw.json" and "test_set_raw.json", provide the raw train and test sets respectively. These datasets are organized in the following manner:
