@@ -3,7 +3,7 @@
 This folder contains the dataset, prompts, and generated results of this work which is described in depth below:
 
 
-NEED TO EXPLAIN repr_subset_labels_w_LLM_eval_compare.csv
+NEED TO EXPLAIN evaluator_validation/repr_subset_evals.csv
 
 ## "raw_dataset.zip" 
 
