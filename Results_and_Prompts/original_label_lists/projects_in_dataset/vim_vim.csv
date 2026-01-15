@@ -1,0 +1,49 @@
+Label,is_non_descriptive_label
+auto-migrated,
+bug,
+CI,
+defect,
+dependencies,
+discuss,True
+documentation,
+duplicate,True,
+enhancement,
+feature-regex,
+feature-terminal,
+github_actions,
+hacktoberfest-accepted,True
+help wanted,True
+i18n,
+if_lua,
+if_mzscheme,
+if_perl,
+if_python,
+if_ruby,
+if_tcl,
+installer,
+invalid,True
+needs a test,True
+needs feedback,True
+needs more work,True
+needs-minor-patch,True
+patch,
+performance,
+platform-cygwin,
+platform-linux,
+platform-mac,
+platform-windows,
+platform-wsl,
+plugin-netrw,
+Priority-Medium,True
+question,
+runtime,
+spam,
+termdebug,
+translation,
+typo,
+un-reproducible,True
+vim9class,
+vim9script,
+website,
+wontfix,True
+xxd,True

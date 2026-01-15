@@ -157,6 +157,14 @@ The optimal clustering was [clusters/all-mpnet-base-v2_metric=cos_link=avg/SIM_T
 
 The final label list based on the evaluation of authors "LJ" and "MRM" is in the file [label_list/label_list.csv](./label_list/label_list.csv).
 
+## ["original_label_lists" Folder](./original_label_lists/)
+
+This folder contains the original label lists of the 30 GitHub repositories in our dataset (see [original_label_lists/projects_in_dataset](./original_label_lists/projects_in_dataset/)) as well as two other repositories, namely "opencv/opencv" and "tensorflow/tensorflow" (see [original_label_lists/projects_not_in_dataset](./original_label_lists/projects_not_in_dataset/)). 
+
+For each file containing label lists of projects in our dataset, there are two columns: the labels themselves and a classification marked as "True" if the label was classified as not referring directly to the issue itself (i.e., if it refers to the status of the issue's resolution (e.g., "help-wanted", "wontfix", "needs reproduction"), if it compares the issue to other issues (e.g., "good first issue", "duplicate", "high priority"), of if it refers to a version of the project (e.g., "Vuetify 2", \textit"affects-7.6")) or otherwise left empty. 
+
+For a list of labels that were classified as not referring to the issue itself ordered by the number of label lists of repositories in our dataset in which the label is present, please view [original_label_lists/projects_in_dataset/labels_that_do_not_describe_issue.csv](./original_label_lists/projects_in_dataset/labels_that_do_not_describe_issue.csv).
+
 ## ["evaluator_validation" Folder](./evaluator_validation/)
 
 To assess the judgements of our evaluator LLM, an author manually reviewed a randomly sampled 90% confidence level, 10% margin of error representative subset of the 30,553 labels assigned by Qwen2.5-7B-Instruct to the 13,210 issue reports in the training set. This subset consisted of 80 label assignments. The results of this assessment can be viewed in the file [evaluator_validation/repr_subset_first_review.csv](./evaluator_validation/repr_subset_first_review.csv) which contains the following fields:

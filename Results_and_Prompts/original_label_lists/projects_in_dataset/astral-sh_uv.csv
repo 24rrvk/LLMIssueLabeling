@@ -1,0 +1,57 @@
+Label,is_non_descriptive_label
+benchmarks,
+breaking,
+bug,
+build-backend,
+cache,
+ci-flake,
+cli,
+codex,
+compatibility,
+configuration,
+dependencies,
+do-not-merge,True
+documentation,
+duplicate,True
+enhancement,
+error messages,
+external,
+good first issue,True
+great writeup,True
+help wanted,True
+installer,
+integration,
+internal,
+linux,
+lock,
+macos,
+musl,
+needs-decision,True
+needs-design,True
+needs-mre,True
+network,
+no-build,
+no-test,
+performance,
+preview,
+projects,
+pypy,
+question,
+registry,
+releases,
+resolver,
+rustlib,
+security,
+show-and-tell,
+test-extra,
+test:macos,
+testing,
+tracing,
+tracking,
+uv pip,
+uv python,
+uv tool,
+virtualenv,
+windows,
+wish,
+wontfix,True

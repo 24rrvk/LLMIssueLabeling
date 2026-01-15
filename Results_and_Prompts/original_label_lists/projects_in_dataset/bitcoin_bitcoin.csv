@@ -1,0 +1,54 @@
+Label,is_non_descriptive_label
+Android,
+Backport,
+Block storage,
+Brainstorming,
+Bug,
+Build system,
+CI failed,
+Consensus,
+Data corruption,
+Descriptors,
+Docs,
+DrahtBot Guix build requested,
+Feature,
+Fuzzing,
+good first issue,True
+Good First Review,True
+GUI,
+Insufficient Review,True
+interfaces,
+Linux/Unix,
+macOS,
+Mempool,
+Mining,
+Needs backport (27.x),True
+Needs backport (28.x),True
+Needs backport (29.x),True
+Needs backport (30.x),True
+Needs Benchmark,
+Needs Conceptual Review,True
+Needs rebase,
+Needs release note,True
+P2P,
+Privacy,
+PSBT,
+Questions and Help,
+Refactoring,
+Resource usage,
+Review club,
+RPC/REST/ZMQ,
+Scripts and tools,
+Settings,
+Tests,
+Tracking Issue,
+TX fees and policy,
+Up for grabs,True
+Upstream,
+Utils/log/libs,
+UTXO Db and Indexes,
+Validation,
+Waiting for author,True
+Waiting for other,True
+Wallet,
+Windows,

@@ -1,0 +1,212 @@
+Label,is_non_descriptive_label
+:open_umbrella: Umbrella,
+0.76,True
+Accessibility,
+Accessibility Team - Evaluated,True
+amazon,
+API: AccessibilityInfo,
+API: ActionSheetIOS,
+API: Alert,
+API: AlertIOS,
+API: Animated,
+API: AppRegistry,
+API: AppState,
+API: AsyncStorage,
+API: BackAndroid,
+API: BackHandler,
+API: CameraRoll,
+API: Clipboard,
+API: Dimensions,
+API: Easing,
+API: Geolocation,
+API: ImageEditor,
+API: ImagePickerIOS,
+API: ImageStore,
+API: InteractionManager,
+API: Keyboard,
+API: LayoutAnimation,
+API: Linking,
+API: ListViewDataSource,
+API: NetInfo,
+API: PanResponder,
+API: PermissionsAndroid,
+API: PixelRatio,
+API: PushNotificationIOS,
+API: Settings,
+API: Share,
+API: StatusBarIOS,
+API: StyleSheet,
+API: TimePickerAndroid,
+API: ToastAndroid,
+API: Transforms,
+API: Vibration,
+API: VibrationIOS,
+Bug,
+CLA Signed,
+Component: ActivityIndicator,
+Component: Button,
+Component: DatePickerIOS,
+Component: DrawerLayoutAndroid,
+Component: FlatList,
+Component: Image,
+Component: ImageBackground,
+Component: InputAccessoryView,
+Component: KeyboardAvoidingView,
+Component: ListView,
+Component: Modal,
+Component: NavigatorIOS,
+Component: Picker,
+Component: PickerIOS,
+Component: ProgressBarAndroid,
+Component: ProgressViewIOS,
+Component: RefreshControl,
+Component: SafeAreaView,
+Component: ScrollView,
+Component: SectionList,
+Component: SegmentedControlIOS,
+Component: Slider,
+Component: SnapshotViewIOS,
+Component: StatusBar,
+Component: Switch,
+Component: TabBarIOS,
+Component: Text,
+Component: TextInput,
+Component: ToolbarAndroid,
+Component: TouchableHighlight,
+Component: TouchableNativeFeedback,
+Component: TouchableOpacity,
+Component: TouchableWithoutFeedback,
+Component: View,
+Component: ViewPagerAndroid,
+Component: VirtualizedList,
+Component: WebView,
+Contributor,
+Debugging,
+DX,
+fb-exported,
+fh:direct-merge-enabled,
+Flow,
+Good first issue,True
+hacktoberfest-accepted,True
+Help Wanted :octocat:,True
+Impact: App Rejected,
+Impact: Bug,
+Impact: Crash,
+Impact: Errors During Build,
+Impact: Misconfiguration,
+Impact: Performance,
+Impact: Platform Disparity,
+Impact: Regression,
+Impact: Security,
+Impact: UBN,
+Import Failed,
+Import Requested,
+Import Started,
+iOS 26,
+Issue: Author Provided Repro,True
+JavaScript,
+JS API refinements (2025),
+LogBox,
+Merged,True
+meta-exported,
+Missing Changelog,True
+Missing Test Plan,True
+Native Module,
+Needs TypeScript Update,
+Needs: Attention,True
+Needs: Author Feedback,True
+Needs: Docs Website PR,True
+Needs: Environment Info,True
+Needs: Imported Diff Review,True
+Needs: Imported Diff Waiting on Meta,True
+Needs: Issue Manager Attention,True
+Needs: Issue Template,True
+Needs: React Native Team Attention,True
+Needs: Rebase,True
+Needs: Repro,True
+Needs: Task,True
+Needs: Triage :mag:,True
+Needs: Version Info,True
+Never gets stale,
+Newer Patch Available,True
+No CLA,
+p: Amazon,
+p: Callstack,
+p: contributor,
+p: Expo,
+p: Facebook,
+p: Infinite Red,
+p: Microsoft,
+p: Sentry,
+p: Shopify,
+p: Software Mansion,
+p: Sony,
+Partner,
+Pick Request,
+Platform: All,
+Platform: Android,
+Platform: iOS,
+Platform: Linux,
+Platform: macOS,
+Platform: tvOS,
+Platform: Windows,
+Priority: High,True
+Priority: Low,True
+Priority: Mid,True
+Ran Commands,True
+React,
+React Native Engineering - Evaluated,True
+Release Improvements,
+release-blocking,True
+Resolution: Answered,True
+Resolution: Backlog,True
+Resolution: Cannot Reproduce,True
+Resolution: Duplicate,True
+Resolution: Fixed,True
+Resolution: For Stack Overflow,True
+Resolution: Issue in another tool or repo,True
+Resolution: Locked,True
+Resolution: PR Submitted,True
+Reverted,
+RN Team,
+RNTester,
+Shared with Meta,True
+sony,
+Stale,True
+Tech: Bundler 📦,
+Tech: Codegen,
+Tech: Fabric,
+Tech: Hermes,
+Tech: Jest,
+Tech: Monorepo,
+Tech: React Native Core,
+Tech: Watchman,
+Tests,
+Tool: CocoaPods,
+Tool: Gradle,
+Tool: Xcode,
+Type: Breaking Change💥,
+Type: Deprecation,
+Type: Discussion,
+Type: Docs,
+Type: Enhancement,
+Type: Expo,
+Type: Invalid,True
+Type: New Architecture,
+Type: Old Architecture,
+Type: Question,
+Type: Removal,
+Type: Security,
+Type: Too Old Version,True
+Type: Unsupported Version,True
+Type: Upgrade Issue,
+Typescript,
+Version: unspecified,True
+Violation: CoC,
+YellowBox,
+🌐Networking,
+💻CLI,
+📝 Changelog,
+📦Bundler,
+📮Known Issues,True
+🔩Test Infrastructure,

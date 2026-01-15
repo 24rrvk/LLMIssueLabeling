@@ -1,0 +1,59 @@
+Label,is_non_descriptive_label
+AI Slop,
+AI Suspect,
+BlockedUpstream,True
+Breaking,
+Bug,
+CantReproduce,True
+dependencies,
+DifficultToImplement,True
+Docs,
+Duplicate,True
+Enhancement,
+Feature: AsciiDoc,
+Feature: Content Adapter,
+Feature: Docker Image,
+Feature: Embedded Template,
+Feature: Footnotes,
+Feature: Modules,
+Feature: Multilingual,
+Feature: Org Mode,
+Feature: Pages from Data,
+Feature: Pandoc,
+Feature: Render Hook,
+Feature: reStructuredText,
+Feature: Server,
+Feature: Snap Package,
+Feature: Summary,
+Feature: TOC,
+FeedbackWanted,True
+go,
+GoodFirstIssue,True
+Impossible?,True
+InProgress,True
+Invalid,True
+Keep,True
+MissingIssueReference,
+NeedsCLASigned,
+NeedsInvestigation,True
+NeedsThinking,True
+NeedsTriage,True
+NeedsUserFeedback,True
+NotSure,True
+OK,True
+OnHold,True
+Outdated,True
+Panic,
+Pri 1,
+Proposal,
+Question,
+ReleaseBlocker,True
+S0,True
+S1,True
+S2,True
+Spam,True
+Stale,True
+Upstream,
+v0.123.x,True
+v0.146.x,True
+Wish,

@@ -1,0 +1,178 @@
+Label,is_non_descriptive_label
+arrays,
+artifacts,
+asan trophy case,
+atomics,
+backport 1.10,True
+backport 1.11,True
+backport 1.12,True
+backport 1.13,True
+backport 1.6,True
+backport 1.8,True
+backport 1.9,True
+bignums,
+bisect completed,True
+bisect wanted,True
+breaking,
+broadcast,
+bug,
+bugfix,
+building,
+caching,
+ci,
+cmd,
+code coverage,
+codex,
+collections,
+compiler:codegen,
+compiler:effects,
+compiler:inference,
+compiler:interpreter,
+compiler:llvm,
+compiler:lowering,
+compiler:musl,
+compiler:optimizer,
+compiler:plugins,
+compiler:precompilation,
+compiler:simd,
+compiler:wasm,
+completions,
+complex,
+correctness bug ⚠,
+dates,
+dependencies,
+deprecation,
+design,
+display and printing,
+DO NOT MERGE,True
+docs,
+docsystem,
+don't squash,True
+duplicate,True
+embarrassing-bugfix,
+embedding,
+equality,
+error handling,
+error messages,
+excision,
+existential crisis,True
+experimental,
+external dependencies,
+failing,
+feature,
+ffi,
+filesystem,
+fixed on master,
+flaky,
+float16,
+fold,
+GC,
+GC: MMTK,
+github-actions,
+good first issue,True
+gpu,
+Hacktoberfest,True
+hashing,
+heisenbug,
+help wanted,True
+invalid,True
+invalidations,
+io,
+iteration,
+JLLs,
+julep,
+juliac,
+JuliaLowering,
+kernel bug 🤯,
+keyword arguments,
+latency,
+libgit2,
+linalg triage,
+linear algebra,
+logging,
+macros,
+markdown,
+maths,
+merge me,True
+minor change,True
+missing data,True
+modules,
+msys2,
+multithreading,
+MWE wanted,True
+needs compat annotation,True
+needs decision,True
+needs docs,True
+needs full CI,True
+needs more info,True
+needs nanosoldier run,True
+needs news,True
+needs pkgeval,True
+needs tests,True
+observability,
+package extensions,
+packages,
+parallelism,
+parser,
+performance,
+pkgimage,
+potential benchmark,
+priority,True
+profiler,
+randomness,
+ranges,
+rationals,
+re-land,
+regression,
+regression 1.10,True
+regression 1.11,True
+regression 1.12,True
+regression 1.13,True
+regression 1.9,True
+release,
+REPL,
+revert,True
+reverted,True
+rr trace included,True
+rr trace wanted,True
+search & find,
+security,
+semantic conflict,
+sockets,
+sorting,
+spam,
+sparse,
+speculative,
+statistics,
+status: waiting for issue author (reporter),True
+status: waiting for PR author,True
+status: waiting for PR reviewer,True
+status: waiting for triage feedback,True
+stdlib,
+strings,
+system:32-bit,
+system:apple silicon,
+system:apple silicon rosetta,
+system:arm,
+system:freebsd,
+system:linux,
+system:mac,
+system:MS-DOS,
+system:powerpc,
+system:riscv,
+system:windows,
+system:wine,
+system:wsl,
+system:x86,
+test,
+testsystem,
+TOML,
+tooling,
+traits,
+triage,
+trimming,
+types and dispatch,
+unicode,
+upstream,
+won't change,True
+😃🍕 and other emoji,True

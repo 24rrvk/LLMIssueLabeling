@@ -1,0 +1,36 @@
+Label,is_non_descriptive_label
+a11y,
+awaiting submitter,True
+blocked by upstream,True
+breaking change,
+browser specific,
+bug,
+compiler,
+conservative reactivity,
+css,
+custom element,
+dependencies,
+documentation,
+feature request,
+good first issue,True
+help wanted,True
+javascript,
+media elements,
+meta,
+needs discussion,True
+p0,True
+perf,
+popular,
+PRs welcome,True
+runes,
+runtime,
+site,
+slot,
+ssr,
+stale-bot,
+svg,
+temp-stale,
+test,
+transition/animation,
+types / typescript,
+wontfix,True

@@ -1,0 +1,24 @@
+Label,is_non_descriptive_label
+bug,
+cygwin,
+dependencies,
+discussion,True
+doc,
+duplicate,True
+enhancement,
+feature,
+github_actions,
+go,
+help-needed,True
+invalid,True
+invalid: missing template,True
+neovim,
+no-response,True
+not-reproducible,True
+outdated,True
+pending,True
+question,
+shell,
+tip,
+windows,
+wontfix,True

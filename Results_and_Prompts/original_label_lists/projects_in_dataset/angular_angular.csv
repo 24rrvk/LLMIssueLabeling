@@ -1,0 +1,208 @@
+Label,is_non_descriptive_label
+Accessibility,
+action: cleanup,True
+action: discuss,True
+action: global presubmit,True
+action: merge,True
+action: presubmit,True
+action: review,True
+adev: preview,True
+ai,
+animations: async,
+area: animations,
+area: bazel,
+area: benchpress,
+area: build & ci,
+area: common,
+area: common/http,
+area: compiler,
+area: core,
+area: dev-infra,
+area: devtools,
+area: docs,
+area: docs-infra,
+area: elements,
+area: forms,
+area: i18n,
+area: in-memory-web-api,
+area: language-service,
+area: migrations,
+area: packaging,
+area: performance,
+area: router,
+area: security,
+area: server,
+area: service-worker,
+area: testing,
+area: upgrade,
+area: vscode-extension,
+area: zones,
+breaking changes,
+browser: chrome,
+browser: edge,
+browser: firefox,
+browser: safari,
+bug,
+canonical,
+cla: no,
+cla: yes,
+common: async pipe,
+common: image directive,
+compiler: extended diagnostics,
+compiler: jit,
+compiler: linker,
+compiler: parser,
+compiler: styles,
+compiler: template pipeline,
+compiler: template type-checking,
+core: animations,
+core: basic template syntax,
+core: binding & interpolation,
+core: bootstrap,
+core: change detection,
+core: component extension and customization,
+core: content projection,
+core: control flow,
+core: CSS encapsulation,
+core: debug tools,
+core: defer,
+core: di,
+core: differs,
+core: directive matching,
+core: DOM rendering,
+core: dynamic view creation,
+core: error handling,
+core: event dispatch,
+core: event listeners,
+core: host and host bindings,
+core: host directives,
+core: hot module replacement (HMR),
+core: hydration,
+core: incremental hydration,
+core: inputs / outputs,
+core: lifecycle hooks,
+core: local references,
+core: ng-template and *microsyntax,
+core: NgModule,
+core: performance,
+core: pipes,
+core: queries,
+core: reactivity,
+core: rxjs interop,
+core: sanitization,
+core: stylesheets,
+core: styling bindings,
+core: zoneless,
+cross-cutting: CSP,
+cross-cutting: custom elements,
+cross-cutting: decorators,
+cross-cutting: observables,
+cross-cutting: resource,
+cross-cutting: signals,
+cross-cutting: standalone,
+cross-cutting: SVG,
+cross-cutting: tree-shaking,
+cross-cutting: types,
+design complexity: low-hanging,True
+design complexity: major,True
+detected: breaking change,
+detected: deprecation,
+detected: feature,
+doc-topic: reference,
+docsarea: testing,
+effort1: hours,True
+effort2: days,True
+effort3: weeks,True
+feature,
+feature: in backlog,True
+feature: insufficient votes,True
+feature: under consideration,True
+feature: votes required,True
+flag: breaking change,
+forms: change detection,
+forms: Controls API,
+forms: ControlValueAccessor,
+forms: directives,
+forms: disabling controls,
+forms: DOM,
+forms: dynamic,
+forms: ngModel,
+forms: signals,
+forms: strictly typed,
+forms: template-driven,
+forms: validators,
+freq1: low,True
+freq2: medium,True
+freq3: high,True
+freq4: critical,True
+good first issue,True
+help wanted,True
+hotlist: components team,
+hotlist: devrel,
+hotlist: error messages,
+hotlist: google,
+iOS,
+memory leak,
+merge: caretaker note,
+merge: preserve commits,
+merge: squash commits,
+needs reproduction,True
+needs triage,True
+needs: clarification,True
+needs: discussion,True
+needs: verification,True
+P0,True
+P1,True
+P2,True
+P3,True
+P4,True
+P5,True
+PullApprove: disable,True
+refactoring,
+regression,
+requires: TGP,True
+risk: high,True
+risk: low,True
+risk: medium,True
+risky,True
+router: aux routes,
+router: config matching/activation/validation,
+router: directives,
+router: guards/resolvers,
+router: lazy loading,
+router: LocationStrategy,
+router: navigation pipe,
+router: RouteReuseStrategy,
+router: URL parsing/generation,
+security,
+server: http cache,
+shadow dom,
+state: blocked,True
+state: blocked on G3 cleanup,True
+state: blocked on upstream,True
+state: community,True
+state: confirmed,True
+state: has PR,True
+state: in investigation,True
+state: Needs Design,True
+state: needs devrel input,True
+state: needs doc team review,True
+state: needs eng input,True
+state: needs eng review,True
+state: needs more investigation,True
+state: WIP,True
+target: automation,
+target: feature,
+target: lts,
+target: major,
+target: minor,
+target: patch,
+target: rc,
+type: bug/fix,
+type: confusing,
+type: use-case,
+windows,
+workaround1: obvious,True
+workaround2: non-obvious,True
+workaround3: complex,True
+workaround4: none,True
