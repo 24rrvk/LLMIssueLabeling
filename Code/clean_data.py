@@ -197,7 +197,6 @@ def clean_file(file_name, pipeline, llm):
 
 if __name__ == "__main__":
 
-
     MODEL_NAME = sys.argv[1]
 
     # LLM Implementation in this work. You can use your own.

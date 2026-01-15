@@ -124,7 +124,6 @@ if __name__ == "__main__":
                 data[project][i]["assigned_labels"] = []
 
 
-
     sorted_catalog = sorted(label_catalog.items(), key= lambda x:x[1], reverse=True)
 
     outfolder_path = f"label_generation_results/{MODEL_NAME}"

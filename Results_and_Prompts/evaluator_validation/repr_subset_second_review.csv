@@ -1,0 +1,279 @@
+project,issue_number,label,title,body,SN Eval,SN Notes,LLM eval,LLM_explanation,LJ Eval
+vim/vim,15355,extension,Add superhtml and ziggy filetype,"**Is your feature request about something that is currently impossible or hard to do? Please describe the problem.**
+I guess technically it is currently impossible to do? I am working on adding superhtml support to the Neovim ecosystem (will be followed by ziggy), one of the things that is needed is adding the file type support.
+
+**Describe the solution you'd like**
+Ideally, the `superhtml` file type would be added using the `.shtml` file extension as described [here](<URL> by the creator of superhtml and then the `ziggy` file type would be added using the `.ziggy` and `.ziggy-schema` file extensions as described [here](<URL>
+
+**Additional context**
+As these are simple changes, I am willing to do the leg work of the changes (though I am unfamiliar with vimscript atm). However, since `.shtml` is currently mapped and this is my first time being involved with the project I wanted to open an issue for discussion.",1,"Could be feature extenstion, or feature request. Extension itself does not give me much detail UPDATE: because judge reads the file formats I agree with judge because file extentions were changed.",1,"<think>
+Okay, so I need to determine if the label ""extension"" accurately reflects the given GitHub issue based on its title, body, and the patches applied.
+
+First, let's look at the issue title: ""Add superhtml and ziggy filetype."" This suggests that the user is requesting support for new file types in Neovim. The body explains that they're working on adding these filetypes and want to use specific extensions (.shtml, .ziggy, .ziggy-schema). They mention being willing to do the work but are opening the issue for discussion.
+
+Now, looking at the patches provided:
+
+Patch 1 adds autocommands for *.ziggy and *.ziggy-schema, setting their filetypes to ziggy and ziggy_schema respectively. It also comments about adding these file types.
+
+Patch 2 updates a dictionary that maps filetypes to their respective filename checks. It includes entries for ziggy and ziggy_schema with their corresponding file extensions.
+
+Patch 3 seems to include the patch number in an array, indicating it's part of the changes made.
+
+The label assigned is ""extension."" I'm trying to think about what this label typically represents. Often, ""extension"" refers to adding new features or functionalities beyond the core product, like extending Neovim with support for new filetypes.
+
+In this case, the issue is about adding support for superhtml and ziggy filetypes by recognizing their extensions. This fits well under an ""extension"" label because it's expanding Neovim's capabilities to handle more file types, which is a form of extending its functionality.
+
+I don't see any information suggesting that the changes are bug fixes or related to other labels like ""bug,"" ""enhancement,"" or ""discussion."" The focus is on adding new supported extensions, so ""extension"" seems appropriate.
+</think>
+
+The label ""extension"" accurately reflects the issue as it's about adding support for new filetypes through their extensions. 
+
+1",0
+vercel/next.js,62634,cache,Next in Vercel - SSG page with fetch `cache: no-store` responds with `404 Not Found` page,"### Link to the code that reproduces this issue
+
+<URL>
+
+### To Reproduce
+
+1. Install dependencies
+2. Run locally - `npm run build` => `npm run start`
+3. Go to `localhost:3000/no-store` and note that it functions
+4. Deploy to Vercel - `vercel link` => `vercel deploy`
+5. Go to the deployed site (mine is here: [`no-store`](<URL>
+6. Note that it does not function - instead gives `404 Not Found`
+
+### Current vs. Expected behavior
+
+It gives an error.
+I expect the page to render, just like in local environment.
+
+
+### Provide environment information
+
+```The log indicates the operating system platform is macOS (darwin), with an arm64 architecture and kernel version 23.2.0. It lists the versions of various binaries and packages including Node.js (18.18.2 and v20), npm (9.8.1), Yarn (1.22.21), and pnpm (8.9.2). The relevant Next.js packages include next (14.1.0) and eslint-config-next (14.1.0 and canary), along with React (18.2.0) and TypeScript (5.3.3). The `output` field in the Next.js config is not specified.```
+
+
+### Which area(s) are affected? (Select all that apply)
+
+App Router, Data fetching (gS(S)P, getInitialProps)
+
+### Which stage(s) are affected? (Select all that apply)
+
+Vercel (Deployed)
+
+### Additional context
+
+Also posted my initial discussion here: <URL>",0,Deployment issue,0,"<think>
+Okay, so I need to determine whether the label ""cache"" accurately reflects the given GitHub issue report. Let's break down the problem step by step.
+
+First, let me read through the title and body of the issue. The title says: ""Next in Vercel - SSG page with fetch `cache: no-store` responds with `404 Not Found` page."" So, it seems like when a user deploys to Vercel, their server-side generated (SSG) page isn't working as expected. Specifically, when using `cache: no-store`, the page returns a 404 error instead of rendering correctly.
+
+Looking at the body, the user provided steps to reproduce. They have a sample code that works locally but fails on Vercel. The issue arises during deployment, leading to a 404 Not Found error. This suggests that something about the way Vercel handles caching or routing for SSG pages is causing the problem.
+
+The environment information includes details like Node version, Next.js version (14.1.0), and other relevant packages. It also mentions that the areas affected are App Router and Data fetching (which relates to SSG/SSP). The stages affected are specifically during deployment on Vercel.
+
+Now, looking at the patches provided:
+
+Patch 1 talks about fixing a missing app route with mixed SSR/SSG dynamic routes. This indicates that the issue might be related to how Next.js handles different rendering strategies (like mixing Server-Side Rendering and Static Generation) for certain routes.
+
+Patch 2 modifies serverBuild function by adding checks before pruning prerendered routes, specifically when dealing with app routes in the manifest. This suggests it's about ensuring that dynamic routes which mix SSG and SSR are handled correctly during build time to prevent incorrect route pruning.
+
+Patches 3 adds a page with generateStaticParams, which seems to create static paths for some slugs but bails to server-side rendering (SSR) for 'third'. This might be testing how Next.js handles mixed static and SSR content within the same dynamic route.
+
+Patch 4 updates probes to check if certain paths return 200 with expected content. This is likely adding tests to ensure that after the fix, all these routes work as intended.
+
+Patch 5 increases the expected number of lambdas from 5 to 7. Since Vercel uses serverless functions (lambdas) for Next.js deployments, this change might be ensuring that the correct number of lambda functions are generated when mixing SSR and SSG, preventing some lambdas from being mistakenly pruned.
+
+Putting it all together, the issue seems related to how Next.js on Vercel handles mixed rendering strategies (SSG and SSR) within dynamic routes. The problem arises during deployment where certain pages return 404 instead of rendering correctly because of incorrect pruning or handling of app routes that mix these strategies.
+
+The label assigned is ""cache"". But from what I understand, the issue isn't directly about caching in terms of how data is fetched (like using `getStaticProps` with a cache) but more about how Next.js and Vercel handle different rendering methods for dynamic routes during deployment. The use of `cache: no-store` in the fetch might be part of the problem, but the core issue seems to revolve around route handling and deployment rather than caching mechanisms.
+
+Therefore, labeling it as ""cache"" doesn't capture the essence of the problem, which is more about routing and rendering strategies in a serverless environment. A better label might be something like ""routing"" or ""deployment"" since those are the areas where the issue manifests.
+</think>
+
+The label assigned was ""cache,"" but upon analysis, the core issue relates to routing and deployment handling rather than caching mechanisms.
+
+0",1
+pytorch/pytorch,119436,non local definitions,Unbound local in inductor with inplace foreach and views,"### 🐛 Describe the bug
+
+If calling an inplace foreach op with multiple views in the first input list, inductor generates bad code.
+
+<URL>
+
+### Versions
+
+nightly 884b6d2a675756091ae7c19b49f0aec1a8931955
+
+cc @ezyang @msaroufim @bdhirsh @anijain2305 @zou3519 @voznesenskym @penguinwu @EikanWang @jgong5 @Guobing-Chen @XiaobingSuper @zhuhaozhe @blzheng @wenzhe-nrv @jiayisunx @peterbell10 @ipiszy @yf225 @chenyang78 @kadeng @muchulee8 @aakhundov @ColinPeppler",0,"I could see bug, which is not in label list",0,"<think>
+Okay, so I'm trying to figure out if the label ""non local definitions"" accurately reflects the given GitHub issue report. Let me go through each part step by step.
+
+First, looking at the title of the issue: ""Unbound local in inductor with inplace foreach and views."" This suggests that there's an unbound local variable somewhere in the code related to the inductor when using inplace foreach operations with multiple views. Unbound locals usually mean a variable is referenced before it's assigned, which can cause errors.
+
+Next, the body of the issue provides more context. It mentions that calling an inplace foreach op with multiple views in the first input list causes Inductor to generate bad code. There's also a link to a gist, but I can't access it, so I'll focus on what's provided here. The versions and people mentioned aren't directly relevant to the label assessment.
+
+Now, looking at the patches that resolved this issue. Patch 1 adds a test case for aliasing in the foreach_add function. It creates several inputs with views and checks if the compiled code matches the eager execution. This suggests they're ensuring that when multiple views (which are different tensors but share data) are used in foreach operations, the generated code doesn't have issues.
+
+Patch 2 seems to modify functions related to pruning redundant dependencies in fused nodes. It introduces a new function _prune_redundant_deps and updates prune_redundant_deps methods in FusedSchedulerNode and SchedulerNode classes. The comments mention weak dependencies and ensuring fusions happen in the correct order, which relates to how nodes are managed during fusion.
+
+The original label assigned is ""non local definitions."" But looking at the patches, especially Patch 2, it's about managing dependencies between nodes during fusion. It seems the problem was that certain dependencies were being kept when they should have been pruned, leading to incorrect ordering or references. This might cause variables to be referenced incorrectly, hence the unbound local error mentioned in the title.
+
+However, ""non local definitions"" usually refers to using variables outside their scope without proper declaration. The issue here seems more about dependency management and correct variable scoping during code generation in Inductor. So while the symptoms (unbound locals) might relate to variable usage, the root cause is about how dependencies are handled after fusing nodes.
+
+Therefore, the label ""non local definitions"" doesn't accurately capture the essence of the problem because it's more about dependency pruning and fusion order rather than non-local variables.
+</think>
+
+The patches address issues with dependency management during node fusion, not non-local variable usage. The unbound local error was a symptom of incorrect dependencies.
+
+0",1
+spring-projects/spring-framework,32575,runtime error,RestClient observations are stopped before ResponseSpec calls,"Debugging a `RestTemplate` shows that `execute()` bad responses are properly throwing exceptions, which when caught, are setting the error to the observation:
+```The code snippet performs the following steps:
+1. Executes a request and stores the response.
+2. Sets the response in an observation context.
+3. Handles the response by calling a method with URL, method, and response as parameters.
+4. Extracts data from the response using a response extractor if available, otherwise returns null.
+5. Catches and handles `IOException`, creating a `ResourceAccessException` and rethrowing it after logging the error.
+6. Catches and logs any other `Throwable`, then rethrows it.```
+Doing the same for the `DefaultRestClient` `retrieve` method shows that the `clientRequest.execute()` call is not throwing any exception, thus no error is recorded to the observation (later during the `toEntity` call the exception is thrown, but at that time the client observation is already stopped).
+```The code snippet captures a try-catch block that executes a client request, handles exceptions, and logs errors. It sets the client response in an observation context, wraps the response, and exchanges it. Catch blocks manage `IOException` and other `Throwable` exceptions, creating and throwing `ResourceAccessException`.```
+
+What is the idea of the new RestClient implementation, how is it supposed to propagate the exception to the observation?",1,Well i think still it could be labeled as runtime error,0,"<think>
+Okay, so I'm trying to figure out if the label ""runtime error"" accurately reflects the given GitHub issue report. Let's break it down step by step.
+
+First, looking at the title of the issue: ""RestClient observations are stopped before ResponseSpec calls."" This suggests that there's a problem with how observations (like logging or monitoring) are being handled in the RestClient. Specifically, the observation is stopping too early, before certain response handling occurs.
+
+The body of the issue provides more details. It compares two implementations: RestTemplate and DefaultRestClient. In RestTemplate, when execute() throws an exception, it's caught and the error is recorded to the observation. However, in DefaultRestClient, during the retrieve method, clientRequest.execute() doesn't throw any exceptions, so no error is logged to the observation. Later, when toEntity is called, an exception is thrown, but by then, the observation has already stopped.
+
+The patches provided show changes made to fix this issue. Let me go through them:
+
+1. **Patch 1** modifies several parts of the code:
+   - It adds a parameter `observation` to the method `readWithMessageConverters`.
+   - In cases where exceptions are caught, it sets the error on the observation before throwing.
+   - It ensures that observations are stopped in the `finally` block after processing.
+
+2. **Patch 2** updates test methods and class names for better clarity, but doesn't directly relate to the bug fix.
+
+The main idea here is ensuring that any exceptions during response handling are properly recorded by the observation before it stops. The problem was that observations were stopping too early, missing error logging when exceptions occurred later in the process.
+
+Now, considering the label ""runtime error."" A runtime error typically refers to an error that occurs during the execution of a program, such as null pointer exceptions or array index out of bounds. However, this issue isn't about a specific error occurring but rather about the timing and completeness of error logging within observations.
+
+The patches are about ensuring that when exceptions do occur (like RestClientException), they are properly captured in the observation before it's stopped. So the problem is more about correct error handling and logging mechanisms rather than a runtime error itself.
+
+Therefore, labeling this issue as ""runtime error"" might not be accurate because the core issue isn't an unexpected error during execution but rather a flaw in how errors are being logged or tracked.
+</think>
+
+The label does not accurately reflect the issue. The problem was about ensuring proper error logging and observation handling, not a runtime error.
+
+0",1
+golang/go,67428,integration,x/tools/gopls/internal/test/integration/codelens: spurious TestGCDetails_Toggle failure,"`````The code snippet is a watchflakes rule that matches packages from `golang.org/x/tools/gopls/internal/test/integration/codelens` and tests whose names start with `TestGCDetails_Toggle/`.```
+
+Observed in one builder in the context of <URL> test passed after re-try.
+
+```The test `TestGCDetails_Toggle/default` failed after 2.01 seconds. The test expected that after toggling GC details, there would be diagnostics for `main.go` mentioning ""42 escapes"" with an ""optimizer details"" diagnostic of severity Information and no tags. However, this condition was not met. The log shows that the view was created, packages were loaded, and some diagnostics were performed, but the specific diagnostics for `main.go` were missing.```",0,"Looks more like test faulure to me than integration, however, integration could still be somehow related, but i would agree with integration-test for example rather than just integration",0,"<think>
+Okay, so I need to figure out if the label ""integration"" is accurate for this GitHub issue. Let me start by reading through everything carefully.
+
+The issue's title mentions a spurious failure in TestGCDetails_Toggle within the codelens integration tests. The body describes a test that's failing because of an unmet condition related to diagnostics, specifically looking for a message containing ""42 escapes"" with certain severity and tags. It also notes that the test passed on retry, which suggests it might be a flaky test.
+
+Looking at the patches provided, Patch 1 modifies the test by replacing AfterChange with OnceMet, adding a CompletedWork condition before checking the Diagnostics expectation. This seems to adjust how the test waits for certain diagnostics to appear after specific work is done. 
+
+Patch 2 updates the comment for the DoneDiagnosingChanges function, clarifying that it's about awaiting various document and workspace change notifications before checking expectations. It also adds a more detailed description of what AfterChange awaits, including different textDocument and workspace events.
+
+Now, considering the label ""integration."" Integration tests typically verify interactions between components or systems, ensuring they work together as expected. The changes here are in test setup and expectations, making the test more reliable by correctly awaiting certain conditions before checking for results. This isn't adding new integration points but rather fixing how the existing integration test behaves.
+
+So, while the issue is about an integration test failure, the patches don't add or modify integration aspects per se; they adjust the test's timing and expectations to prevent spurious failures. Therefore, the label ""integration"" might not be the most accurate because it doesn't directly relate to integrating components but rather to test reliability.
+
+However, since the issue is within an integration test file and involves how the test integrates with the server's behavior, there's a case for the label being appropriate. But I'm leaning towards it not being the best fit because the core problem was about test flakiness due to timing issues, not integration logic.
+</think>
+
+The label ""integration"" is somewhat relevant as the issue pertains to an integration test. However, the patches address test reliability rather than integrating components. 
+
+Answer: 0",1
+pingcap/tidb,55153,enhancement,Support hash join spill,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+
+
+**Describe the feature you'd like:**
+
+
+**Describe alternatives you've considered:**
+
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+",0,"Seeing the judge reasoning because they reason based on code (issue is template), i would agree with judge more. orhetwise this is very vague issue",0,"<think>
+Okay, so I'm trying to figure out whether the label ""enhancement"" is accurate for this issue report based on the information provided. Let me start by understanding what each part of the problem is saying.
+
+The user provided a series of patches from a GitHub repository and some test cases. The main focus seems to be around fixing issues related to joining tables, especially when dealing with large data types like bigint unsigned and bit(64). There are tests added in Patches 21 and 24 that check if certain joins behave correctly when comparing these large integer types.
+
+Patch 1 through Patch 20 show various code changes, but they don't add new features. Instead, they seem to fix existing bugs or improve how the system handles specific data types during joins. For example, in Patch 17, there's a change in checking the length of segments which might be related to handling larger data without causing errors.
+
+The labels given by GitHub are important here. The issue report was assigned the label ""enhancement."" But looking at the patches and test cases, it seems like these changes are addressing specific bugs or improving correctness rather than adding new features. Enhancements usually refer to new functionalities or significant improvements, not necessarily bug fixes.
+
+Moreover, the tests added in Patches 21 and 24 are testing for correct behavior when comparing different integer types across tables. This suggests that prior to these patches, there might have been incorrect results or errors when performing such joins, indicating a bug fix rather than an enhancement.
+
+So, considering all this, I don't think ""enhancement"" is the right label here. These changes are more about fixing issues and improving correctness rather than introducing new features or enhancements.
+</think>
+
+0",1
+rust-lang/rust,122652,feature request,Disable const-stability checking for intrinsics with fallback MIR?,"As suggested in <URL> I moved my new intrinsic to `core::intrinsics`.  But that meant I started getting a new error:
+
+`````The code snippet shows an error indicating that the `typed_swap` function is not yet stable when used as a constant function (`const fn`). The error occurs on line 731 of the `library\core\src\mem\mod.rs` file, where an `unsafe` block calls `intrinsics::typed_swap(x, y)`.```
+
+Is that error useful for things with fallback MIR that's already const-checked?  Could we skip it?
+
+(Maybe doing that in the same PR that would make CTFE capable of using fallback MIR?)
+
+cc @oli-obk ",0,I see this as a more of bug/error or compiler issue than feature request,0,"<think>
+Okay, so I'm trying to figure out if the label ""feature request"" accurately reflects the given issue report. Let me start by understanding what each part of the problem is showing.
+
+First, there's an issue report with various patches applied to a repository. The question is whether assigning the label ""feature request"" to this issue is correct based on its title, body, and the provided patches.
+
+Looking at the patches, I see that they modify several files related to Rust's intrinsics. For example, Patch 28 adds `#[rustc_intrinsic]` and `#[rustc_intrinsic_must_be_overridden]` attributes to a function, which suggests changes in how certain intrinsic functions are handled or exposed by the compiler.
+
+Intrinsics in Rust are low-level functions that are part of the standard library but are implemented in a way that bypasses the usual ABI. They're often used for performance-critical operations. Modifying these intrinsics could be about adding new functionality, changing their behavior, or improving how they're handled by the compiler.
+
+The patches also include changes to error messages and tests, like adjusting when certain errors are thrown during constant evaluation. For example, in Patch 23, it looks like there's a test that checks if using `copy_nonoverlapping` with invalid pointers correctly throws an error. This indicates that the issue might be about ensuring the intrinsics behave correctly under various conditions.
+
+Another patch (Patch 27) deals with transmuting function pointers to intrinsic functions, which again relates to how these low-level operations are handled by the compiler and runtime.
+
+Now, considering what a ""feature request"" typically entails. A feature request usually involves adding new functionality or making enhancements to an existing system. The patches here seem more about fixing bugs or improving the internal handling of intrinsics rather than adding a new user-facing feature.
+
+However, sometimes changes to intrinsic functions can be part of larger feature work, like improving performance or enabling new language features that rely on these intrinsics. But in this case, the focus seems to be on correct behavior and error handling rather than introducing a new feature per se.
+
+Alternatively, if these patches are part of adding support for a new feature that relies on updated intrinsics, then ""feature request"" might make sense. For example, if a new language feature requires changes to how certain intrinsics work, then this could be considered as part of the feature's implementation.
+
+But without more context from the issue title or body, it's hard to say definitively. Based solely on the patches provided, they seem more like bug fixes or internal improvements rather than a feature request. Feature requests usually involve adding something new that users can utilize, whereas these changes are under-the-hood adjustments.
+
+So, if the issue is about improving how intrinsics work internally without exposing new functionality to end-users, then labeling it as a ""feature request"" might not be accurate. It would be more appropriate for bug fixes or internal improvements.
+
+However, I could be missing some context where these patches are indeed enabling a new feature, making the label correct. But based on what's shown here, I'm leaning towards it not being a feature request.
+</think>
+
+0",1
+microsoft/vscode,212904,settings,Shared process should have a clone of all profile storages,"Discovered from <URL>
+
+At present when syncing a profile, Settings gets snapshot of each profile storage from main and discards the snapshot as soon as the sync is finished. On an average, settings sync syncs all profiles once per 5 minutes. This means, every 5 minutes settings sync reads all profiles storages from main. 
+
+Ref: <URL>
+
+Instead
+
+- get profile storage from main when needed for the first time
+- from there on sync the storage from main using listeners - incrementally update the profile storage",0,I see this as performance or read problem not setting issue,0,"<think>
+Okay, so I need to figure out if the label ""settings"" accurately reflects the given GitHub issue report based on its title, body, and the patches applied. Let me break it down step by step.
+
+First, looking at the issue's title: ""Shared process should have a clone of all profile storages."" This suggests that the problem is about how profile storages are handled in a shared process environment. The term ""profile storages"" likely refers to where user profiles are stored and managed.
+
+Now, the body of the issue explains that currently, when syncing a profile, the settings take snapshots from the main storage and discard them after sync. This happens every 5 minutes, which is inefficient because it reads all profiles each time. The proposed solution is to get the profile storage on first need and then use listeners for incremental updates. So, this seems related to how user data profiles are synced and managed across processes.
+
+The patches provided are a bit technical, but I can see that they involve changing imports from NativeUserDataProfileStorageService to SharedProcessUserDataProfileStorageService. This indicates a shift towards using a shared process approach for handling profile storages. There's also modification in the constructors, adding parameters like persistStorages and managing storage services with DisposableMap. The code changes aim at reusing existing storage instances instead of creating new ones each time, which aligns with the problem described.
+
+The label assigned is ""settings."" I need to determine if this label captures the essence of the issue. Settings usually refer to user preferences or application configurations. While profile storages might include settings, the issue seems broader—it's about the underlying storage mechanism for profiles, not just the settings themselves. The problem affects how data is synced and stored across shared processes, which could impact multiple aspects beyond just user settings.
+
+Moreover, looking at the patches, they modify services related to user data profiles and storage management. These changes are more foundational, dealing with how storages are initialized, managed, and disposed of. They don't specifically target settings but rather the infrastructure supporting profile data synchronization.
+
+Therefore, while ""settings"" might be a related area, it doesn't fully encapsulate the issue's focus on shared process handling of all profile storages. A more accurate label might be something like ""performance,"" ""architecture,"" or ""sync,"" as these better reflect the nature of the changes made.
+</think>
+
+The label ""settings"" does not accurately reflect this issue report because the problem and patches address broader storage management in a shared process environment, not just user settings.
+
+0",1
