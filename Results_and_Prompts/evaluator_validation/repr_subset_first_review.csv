@@ -1,4 +1,4 @@
-project,issue_number,label,title,body,eval,explanation,LJ Eval,LJ Notes,Disagreement?,Disagreement Type
+project,issue_number,label,title,body,LLM_eval,LLM_explanation,LJ Eval,LJ Notes,Disagreement?,Agreement/Disagreement Type
 golang/go,66626,type system,go/types: add iterator methods,"### Proposal Details
 
 There are many data types in the API of go/types that expose a sequence through a pair of methods `NumFoo() int` and `Foo(int) Foo`. For each of them, we propose to define new convenience methods that are go1.23 push iterators:

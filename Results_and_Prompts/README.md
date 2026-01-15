@@ -2,9 +2,6 @@
 
 This folder contains the dataset, prompts, and generated results of this work which is described in depth below:
 
-
-NEED TO EXPLAIN evaluator_validation/repr_subset_evals.csv
-
 ## "raw_dataset.zip" 
 
 When unzipped, this folder contains three files. Two of them, "train_set_raw.json" and "test_set_raw.json", provide the raw train and test sets respectively. These datasets are organized in the following manner:
@@ -159,3 +156,38 @@ The optimal clustering was [clusters/all-mpnet-base-v2_metric=cos_link=avg/SIM_T
  - "Final Decision": If both authors agreed on the decision whether to include the label in the final list, this field was left empty. Otherwise, this field is marked "1" to include the label in the list or "0" to exclude the label from the list based on the discussion between authors "LJ" and "MRM".
 
 The final label list based on the evaluation of authors "LJ" and "MRM" is in the file [label_list/label_list.csv](./label_list/label_list.csv).
+
+## ["evaluator_validation" Folder](./evaluator_validation/)
+
+To assess the judgements of our evaluator LLM, an author manually reviewed a randomly sampled 90% confidence level, 10% margin of error representative subset of the 30,553 labels assigned by Qwen2.5-7B-Instruct to the 13,210 issue reports in the training set. This subset consisted of 80 label assignments. The results of this assessment can be viewed in the file [evaluator_validation/repr_subset_first_review.csv](./evaluator_validation/repr_subset_first_review.csv) which contains the following fields:
+
+ - "Project": The GitHub repository to which the issue report belongs.
+ - "issue_number": The issue report's issue number.
+ - "label": A label assigned by Qwen2.5-7B-Instruct to the issue report.
+ - "title": The title of the issue report.
+ - "body": The body of the issue report.
+ - "LLM_eval": 1 if the LLM claimed the label "accurately reflects" the corresponding issue report, otherwise 0.
+ - "LLM_explanation": The exact output of the LLM when prompted to determine if the label "accurately reflects" the corresponding issue report (Prompt available at [prompts/label_evaluation_prompt.txt](./prompts/label_evaluation_prompt.txt)).
+ - "LJ Eval": 1 if the author "LJ" claimed the label "accurately reflects" the corresponding issue report, otherwise 0.
+ - "LJ Notes": Notes left by the author "LJ" explaining their reasoning behind their assessment of the validity of the label assignment.
+ - "Disagreement?": 1 if the LLM and author agreed on whether the assigned label "accurately reflected" the corresponding issue report, otherwise 0.
+ - "Agreement/Disagreement Type":
+    - "Positive Agreement" if both the LLM and author agree that the label "accurately reflects" the corresponding issue report.
+    - "Negative Agreement" if both the LLM and author agree that the label does not "accurately reflect" the corresponding issue report.
+    - "LLM good, human bad" if the LLM judges that the label "accurately reflects" the corresponding issue report but the author does not.
+    - "LLM bad, human good" if the human judges that the label "accurately reflects" the corresponding issue report but the LLM does not.
+
+The author "LJ" agreed with the LLM's assessments in 72 of the 80 cases. A second author subsequently reviewed the eight disagreements between the first author and the evaluator LLM. The results of this assessment can be viewed in the file [evaluator_validation/repr_subset_second_review.csv](./evaluator_validation/repr_subset_second_review.csv) which contains the following fields:
+
+ - "Project": The GitHub repository to which the issue report belongs.
+ - "issue_number": The issue report's issue number.
+ - "label": A label assigned by Qwen2.5-7B-Instruct to the issue report.
+ - "title": The title of the issue report.
+ - "body": The body of the issue report.
+ - "SN Eval": 1 if the author "SN" claimed the label "accurately reflects" the corresponding issue report, otherwise 0.
+ - "SN Notes": Notes left by the author "SN" explaining their reasoning behind their assessment of the validity of the label assignment. 
+ - "LLM_eval": 1 if the LLM claimed the label "accurately reflects" the corresponding issue report, otherwise 0.
+ - "LLM_explanation": The exact output of the LLM when prompted to determine if the label "accurately reflects" the corresponding issue report (Prompt available at [prompts/label_evaluation_prompt.txt](./prompts/label_evaluation_prompt.txt)).
+ - "LJ Eval": 1 if the author "LJ" claimed the label "accurately reflects" the corresponding issue report, otherwise 0.
+
+The author "SN" concurred with the evaluator LLM in seven of the eight cases.
