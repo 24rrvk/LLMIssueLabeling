@@ -1,0 +1,97 @@
+Label,is_non_descriptive_label
+affected: 2.4,True
+affected: 3.4,True
+auto-transferred,True
+backport is needed,True
+bug,
+category: 3d module,True
+category: 3rdparty,
+category: apps,
+category: build/install,
+category: calib3d,True
+category: contrib,
+category: core,
+category: dnn,True
+category: dnn (onnx),True
+category: documentation,
+category: features2d,True
+category: flann,True
+category: g-api / gapi,True
+category: gpu/cuda (contrib),
+category: highgui-gui,True
+category: imgcodecs,True
+category: imgproc,True
+category: infrastructure,
+category: java bindings,True
+category: javascript (js),True
+category: legacy,
+category: matlab bindings,True
+category: ml,
+category: nonfree,
+category: objdetect,True
+category: ocl,True
+category: photo,True
+category: python bindings,True
+category: samples,True
+category: shape,True
+category: stitching,True
+category: superres,True
+category: swift/objc bindings,True
+category: t-api,
+category: tracking,
+category: video,True
+category: videoio,True
+category: videoio(camera),True
+category: videostab,True
+category: viz,True
+category: vulnerability,
+category:dnn_cann,True
+category:dnn_timvx,True
+CI/CD: GitHub Actions (GHA),
+cleanup,
+community help requested,True
+confirmed,True
+duplicate,True
+effort: ∞,True
+effort: few days,True
+effort: few hours,True
+effort: few weeks,True
+evolution,
+feature,
+future,True
+good first issue,True
+GSoC,True
+Hackathon,True
+incomplete,True
+invalid,True
+need-ci-update,True
+needs investigation,True
+needs reproducer,True
+OpenCV5,True
+optimization,
+platform: android,True
+platform: arm,True
+platform: ios/osx,True
+platform: linux,True
+platform: loongson,True
+platform: other,True
+platform: ppc (PowerPC),True
+platform: riscv,True
+platform: win32,True
+platform: winrt/uwp,True
+port into 4.x is needed,True
+port to 5.x is needed,True
+port/backport done,True
+pr: Discussion Required,True
+pr: needs docs,True
+pr: needs rebase,True
+pr: needs test,True
+pr: reproducer,True
+priority: high,True
+priority: low,True
+priority: normal,True
+question (invalid tracker),
+RFC,
+test,
+vote,True
+wontfix,True

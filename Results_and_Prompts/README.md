@@ -165,6 +165,8 @@ For each file containing label lists of projects in our dataset, there are two c
 
 For a list of labels that were classified as not referring to the issue itself ordered by the number of label lists of repositories in our dataset in which the label is present, please view [original_label_lists/projects_in_dataset/labels_that_do_not_describe_issue.csv](./original_label_lists/projects_in_dataset/labels_that_do_not_describe_issue.csv).
 
+For projects not in our dataset, the same evaluation was conducted. However, labels are also marked as "non descriptive" if they are project-specific in these files.
+
 ## ["evaluator_validation" Folder](./evaluator_validation/)
 
 To assess the judgements of our evaluator LLM, an author manually reviewed a randomly sampled 90% confidence level, 10% margin of error representative subset of the 30,553 labels assigned by Qwen2.5-7B-Instruct to the 13,210 issue reports in the training set. This subset consisted of 80 label assignments. The results of this assessment can be viewed in the file [evaluator_validation/repr_subset_first_review.csv](./evaluator_validation/repr_subset_first_review.csv) which contains the following fields:

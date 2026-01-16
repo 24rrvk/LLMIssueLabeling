@@ -1,0 +1,121 @@
+Label,is_non_descriptive_label
+1.4.0,True
+1.9,True
+2.17,True
+2.18.rc,True
+2.6.0,True
+Android,True
+API review,
+awaiting PR merge,True
+awaiting review,True
+build and push to gcr.io for staging,True
+cla: no,True
+cla: yes,True
+comp:apis,
+comp:autograph,
+comp:cloud,
+comp:core,
+comp:data,
+comp:dist-strat,
+comp:eager,
+comp:gpu,
+comp:gpu:tensorrt,True
+comp:grappler,True
+comp:keras,True
+comp:lite,True
+comp:lite-examples,True
+comp:lite-flex,True
+comp:lite-kernels,True
+comp:lite-support,True
+comp:lite-tosa,True
+comp:lite-xnnpack,True
+comp:micro,True
+comp:mkl,True
+comp:model,True
+comp:ops,
+comp:runtime,
+comp:signal,
+comp:tensorboard,True
+comp:tf.function,True
+comp:tfdbg,True
+comp:tpus,True
+comp:xla,True
+contrib,True
+dependencies,
+docker,True
+Fixed in Nightly,True
+github_actions,True
+good first issue,True
+invalid,True
+iOS,True
+kokoro:force-run,True
+ModelOptimizationToolkit,True
+override-stale,True
+prime,
+prtype:bugfix,
+python,True
+ready to pull,True
+regression issue,
+release,
+RNN,
+size:L,True
+size:M,True
+size:S,True
+size:XL,True
+size:XS,True
+stale,True
+stat:awaiting response,True
+stat:awaiting tensorflower,True
+stat:community support,True
+stat:contribution welcome,True
+subtype: raspberry pi,True
+subtype: ubuntu/linux,True
+subtype:bazel,True
+subtype:centos,True
+subtype:cpu-intel,True
+subtype:direct-ml-plugin,True
+subtype:macOS,True
+subtype:windows,True
+tensorboard profiler,True
+TF 1.12,True
+TF 1.13,True
+TF 1.14,True
+TF 1.15,True
+TF 1.5.0,True
+TF 2.0,True
+TF 2.1,True
+TF 2.10,True
+TF 2.11,True
+TF 2.12,True
+TF 2.13,True
+TF 2.15,True
+TF 2.16,True
+TF 2.18,True
+TF 2.19,True
+TF 2.2,True
+TF 2.3,True
+TF 2.4,True
+TF 2.5,True
+TF 2.6.0-rc0,True
+TF 2.7,True
+TF 2.8,True
+TF 2.9,True
+TF2.14,True
+TFLiteConverter,True
+TFLiteGooglePlayServices,True
+TFLiteGpuDelegate,True
+TFLiteHexagonDelegate,True
+TFLiteModelMaker,True
+TFLiteNNAPIDelegate,True
+type:bug,
+type:build/install,
+type:docs-bug,
+type:docs-feature,
+type:feature,
+type:internal-todo,True
+type:others,
+type:performance,
+type:support,
+waiting for patch release,True
+WIP,True
+wsl2,True
