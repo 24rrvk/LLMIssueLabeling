@@ -167,6 +167,10 @@ For a list of labels that were classified as not referring to the issue itself o
 
 For projects not in our dataset, the same evaluation was conducted. However, labels are also marked as "non descriptive" if they are project-specific in these files.
 
+## ["label_similarity_matrices" Folder](./label_similarity_matrices/) 
+
+This folder contains the similarities of each label in our list of 275 labels (seen in [label_list/label_list.csv](./label_list/label_list.csv)) with the pre-processed label lists of projects not in our dataset (seen in [original_label_lists/projects_not_in_dataset](./original_label_lists/projects_not_in_dataset/)). These similarities were computed by measuring cosine similarity between label embeddings generated using the embedding model label "sentence-transformers/all-mpnet-base-v2".
+
 ## ["evaluator_validation" Folder](./evaluator_validation/)
 
 To assess the judgements of our evaluator LLM, an author manually reviewed a randomly sampled 90% confidence level, 10% margin of error representative subset of the 30,553 labels assigned by Qwen2.5-7B-Instruct to the 13,210 issue reports in the training set. This subset consisted of 80 label assignments. The results of this assessment can be viewed in the file [evaluator_validation/repr_subset_first_review.csv](./evaluator_validation/repr_subset_first_review.csv) which contains the following fields:
