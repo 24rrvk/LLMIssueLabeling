@@ -49,12 +49,11 @@ if __name__ == "__main__":
     LABELS_FILENAME = sys.argv[2]
     ISSUE_REPORTS_FILE_NAME = sys.argv[3]
 
-    # LLM Implementation in this work. You can use your own.
+    # LLM Implementation in this work which can be modified
     pipeline = transformers.pipeline(
         "text-generation",
         model=MODEL_NAME,
-        model_kwargs={"torch_dtype": torch.bfloat16},
-        device_map="cuda:6"
+        model_kwargs={"torch_dtype": torch.bfloat16}
     )
 
     MODEL_NAME = MODEL_NAME.replace("/","_")

@@ -34,12 +34,11 @@ if __name__ == "__main__":
 
     MODEL_NAME = sys.argv[1]
 
-    # LLM Implementation in this work. You can use your own.
+    # LLM Implementation in this work which can be modified
     pipeline = transformers.pipeline(
         "text-generation",
         model=MODEL_NAME,
-        model_kwargs={"torch_dtype": torch.bfloat16},
-        device_map="cuda:2"
+        model_kwargs={"torch_dtype": torch.bfloat16}
     )
 
     MODEL_NAME = MODEL_NAME.replace("/","_")

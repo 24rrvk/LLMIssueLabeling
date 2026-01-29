@@ -1,19 +1,8 @@
-from gensim.models import KeyedVectors
+from sentence_transformers import SentenceTransformer
 from sklearn.cluster import AgglomerativeClustering
-from sklearn.preprocessing import normalize
 import numpy as np
 import csv, os, sys
 
-
-def embed_label(label, model):
-    tokens = label.split()
-    vectors = [model[word] for word in tokens if word in model.key_to_index]
-
-    if not vectors:
-        print(f"Label {label} has no known words in embedding model's vocab")
-        return None
-    
-    return np.mean(vectors, axis=0)
 
 def get_label_with_highest_count(cluster, label_counts):
     representative_label = ""
@@ -30,7 +19,6 @@ def cluster_labels(embeddings, labels, sim_threshold, model_name, catalog_counts
 
     clustering = AgglomerativeClustering(n_clusters=None, distance_threshold=1-sim_threshold, metric=metric, linkage=linkage)
     clusters = clustering.fit_predict(embeddings)
-
 
     cluster_dict = {}
     cluster_embeddings = {}
@@ -95,15 +83,14 @@ def cluster_labels(embeddings, labels, sim_threshold, model_name, catalog_counts
 
 if __name__ == "__main__":
 
-    MODEL_NAME = sys.argv[1]
-    DISTANCE_METRIC = sys.argv[2]
-    LINKAGE_CRITERION = sys.argv[3]
+    MODEL_NAME = "all-mpnet-base-v2"
+
+    EMBEDDING_MODEL = SentenceTransformer(MODEL_NAME)
+
+    DISTANCE_METRIC = sys.argv[1]
+    LINKAGE_CRITERION = sys.argv[2]
 
     SIM_THRESHOLDS = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
-
-    print("LOADING MODELS")
-
-    model = KeyedVectors.load_word2vec_format(MODEL_NAME)
 
     print("READING LABELS")
 
@@ -137,10 +124,10 @@ if __name__ == "__main__":
     for label, count in catalog_counts.items():
         if count > 1:
 
-    #         num_spaces = label.count(' ')
-    #         if num_spaces not in space_counts:
-    #             space_counts[num_spaces] = 0
-    #         space_counts[num_spaces] += 1
+            # num_spaces = label.count(' ')
+            # if num_spaces not in space_counts:
+            #     space_counts[num_spaces] = 0
+            # space_counts[num_spaces] += 1
 
             labels.append(label)
 
@@ -150,41 +137,17 @@ if __name__ == "__main__":
 
     print("- GETTING EMBEDDINGS")
 
-    embeddings = []
-    oov_labels = []
-    vocab_labels = []
-    for label in labels:
-        embedding = embed_label(label, model)
-        if embedding is None:
-            oov_labels.append(label)
-        else:
-            embeddings.append(embedding)
-            vocab_labels.append(label)
-
-
-    embeddings = normalize(np.vstack(embeddings))
-
-    print("- EMBEDDINGS OBTAINED")
-    print(f"- NUM OOV LABELS: {len(oov_labels)}")
-    print(f"- NUM LABELS IN VOCAB: {len(vocab_labels)}")
+    embeddings = EMBEDDING_MODEL.encode(labels)
 
     if "/" in MODEL_NAME:
         MODEL_NAME = MODEL_NAME.replace("/", "_")
 
+    os.makedirs(f"clusters/{MODEL_NAME}_metric={DISTANCE_METRIC}_link={LINKAGE_CRITERION}", exist_ok=True)
 
-    outfolder_name = f"clusters/{MODEL_NAME}_metric={DISTANCE_METRIC}_link={LINKAGE_CRITERION}"
-
-    os.makedirs(outfolder_name, exist_ok=True)
-
-    with open(outfolder_name + f"/oov_labels.csv", "w") as outfile:
-        for label in oov_labels:
-            outfile.write(f"{label}\n")
 
     for sim_threshold in SIM_THRESHOLDS:
         print(f"\t- CLUSTERING LABELS W SIM_THRESHOLD={sim_threshold}")
-        cluster_labels(embeddings, vocab_labels, sim_threshold, MODEL_NAME, catalog_counts, DISTANCE_METRIC, LINKAGE_CRITERION)
-
-
+        cluster_labels(embeddings, labels, sim_threshold, MODEL_NAME, catalog_counts, DISTANCE_METRIC, LINKAGE_CRITERION)
 
 
 

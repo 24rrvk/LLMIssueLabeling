@@ -1,4 +1,4 @@
-Label,is_non_descriptive_label
+Label,is_non_generic_label
 affected: 2.4,True
 affected: 3.4,True
 auto-transferred,True

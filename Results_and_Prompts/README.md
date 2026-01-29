@@ -165,7 +165,7 @@ For each file containing label lists of projects in our dataset, there are two c
 
 For a list of labels that were classified as not referring to the issue itself ordered by the number of label lists of repositories in our dataset in which the label is present, please view [original_label_lists/projects_in_dataset/labels_that_do_not_describe_issue.csv](./original_label_lists/projects_in_dataset/labels_that_do_not_describe_issue.csv).
 
-For projects not in our dataset, the same evaluation was conducted. However, labels are also marked as "non descriptive" if they are project-specific in these files.
+For projects not in our dataset, the same evaluation was conducted. However, labels are also marked as "non descriptive" if they are project-specific in these files. 
 
 ## ["label_similarity_matrices" Folder](./label_similarity_matrices/) 
 
