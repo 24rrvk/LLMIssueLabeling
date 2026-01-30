@@ -4,6 +4,7 @@ if __name__ == "__main__":
     EVALUATOR_URL = "http://localhost:11434/api/generate"
 
     LLM_TO_EVALUATE = sys.argv[1]
+    LLM_TO_EVALUATE = LLM_TO_EVALUATE.replace("/", "_")
     LABELS_TO_EVALUATE = sys.argv[2]
 
     LABELS_TO_EVALUATE_KEY = "assigned_one_of_four_label"
@@ -12,12 +13,12 @@ if __name__ == "__main__":
     if "train_set" in LABELS_TO_EVALUATE:
         RAW_ISSUE_REPORTS = "train_set_raw.json"
         EVAL_OUTFILE = "train_set_evaluated.json"
-        STATS_OUTFILE = f"train_set_{EVALUATION_RESULT_KEY}_stats.json"
+        STATS_OUTFILE = f"train_set_{EVALUATION_RESULT_KEY}_stats.txt"
 
     elif "test_set" in LABELS_TO_EVALUATE:
         RAW_ISSUE_REPORTS = "test_set_raw.json"
         EVAL_OUTFILE = "test_set_evaluated.json"
-        STATS_OUTFILE = f"test_set_{EVALUATION_RESULT_KEY}_stats.json"    
+        STATS_OUTFILE = f"test_set_{EVALUATION_RESULT_KEY}_stats.txt"    
 
     else:
         print("MUST BE EVALUATING LABELS ASSIGNED TO EITHER THE TRAIN OR TEST SET")
@@ -84,6 +85,7 @@ if __name__ == "__main__":
                 prompt += "Does this label accurately reflect this issue report based on its title, body, and patches made to the repository to resolve this issue? "
                 prompt += "If yes, output 1. If no, output 0."
 
+                # LLM Implementation in this work which can be modified
                 request = {
                     "model": "deepseek-r1:70b",
                     "prompt": prompt,
@@ -127,7 +129,7 @@ if __name__ == "__main__":
                 if num_good_labels + num_bad_labels != 0:
                     with open(f"results/{LLM_TO_EVALUATE}/{STATS_OUTFILE}", "w") as outfile:
                         accuracy = num_good_labels / (num_good_labels + num_bad_labels)
-                        outfile.write(f"NUM GOOD LABELS: {num_good_labels}\n")
-                        outfile.write(f"NUM BAD LABELS: {num_bad_labels}\n")
+                        outfile.write(f"NUM ACCURATE LABELS: {num_good_labels}\n")
+                        outfile.write(f"NUM INACCURATE LABELS: {num_bad_labels}\n")
                         outfile.write(f"NUM INVALID OUTPUTS: {num_invalid_outputs}\n")
-                        outfile.write(f"ACCURACY: {accuracy}")
+                        outfile.write(f"LABELING LLM ACCURACY: {accuracy}")

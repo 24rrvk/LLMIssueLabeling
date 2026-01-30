@@ -36,7 +36,8 @@ if __name__ == "__main__":
 
     ISSUES_TO_RETRIEVE = int(sys.argv[1])
     LLM_TO_TEST = sys.argv[2]
-    UNSEEN_ISSUE_REPORTS = sys.argv[3]
+    LLM_TO_TEST = LLM_TO_TEST.replace("/", "_")
+    UNSEEN_ISSUE_REPORTS = "test_set_cleaned.json"
 
     FOLDER_NAME = "dataset/"
     
@@ -54,6 +55,7 @@ if __name__ == "__main__":
 
     LLM_TO_TEST = LLM_TO_TEST.replace("_", "/")
 
+    # LLM Implementation in this work which can be modified
     pipeline = transformers.pipeline(
         "text-generation",
         model=LLM_TO_TEST,
@@ -157,7 +159,7 @@ if __name__ == "__main__":
 
     LLM_TO_TEST = LLM_TO_TEST.replace("/", "_")
                 
-    with open(f"{FOLDER_NAME}{LLM_TO_TEST}/{UNSEEN_ISSUE_REPORTS}", "w") as outfile:
+    with open(f"{FOLDER_NAME}{LLM_TO_TEST}/{UNSEEN_ISSUE_REPORTS[:-12]}RAG_labels_only.json", "w") as outfile:
         json.dump(unseen_issue_reports, outfile, indent=4)
 
     outfolder_path = f"output_logs/{LLM_TO_TEST}/output_logs_RAG_labels_only"

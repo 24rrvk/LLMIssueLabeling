@@ -5,6 +5,7 @@ from sentence_transformers import SentenceTransformer
 if __name__ == "__main__":
 
     LLM = sys.argv[1]
+    LLM = LLM.replace("/", "_")
 
     FOLDER = "dataset/"
 

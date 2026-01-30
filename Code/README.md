@@ -17,7 +17,7 @@ Step 2: Pre-process issue report text with clean_data.py
    
    3. Remove all content enclosed by Markdown comment tags, i.e., opening tag "\<!--" and closing tag "\-->", as this content is not rendered when opening the issue report in the GitHub web interface, therefore human labelers do not see this content when manually reviewing issue reports.
    
-   4. Summarize all code snippets, shell scripts, and output logs using the prompts in the folder [prompts/technical_summarization_prompts](./prompts/technical_summarization_prompts/).
+   4. Summarize all code snippets, shell scripts, and output logs using the prompts in the folder [../Results_and_Prompts/prompts/technical_summarization_prompts](../Results_and_Prompts/prompts/technical_summarization_prompts/).
 
  - Arguments: 
     1. LLM used to summarize the issue report content.
@@ -30,11 +30,11 @@ python3 clean_data.py Qwen/Qwen2.5-7B-Instruct
 
  - Note that this code initializes a HuggingFace "transformers" pipeline and automatically downloads the LLM specified via the command-line argument from the HuggingFace Model Hub if it is not already available locally. If you wish to employ a different LLM implementation or loading mechanism, this can be easily modified directly in the code.
 
- - You can view the cleaned issue reports in the file "dataset/{Name of the LLM you passed as an argument}/{train_set_cleaned and test_set_cleaned}.json"
+ - You can view the cleaned issue reports in the file "dataset/{Name of the LLM you passed as an argument}/{"train_set_cleaned" and "test_set_cleaned"}.json"
 
 Step 3: Generate labels for issue reports with generate_labels.py
 
- - This code generates labels for the cleaned issue reports in the training set using the prompt in [prompts/label_generation_prompt.txt](./prompts/label_generation_prompt.txt). 
+ - This code generates labels for the cleaned issue reports in the training set using the prompt in [../Results_and_Prompts/prompts/label_generation_prompt.txt](../Results_and_Prompts//prompts/label_generation_prompt.txt). 
 
  - Arguments: 
     1. LLM used to assign labels to the issue reports. Note that you must have previously ran clean_data.py with the same argument as this code must read the cleaned issue reports using this model.
@@ -44,11 +44,11 @@ Step 3: Generate labels for issue reports with generate_labels.py
 ```bash
 python3 generate_labels.py Qwen/Qwen2.5-7B-Instruct
 ```
- - As in clean_data.py, this code initializes a HuggingFace "transformers" pipeline and automatically downloads the LLM specified via the command-line argument from the HuggingFace Model Hub if it is not already available locally. Again, you wish to employ a different LLM implementation or loading mechanism, this can be easily modified directly in the code.
+ - As in clean_data.py, this code initializes a HuggingFace "transformers" pipeline and automatically downloads the LLM specified via the command-line argument from the HuggingFace Model Hub if it is not already available locally. Again, if you wish to employ a different LLM implementation or loading mechanism, this can be easily modified directly in the code.
 
  - You can view the generated labels sorted in order of how many issue reports the label was generated from in "label_generation_results/{Name of the LLM you passed as an argument}"
 
- - You can view the label assignments to issue reports in the file "dataset/{Name of the LLM you passed as an argument}/train_set_labeled.json". The labels assigned to the issue report by this LLM will be in the field "assigned_labels".
+ - You can view the label assignments to issue reports in the file "dataset/{Name of the LLM you passed as an argument}/train_set_labeled.json". The labels assigned to the issue report by this LLM will be in the field "assigned_labels" in it's object.
 
 
 Step 4: Cluster generated labels with cluster_labels.py
@@ -71,12 +71,72 @@ python3 cluster_labels.py cosine average
 
 Step 5: Assign labels from list using assign_labels_from_list.py
  - Arguments:
-    1. LLM used to assign labels to the issue reports.. THIS LLM MUST BE ONE THAT HAS BEEN RUN USING clean_data.py
-    2. The file containing the label list which the LLM needs to select its labels from. the label list derived in this work can be found at [./label_list/label_list.csv](./label_list/label_list.csv).
-    3. The issue reports filename in "./dataset/{LLM_NAME} that you wish to label. Ensure that the dataset has been pre-processed, i.e., select either "train_set_cleaned.json" or "test_set_cleaned.json"
+    1. LLM used to assign labels from the list to the issue reports. As with generate_labels.py, you must have previously ran clean_data.py with the same argument as this code must read the cleaned issue reports using this model.
+    2. The file containing the label list which the LLM needs to select its labels from. You can use list of 275 labels derived in this work found at [./label_list/label_list.csv](./label_list/label_list.csv) by entering "label_list/label_list.csv" as the second argument.
+    3. The issue reports filename in "./dataset/{LLM_NAME} that you wish to label. Ensure that the dataset has been pre-processed, i.e., enter either "train_set_cleaned.json" or "test_set_cleaned.json" as the third argument.
 
-Step 6: Evaluate labels 
+ - Example Run:
 
-Step 7: Build RAG DB
+```bash
+python3 assign_labels_from_list.py Qwen/Qwen2.5-7B-Instruct label_list/label_list.csv train_set_cleaned.json
+```
 
-Step 8: Can assign labels using RAG with either RAG_labeled_issue_reports.py or RAG_labels_only.py
+ - As in clean_data.py and generate_labels.py, this code initializes a HuggingFace "transformers" pipeline and automatically downloads the LLM specified via the command-line argument from the HuggingFace Model Hub if it is not already available locally. Again, if you wish to employ a different LLM implementation or loading mechanism, this can be easily modified directly in the code.
+
+ - This file uses the LLM to not only assign labels from the given list to each issue report, but also assigns one of the four labels "bug", "feature", "question", or "documentation" to each issue report, the standard practice used by many existing literature on labeling issue reports.
+
+ - You can view the generated labels sorted in order of how many issue reports the label was generated from using both the four-label scheme and the labels from the derived list in in "results/{Name of the LLM you passed as an argument}/label_assignment_counts.txt"
+
+ - You can view the label assignments to issue reports in the file "dataset/{Name of the LLM you passed as an argument}/{"train_set_labeled_from_list" or "test_set_labeled_from_list"}.json". The labels assigned to the issue report by this LLM from the list will be in the field "assigned_labels_from_catalog" and the labels assigned by this LLM from the four-label scheme will be in the field "assigned_one_of_four_label" in it's object.
+
+Step 6: Evaluate labels with evaluate_labels.py or evaluate_one_of_four_labels.py
+
+ - Arguments:
+   1. The LLM who's label assignments you wish to evaluate.
+   2. The name of the file from which you are evaluating the assigned labels, e.g. "train_set_labeled_from_list.json".
+   3. The name of the field in each issue report object containing the labels you wish to evaluate, e.g., "assigned_labels_from_catalog". Note that this field is only necessary in evaluate_labels.py as evaluate_one_of_four_labels.py simply evaluates from the "assigned_one_of_four_label" field.
+
+ - Example Run:
+
+```bash
+python3 evaluate_labels.py Qwen/Qwen2.5-7B-Instruct train_set_labeled_from_list.json assigned_labels_from_catalog
+python3 evaluate_one_of_four_labels.py Qwen/Qwen2.5-7B-Instruct train_set_labeled_from_list.json
+```
+
+ - Note that label evaluations in this implementation are hard-coded to be conducted by the LLM "deepseek-r1:70b" which is invoked via an HTTP POST request to a remote inference endpoint. Again, if you wish to employ a different LLM implementation or loading mechanism, this can be easily modified directly in the code.
+
+ - You can view the evaluations of label assignments to issue reports in the file "dataset/{Name of the LLM you passed as an argument}/{"train_set_evaluated" or "test_set_evaluated"}.json". The label evaluations will be in the field "evaluation_of_{name of field containing the labels which evaluator LLM is evaluating}" in each issue report object.
+
+ - You can also view summary stats of how many labels the evaluator LLM deemed to be accurate or inaccurate in the file "results/{Name of the LLM you passed as an argument}/{"train_set" or "test_set"}_evaluation_of_{name of field containing the labels which evaluator LLM is evaluating}_stats.txt".
+
+Step 7: Build RAG Knowledge Base using build_faiss_index.py
+
+ - Arguments:
+   1. LLM whose label assignments you are using to build the RAG Knowledge Base. Note that you must have ran "assign_labels_from_list.py" using this LLM on "train_set_cleaned.json" and evaluated these label assignments using "evaluate_labels.py" in order for this to successfully run.
+
+ - Example Run:
+
+```bash
+python3 build_faiss_index.py Qwen/Qwen2.5-7B-Instruct
+```
+
+Step 8: Can assign labels using RAG-based technique with either RAG_labeled_issue_reports.py or RAG_labels_only.py
+
+ - Arguments:
+   1. The number of issue reports from the knowledge base to retrieve to use as context for labeling the new issue report.
+   2. The LLM used to assign labels to the issue report. Note that you must have previously ran clean_data.py with the same argument as this code must read the cleaned issue reports using this model.
+
+ - Example Run:
+
+```bash
+python3 RAG_labeled_issue_reports.py 3 Qwen/Qwen2.5-7B-Instruct
+python3 RAG_labels_only.py 5 Qwen/Qwen2.5-7B-Instruct
+```
+
+ - As in clean_data.py, generate_labels.py, and assign_labels_from_list.py, the code in RAG_labeled_issue_reports.py and RAG_labels_only.py initializes a HuggingFace "transformers" pipeline and automatically downloads the LLM specified via the command-line argument from the HuggingFace Model Hub if it is not already available locally. Again, if you wish to employ a different LLM implementation or loading mechanism, this can be easily modified directly in the code.
+
+ - RAG_labeled_issue_reports.py uses the prompt in [../Results_and_Prompts/prompts/RAG_labeled_issue_reports_prompt.txt](../Results_and_Prompts/prompts/RAG_labeled_issue_reports_prompt.txt) to label issue reports.
+
+ - RAG_labels_only.py uses the prompt in [../Results_and_Prompts/prompts/RAG_labels_only_prompt.txt](../Results_and_Prompts/prompts/RAG_labels_only_prompt.txt) to label issue reports.
+
+ - You can view the label assignments to issue reports using each RAG-based strategy in the folder "dataset/{Name of the LLM you passed as an argument}/test_set_{"RAG_labeled_issue_reports" or "RAG_labels_only"}.json". The labels assigned to the issue report by this LLM using these strategies will be in the field "assigned_labels_from_RAG_{"labeled_issue_reports" or "labels only"}_k={the number of issues to retrieve}" in it's object.
