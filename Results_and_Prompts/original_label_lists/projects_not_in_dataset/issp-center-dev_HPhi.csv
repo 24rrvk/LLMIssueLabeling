@@ -1,0 +1,16 @@
+Label,is_non_generic_label
+answered (awaiting feedback),True
+answered (resolved),True
+awaiting response,True
+bug,
+bug fix planned,True
+bug fixed (from issue),True
+duplicate,True
+enhancement,
+feature under consideration,True
+help wanted,True
+implemented (from issue),True
+internal note,True
+invalid,True
+question,
+wontfix,True
