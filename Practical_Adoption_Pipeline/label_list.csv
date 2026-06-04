@@ -1,0 +1,275 @@
+bug
+enhancement
+documentation
+dependency upgrade
+testing
+compiler
+feature request
+ui
+build
+api
+performance
+ci
+runtime
+security
+terminal
+regression
+editor
+database
+logging
+plugin
+runtime error
+type system
+configuration
+rendering
+syntax
+web
+behavior
+extension
+accessibility
+integration
+crash
+panic
+optimization
+search
+tooling
+language
+framework
+maintenance
+memory leak
+network
+lifetime
+distributed
+upgrade
+installation
+cache
+layout
+messaging
+workspace
+component
+debugging
+deprecation
+chat
+metrics
+backport
+workflow
+authentication
+server
+migration
+infrastructure
+functionality
+import
+indexing
+completion
+concurrency
+compatibility
+ownership
+routing
+formatting
+gui
+settings
+environment
+template
+syntax highlighting
+sync
+serialization
+packaging
+refactoring
+metadata
+warning
+validation
+input
+encoding
+fuzzing
+data race
+release
+internal
+navigation
+reflection
+package management
+filesystem
+operator
+annotation
+information schema
+quantization
+partitioning
+scrolling
+integer overflow
+library
+infoschema
+shell
+coverage
+event handling
+inference
+classpath
+aggregation
+filter
+breaking change
+timeout
+protocol
+io
+scheduler
+decompilation
+backup
+experimental feature
+match
+array
+mapping
+file management
+clipboard
+model
+cleanup
+binding
+removal
+properties
+ice
+hover
+comments
+module
+deadlock
+pattern matching
+reproducible
+failure
+datetime
+console
+window management
+transaction
+math
+driver
+change detection
+device
+worker
+stability
+hashing
+coroutines
+complex numbers
+p2p
+proxy
+comparison
+dashboard
+typo
+checkpointing
+shutdown
+startup
+sorting
+path
+rename
+target
+generator
+directive
+floating point
+cluster
+profile
+selection
+help
+view
+loader
+spec
+context
+stream
+development
+unsoundness
+deployment
+recursion
+derive
+cursor
+injection
+distributed training
+content
+status bar
+semantic tokens
+semantics
+effects
+symbolic computation
+initialization
+animation
+compose
+expression
+precompilation
+visual mode
+registry
+state management
+alignment
+tutorial
+stack trace
+code generation
+image processing
+forms
+defer
+resource management
+table
+forward port
+conversion
+virtual environment
+resolution
+folding
+screen reader
+execution
+assembly
+copyright
+embedding
+vector
+customization
+third party
+taxonomy
+property placeholder
+endpoint
+generated columns
+code lens
+history
+headers
+reporting
+user facing
+reference
+collaborator nomination
+promise
+corruption
+randomness
+inheritance
+out of bounds
+conflict resolution
+branch management
+method resolution
+transmutability
+region
+scalability
+save
+drag and drop
+stepping
+range loop
+merge
+build tags
+push
+web services
+community
+constraint
+estimation
+params
+response
+artifact
+general
+slow query
+reusability
+account management
+ergonomics
+content length
+unwinding
+implementation
+non local definitions
+tab management
+command line flags
+reduction
+content management
+lookup
+inplace operation
+note taking
+attachment
+tracking issue
+missing
+summary
+feat
+default behavior
+unhandled rejection
+case sensitivity
+post quantum cryptography
+idempotence
