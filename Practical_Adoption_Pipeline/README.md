@@ -1,8 +1,8 @@
 # Practical_Adoption_Pipeline Folder
 
-This folder contains an example of our automated labeling pipeline can be implemented in real-world issue triaging workflows.
+This folder contains an example of how our automated labeling pipeline can be implemented in real-world issue triaging workflows.
 
-The first step is to run the commands in the file[ollama_server_setup_commands.md](./ollama_server_setup_commands.md) to start an Ollama server on your local machine and add an LLM to the running Ollama server.
+The first step is to run the commands in the file [ollama_server_setup_commands.md](./ollama_server_setup_commands.md) to start an Ollama server on your local machine and add an LLM to the running Ollama server.
 
 Next, start the Flask application that listens for new issue report submissions to the issue tracking system by running the following command:
 
