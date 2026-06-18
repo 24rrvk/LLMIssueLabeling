@@ -1,0 +1,1131 @@
+Project/Issue Number,Title,Body,Original Labels,Qwen Full Label List,Qwen RAG labels only k=7,Qwen RAG labeled issue reports k=19,Gemma Full Label List,Gemma RAG labels only k=6,Gemma RAG labeled issue reports k=2,Llama Full Label List,Llama labels only k=6,Llama labeled issue reports k=2,LLM assigned labels are better?,LLM assigned labels are the same or better?
+spring-projects/spring-boot/44892,Use ResolvedBom as a source for AntoraAsciidocAttributes,Forward port of issue #44891 to 3.4.x.,['type: task'],['type: enhancement'],['type: task'],['type: task'],"['type: bug', 'type: dependency-upgrade']",['type: task'],['type: task'],"['type: enhancement', 'type: documentation']",[],['type: task'],1,1
+microsoft/vscode/243359,[Accessibility] Improve Alertability within Copilot Edits,"
+Type: <b>Feature Request</b>
+
+CC @meganrogge 
+
+In Copilot Edits (in agent mode), there are some situations where users are prompted to choose the next actions.  For examples:
+
+* Whether to continue to execute the command in terminal (this requires users' immediate gesture for the next step)
+
+* Whether to keep the current Copilot Edits in the pending editors (does not require immediate users' attention, but this needs to be resolved before they end the current Copilot Edits session)
+
+* Whether to finish the current Copilot Edits session (Users needd to click ""Done"" button)
+
+The current issue is that these prompts are not easily noticeable  for screen reader users unless they read through the Copilot response carefully.
+
+Is there any way to make them displayed in the Notification area such that users can hear the alert more clearly and take any required actions there?
+
+VS Code version: Code - Insiders 1.99.0-insider (c1fb4c3983bcc28e63dd159dbbb2ea98d352d33e, 2025-03-12T08:28:07.410Z)
+OS version: Windows_NT x64 10.0.26100
+Modes:
+
+
+","['feature-request', 'accessibility', 'insiders-released', 'chat']","['accessibility', 'workbench-notifications']","['feature-request', 'accessibility', 'workbench-copilot']","['feature-request', 'accessibility', 'insiders-released', 'inline-chat', 'workbench-voice']","['accessibility', 'a11ymas', 'accessibility-signal']","['feature-request', 'accessibility', 'workbench-copilot']",[],"['a11y-partner', 'accessibility', 'accessibility-signal', 'agent-behavior', 'chat-agent-editing', 'feature-request']","['feature-request', 'accessibility']","['feature-request', 'accessibility', 'insiders-released']",0,1
+elastic/elasticsearch/122343,[CI] DocsClientYamlTestSuiteIT test {yaml=reference/alias/line_260} failing,"**Build Scans:**
+- [elasticsearch-periodic-platform-support #6898 / rhel-9_platform-support-unix](<URL>
+- [elasticsearch-periodic #6863 / graalvm-ce17_checkpart1_java-matrix](<URL>
+
+**Reproduction Line:**
+```This command runs a specific test case using Gradle for the Elasticsearch project. It targets the `yamlRestTest` task in the `docs` module and executes `test` from `DocsClientYamlTestSuiteIT` with the specified YAML file path. Additional flags set the test seed, locale, timezone, and Java runtime version.```
+
+**Applicable branches:**
+8.18
+
+**Reproduces locally?:**
+N/A
+
+**Failure History:**
+[See dashboard](<URL>
+
+**Failure Message:**
+```The log indicates an `AssertionError` with a failure at line 282 of the reference/alias file. The error message mentions an unexpected warning about accessing system indices (`.security-7`) in Elasticsearch version 8.18.0, with a note that such direct access will be prevented by default in a future major version.```
+
+**Issue Reasons:**
+- [8.18] 2 failures in test test {yaml=reference/alias/line_260} (1.2% fail rate in 167 executions)
+
+**Note:**
+This issue was created using new test triage automation. Please report issues or feedback to es-delivery.","[':Delivery/Build', '>test-failure', 'Team:Delivery', 'low-risk']",['>test-failure'],[],"['>test-failure', ':Data Management/Data streams', 'Team:Data Management', 'low-risk']",[],[],[],"['>bug', '>regression']","[':Data Management/Data streams', 'low-risk']",[],0,1
+spring-projects/spring-framework/34360,Quartz-style Nth Day of Week cron expressions can overflow to other month,"## The issue
+
+We are experiencing a weird issue with Cron Expressions. We are using the `@Scheduled` annotation to run scheduled jobs every monday.
+
+We have a use case where we want to run a schedule differently if it is the first Monday of the month, which is why we split our schedules up into 2 CRON expressions, using the ""day of week"" notation ([documented here](<URL>
+
+
+1. `0 0 8 ? * MON#1` - run every first Monday of the month
+2.  `0 0 8 ? * MON#2,MON#3,MON#4,MON#5` - run on all other Mondays of the month
+
+This worked fine until we observed weird behavior today on Monday the 3rd February 2025. The second CRON expression fired even though it should not fire on the first Monday of a month.
+
+I run a test for the next 10000 invocations and these are the 10 dates that this unexpected overlap will happen next:
+
+```The code snippet is a list of 12 `OffsetDateTime` objects in Java, each representing a date and time in the format `YYYY-MM-DDTHH:mmZ`. All times are set to 08:00Z (UTC). The dates span from February 3, 2025, to February 4, 2047.```
+
+## Conclusion
+
+It seems as if the _day of week_ expression (e.g. `MON#5`) overflows **only** from January to February in the years where January has less than 5 Mondays. (This is why 31.1.2028 is not up there for example).
+
+
+## Reproduction
+This can be reproduced with spring-context-6.2.2 with following test case:
+
+ ```This Java test case ensures that two cron expressions do not overlap within a specified number of invocations. It uses the `CronExpression` class from Spring to parse and schedule cron expressions, then checks for overlapping times between the two schedules.```
+","['type: bug', 'in: core']",['type: bug'],"['type: bug', 'in: core']",[],"['in: core', 'type: bug', 'type: regression']","['type: bug', 'type: regression', 'in: core']","['type: bug', 'in: core']","['type: bug', 'in: core', 'theme: aot']","['type: bug', 'in: core']","['type: documentation', 'in: core']",0,1
+pytorch/pytorch/142050,dynamo doesn't support inlining custom methods on enums,"Found from @kwen2501 's SGLang + compile integration. This graph break appears to be in a deeply nested region, so it was causing us to compile a lot of small graphs (example tlparse: <URL> Minimal repro below:
+```The code defines an enumeration `ForwardMode` with various modes for sequence processing in a neural network. It then compiles a function `f` using PyTorch's `torch.compile` that adds 1 to its input `x`. If the mode is `DECODE`, it adds 2 more; otherwise, it adds 3. The function is called with `x` set to a tensor of ones and `enum` set to `DECODemode`, resulting in `out` being a tensor of 4s.```
+
+cc @chauhang @penguinwu @voznesenskym @EikanWang @jgong5 @Guobing-Chen @XiaobingSuper @zhuhaozhe @blzheng @wenzhe-nrv @jiayisunx @chenyang78 @kadeng @amjames","['oncall: pt2', 'module: dynamo', 'module: graph breaks']",[],"['module: dynamo', 'module: correctness (silent)', 'dynamo-must-fix']","['oncall: pt2', 'module: dynamo', 'dynamo-must-fix']","['compile-cache', 'dynamo-autograd-function', 'compile-docs', 'module: dynamo']","['oncall: pt2', 'module: dynamo', 'module: correctness (silent)', 'dynamo-must-fix']",[],"['dynamo-autograd-function', 'dynamo-functools', 'dynamo-torch-function', 'dynamo-symbolic-analysis', 'dynamo-tensor-subclasses']","['module: dynamo', 'dynamo-must-fix']",[],0,1
+spring-projects/spring-boot/44476,Update version of Elasticsearch test container image,Forward port of issue #44475 to 3.5.x.,['type: task'],"['type: dependency-upgrade', 'theme: containers']","['type: dependency-upgrade', 'theme: containers']","['type: task', 'theme: containers']","['type: dependency-upgrade', 'theme: containers']",['type: dependency-upgrade'],['type: task'],"['type: dependency-upgrade', 'theme: containers']",['type: dependency-upgrade'],['type: task'],1,1
+pytorch/pytorch/144830,[dynamo] Issue with torch.compile decorator for simple function using python `format` function with integer input.,"### 🐛 Describe the bug
+
+...
+  File ""/home/.../.venv/lib/python3.12/site-packages/torch/_dynamo/variables/builtin.py"", line 1958, in call_format
+    return variables.StringFormatVariable.create(format_string, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/.../.venv/lib/python3.12/site-packages/torch/_dynamo/variables/misc.py"", line 1357, in create
+    format_string.format(
+    ^^^^^^^^^^^^^^^^^^^^
+torch._dynamo.exc.InternalTorchDynamoError: AttributeError: 'int' object has no attribute 'format'
+
+
+Torch JIT compilation seems to have issues calling format function with integer input.
+
+Reproducible example:
+
+```This code snippet imports the `torch` library and defines a compiled function `to_binary_string` that converts an integer to its binary string representation using the `format` function. The function is then called with the argument `10`.```
+
+Example without bug:
+```The code snippet imports the `torch` library and defines a compiled function `to_binary_string` that formats an integer into a binary string prefixed with 'b'. When called with the argument `10`, it returns the binary string `'b1010'`.```
+
+### Versions
+
+PyTorch version: 2.5.1+cu124
+Is debug build: False
+CUDA used to build PyTorch: 12.4
+ROCM used to build PyTorch: N/A
+
+OS: Ubuntu 24.04.1 LTS (x86_64)
+GCC version: (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Clang version: Could not collect
+CMake version: version 3.28.3
+Libc version: glibc-2.39
+
+Python version: 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0] (64-bit runtime)
+Python platform: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39
+Is CUDA available: False
+CUDA runtime version: No CUDA
+CUDA_MODULE_LOADING set to: N/A
+GPU models and configuration: No CUDA
+Nvidia driver version: No CUDA
+cuDNN version: No CUDA
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+Is XNNPACK available: True
+
+CPU:
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               8
+On-line CPU(s) list:                  0-7
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD Ryzen 7 PRO 7840U w/ Radeon 780M Graphics
+CPU family:                           25
+Model:                                116
+Thread(s) per core:                   2
+Core(s) per socket:                   4
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             6587.68
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512_bf16 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm
+Virtualization:                       AMD-V
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            128 KiB (4 instances)
+L1i cache:                            128 KiB (4 instances)
+L2 cache:                             4 MiB (4 instances)
+L3 cache:                             16 MiB (1 instance)
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Mitigation; safe RET
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+Versions of relevant libraries:
+[pip3] numpy==2.0.2
+[pip3] nvidia-cublas-cu12==12.4.5.8
+[pip3] nvidia-cuda-cupti-cu12==12.4.127
+[pip3] nvidia-cuda-nvrtc-cu12==12.4.127
+[pip3] nvidia-cuda-runtime-cu12==12.4.127
+[pip3] nvidia-cudnn-cu12==9.1.0.70
+[pip3] nvidia-cufft-cu12==11.2.1.3
+[pip3] nvidia-curand-cu12==10.3.5.147
+[pip3] nvidia-cusolver-cu12==11.6.1.9
+[pip3] nvidia-cusparse-cu12==12.3.1.170
+[pip3] nvidia-nccl-cu12==2.21.5
+[pip3] nvidia-nvjitlink-cu12==12.4.127
+[pip3] nvidia-nvtx-cu12==12.4.127
+[pip3] onnx==1.17.0
+[pip3] onnxruntime==1.20.1
+[pip3] optree==0.13.1
+[pip3] torch==2.5.1
+[pip3] triton==3.1.0
+[conda] Could not collect
+
+cc @chauhang @penguinwu @voznesenskym @EikanWang @jgong5 @Guobing-Chen @XiaobingSuper @zhuhaozhe @blzheng @wenzhe-nrv @jiayisunx @chenyang78 @kadeng @amjames","['oncall: pt2', 'module: dynamo']","['module: python frontend', 'module: autograd']","['module: dynamo', 'dynamo-must-fix']","['oncall: pt2', 'module: dynamo']","['compile-cache', 'dynamo-autograd-function']",['module: dynamo'],"['oncall: pt2', 'module: dynamo']","['module: dynamo', 'easy']","['module: dynamo', 'module: dynamic shapes']","['oncall: pt2', 'module: dynamic shapes']",1,1
+microsoft/terminal/18226,Close button looks wrong on Accent Title Bar,"@carlos-zamora this is probably related to your changes for HC
+
+![image](<URL>","['Issue-Bug', 'Area-UserInterface', 'Product-Terminal', 'In-PR']","['Area-Theming', 'Issue-Bug']","['Issue-Bug', 'Area-UserInterface']",[],"['Area-Accessibility', 'Area-Theming', 'Disability-All', 'Impact-Visual', 'Issue-Bug']","['Issue-Bug', 'Area-UserInterface', 'HCL-E+D', 'HCL-WindowsTerminal']","['Issue-Bug', 'Area-UserInterface', 'Product-Terminal']","['Area-Theming', 'Issue-Bug', 'A11yUsable', 'Area-UserInterface', 'Severity-Blocking']","['Issue-Bug', 'Area-UserInterface', 'A11yWCAG']",[],1,1
+spring-projects/spring-boot/44561,Upgrade to Spring Data Bom 2024.0.10,Upgrade to [Spring Data Bom 2024.0.10](<URL>,['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],[],['type: dependency-upgrade'],0,1
+ziglang/zig/23210,empty anonymous array init doesnt coerce to many pointer,"### Zig Version
+
+0.15.0-dev.7+4cefd1bd1
+
+### Steps to Reproduce and Observed Behavior
+
+```The code snippet declares a pointer `a` to a constant array of `u8` type and initializes it with an empty array. The pointer is then assigned to the blank identifier `_`.```
+```The code attempts to initialize a pointer to a constant `u8` array using the array initialization syntax but encounters an error because the `u8` type does not support this syntax directly.```
+#18925 missed this case
+
+### Expected Behavior
+
+successful compile same as when the initializer isnt empty",['bug'],['bug'],['bug'],"['bug', 'frontend']","['bug', 'compiler-rt']","['bug', 'miscompilation']","['bug', 'frontend']","['bug', 'compiler-rt', 'frontend', 'error message', 'miscompilation']","['bug', 'frontend', 'miscompilation']","['bug', 'miscompilation', 'backend-c']",1,1
+spring-projects/spring-boot/44088,Upgrade to Lettuce 6.5.3.RELEASE,Upgrade to [Lettuce 6.5.3.RELEASE](<URL>,['type: task'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],[],['type: dependency-upgrade'],1,1
+junegunn/fzf/4298,`--tmux` causes `**<Tab>` completion to behave strangely,"### Checklist
+
+- [x] I have read through the manual page (`man fzf`)
+- [x] I have searched through the existing issues
+- [x] For bug reports, I have checked if the bug is reproducible in the latest version of fzf
+
+### Output of `fzf --version`
+
+0.60.3 (brew)
+
+### OS
+
+- [ ] Linux
+- [x] macOS
+- [ ] Windows
+- [ ] Etc.
+
+### Shell
+
+- [ ] bash
+- [x] zsh
+- [ ] fish
+
+### Problem / Steps to reproduce
+
+With `--tmux` in my `FZF_DEFAULT_OPTS_FILE`, I observe the following:
+* `cd **<Tab>` will list files, not directories
+* Paths in prefixes will not be respected; only the current directory will be searched
+
+
+Minimal reproduction, with a clean fzf environment except for an `FZF_DEFAULT_OPTS_FILE `with only `--tmux`:
+```The code snippet creates a directory structure, touches files within it, changes to the sandbox directory, and then uses tab completion to explore the directory structure.```
+
+With `--tmux`, both completions will list `file` and `dir/file-in-dir`.
+Without `--tmux`, the first completion will list only `dir`. The second completion will list `dir` and `dir/file-in-dir`. This is the expected behavior.
+
+
+",['bug'],['bug'],['bug'],['bug'],"['bug', 'shell']",['bug'],['bug'],"['bug', 'shell']",['bug'],"['bug', 'feature']",1,1
+rust-lang/rust/138257,UWP target (e.g. x86_64-uwp-windows-msvc) is broken,"
+
+I tried to compile x86_64-uwp-windows-msvc on nightly rust using `-Z build-std` . I used `staticlib` as target type. Then I tried to link the successfully created .lib file into my exe - outside of rust ecosystem. The linker failed with this error:
+
+```The log indicates an unresolved external symbol error for `__imp_NtOpenFile` when referencing it in the `_ZN3std3sys3pal7windows2fs14remove_dir_all12nt_open_file17h43bb929b19188a87E` function.```
+
+My successful cargo command which created my staticlib which is unusable in UWP is:
+
+```This command compiles a Rust library package named `pkg_name` using Cargo for the x86_64 UWP Windows MSVC target, including only the `std` and `panic_abort` libraries, and disables default linker libraries.```
+
+The issue is due to rust's std lib using NtOpenFile function which is not available for UWP applications. This regression was introduced in <URL>
+
+The usage of the function is not guarded by the `#[cfg(target_vendor = ""uwp"")]` feature here: <URL>
+
+The way I understand it, all uwp targets are unusable since the above mentioned commit around September 2024 because the rust's std library uses function not allowed for uwp applications.
+","['C-bug', 'T-libs', 'O-uwp-windows-msvc']","['-Zbuild-std', '-Zno-link', 'O-uwp-windows-msvc', 'C-bug']","['O-windows', 'regression-from-stable-to-nightly', 'C-bug', 'T-compiler']","['O-windows', 'T-compiler', 'regression-from-stable-to-nightly', 'C-bug']","['T-compiler', 'T-lang', 'C-bug', 'NLL-diagnostics']","['C-bug', 'O-windows-msvc', 'regression-from-stable-to-nightly']","['A-linkage', 'O-windows', 'regression-from-stable-to-nightly', 'O-windows-msvc', 'C-bug']","['C-enhancement', 'C-tracking-issue', 'P-low', 'P-medium', 'T-lang', 'T-infra', 'NLL-sound', 'WG-const-eval', 'WG-const-eval']","['C-bug', 'T-compiler', 'regression-from-stable-to-nightly']","['regression-from-stable-to-nightly', 'T-compiler', 'C-bug']",0,1
+pingcap/tidb/58658,performance regression when execute bulk DML with lite-cop-worker,"## Bug Report
+
+Please answer these questions before submitting your issue. Thanks!
+
+### 1. Minimal reproduce step (Required)
+
+<img width=""1782"" alt=""Image"" src=""<URL> />
+
+
+
+
+
+### 2. What did you expect to see? (Required)
+
+### 3. What did you see instead (Required)
+
+### 4. What is your TiDB version? (Required)
+
+
+
+nightly: a6cd5e7dc9f5b9336f7dc06f13f83300aebf5810
+
+","['sig/transaction', 'type/regression', 'severity/minor']","['type/regression', 'priority/P1', 'affects-6.0', 'affects-6.1', 'affects-6.2', 'affects-6.3', 'affects-6.4', 'affects-6.5', 'affects-6.6']","['type/bug', 'type/regression', 'severity/major', 'sig/sql-infra', 'type/performance']",[],"['component/tikv', 'type/performance', 'severity/major']","['type/regression', 'type/performance', 'severity/moderate', 'affects-7.1', 'affects-8.1', 'affects-8.5', 'sig/execution']","['type/bug', 'type/regression', 'sig/sql-infra', 'severity/major', 'affects-6.5', 'affects-7.1', 'affects-7.5', 'affects-8.1', 'report/customer']","['affects-6.5', 'component/coprocessor', 'component/lightning', 'component/store', 'component/tikv', 'component/tikv-client', 'component/tools', 'impact/perf-jitter', 'type/regression', 'type/performance']","['type/regression', 'type/performance', 'affects-7.5', 'severity/moderate', 'sig/sql-infra']","['type/bug', 'sig/transaction', 'severity/minor', 'affects-7.1', 'affects-7.5', 'affects-8.1', 'report/customer', 'affects-8.5']",1,1
+spring-projects/spring-boot/44176,Upgrade to HttpClient5 5.4.2,Upgrade to HttpClient5 5.4.2.,['type: dependency-upgrade'],['type: dependency-upgrade'],"['type: dependency-upgrade', 'type: task']",['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],[],['type: dependency-upgrade'],0,1
+spring-projects/spring-boot/44370,Upgrade to Testcontainers Redis Module 2.2.4,"Upgrade to Testcontainers Redis Module 2.2.4.
+
+Supersedes #44182",['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: enhancement'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: enhancement'],['type: dependency-upgrade'],"['type: dependency-upgrade', 'type: task']","['type: enhancement', 'type: dependency-upgrade']",0,1
+spring-projects/spring-boot/44551,Upgrade to Logback 1.5.17,Upgrade to Logback 1.5.17.,['type: task'],['type: dependency-upgrade'],"['type: dependency-upgrade', 'type: task']",['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],[],['type: dependency-upgrade'],1,1
+astral-sh/uv/10406,Add an example with Lambda Layers to AWS Lambda docs,See: <URL>,['documentation'],"['documentation', 'enhancement']",['documentation'],['documentation'],['documentation'],['documentation'],['documentation'],"['documentation', 'enhancement']","['documentation', 'enhancement']",['documentation'],0,1
+spring-projects/spring-boot/44468,Remove support for management.otlp.metrics.export.resource-attributes that has been deprecated since 3.2,"As discussed in <URL> the property has been deprecated since 3.2 when `management.opentelemetry.resource-attributes` was introduced as its replacement. It should have been removed in 3.4 but we missed it. To avoid a breaking change in a 3.4.x maintenance release, remove it in 3.5.",['type: enhancement'],"['type: enhancement', 'theme: opentelemetry']",['type: task'],"['type: enhancement', 'type: bug']","['type: bug', 'theme: opentelemetry', 'type: dependency-upgrade']",['type: task'],[],"['theme: opentelemetry', 'type: bug', 'type: blocker']",['type: task'],['type: documentation'],0,1
+pytorch/pytorch/149450,Support any number of kernel arguments (fallback to heap allocation beyond N max arguments),cc @chauhang @penguinwu,['oncall: pt2'],['enhancement'],['feature'],"['oncall: pt2', 'module: user triton']","['advanced', 'feature']",[],['module: rocm'],"['module: backend', 'module: compile ux', 'module: compile-time', 'module: custom-operators', 'module: data', 'module: data parallel', 'module: distributed_tool', 'module: distributed_tool']",['module: user triton'],['module: rocm'],1,1
+spring-projects/spring-boot/43873,Upgrade to release verification tests 0.0.8,Forward port of issue #43872 to 3.5.x.,['type: task'],['type: dependency-upgrade'],['type: task'],['type: dependency-upgrade'],"['type: dependency-upgrade', 'for: external-project']",['type: task'],['type: task'],"['type: dependency-upgrade', 'type: regression']",[],['type: task'],0,1
+NationalSecurityAgency/ghidra/7428,`SegmentCommand.create` does not properly create a segment command with a non-zero number of sections,"**Describe the bug**
+A clear and concise description of the bug.
+
+**To Reproduce**
+Use the `SegmentCommand.create` method and pass a non-zero value to the `numSections` argument. The resulting bytes have a `cmdsize` parameter that does not account for the section definitions.
+
+**Expected behavior**
+The resulting bytes have a `cmdsize` parameter that *does* account for the section definitions.
+
+**Additional context**
+As far as I know, each section definition is of a guaranteed size, so it should be trivial to multiply that size by the number of sections and add it to the total size. The sections may not be included in the returned bytes, but at least the `cmdsize` parameter will be more accurate. The function could include null bytes of the correct size, if need be. At worst, it can throw if a non-zero value is passed to the `numSections` argument.
+
+I understand this is a new-ish method, but is quite helpful for some work that I am doing. I am, however, having to manually re-do the `cmdsize` parameter afterwards and would prefer to not have to do that.",['Feature: Loader/Mach-O'],"['Type: Bug', 'Feature: Segmented Addresses']","['Type: Bug', 'Feature: Structure Editor']",['Feature: Loader/ELF'],"['Type: Bug', 'Feature: API', 'Feature: Loader/Binary']",['Type: Bug'],['Feature: Decompiler'],"['Feature: Loader', 'Feature: Loader/ELF', 'Type: Bug']","['Type: Bug', 'Feature: Processor/68000']",['Feature: Decompiler'],1,1
+rust-lang/rust/133771,ICE: `No HirId for DefId`,"
+
+snippet:
+````The code snippet defines a Rust function `foo` that declares a mutable array `s` of 10 `u8` elements, initializes it with zeros using a generic argument inference feature, and then prints the array using `dbg!`.````
+
+Version information
+````The log indicates that the Rust compiler version is 1.85.0-nightly, built on December 2, 2024, with commit hash `d49be02cf`. It was compiled for an x86_64 Linux system and uses LLVM version 19.1.4.````
+
+
+
+Command:
+`/home/matthias/.rustup/toolchains/master/bin/rustc -Zcrate-attr=feature(generic_arg_infer) --crate-type=lib`
+
+<details><summary><strong>Program output</strong></summary>
+<p>
+
+`````The log indicates an internal compiler error during compilation. Specifically, the compiler encountered a `No HirId` error for a particular `DefId`, which led to a panic. The error occurred while trying to get the HIR ID of a constant within the `foo` module. The compiler version is 1.85.0-nightly, and the compilation was run with certain flags. The compilation process aborted due to this error.```
+
+</p>
+</details>
+
+
+@rustbot label +F-generic_arg_infer ","['I-ICE', 'T-compiler', 'C-bug', 'F-generic_arg_infer']","['F-generic_arg_infer', 'I-ICE']","['I-ICE', 'T-compiler', 'A-HIR', 'C-bug']","['I-ICE', 'T-compiler', 'C-bug']","['F-generic_arg_infer', 'I-ICE']","['I-ICE', 'T-compiler', 'A-HIR']",[],"['I-ICE', 'I-compiler-nominated', 'I-compilemem', 'I-crash', 'I-heavy', 'T-compiler', 'T-core', 'T-libs-api', 'T-infra', 'T-lang', 'T-lang-docs', 'T-leadership-council', 'T-release', 'T-rust-analyzer', 'T-rustdoc', 'T-rustdoc-frontend', 'T-rustfmt', 'T-spec', 'T-style', 'T-testing-devex', 'T-triagebot', 'T-types']","['I-ICE', 'A-HIR', 'T-compiler', 'C-bug']","['I-ICE', 'A-macros', 'T-compiler', 'A-incr-comp', 'C-bug', 'F-effects']",0,1
+microsoft/vscode/239401,Terminal suggest: Support $CDPATH completions,"`$CDPATH` is a special variable that allows navigating to folders via `cd` regardless of the current directory. Turns out fish completions show this in tab completion:
+
+<URL>","['feature-request', 'insiders-released', 'terminal-suggest']",['terminal-suggest'],"['terminal-suggest', 'feature-request']","['feature-request', 'insiders-released', 'terminal-suggest']",['terminal'],"['feature-request', 'terminal-suggest']","['feature-request', 'terminal-suggest']","['terminal', 'suggest']","['feature-request', 'terminal-suggest']","['feature-request', 'terminal-suggest']",0,1
+pytorch/pytorch/141891,AOTInductor runner does not ensure inputs are properly aligned as required inside kernels,"### 🐛 Describe the bug
+
+```This code snippet imports necessary modules from PyTorch and `_inductor`, defines a simple neural network module `M` that performs a sine and cosine operation on its input, and then creates input tensors with specific properties. It compiles the model using PyTorch's `torch.compile()` and `_inductor.aoti_compile_and_package`. The script also uses `torch.profiler` to profile the execution of the compiled model with misaligned input data, expecting to observe memory copy operations in the profiling output.```
+
+This fails with:
+
+`````The log shows that a Python script (`n.py`) was executed in a PyTorch environment on a GPU. The script printed a tensor and then attempted to use PyTorch's profiler. The profiler encountered a `RuntimeError` indicating a ""misaligned address"" CUDA error. This error led to a segmentation fault, causing the program to crash. The log also mentions that enabling `CUDA_LAUNCH_BLOCKING=1` could provide more debug information and suggests compiling with `TORCH_USE_CUDA_DSA` to enable device-side assertions.```
+
+There is some sensitivity to the necessary input size to trigger this (I originally tried 64 * 64 + 64 and this triggered IMA on torch.compile but not AOTInductor).
+
+### Versions
+
+main
+
+cc @ptrblck @msaroufim @eqy @chauhang @penguinwu @desertfire @chenyang78","['module: crash', 'module: cuda', 'oncall: pt2', 'module: aotinductor']","['module: aotinductor', 'module: cuda', 'module: crash']",['module: aotinductor'],"['module: aotinductor', 'module: cuda', 'oncall: pt2']","['module: aotinductor', 'inference mode', 'inductor_pattern_match']","['module: aotinductor', 'module: cuda graphs']","['oncall: pt2', 'oncall: export', 'module: aotinductor']","['module: aotinductor', 'module: aotdispatch', 'module: cuda', 'module: crash', 'module: correctness (silent)', 'module: torchbind']","['module: aotinductor', 'module: inductor', 'feature']","['oncall: pt2', 'module: inductor']",0,1
+ziglang/zig/23212,spirv: Memory accesses with `PhysicalStorageBuffer` must use `Aligned`,"### Zig Version
+
+0.15.0-dev.34+8e0a4ca4b
+
+### Steps to Reproduce and Observed Behavior
+
+sample code:
+```This Zig code snippet defines a vertex shader for GPU rendering. It imports necessary modules and structures, declares input, push constant, and output variables, and implements the main function to set the output color based on the input color from the push constant buffer.```
+compile with:
+```This command builds an object file from `test.zig` using the SPIR-V target for Vulkan with the specified Vulkan version and CPU features, while disabling LLVM optimizations.```
+
+running `spirv-val test.spv` returns:
+```The error message indicates that memory accesses using `PhysicalStorageBuffer` must be aligned, but an unaligned access was attempted on line 61. Specifically, the unaligned load operation is defined by `%input = OpLoad %test_Input %23 None`.```
+
+### Expected Behavior
+
+alignment should be specified when loading from a `PhysicalStorageBuffer` pointer. the expected behaviour is that the validator shouldn't complain about anything.","['bug', 'backend-self-hosted', 'arch-spirv']","['backend-llvm', 'bug']",['bug'],"['bug', 'os-windows', 'arch-x86', 'backend-llvm', 'regression']",['bug'],"['bug', 'frontend']","['bug', 'os-windows', 'arch-x86']","['bug', 'error message', 'compiler-rt']","['bug', 'frontend', 'regression']","['bug', 'os-windows', 'arch-x86']",0,1
+pytorch/pytorch/145801,torch.linalg.eigh fails on CPU,"### 🐛 Describe the bug
+
+Based on this issue <URL> we see failure on CPU since PyTorch 2.4.0 Release.
+
+Minumum test, requires [fc_layer_tensor.pt.zip](<URL> :
+```The code loads a tensor from a file named `fc_layer_tensor.pt`, flattens it, and then computes the eigenvalues and eigenvectors of the outer product of the tensor with itself using `torch.linalg.eigh`.```
+
+Output:
+```````````````The log indicates that `test5.py` issued a warning about the use of `torch.load` with the default behavior, and then encountered an error from Intel oneMKL regarding an incorrect parameter. Subsequently, a runtime error occurred due to an illegal value argument when calling `torch.linalg.eigh`.```
+
+Full test
+```The code snippet initializes PyTorch for reproducibility and sets up device configuration. It loads MNIST dataset, defines a linear layer, and processes batches. It computes gradients, forms a preconditioner using Adagrad, and attempts to compute eigenvalues and eigenvectors on a GPU, which fails.```
+
+### Versions
+
+2.7.0
+
+cc @ezyang @gchanan @zou3519 @kadeng @msaroufim @malfet @jianyuh @nikitaved @pearu @mruberry @walterddr @xwang233 @Lezcano","['module: regression', 'module: third_party', 'module: linear algebra']","['module: cpu', 'module: linear algebra']",['module: error checking'],"['module: bc-breaking', 'module: autograd']","['intel', 'rocm', 'unstable', 'core issue', 'security', 'compile-docs']",['oncall: cpu inductor'],"['module: cuda graphs', 'oncall: pt2']","['core issue', 'intel priority', 'intel', 'module: intel', 'module: assert failure']","['module: cuda graphs', 'module: python frontend']","['module: complex', 'module: python frontend']",0,0
+rust-lang/rust/135554,build error: generated a symlink in a tarball,"When building rust-1.84.0 from the source tarball on Linux I'm seeing the following in a backtrace:
+
+`thread 'main' panicked at src/utils/tarball.rs:397:21: generated a symlink in a tarball: /builddir/build/BUILD/rustc-1.84.0-src/build/tmp/tarball/rustc/x86_64-unknown-linux-gnu/rustc-1.84.0-x86_64-unknown-linux-gnu/rustc/lib/rustlib/x86_64-unknown-linux-gnu/bin/rust-objcopy`
+
+My config.toml has the following:
+
+```This code snippet defines a configuration profile for building Rust projects. It specifies settings for LLVM, build targets, tools to install, and various compilation options. Key settings include shared LLVM linking, specific Rust targets, paths to Cargo and Rust tools, and details about sanitizers, profiling, and more.```
+
+Looking at another issue I tried `llvm-tools = false` and hit a different issue:
+
+`src.symlink_metadata() failed with No such file or directory (os error 2) (""src = /builddir/build/BUILD/rustc-1.84.0-src/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-linux-gnu/bin/llvm-objcopy"")`
+
+I'm inclined to just patch out the test for the symlink in the tarfile for now as that appears to be only there because of windows but this seems like a problem regardless.","['T-bootstrap', 'C-bug']","['C-bug', 'A-debuggers', 'A-debuggers-lldb']","['C-bug', 'A-cross']","['T-bootstrap', 'C-bug', 'A-contributor-roadblock']","['C-bug', 'C-cleanup', 'C-crater', 'C-feature-request', 'NLL-diagnostics', 'T-compiler', 'T-lang']","['T-compiler', 'C-bug', 'P-medium']","['A-cross', 'T-bootstrap', 'C-bug']","['C-bug', 'C-cleanup', 'T-compiler', 'P-low']","['C-bug', 'T-compiler']","['A-cross', 'T-bootstrap', 'C-bug']",0,1
+spring-projects/spring-boot/44909,TaskExecution documentation should describe what happens when multiple Executor beans are present,Forward port of issue #44908 to 3.5.x.,['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],['type: enhancement'],"['type: documentation', 'type: bug', 'type: task']","['type: documentation', 'type: task']","['type: documentation', 'type: enhancement']",0,1
+denoland/deno/27243,"[npm resolution]: Error importing submodule when it begins with an ""@"" namespace","I'm a user of the [postgraphile](<URL> package. Because of problems with peer dependencies across different package managers, the maintainer [re-exports dependent packages in the package.json](<URL> as submodules, e.g., `postgraphile/cli` or `postgraphile/grafast`. 
+
+Normally this works fine, but when attempting to import from the path `postgraphile/@dataplan/pg`, I seem to run into an issue with the way deno is parsing the path. In my editor, it shows that the path is not found:
+
+![Screenshot 2024-12-05 at 2 00 33 PM](<URL>
+
+When I try and run a script, it gives me the following error: 
+
+```The log indicates that Deno encountered an invalid package specifier 'npm:postgraphile@^5.0.0-beta.35/@dataplan/pg' in the file `main.ts` at line 2, column 32. It suggests that the intended specifier might have been 'npm:postgraphile@^5.0.0-beta.35@dataplan/pg/'.```
+
+With some research, it looks like there is a regex check somewhere in [resolutions.ts](<URL> set to err if the package starts with the ""@"" symbol.
+
+Is there anyway to permit this given that there is no issue with other package managers? If not, is there a way to alias it to avoid this issue?
+
+Thanks in advance!
+
+Version:
+deno 2.1.2 (stable, release, aarch64-apple-darwin)
+v8 13.0.245.12-rusty
+typescript 5.6.2
+
+","['bug', 'node resolution']","['bug', 'resolution', 'peerDependencies']","['bug', 'install']","['bug', 'std', 'deno info']","['bundler-resolution', 'node resolution', 'bug']","['bug', 'install']",['bug'],"['bug', 'node resolution', 'resolution']","['bug', 'node compat']",[],1,1
+vercel/next.js/73793,JavaScript heap out of memory during next build (Next 15.1),"### Link to the code that reproduces this issue
+
+<URL>
+
+### To Reproduce
+
+1. Have a moderately complex page to build (generateStaticParams + parallel routes)
+2. `next build`
+3. process will crash `JavaScript heap out of memory` (usually during the 'Collecting page data' step)
+
+### Current vs. Expected behavior
+
+`next build` process doesn't crash.
+
+### Provide environment information
+
+```The log shows the following details:
+
+- Binaries: Node.js version 22.12.0, npm version 10.9.0, Yarn version 1.22.19, and pnpm version 8.10.2.
+- Relevant Packages: Next.js version 15.1.1-canary.0, React version 19.0.0, React DOM version 19.0.0, and TypeScript version 5.3.3. The `eslint-config-next` package is not installed.
+- Next.js Config: Output configuration is not specified.
+- Node.js version 20 was also tested.```
+
+
+### Which area(s) are affected? (Select all that apply)
+
+Not sure
+
+### Which stage(s) are affected? (Select all that apply)
+
+next build (local), Vercel (Deployed)
+
+### Additional context
+
+The crash doesn't happen if I reduce the size of the array returned by `generateStaticParams` or if I remove a couple parallel routes. This happens on all platform I tested: Vercel, locally and on codesandbox.io.
+This used to work correctly with `next@15.0.4`.","['bug', 'locked']","['bug', 'Parallel & Intercepting Routes']",['bug'],"['bug', 'locked', 'Performance']","['bug', 'Performance', 'TypeScript']","['bug', 'Runtime', 'linear: next']",[],"['bug', 'Performance', 'Parallel & Intercepting Routes', 'TypeScript']","['bug', 'Runtime', 'linear: next']","['bug', 'locked']",1,1
+pytorch/pytorch/141710,compiling attention layer with dynamic shapes yields nans,"Repro below minified from a torchtune model, still investigating:
+```The code snippet defines and compiles a forward pass function for a transformer model using PyTorch. It involves several linear transformations, normalization, positional embedding interactions, and scaled dot-product attention mechanisms. The function accepts numerous parameters related to model weights and configurations, processes input tensors through these operations, and returns the attention output. The compiled function is then invoked with randomly generated input tensors and checks for NaN values in the output.```
+
+cc @ezyang @gchanan @zou3519 @kadeng @msaroufim @chauhang @penguinwu @bobrenjc93","['oncall: pt2', 'module: dynamic shapes']",[],"['module: dynamo', 'module: numerical-stability', 'module: dynamic shapes']",[],['advanced'],['module: dynamic shapes'],[],[],"['module: pt2-dispatcher', 'module: flex attention', 'module: complex']","['oncall: pt2', 'module: dynamo']",0,1
+microsoft/vscode/240393,add `activeEditorState` window title variable to editor's a11y help dialog,"cc @jooyoungseo and @rperez030 while we decide if this should be the default, I'm going to add it to the editor's help dialog for discoverability.
+
+
+","['feature-request', 'accessibility', 'insiders-released']","['a11ymas', 'accessibility', 'accessibility-signal']","['accessibility', 'workbench-editors']","['feature-request', 'accessibility', 'insiders-released']","['accessibility', 'a11y-partner', 'a11ymas']","['accessibility', 'feature-request']","['feature-request', 'accessibility']","['a11y-partner', 'accessibility', 'accessibility-signal']","['feature-request', 'accessibility', 'polish']","['feature-request', 'accessibility', 'insiders-released']",0,1
+sveltejs/svelte/14455,Function Overloading Bugging Rollup when Reading .svelte Files,"### Describe the bug
+
+When I have a component which includes function overloading (inside `<script module>`):
+```The code defines a function `test` with multiple overloads and an implementation. The overloads specify different parameter types, while the implementation logs the type and props to the console.```
+Everything seens fine on the IDE but I still get this weird Rollup Error when running Vite or on the Playground:
+```The log indicates that Vite encountered an error while evaluating an SSR module located at `/src/routes/+layout.server.ts`. The error is a `RollupError` stating that it expected a `{` but found a `;` instead. This error originates from issues with parsing the AST (Abstract Syntax Tree) of the module.```
+
+### Reproduction
+
+<URL>
+```The code snippet defines a Svelte component with a TypeScript function named `test`. The function can be called with either two parameters (`type` and `props`) or one parameter (`type`). The `type` parameter is a string that determines the behavior of the function, and `props` is an optional object containing additional properties.```
+
+### Logs
+
+_No response_
+
+### System Info
+
+```The system is running Windows 10 with an AMD Ryzen 9 3900X processor and 31.92 GB of RAM. It has Node.js version 20.11.1, npm version 9.7.1, and pnpm version 9.14.2 installed. The user has Chrome version 131.0.6778.86 and Edge Chromium version 127.0.2651.74. Internet Explorer version 11.0.19041.4355 is also installed. The npm package Svelte is installed at version 5.2.1.```
+
+
+### Severity
+
+annoyance",['types / typescript'],"['bug', 'compiler', 'ssr']","['bug', 'types / typescript']",['types / typescript'],"['bug', 'compiler']","['bug', 'types / typescript']",[],"['bug', 'compiler', 'ssr']",['bug'],[],1,1
+spring-projects/spring-framework/34234,ApplicationListener no longer invoked for double generic ApplicationEvent with 6.2.1,"This issue is next step [this issue.](<URL>
+
+So: 
+
+I have simple interface like this:
+
+```This code snippet defines an empty interface named `ITest` in Java.```
+
+and this:
+
+```This code snippet defines an empty interface named `ITest2` in Java.```
+
+and the simple event:
+
+```This code snippet defines a Java class `TestEvent` that extends `ApplicationEvent`. It has a generic type parameter `T` that must implement `ITest`. The class has a constructor that takes an `Object` as the source and calls the superclass constructor with this source.```
+
+and listener:
+
+```This code snippet defines a Spring bean annotated with `@Component` that listens for events of type `TestEvent<T>`, where `T` is a generic type extending both `ITest` and `ITest2`. When an event is triggered, it prints a message to the console.```
+
+and when i trying to send an event via the spring context like this:
+
+```This code snippet initializes a Spring application context using `AnnotationConfigApplicationContext` with `AppConfig` as configuration and then publishes a `TestEvent` with an empty string as the event data.```
+I have different result in depends on the version Spring. 
+When i use Spring 6.2.1 i can't see in the log anything.
+
+when i use Spring 6.1.16 i see this result:
+
+```The code snippet provided is incomplete and only shows the class definition starting with `class...MyListener DONE!`.```
+
+I guess it's a bug.","['type: regression', 'in: core']","['type: regression', 'in: messaging']","['type: regression', 'in: core']","['type: regression', 'in: core', 'theme: aot']","['in: messaging', 'type: bug', 'type: regression']",['in: core'],"['type: regression', 'in: core']","['in: core', 'type: bug', 'type: regression']","['type: regression', 'in: core']","['type: regression', 'in: core']",0,1
+pytorch/pytorch/143828,[DCP]Distributed checkpoint `set_optimizer_state_dict` cause optimizer step error when optimizer contains empty param group,"### 🐛 Describe the bug
+
+DCP `set_optimizer_state_dict` introduce wrong param group and cause `optim.step` raise error when original state dict contains param group that doesn't have any parameters.
+
+* Error Message
+
+```The log indicates that an error occurred during the execution of `dcp_bug.py` on rank 1. The error is a `KeyError` with the message `'betas'`, which arises when trying to access the `""betas""` key in a group dictionary. This happens within the `step` method of the AdamW optimizer in PyTorch.```
+
+* Code
+
+`torchrun --nnodes=1 --nproc-per-node=4 --standalone /path/to/pytorch_bug/dcp_bug.py`
+
+```The code initializes a distributed computing environment using PyTorch's distributed package. It defines a simple neural network module, parallelizes it across devices, and sets up an optimizer. It then performs a forward pass, computes a loss, and updates the optimizer state. The final lines save the optimizer state from one optimizer and load it into another, demonstrating optimizer state checkpointing.```
+
+
+### Versions
+
+```The log details the configuration and versions of PyTorch and its dependencies running on an Ubuntu 22.04 system with CUDA 12.4 and cuDNN 9.1.0.70. It includes information about Python version, installed libraries, and hardware details such as GPU driver version 535.86.10. The specific versions of PyTorch and related packages are also noted, including torch 2.6.0.dev20241222+cu124 and torchvision 0.22.0.dev20241222+cu124. XNNPACK and CUDA runtime are also enabled.```
+
+cc @H-Huang @awgu @kwen2501 @wanchaol @fegin @fduwjj @wz337 @wconstab @d4l3k @c-p-i-o @vincentqb @jbschlosser @albanD @janeyx99 @crcrpar @LucasLLC @pradeepfn","['oncall: distributed', 'module: optimizer']",[],"['oncall: distributed', 'oncall: distributed checkpointing']",[],['distributed-backlog'],"['oncall: distributed', 'oncall: distributed checkpointing', 'release notes: distributed (checkpoint)']",[],"['core issue', 'oncall: distributed checkpointing']","['oncall: distributed checkpointing', 'oncall: distributed']","['oncall: distributed', 'oncall: distributed checkpointing']",0,1
+spring-projects/spring-boot/44437,Kafka message sending fails with 'class SslBundleSslEngineFactory could not be found',Forward port of issue #44414 to 3.4.x.,['type: bug'],"['type: bug', 'theme: ssl']",['type: bug'],['type: bug'],"['type: bug', 'theme: ssl']",['type: bug'],['type: bug'],"['type: bug', 'theme: ssl', 'type: blocker']",['type: bug'],['type: bug'],1,1
+NationalSecurityAgency/ghidra/7435,AArch64 Rust binary decompiler error: `Low-level Error: Overlapping input varnodes`,"**Describe the bug**
+In some Rust AArch64 binaries the decompiler shows `Low-level Error: Overlapping input varnodes` instead of the decompiled code.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+
+0. Extract the attached .zip
+1. Import and analyze the extracted .elf file
+2. Go to `FUN_00230680`
+3. See error `Low-level Error: Overlapping input varnodes`
+
+**Expected behavior**
+The function is decompiled without errors.
+
+**Screenshots**
+
+![Image](<URL>
+
+**Attachments**
+
+[rust-rayon2.zip](<URL>
+
+**Environment (please complete the following information):**
+ - OS: Linux fedora 6.12.9-200.fc41.x86_64
+ - Java Version: openjdk 21.0.4 2024-07-16 LTS
+ - Ghidra Version: 11.4_DEV
+ - Ghidra Origin: locally built from the GitHub repo without any changes (commit [e0fd708d](<URL>
+
+**Additional context**
+Might be related to #7433
+",['Feature: Decompiler'],"['Type: Bug', 'Feature: Decompiler', 'Feature: Processor/AARCH64']",['Feature: Decompiler'],"['Feature: BSim', 'Type: Bug']","['Feature: Decompiler', 'Type: Bug']",['Feature: Decompiler'],['Feature: Decompiler'],"['Feature: Decompiler', 'Type: Bug']",['Feature: Decompiler'],['Feature: Decompiler'],1,1
+JuliaLang/julia/57402,help? mode: Error showing value of type Markdown.MD,"On today's nightly:
+
+```````The code snippet provides documentation for the `round` function in Julia, including how it handles rounding complex numbers and various rounding modes. It also includes examples of usage and demonstrates an error related to type handling and syntax highlighting, which is not part of the `round` function itself. The error indicates a method mismatch and involves the `keys` function and syntax highlighting modules.```","['REPL', 'regression', 'docsystem']",['markdown'],['bug'],[],"['bug', 'docs', 'markdown']","['bug', 'docs']",['bug'],"['bug', 'error messages', 'docs']","['bug', 'REPL']",['bug'],1,1
+pytorch/pytorch/147627,Enforce full FIPS compliance with hashlib - ruff rule S324 on python 3.9+,"### 🚀 The feature, motivation and pitch
+
+This is to more broadly address the issue here. We need to add a special flag for compliance reasons that the hashlib function is not being used for cryptographic applications. More details can be found here: <URL> . In most builds of Python, this will serve as a noop.
+
+We can enforce FIPS compliance o the hashlib this codebase wide pretty easily with ruff rule [S324](<URL> We just need to have someone go and manually add usedforsecurity=False to all the hashlib calls in the codebase. The documentation for the rule doesn't mention the usedforsecurity suppression so I added it to the ruff docs so I opened an issue to improve the docs: <URL>
+
+Steps to resolve this issue:
+
+* Enable S324 in the pyproject.toml for RUFF
+* Scan the codebase for all flagged issues. Double check they are not in fact being used for a cryptographically secure application. If not add usedforsecurity=False, if so please flag.
+* Open a PR with the ruff rule enabled, and all the fixes linking back to this issue.
+
+### Alternatives
+
+Leave as is.
+
+### Additional context
+
+_No response_","['module: lint', 'enhancement']","['better-engineering', 'enhancement']",['module: lint'],"['module: lint', 'better-engineering']","['advanced', 'security', 'compile-docs', 'lint-all-files']",['module: lint'],[],"['security', 'enhancement', 'python']","['better-engineering', 'small']","['module: lint', 'better-engineering']",1,1
+spring-projects/spring-boot/44520,"Remove MessageSourceAutoConfigurationIntegrationTests, MessageSourceAutoConfigurationProfileTests, and SpringJUnitTests ","All three tests appear to be testing functionality that's tested elsewhere.
+
+-  `MessageSourceAutoConfigurationIntegrationTests` is testing that a configuration property can be set by `@SpringBootTest`
+- `MessageSourceAutoConfigurationProfileTests` is testing that profile can be activated by `@ActiveProfiles` and that a profile-specific configuration file is then loaded
+- `SpringJUnitTests` is testing that `@Value` can resolve placeholders from the environment and that the environment has been populated by `application.properties",['type: task'],['type: task'],['type: task'],['type: bug'],"['type: regression', 'theme: config-data']",['type: task'],['type: bug'],"['type: bug', 'type: task', 'theme: config-data']",['type: task'],[],0,1
+spring-projects/spring-boot/43984,Source snippet in Developing Your First Spring Boot Application section uses the root package,Forward port of issue #43983 to 3.5.x.,['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],['type: bug'],"['type: bug', 'type: documentation']","['type: bug', 'type: documentation']",['type: bug'],0,1
+pytorch/pytorch/145225,The `sympy` dependency spec for pytorch on PyPi wheel is still unchanged.,"When run `pip install -U torch`, it will still require `sympy==1.13.1` and will uninstall the latest `sympy` which is version `1.13.3` in the virtual environment.
+
+The reason is due to the dependency spec unchanged in `setup.py`.","['oncall: releng', 'module: third_party']","['dependencies', 'dependency issue']","['module: binaries', 'module: regression']","['module: binaries', 'module: regression']",['dependency issue'],"['module: binaries', 'module: build']",[],"['dependency issue', 'easy', 'python']","['module: binaries', 'module: python frontend']",['module: binaries'],0,1
+denoland/deno/27214,crypto.timingSafeEqual does not throw on different byteLength,"Version: Deno 2.1.2
+
+See <URL>
+
+> they must have the same byte length. An error is thrown if a and b have different byte lengths
+
+
+<URL>
+
+Node:
+
+```The log shows an attempt to use the `timingSafeEqual` method from the Node.js `crypto` module on two `Uint8Array` objects of different lengths, resulting in a `RangeError` with the message ""Input buffers must have the same byte length"" and the code `ERR_CRYPTO_TIMING_SAFE_EQUAL_LENGTH`.```
+
+Deno:
+```The code checks if the `timingSafeEqual` method from the `node:crypto` module is available in the global environment and then calls it with two `Uint8Array` objects. The result of the call is `false`.```","['bug', 'node compat', 'crypto']","['bug', 'crypto']","['bug', 'crypto', 'node compat']","['bug', 'crypto', 'node compat']","['bug', 'crypto', 'node compat']","['bug', 'node compat', 'crypto']","['bug', 'node compat']","['crypto', 'bug', 'node compat']","['bug', 'node compat', 'crypto']","['bug', 'node compat']",0,1
+rust-lang/rust/138220,tests/ui/meta/no_std-extern-libc.rs fails `aarch64-apple`,"<URL>
+
+<URL>
+
+`````````The log shows that most UI (User Interface) tests passed, but one test failed. The failing test is `tests/ui/meta/no_std-extern-libc.rs`. The failure is due to an error during the compilation of this test file, specifically an `E0464` error indicating that there are multiple candidates for the `rlib` dependency `libc`. The error details show two conflicting `libc` libraries present in the build directory, causing the compilation to fail.```","['T-bootstrap', 'C-bug', 'A-download-rustc']","['A-no_std', 'O-aarch64-unknown-linux-musl']","['C-bug', 'A-testsuite']","['A-testsuite', 'C-bug', 'T-libs', 'O-tvos']","['A-no_std', 'T-compiler', 'T-lang']","['T-libs', 'A-CI']","['T-bootstrap', 'C-bug', 'O-loongarch']","['A-ABI', 'A-linkers', 'A-LLVM', 'A-ABI', 'C-bug', 'A-ABI', 'NLL-diagnostics', 'NLL-sound', 'A-no_std', 'T-core', 'T-compiler', 'P-critical']","['A-testsuite', 'T-compiler', 'A-compiletest']","['A-testsuite', 'T-bootstrap', 'C-bug']",1,1
+JuliaLang/julia/57574,Setting a type alias in local scope doesn't define the variable anymore in some special cases,"This used to work in 1.11 but errors in 1.12 with `B` not defined:
+
+```The code defines a generic struct `A` and contains nested `let` blocks with an empty loop that does nothing, followed by an assignment of `B{T}` to `A{T}` within a `let` block, but `B` is not used outside its scope.```
+
+Bisected to <URL>",['regression'],"['bug', 'regression 1.12']","['regression 1.12', 'bug', 'types and dispatch']","['compiler:lowering', 'regression 1.12']","['bug', 'bugfix', 'compiler:inference', 'regression', 'regression 1.12', 'types and dispatch']","['regression 1.12', 'bug', 'types and dispatch']",[],"['bug', 'types and dispatch', 'compiler:lowering', 'regression 1.12']","['bug', 'types and dispatch', 'regression 1.12']","['compiler:lowering', 'regression 1.12']",1,1
+php/php-src/17246,Nested shm protections cause segfault,"### Description
+
+The following code:
+
+```The code defines a `Cycle` class with a constructor that creates an anonymous function using a variable `$obj`. It then creates 10,000 instances of `Cycle` in a loop. Finally, it requires a file named `xpath_callables.inc`.```
+
+Resulted in this output:
+```The log indicates an AddressSanitizer error resulting in a segmentation violation (SEGV) due to a write access to an unknown address (0x0000418f412c). The error originates from the `accel_new_interned_string` function in `ZendAccelerator.c` at line 542. The stack trace shows that this issue is triggered during the script persistence calculation process in the Zend Accelerator module. The process ultimately leads to the abortion of the program.```
+
+To reproduce:
+```The code snippet sets configuration directives for PHP's OPcache module in a command-line interface (CLI) context. It enables OPcache protection memory features, loads the OPcache extension, and enables Just-In-Time (JIT) compilation with a specific opcode limit of 1254.```
+
+
+### PHP Version
+
+nightly
+
+### Operating System
+
+_No response_","['Bug', 'Extension: opcache']","['Bug', 'Category: Engine', 'Extension: opcache', 'Category: JIT']","['Bug', 'Category: Engine', 'SAPI: phpdbg']","['Bug', 'Category: Engine', 'Extension: opcache']","['Bug', 'Category: Engine', 'Category: Optimizer', 'Extension: opcache']","['Bug', 'Category: JIT']","['Bug', 'Category: JIT']","['Bug', 'Category: JIT', 'Category: Program Execution', 'Extension: opcache']","['Bug', 'Category: JIT', 'Category: Engine']","['Bug', 'Category: JIT']",1,1
+microsoft/terminal/18331,Alt and F7 don't work in 1.23.3481.0,"### Windows Terminal version
+
+1.23.3481.0
+
+### Windows build number
+
+10.0.19045.5247
+
+### Other Software
+
+FAR Manager 3.0.6401.0 x64
+
+when migrate from canary build terminal-1.23.3461.0 to next canary build terminal-1.23.3481.0
+i have trouble with keys: Alt/RAlt and F7
+
+### Steps to reproduce
+
+run utility KeyEvents.exe and press Alt and F7
+
+
+
+### Expected Behavior
+
+result when press Alt:
+
+terminal-1.23.3461.0 - good behavior
+02:56:37 KEY_EVENT_RECORD: Dn, 1, Vk=""VK_MENU"" [18/0x0012], Scan=0x0038 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000002 (cAsac - ecns) (Windowed)
+02:56:37 KEY_EVENT_RECORD: Up, 1, Vk=""VK_MENU"" [18/0x0012], Scan=0x0038 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000000 (casac - ecns) (Windowed)
+
+result when press f7:
+
+terminal-1.23.3461.0 - good behavior
+
+03:08:36 KEY_EVENT_RECORD: Dn, 1, Vk=""VK_F7"" [118/0x0076], Scan=0x0041 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000000 (casac - ecns) (Windowed)
+03:08:36 KEY_EVENT_RECORD: Up, 1, Vk=""VK_F7"" [118/0x0076], Scan=0x0041 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000000 (casac - ecns) (Windowed)
+
+### Actual Behavior
+
+result when press Alt:
+
+terminal-1.23.3481.0 - bad behavior
+02:54:44 KEY_EVENT_RECORD: Up, 1, Vk=""VK_MENU"" [18/0x0012], Scan=0x0038 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000002 (cAsac - ecns) (Windowed)
+
+
+result when press f7:
+
+terminal-1.23.3481.0 - bad behavior
+03:02:27 KEY_EVENT_RECORD: Dn, 1, Vk=""VK_F7"" [118/0x0076], Scan=0x0041 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000000 (casac - ecns) (Windowed)
+03:02:27 KEY_EVENT_RECORD: Dn, 1, Vk=""VK_F7"" [118/0x0076], Scan=0x0041 uChar=[U=' ' (0x0000): A=' ' (0x00)]
+         Ctrl=0x00000000 (casac - ecns) (Windowed)
+","['Issue-Bug', 'Product-Terminal', 'In-PR', 'Priority-2', 'Area-Windowing']","['Area-Input', 'Issue-Bug', 'Severity-Crash']","['Issue-Bug', 'Product-Terminal', 'Area-Input']","['Issue-Bug', 'Area-Input', 'Product-Terminal', 'In-PR']","['Area-Accessibility', 'Issue-Bug', 'Impact-Compatibility', 'Disability-All', 'Severity-Blocking', 'WindowsTerminal_Win32']","['Issue-Bug', 'Area-Input', 'Area-TerminalControl', 'Priority-3']","['Area-Input', 'Issue-Bug', 'Product-Terminal', 'In-PR']","['Area-TerminalControl', 'Area-Input', 'Area-Windowing', 'Issue-Bug', 'Priority-1', 'Severity-Blocking', 'Impact-Visual', 'Area-UserInterface', 'Gathering-Data', 'HCL-WindowsTerminal']","['Issue-Bug', 'Product-Terminal', 'Area-TerminalControl', 'Area-UserInterface', 'Priority-3']","['Area-Input', 'Issue-Bug', 'Product-Terminal', 'In-PR']",1,1
+rust-lang/rust/138048,ICE when using a constant as a pattern,"
+
+Bisected to 8c392966a013fd8a09e6b78b3c8d6e442bc278e1 (#137848).
+
+### Code
+
+`````The code defines a struct `Foo` with a constant parameter `V`. It also defines a trait `Bar` with a generic lifetime parameter `'b`. An impl block provides an implementation for `Bar` for `Foo<V>`, where `V` is a constant parameter. The implementation of `bar` method matches on the value of `n` against `V`. The code snippet notes that an internal compiler error (ICE) is triggered under certain conditions related to the presence of the constant parameter and lifetime parameter.```
+
+
+### Meta
+
+
+`rustc --version --verbose`:
+```The log indicates that the Rust compiler version is 1.87.0-nightly, built on 2025-03-04 with commit hash f9e0239a7. It is hosted on an x86_64-unknown-linux-gnu platform and includes LLVM version 20.1.0.```
+
+### Error output
+
+```The code snippet shows an error `E0158` indicating that constant parameters (`V`) cannot be referenced in patterns within the implementation of the `Bar` trait for `Foo<V>`. The error occurs at line 13 where `V` is referenced in a pattern.```
+
+
+<details><summary><strong>Backtrace</strong></summary>
+<p>
+
+`````The log indicates that the Rust compiler (version 1.87.0-nightly) encountered an internal error while building the THIR (Three-Address Intermediate Representation) for a specific implementation block. The error occurred at `compiler/rustc_mir_build/src/thir/util.rs:25:14`. The error message suggests that a `Box<dyn Any>` was involved, but the exact nature of the issue is not specified.
+
+The compiler then attempted to handle the error by calling various functions related to panic handling and diagnostic reporting. The stack trace shows that the error originated from the THIR build process and propagated through several layers of the compiler's query system and analysis passes.
+
+The query stack trace indicates that the error happened while building the THIR for an implementation block at `src/lib.rs:10`, and it also mentions that the analysis passes were running on the current crate when the error occurred.```
+
+</p>
+</details>
+","['I-ICE', 'T-compiler', 'C-bug']","['C-bug', 'I-ICE', 'T-lang']","['I-ICE', 'T-compiler', 'C-bug', 'F-inline_const_pat']","['I-ICE', 'T-compiler', 'C-bug', 'requires-nightly']","['NLL-diagnostics', 'T-compiler', 'T-lang', 'I-ICE']","['I-ICE', 'T-compiler', 'C-bug', 'F-const_trait_impl', 'F-generic_const_items', 'requires-nightly']",[],"['I-ICE', 'T-compiler', 'NLL-diagnostics']","['I-ICE', 'T-compiler', 'C-bug', 'F-generic_const_items', 'F-const_trait_impl']","['I-ICE', 'T-compiler', 'C-bug', 'F-generic_const_items']",0,1
+php/php-src/18148,pg_copy_from no longer accepts linefeed,"### Description
+
+After creating a PostgreSQL table with:
+
+```This SQL statement creates a table named `ttt` with two columns: `aaa` of type `integer` and `bbb` of type `text`.```
+
+The following code:
+
+```This PHP code snippet connects to a PostgreSQL database and attempts to insert data using `pg_copy_from`. If the connection fails, it dies with an error message. If `pg_copy_from` fails, it dies with the last error message from the database.```
+
+Resulted in this output:
+
+```The log indicates a PHP warning related to a PostgreSQL `pg_copy_from()` function call. The copy operation failed due to invalid input syntax for an integer type. Specifically, an empty string ("""") was encountered in the ""id"" column on line 2 of the input data being copied into the ""ttt"" table. The error originated from the `pg_strtoint32` function at line 320 of the numutils.c file.```
+
+But I expected *no* output instead.
+
+As the error messages indicates: Although I have given only one row of data, PostgreSQL sees two rows.
+
+The following code, however (note the missing linefeed in the array element), applied to the same database:
+
+```This PHP code snippet connects to a PostgreSQL database and attempts to insert a single row of data using `pg_copy_from`. If the connection fails, it dies with an error message. If `pg_copy_from` fails, it dies with the last PostgreSQL error.```
+
+Resulted in no output, as expected.
+
+According to the documentation of the parameter `rows` of the function `pg_copy_from`: ""Values should be linefeed terminated."" So the first code block should be accepted.
+
+With PHP 8.1, both code blocks produce no output as expected.
+I have not tested PHP 8.2 and PHP 8.3.
+With PHP 8.4, the error above appears as a regression.
+
+
+
+
+### PHP Version
+
+PHP 8.4.5
+
+### Operating System
+
+Alma Linux 9","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql', 'Category: Program Execution', 'OS: Linux']","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql', 'Category: SAPI']","['Bug', 'Extension: pgsql']","['Bug', 'Extension: pgsql']",0,1
+vercel/next.js/74642,CatchAll route next-intl: no default component was found,"### Link to the code that reproduces this issue
+
+<URL>
+
+### To Reproduce
+
+1. start the application with next dev
+2. open the console
+3. go to a non existing locale route to trigger the catch all not found page.
+4. see the warning concerning parallel routes in the console, even though no parallel routes are used
+
+### Current vs. Expected behavior
+
+Currently a warning is shown stating: 
+`No default component was found for a parallel route rendered on this page. Falling back to nearest NotFound boundary.`
+This warning only appears in dev mode, so not a huge issue. 
+
+Expected behavior would either be no warning message, since no parallel routes are being used; or a warning explaining what exactly the problem is, as it doesn't have to do with parallel routes. Maybe it's just the wording, that's off.
+
+### Provide environment information
+
+```The log shows Node.js version 23.5.0 running on a Darwin (macOS) system with an ARM64 architecture. The system has 12 available CPU cores and 36864 MB of available memory. The installed binaries include Node.js 23.5.0, npm 10.9.2, and pnpm 9.4.0. Yarn is not installed. Relevant package versions are listed, with `next` being an outdated version (14.2.22, latest is 15.1.4). The Next.js configuration does not specify an `output`.```
+
+
+### Which area(s) are affected? (Select all that apply)
+
+Developer Experience, Internationalization (i18n)
+
+### Which stage(s) are affected? (Select all that apply)
+
+next dev (local)
+
+### Additional context
+
+See issue from next-intl: 
+<URL>","['bug', 'Internationalization (i18n)', 'locked']","['bug', 'Internationalization (i18n)', 'Not Found']","['bug', 'Internationalization (i18n)', 'Runtime']","['bug', 'Internationalization (i18n)', 'locked']","['bug', 'Internationalization (i18n)']","['bug', 'Parallel & Intercepting Routes']","['bug', 'Linking and Navigating']","['Internationalization (i18n)', 'Performance', 'bug']","['bug', 'Internationalization (i18n)']",[],0,1
+rust-lang/rust/138392,Integer literal type suggestions do not account for parentheses,"### Code
+
+```The code snippet defines a `main` function in Rust that declares a variable `x` of type `u8` and initializes it with the value `4i32`. However, this will result in a compilation error due to type mismatch.```
+
+### Current output
+
+```````````The code attempts to assign an `i32` literal to a `u8` variable, resulting in a type mismatch error. The error suggests changing the type of the numeric literal to `u8`.```
+
+### Desired output
+
+```````````The code attempts to assign an `i32` literal to a `u8` variable, resulting in a type mismatch error. The error suggests changing the type of the numeric literal to `u8`.```
+
+### Rationale and extra context
+
+_No response_
+
+### Other cases
+
+```The provided code snippet is incomplete and lacks any actual Rust code. Here is a concise summary:
+
+    ```Rust
+    // No code provided
+    ``````
+
+### Rust Version
+
+```The log indicates the version `1.87.0-nightly` and a commit hash `6650252439d4e03368b3` from March 11, 2025.```
+
+### Anything else?
+
+_No response_
+
+
+
+
+
+
+
+
+","['A-diagnostics', 'T-compiler']","['C-bug', 'E-medium']","['C-bug', 'A-suggestion-diagnostics', 'T-compiler']","['A-diagnostics', 'T-compiler', 'A-suggestion-diagnostics']","['T-compiler', 'T-lang', 'C-bug']","['T-compiler', 'A-suggestion-diagnostics']",[],"['A-AST', 'A-async-await', 'A-borrow-checker', 'A-type-system', 'P-critical', 'T-compiler', 'T-libs', 'T-libs-api', 'T-opsem']","['T-compiler', 'A-suggestion-diagnostics', 'A-diagnostics']",[],0,1
+spring-projects/spring-boot/44079,Upgrade to Gson 2.12.1,Upgrade to [Gson 2.12.1](<URL>,['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],[],[],0,1
+spring-projects/spring-boot/44485,Fix typo in javadoc of CommonStructuredLogFormat#ELASTIC_COMMON_SCHEMA,Forward port of issue #44469 to 3.5.x.,['type: documentation'],['type: documentation'],"['type: documentation', 'type: task']",['type: documentation'],['type: documentation'],['type: documentation'],['type: documentation'],"['type: documentation', 'type: bug']",['type: documentation'],['type: documentation'],0,1
+spring-projects/spring-framework/34128,Wrong parentId tracking in FlightRecorderApplicationStartup,"
+
+It looks like the eventId and parentId of the JFR events generated by 'FlightRecorderApplicationStartup' do not match.
+<img width=""1536"" alt=""image"" src=""<URL> />
+<img width=""417"" alt=""image"" src=""<URL> />
+
+I don't know if I did something wrong?
+
+Here is my sample code and JVM parameters:
+```This Java code snippet defines the `StartApplication` class annotated with `@SpringBootApplication`, which is the main entry point for a Spring Boot application. The `main` method configures and runs the application, setting a custom `ApplicationStartup` instance before running the Spring Application.```
+
+```This code snippet sets Java Virtual Machine (JVM) options for starting a flight recording with a filename of `/data/app.jfr` and a duration of 30 seconds. It also configures the stack depth to 192 frames.```
+
+### Additional
+Spring Boot Version: 2.5.15","['type: bug', 'in: core']",['type: bug'],[],"['in: web', 'type: bug']","['in: core', 'type: bug']","['type: bug', 'in: core']","['in: messaging', 'type: bug']","['type: bug', 'in: core', 'theme: aot']","['type: bug', 'in: core']","['type: bug', 'in: core']",0,1
+microsoft/vscode/240866,Wrong command for Zsh Integration RC file since `ZSH_VERSION` use Semantic Versioning,"
+
+
+
+
+
+
+Does this issue occur when all extensions are disabled?: Yes
+
+
+
+Version: 1.98.0-insider
+Commit: 44028decf1ca81a0cbf99a65ab72cca6735449f2
+Date: 2025-02-14T05:04:46.748Z (23 hrs ago)
+Electron: 34.1.0
+ElectronBuildId: 10990655
+Chromium: 132.0.6834.194
+Node.js: 20.18.1
+V8: 13.2.152.38-electron.0
+OS: Darwin x64 21.6.0
+
+Steps to Reproduce:
+
+1. Open VSCode
+2. Open Terminal panel for Zsh
+3. Got error
+
+> /var/folders/g1/xxx/T/username-code-insiders-zsh/.zshrc:40: bad floating point constant
+
+Reference:
+
+<URL>
+
+```This code snippet prints the version of the Zsh shell, which is 5.8.1.```","['bug', 'important', 'insiders-released', 'terminal-shell-zsh']","['bug', 'terminal-shell-integration']","['bug', 'terminal-shell-integration', 'terminal-shell-zsh']","['bug', 'insiders-released', 'terminal-shell-integration']",['bug'],"['bug', 'insiders-released', 'terminal-shell-integration', 'terminal-shell-zsh']",[],"['bug', 'terminal', 'electron']","['bug', 'terminal-shell-zsh', 'terminal-shell-integration']",[],0,1
+facebook/react-native/49783,[Android] ConcurrentModificationException in FabricUIManager,"### Description
+
+In this [commit](<URL> you have changed the flag `mMountNotificationScheduled` from `AtomicBoolean` to `boolean`
+```The code snippet changes the declaration of `mMountNotificationScheduled` from an `@NonNull`-annotated `AtomicBoolean` to a simple `boolean`.```
+but the line changing its value to `true` was removed
+```This line sets and retrieves the value of `mMountNotificationScheduled` to `true` and then schedules a mount notification. The initial value of `mMountNotificationScheduled` is retrieved before it is set to `true`.```
+so now the flag is always `false`.
+This is probably the reason of the `ConcurrentModificationException`.
+
+### Steps to reproduce
+
+Couldn't provide minimum steps. It happens when animating the image to slide in. Reanimated version: 3.16.1
+
+### React Native Version
+
+0.76.7
+
+### Affected Platforms
+
+Runtime - Android
+
+### Areas
+
+Fabric - The New Renderer
+
+### Output of `npx @react-native-community/cli info`
+
+```The system log details the following:
+
+- **OS**: macOS 15.3.1
+- **CPU**: 10 cores of an Apple M1 Pro
+- **Memory**: 158.77 MB used out of 32.00 GB
+- **Shell**: zsh version 5.9
+- **Binaries**:
+  - Node.js: version 22.12.0
+  - Yarn: version 1.22.22
+  - npm: version 10.9.0
+  - Watchman: version 2025.02.17.00
+- **Managers**: CocoaPods version 1.16.0
+- **SDKs**:
+  - iOS: various versions including DriverKit 24.1, iOS 18.1, macOS 15.1, tvOS 18.1, visionOS 2.1, and watchOS 11.1
+  - Android: API levels 33, 34, and 35; build tools 33.0.1, 34.0.0, 35```
+
+### Stacktrace or Logs
+
+```The log indicates a `java.util.ConcurrentModificationException` occurred on the main thread. The exception originates from an attempt to modify an `ArrayList` while an iterator is iterating over it, specifically within the `FabricUIManager$MountItemDispatchListener$1.run` method.```
+
+### Reproducer
+
+<URL>
+
+### Screenshots and Videos
+
+Copilot suggestion
+![Image](<URL>","['Platform: Android', 'Type: New Architecture']","['Bug', 'Impact: Crash', 'Platform: Android', 'Tech: Fabric']","['Platform: Android', 'Tech: Fabric']","['Platform: Android', 'Tech: Fabric', 'Type: New Architecture']","['Bug', 'Impact: Crash']","['Platform: Android', 'Tech: Fabric']",[],"['Impact: Bug', 'Platform: Android', 'Tech: Fabric']","['Platform: Android', 'Type: New Architecture', 'API: LayoutAnimation']","['API: Animated', 'API: PanResponder', 'Type: New Architecture']",1,1
+spring-projects/spring-boot/44779,Upgrade to Jetty 12.0.18,Upgrade to [Jetty 12.0.18](<URL>,['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],['type: dependency-upgrade'],"['type: dependency-upgrade', 'type: bug']",[],['type: dependency-upgrade'],0,1
+vuetifyjs/vuetify/20969,[Bug Report][3.7.11] Opacity propagating from v-dialog to v-file-upload,"
+### Environment
+**Vuetify Version:** 3.7.11
+**Vue Version:** 3.5.13
+**Browsers:** Chrome 133.0.0.0
+**OS:** Windows 10
+
+### Steps to reproduce
+1. Create a v-dialog with opacity set to 0
+2. Add a v-file-upload to the dialog
+3. Drag and drop a file to the v-file-upload component
+4. See that the v-file-upload component opacity is also 0
+
+### Expected Behavior
+Dragging a file onto the v-file-upload should result in the component being highlighted
+
+### Actual Behavior
+No highlight visible since the opacity of 0 is propagated from the dialog to the v-file-upload component
+
+### Reproduction Link
+[<URL>
+
+
+","['T: bug', 'C: VOverlay']","['T: bug', 'C: VDialog', 'C: VFileUpload']","['T: bug', 'C: VFileUpload']","['T: bug', 'C: VFileUpload']","['C: VDialog', 'C: VFileUpload', 'T: bug']","['T: bug', 'C: VOverlay', 'C: VFileUpload']","['T: bug', 'C: VOverlay']","['C: VDialog', 'C: VFileUpload', 'T: bug']",['C: VFileUpload'],"['T: bug', 'C: VOverlay', 'C: VAvatar']",0,1
+microsoft/vscode/241285,The types `LanguageModelChatTool` and `LanguageModelToolInformation` are incompatible when `exactOptionalPropertyTypes` set,"Version: 1.98.0-insider
+Commit: 105d4af21c11ed9f13e65feba4ce4b41217e2024
+Date: 2025-02-19T06:43:12.388Z
+Electron: 34.1.0
+ElectronBuildId: 10990655
+Chromium: 132.0.6834.194
+Node.js: 20.18.1
+V8: 13.2.152.38-electron.0
+OS: Darwin x64 22.6.0
+
+Steps to Reproduce:
+
+1. Set `""exactOptionalPropertyTypes"": true` in `tsconfig.json`
+2. We cannot directly use the result of `vscode.lm.tools.find` with `vscode.lm.invokeTool` because the types `LanguageModelChatTool` and `LanguageModelToolInformation` are incompatible.
+3. See <URL>
+4. The `inputSchema` property in both types should be `inputSchema?: object | undefined;`","['bug', 'insiders-released']",['bug'],"['bug', 'api', 'typescript', 'insiders-released']","['bug', 'typescript', 'insiders-released']",[],"['bug', 'api', 'typescript']",[],"['bug', 'electron', 'capi', 'chat-lm-unavailable', 'typescript']","['bug', 'typescript', 'api', 'insiders-released']",[],1,1
+FuelLabs/sway/6913,Check attribute multiplicity,"Currently, attributes that should be applied only once per item can be applied an arbitrary number of times. E.g., this compiles without any errors or warnings:
+
+```The code snippet contains two functions with conflicting `#[inline]` attributes and a test function with duplicate `#[test]` attributes.```","['compiler', 'compiler: frontend', 'compiler: parser', 'team:compiler']",['bug'],['bug'],"['bug', 'compiler: ir', 'compiler: optimization', 'team:compiler']","['bug', 'code quality']","['bug', 'compiler']","['bug', 'compiler', 'team:compiler']","['bug', 'code quality', 'compiler', 'compiler: frontend', 'testing']","['bug', 'compiler', 'compiler: frontend']","['bug', 'compiler', 'triage', 'team:compiler']",0,1
+spring-projects/spring-framework/34201,Document that http.client.requests measure the entire HTTP exchange,"Hello! 👋 
+
+# Context
+<URL>
+By looking at the description of client metric, I wouldn't say, that `http.client.requests` metric includes things like eq: waiting for connection in connection pool.
+Sometimes i see Spikes for dashboards with this metric and i would like to know, that those SPIKE's may be visible due to requests waiting in queue or something else.
+
+In order to have only request time, I need to measure request time on `RequestFactory` level.
+
+
+# Example
+Spring Boot Version - `3.4.1`
+
+I've prepared an small example, where I'm executing 4 requests with connection pool size equal to 2 and response from wiremock stub equal to 50ms. Here's the code: <URL>
+
+Here's the results:
+```The log shows multiple requests with durations around 52-54 ms, and HTTP client metric durations around 53-54 ms for individual requests, with some cumulative metric durations of approximately 108 ms.```
+
+So as you can see, those last two request contains of: 
+- request itself
+- waiting in queue
+
+# Proposal
+I would like to add some tip for documentation like:
+
+```The log indicates that the specified metric does not apply to the particular Request Factory being used, and thus its value may not directly correspond to the request itself. Instead, it may include additional factors such as waiting for a connection from a connection pool.```
+
+# Question
+What do you think?
+Please let me know! 😄 
+
+
+","['type: documentation', 'in: web']",['type: documentation'],[],"['in: web', 'type: bug']","['type: documentation', 'in: web']","['type: documentation', 'in: web']","['in: web', 'type: bug']","['in: web', 'type: documentation', 'type: enhancement']",['type: bug'],"['in: web', 'type: bug']",0,1
+rust-lang/rust/138320,naked_functions: invalid instruction mnemonic <function name> on an .endef line,"On **nightly-2024-12-13** and any later version, I'm seeing compile errors in [my project](<URL> I do not get these errors on previous nightlies. My project only builds for Windows 32-bit (and requires nightly Rust), but I'm seeing this error both on native MSVC and when cross-compiling on Linux with the i686-pc-windows-gnu target. The error message in question looks like this:
+```The code snippet indicates an invalid instruction mnemonic `_ZN8gm82save39confirm_before_deleting_action_timeline17h22d105fcf186e7cce@0` in inline assembly. The error is noted at line 1808 of the assembly file, specifically marking the end definition for the mnemonic.```
+No additional information is printed with `RUST_BACKTRACE=1`.
+
+This error occurs for the following functions on debug and release builds (listing manged function names, links point to relevant source code):
+* [@_ZN8gm82save37confirm_before_deleting_action_object17h30a220a8f4863defE@0
+](<URL>
+* [@_ZN8gm82save39confirm_before_deleting_action_timeline17h22d105fcf186e7ccE@0
+](<URL>
+
+And for the following functions, only on release builds:
+* [@_ZN8gm82save6delphi7TBitmap19load_from_clipboard17h9cbf20c58e920f0dE@4](<URL>
+* [@_ZN8gm82save9code_form30trigger_disable_condition_memo17hd451c78277cada2bE@0
+](<URL>
+* [@_ZN8gm82save11font_render39_$LT$impl$u20$gm82save..asset..Font$GT$21copy_glyph_onto_atlas17h2c7e90248cebc313E@32](<URL>
+
+All of the above are naked functions. The project contains many other naked functions; I don't know whether these are special or whether it just didn't get to any others. I've tried a blank project with just one naked function, and that compiles without issue.
+
+The date and error message seem to point to #128004 (.endef is generated [here](<URL> but I'm not familiar enough with the internals to identify what's wrong here.
+
+The issue can be reproduced by cloning <URL> and running `cargo build` (with or without `--release`, specifying `--target=i686-pc-windows-gnu` if necessary). There's no unusual dependencies.","['O-windows', 'T-compiler', 'A-naked', 'C-bug', 'F-naked_functions']","['A-naked', 'F-naked_functions']","['regression-from-stable-to-nightly', 'requires-nightly', 'A-naked', 'A-codegen', 'F-naked_functions']","['I-ICE', 'T-compiler', 'C-bug', 'O-windows', 'A-naked']",[],"['T-compiler', 'C-bug', 'regression-from-stable-to-nightly', 'O-windows', 'O-windows-msvc', 'O-windows-gnu', 'A-codegen', 'requires-nightly', 'P-high']",[],"['C-bug', 'A-name-mangling', 'A-naked', 'A-mir-opt', 'T-compiler']","['T-compiler', 'C-bug', 'A-naked', 'F-naked_functions', 'A-ABI', 'O-windows', 'A-diagnostics']",[],0,1
+angular/angular/59378,"schema.json in ""Schematics for libraries"" is missing the default value for the `path` property","### Describe the problem that you experienced
+
+In ""Schematics for libraries"", the `schema.json` template defined the `path` property without any `$default` value. The `path` option will remain undefined when running the schematics, which contradicts with the documentation below.
+
+> The path option in the schematic's schema is substituted by default with the current working directory.
+
+### Enter the URL of the topic with the problem
+
+<URL>
+
+### Provide any additional information here in as much as detail as you can
+
+The correct template for the `path` property should be
+
+```This code snippet defines a JSON schema property for a ""path"" with the following characteristics:
+- Type: string
+- Format: path
+- Description: The path to create the service.
+- Visible: false
+- Default value sourced from ""workingDirectory""```",['area: docs'],['bug'],['area: core'],[],"['area: docs', 'type: bug/fix']",['area: core'],[],"['bug', 'feature']","['area: docs', 'regression']",['area: docs'],0,1
+elastic/elasticsearch/121867,[CI] DocsClientYamlTestSuiteIT test {yaml=reference/cat/health/cat-health-no-timestamp-example} failing,"**Build Scans:**
+- [elasticsearch-intake #17410 / part1](<URL>
+- [elasticsearch-pull-request #54869 / part-1](<URL>
+
+**Reproduction Line:**
+```This command runs a specific test case using Gradle for the Elasticsearch project. It targets the `yamlRestTest` task in the `docs` module and executes `test` from `DocsClientYamlTestSuiteIT` with the specified YAML file. Additional flags set the test seed, locale, timezone, and Java runtime version.```
+
+**Applicable branches:**
+main
+
+**Reproduces locally?:**
+N/A
+
+**Failure History:**
+[See dashboard](<URL>
+
+**Failure Message:**
+```The log indicates an `AssertionError` where the expected regex pattern for the `$body` field did not match the actual content. The expected pattern and the actual content are provided in the log.```
+
+**Issue Reasons:**
+- [main] 2 failures in test test {yaml=reference/cat/health/cat-health-no-timestamp-example} (0.5% fail rate in 373 executions)
+
+**Note:**
+This issue was created using new test triage automation. Please report issues or feedback to es-delivery.","[':Delivery/Build', '>test-failure', 'Team:Delivery']",['>test-failure'],[],"['>test-failure', ':Data Management/Data streams', 'Team:Data Management', 'low-risk']",['release highlight'],[],[],"['>test', '>test-failure']",['low-risk'],[],0,0
+rust-lang/rust/136273,ICE: the trait bound `T: ~const Deref` is not satisfied,"
+
+### Code
+
+[Playground link](<URL>
+```This Rust code defines a `Wrap` struct that implements both `Deref` and `DerefMut` traits to enable borrowing its inner value. It also includes a `const` method `get_pinned_mut` that returns a pinned mutable reference to the inner value, using the `Pin` trait. The method uses `Pin::new_unchecked` to create a pinned reference, assuming structural pinning is followed.```
+
+
+### Meta
+
+
+`rustc --version --verbose`:
+```The log indicates that the Rust compiler version is 1.86.0-nightly, built on 2025-01-29 with commit hash ae5de6c759cd337ecdb2de4e94f47eaafb5d4606. It is hosted on an x86_64-unknown-linux-gnu system and includes LLVM version 19.1.7.```
+
+### Error output
+
+```````The log indicates that no errors were encountered during the initial run, but delayed bugs were created and are now showing as internal compiler errors. Specifically, there is an internal compiler error related to the trait bound `T: ~const Deref` at line 26 of `src/lib.rs`. The error originated from a file in the Rust compiler's source code and is disabled, preventing a full backtrace. The log suggests reporting this issue and provides instructions on how to do so, including attaching a specific file and ensuring the latest nightly version of the compiler is used.```
+
+
+<details><summary><strong>Backtrace</strong></summary>
+<p>
+
+`````The log indicates a delayed bug in Rust, specifically related to a missing trait bound `T: ~const std::ops::Deref`. The error originates from the `rustc_errors` module and is propagated through various components of the Rust compiler, including type checking, trait selection, and expression validation. The bug occurs during the analysis phase of the compilation process. The stack trace shows the flow of the error from initial emission to deeper type checking and expression validation functions. The log also includes information about the Rust compiler version (1.86.0-nightly) and the platform (x86_64-unknown-linux-gnu).```
+
+</p>
+</details>
+","['I-ICE', 'T-compiler', 'C-bug', 'F-const_trait_impl']","['C-bug', 'I-ICE', 'A-pin']","['I-ICE', 'T-compiler', 'C-bug', 'F-const_trait_impl', 'requires-nightly']","['I-ICE', 'T-compiler', 'C-bug']","['C-bug', 'I-ICE']","['I-ICE', 'T-compiler', 'C-bug', 'F-const_trait_impl', 'requires-nightly']",[],['const-generics-bad-diagnostics'],"['I-ICE', 'T-compiler', 'F-const_trait_impl', 'F-const_mut_refs', 'F-const_refs_to_static']",[],0,1
+rust-lang/rust/138172,CoercePointee doesn't support trait bounds on the smart pointer,"I tried this code:
+
+```The code snippet defines a custom Arc-like smart pointer `MyArc` for types that implement `MyTrait`. It uses Rust's `CoercePointee` and `arbitrary_self_types` features to create a transparent wrapper around `std::sync::Arc`. The `MyArc` struct is designed to be used with types implementing `MyOtherTrait`, which in turn extends `MyTrait`. The `test` function demonstrates using `MyArc` with a trait object of `MyOtherTrait`.```
+
+I expected to see this happen: It compiles.
+Instead, this happened: 
+```````````````````The code snippet indicates that the trait `MyOtherTrait` is not dynamically compatible because its `foo` method has a self parameter of type `MyArc<Self>`. For a trait to be dynamically dispatchable (`dyn` compatible), its self parameter must be either `self: Self` (for non-reference types) or `&self: &Self` (for reference types). The error suggests changing the `foo` method's self parameter to `&Self`.```
+","['T-compiler', 'C-bug', 'F-derive_coerce_pointee']","['A-coercions', 'A-dyn-trait']","['F-derive_coerce_pointee', 'A-trait-system', 'A-diagnostics']","['T-compiler', 'C-bug', 'F-derive_coerce_pointee']","['A-dyn-compatibility', 'A-trait-system', 'C-bug']","['F-derive_coerce_pointee', 'T-compiler', 'A-trait-system', 'A-diagnostics']","['F-derive_coerce_pointee', 'T-types']","['A-dyn-compatibility', 'A-dyn-trait', 'C-bug']","['T-compiler', 'A-trait-system', 'C-bug']","['T-compiler', 'C-bug', 'F-derive_coerce_pointee']",0,1
